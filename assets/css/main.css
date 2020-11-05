@@ -1,0 +1,127 @@
+:root {
+  --grid-gutter: 25px;
+  --layout-width: 990px;
+  --text-color: #18191A;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto'), local('Roboto-Regular'),
+      url('../fonts/roboto-v20-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+       url('../fonts/roboto-v20-latin-bold.woff2') format('woff2');
+}
+
+html {
+  font-family: Roboto, sans-serif;
+  color: var(--text-color);
+  font-size: 24px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  background-color: #EBF3FD;
+}
+
+.header__inner {
+  position: relative;
+  padding: 0 var(--grid-gutter);
+  max-width: var(--layout-width);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.header__logo {
+  position: absolute;
+  left: 36px;
+  top: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo svg {
+  height: 48px;
+}
+
+.header__logo span {
+  font-size: 12px;
+}
+
+.header__button {
+  position: absolute;
+  right: 36px;
+  top: 36px;
+}
+
+.header__hero {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+}
+
+.button {
+  background-color: #0085FF;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 14px 28px;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 24px;
+  transition: background-color 0.2s ease-in;
+}
+
+.button:hover {
+  background-color: #0085FFDD;
+}
+
+.content {
+  max-width: var(--layout-width);
+  margin: 0 auto;
+}
+
+.content p {
+  margin: 1.5em auto;
+  padding: 0 var(--grid-gutter);
+  width: calc(4 * 100% / 6);
+  line-height: 1.5em;
+}
+
+.content img {
+  max-width: 100%;
+  display: block;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.1em;
+  padding: 0 var(--grid-gutter);
+  margin: 1em 0;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 32px;
+}

@@ -1,0 +1,5 @@
+<footer id="footer">
+  {{ with .Site.Params.copyright }}
+    <div class="prose copyright">{{ . | markdownify }}</div>
+  {{ end }}
+</footer>

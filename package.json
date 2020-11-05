@@ -1,0 +1,23 @@
+{
+  "name": "evcc.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naltatis/evcc.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naltatis/evcc.io/issues"
+  },
+  "homepage": "https://github.com/naltatis/evcc.io#readme",
+  "dependencies": {
+    "prettier": "^2.1.2",
+    "prettier-plugin-go-template": "0.0.10"
+  }
+}
