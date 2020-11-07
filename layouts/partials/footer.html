@@ -1,5 +1,5 @@
-<footer id="footer">
-  {{ with .Site.Params.copyright }}
-    <div class="prose copyright">{{ . | markdownify }}</div>
+<footer class="footer">
+  {{ with .Site.Copyright }}
+    <div class="copyright">{{ . | markdownify }}</div>
   {{ end }}
 </footer>

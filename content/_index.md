@@ -12,7 +12,11 @@ evcc ist angetreten, unser Leben mit Elektrizität einfach, verlässlich und kom
 
 ## Darum solltest du dir evcc runterladen
 
-Some introductory text to get you excited about what we are doing. For example, I could tell you what our [prototype](#prototype) can do and then link you to our [contact form](#contact-form) so you can get in touch to ask for a **one-on-one** (or more :-)) showcase session.
+- Simple and clean user interface
+- Wide support of multiple vehicles, chargers and meters
+- plugins for integrating with hardware devices and home automation: Modbus (meters and grid inverters), MQTT and shell scripts
+
+---
 
 ## Unterstützte Systeme
 
@@ -27,6 +31,8 @@ SMA Sunny Tripower 8.0 STP8.0-3AV-40 • Fronius Symo 10.0-3-M • SolarEdge SE7
 ### Wallboxen
 
 ABL eMH3 Wallbox 3W2263B Twin 22kW S2 Master • ABL eMH1 Wallbox EVSE 552 22kW S2 • ABL eMH3 Wallbox 3W2253B Twin 22kW S2 Slave • ABL eMH3 Wallbox 3W2263B Twin 22kW S2 Master • ABL eMH1 Wallbox EVSE 552 22kW S2 • ABL eMH3 Wallbox 3W2253B Twin 22kW S2 Slave
+
+---
 
 ## Wie evcc funktioniert
 
@@ -60,24 +66,6 @@ Check out this sweet preview. Impressed much, are you?
 
 ---
 
-# Imprint & Privacy Policy
+## Implemented in _Go_
 
-Let's keep it simple. This is our contact information:
-
-Jane Doe
-1093 Simpson Square
-May 73851, OK
-USA
-
-E-mail: jane@doe.net
-Phone: 580-689-0577
-
-We take data privacy very seriously, so we make sure not to store anything we do not need. We do not have any tracking service, no cookies or anything like that. If you decide to use the contact form or the newsletter sign up this information will be stored on Netlify, a service we use to host this website. You can approach us any time to have your data removed or simply retrieve information about what information we did store.
-
----
-
-# Stay in touch
-
-Let's stay in touch. Sign up for our newsletter. Do not worry, we will not bother you with boring details. Expect nice & tight updates about once or twice every 3 months.
-
-{{< newsletter_sign_up id="newsletter-sign-up-form" placeholder_email="Your Email" button_label="Sign up">}}
+![EVCC Gopher](/img/ccs-gopher.svg)
