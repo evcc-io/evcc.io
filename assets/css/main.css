@@ -13,6 +13,12 @@
   --1-col: calc(1 * 100% / 6);
 }
 
+@media (max-width: 499px) {
+  :root {
+    --4-cols: 100%;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -138,7 +144,7 @@ a:hover {
 .content p {
   margin: 1.5em auto;
   padding: 0 var(--grid-gutter);
-  width: calc(4 * 100% / 6);
+  width: var(--4-cols);
   line-height: 1.5em;
 }
 
@@ -206,16 +212,17 @@ h1, h2, h3 {
   margin: 1em 0;
 }
 
-h1 {
-  font-size: 56px;
+
+@media (min-width: 500px) {
+  h1 { font-size: 56px; }
+  h2 { font-size: 40px; }
+  h3 { font-size: 32px; }
 }
 
-h2 {
-  font-size: 40px;
-}
-
-h3 {
-  font-size: 32px;
+@media (max-width: 499px) {
+  h1 { font-size: 36px; }
+  h2 { font-size: 32px; }
+  h3 { font-size: 28px; }
 }
 
 .footer {
