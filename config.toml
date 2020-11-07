@@ -1,4 +1,4 @@
-baseURL = "https://evcc.io/"
+baseURL = "/"
 languageCode = "de-de"
 title = "evcc ⚡️ solar powered car charging"
 copyright = "© 2020 evcc [Contact](#contact) • [Imprint](#imprint) • [Legal notice](#legal)"
