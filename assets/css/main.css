@@ -4,6 +4,7 @@
   --page-background: #FFFFFF;
   --header-background: #EBF3FD;
   --text-color: #18191A;
+  --text-font-size: 24px;
   --accent-color: #0085FF;
   --accent-hover-color: #0085FFDD;
   --light-background: #F1F1F4;
@@ -15,12 +16,9 @@
 
 @media (max-width: 499px) {
   :root {
+    --text-font-size: 16px;
     --4-cols: 100%;
   }
-}
-
-* {
-  box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,6 +28,10 @@
     --light-background: rgba(241,241,244,0.1);
     --text-color: #F1F1F4;
   }
+}
+
+* {
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -51,7 +53,8 @@
 html {
   font-family: Roboto, sans-serif;
   color: var(--text-color);
-  font-size: 24px;
+  font-size: var(--text-font-size);
+  transition: font-size 0.25s ease-in;
 }
 
 body {
@@ -96,6 +99,15 @@ a:hover {
   align-items: center;
 }
 
+
+@media (max-width: 499px) {
+  .header__logo {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    top: 20px;
+  }
+}
+
 .header__logo__letters {
   fill: var(--text-color);
 }
@@ -106,6 +118,15 @@ a:hover {
 
 .header__logo span {
   font-size: 12px;
+}
+
+@media (max-width: 499px) {
+  .header__logo span {
+    display: block;
+    position: relative;
+    left: 14px;
+    top: 5px;
+  }
 }
 
 .header__button {
@@ -198,10 +219,9 @@ a:hover {
   border-left: var(--grid-gutter) solid var(--page-background);
 }
 
-
 hr {
   border: none;
-  margin: 75px 0;
+  margin: 3rem 0;
 }
 
 h1, h2, h3 {
@@ -212,17 +232,16 @@ h1, h2, h3 {
   margin: 1em 0;
 }
 
-
-@media (min-width: 500px) {
-  h1 { font-size: 56px; }
-  h2 { font-size: 40px; }
-  h3 { font-size: 32px; }
+h1 {
+  font-size: 2.33rem;
 }
 
-@media (max-width: 499px) {
-  h1 { font-size: 36px; }
-  h2 { font-size: 32px; }
-  h3 { font-size: 28px; }
+h2 {
+  font-size: 1.66rem;
+}
+
+h3 {
+  font-size: 1.33rem;
 }
 
 .footer {
