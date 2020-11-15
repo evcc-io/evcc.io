@@ -9,6 +9,7 @@
   --darkmode-icon: "🌙";
   --text-font-size: 24px;
   --accent-color: #0085FF;
+  --accent-hover-color: #0085FFAA;
   --light-background: #F1F1F4;
   --6-cols: 100%;
   --4-cols: calc(4 * 100% / 6);
