@@ -222,7 +222,7 @@ a:hover {
   bottom: 0;
   width: var(--1-col);
   border-left: var(--grid-gutter) solid var(--page-background);
-  background-image: url("/img/lightning.svg");
+  background-image: url("../img/lightning.svg");
   background-size: 40px;
   background-repeat: no-repeat;
   background-position: center 0.85em;

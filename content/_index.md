@@ -37,7 +37,7 @@ Wallbe • Phoenix • ESL Walli • go-eCharger • NRGkick • SimpleEVSE • 
 
 ## Wie evcc funktioniert
 
-![alt text](/img/schema.png "title")
+![alt text](img/schema.png "title")
 
 ## Für wen sich evcc eignet
 
@@ -69,4 +69,4 @@ Duis laborum ullamco veniam ullamco fugiat Lorem. Veniam culpa consectetur dolor
 
 ## Implemented in [Go](https://golang.org)
 
-![EVCC Gopher](/img/ccs-gopher.svg)
+![EVCC Gopher](img/ccs-gopher.svg)
