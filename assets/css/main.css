@@ -4,14 +4,17 @@
   --page-background: #FFFFFF;
   --header-background: #EBF3FD;
   --text-color: #18191A;
+  --darkmode-button: #18191A;
+  --darkmode-button-hover: #EBF3FD;
+  --darkmode-icon: "🌙";
   --text-font-size: 24px;
   --accent-color: #0085FF;
-  --accent-hover-color: #0085FFDD;
   --light-background: #F1F1F4;
   --6-cols: 100%;
   --4-cols: calc(4 * 100% / 6);
   --2-cols: calc(2 * 100% / 6);
   --1-col: calc(1 * 100% / 6);
+  --transition-background: background-color 0.4s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 @media (max-width: 499px) {
@@ -26,8 +29,22 @@
     --page-background: #18191A;
     --header-background: #18191A;
     --light-background: rgba(241,241,244,0.1);
+    --darkmode-button: #FFFFFF;
+    --darkmode-icon: "☀️";
     --text-color: #F1F1F4;
   }
+  .darkmode.darkmode {
+    display: none;
+  }
+}
+
+html.dark {
+  --page-background: #18191A;
+  --header-background: #18191A;
+  --light-background: rgba(241,241,244,0.1);
+  --darkmode-button: #EBF3FD;
+  --darkmode-icon: "☀️";
+  --text-color: #F1F1F4;
 }
 
 * {
@@ -52,15 +69,16 @@
 
 html {
   font-family: Roboto, sans-serif;
-  color: var(--text-color);
   font-size: var(--text-font-size);
   transition: font-size 0.25s ease-in;
 }
 
 body {
+  color: var(--text-color);
   padding: 0;
   margin: 0;
   background-color: var(--page-background);
+  transition: var(--transition-background);
 }
 
 em {
@@ -79,6 +97,7 @@ a:hover {
 
 .header {
   background-color: var(--header-background);
+  transition: var(--transition-background);
 }
 
 .header__inner {
@@ -102,9 +121,10 @@ a:hover {
 
 @media (max-width: 499px) {
   .header__logo {
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    top: 20px;
+    display: block;
+  }
+  .header__logo > * {
+    display: block;
   }
 }
 
@@ -122,10 +142,7 @@ a:hover {
 
 @media (max-width: 499px) {
   .header__logo span {
-    display: block;
-    position: relative;
-    left: 14px;
-    top: 5px;
+    display: none;
   }
 }
 
@@ -244,8 +261,40 @@ h3 {
   font-size: 1.33rem;
 }
 
+p + h3 {
+  margin-top: 3em;
+}
+
 .footer {
-  margin: 1.5em auto;
-  padding: 0 var(--grid-gutter);
-  width: var(--4-cols);
+  text-align: center;
+}
+
+.footer a,
+.footer span {
+  display: block;
+  padding: 0.5em;
+}
+
+.darkmode {
+  border: none;
+  background-color: var(--darkmode-button);
+  dispay: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  transition: var(--transition-background);
+}
+.darkmode:hover {
+  opacity: 0.9;
+}
+.darkmode::after {
+  content: var(--darkmode-icon);
+  font-size: 1rem;
 }

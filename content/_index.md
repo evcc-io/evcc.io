@@ -49,6 +49,8 @@ Wie wäre es einen Bereich hinzuzufügen: “Für wen ist EVCC geeigenet?” ode
 
 [hier kommen Screenshots]
 
+<a href="http://78.47.130.164:7070/" class="button">Demo ansehen</a>
+
 ---
 
 ## Unterstütze das Projekt
@@ -65,6 +67,6 @@ Duis laborum ullamco veniam ullamco fugiat Lorem. Veniam culpa consectetur dolor
 
 ---
 
-## Implemented in _Go_
+## Implemented in [Go](https://golang.org)
 
 ![EVCC Gopher](/img/ccs-gopher.svg)
