@@ -4,4 +4,4 @@ languageCode = "de-de"
 title = "evcc ⚡️ solar powered car charging"
 
 [minify]
-  disableSVG = false
+  disableSVG = true
