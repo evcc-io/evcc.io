@@ -49,7 +49,7 @@ Wie wäre es einen Bereich hinzuzufügen: “Für wen ist EVCC geeigenet?” ode
 
 [hier kommen Screenshots]
 
-<a href="http://78.47.130.164:7070/" class="button">Demo ansehen</a>
+[Demo ansehen](http://78.47.130.164:7070/)
 
 ---
 
