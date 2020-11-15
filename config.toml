@@ -5,3 +5,4 @@ title = "evcc ⚡️ solar powered car charging"
 
 [minify]
   disableSVG = true
+  disableHTML = true
