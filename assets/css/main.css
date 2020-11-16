@@ -4,9 +4,6 @@
   --page-background: #FFFFFF;
   --header-background: #EBF3FD;
   --text-color: #18191A;
-  --darkmode-button: #18191A;
-  --darkmode-button-hover: #EBF3FD;
-  --darkmode-icon: "🌙";
   --text-font-size: 24px;
   --accent-color: #0085FF;
   --accent-hover-color: #0085FFAA;
@@ -15,7 +12,6 @@
   --4-cols: calc(4 * 100% / 6);
   --2-cols: calc(2 * 100% / 6);
   --1-col: calc(1 * 100% / 6);
-  --transition-background: background-color 0.4s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 @media (max-width: 499px) {
@@ -30,22 +26,8 @@
     --page-background: #18191A;
     --header-background: #18191A;
     --light-background: rgba(241,241,244,0.1);
-    --darkmode-button: #FFFFFF;
-    --darkmode-icon: "☀️";
     --text-color: #F1F1F4;
   }
-  .darkmode.darkmode {
-    display: none;
-  }
-}
-
-html.dark {
-  --page-background: #18191A;
-  --header-background: #18191A;
-  --light-background: rgba(241,241,244,0.1);
-  --darkmode-button: #EBF3FD;
-  --darkmode-icon: "☀️";
-  --text-color: #F1F1F4;
 }
 
 * {
@@ -76,10 +58,9 @@ html {
 
 body {
   color: var(--text-color);
-  padding: 0;
+  padding: 0 0 4rem;
   margin: 0;
   background-color: var(--page-background);
-  transition: var(--transition-background);
 }
 
 em {
@@ -98,7 +79,6 @@ a:hover {
 
 .header {
   background-color: var(--header-background);
-  transition: var(--transition-background);
 }
 
 .header__inner {
@@ -274,28 +254,4 @@ p + h3 {
 .footer span {
   display: block;
   padding: 0.5em;
-}
-
-.darkmode {
-  border: none;
-  background-color: var(--darkmode-button);
-  dispay: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  right: 1rem;
-  bottom: 1rem;
-  height: 2rem;
-  width: 2rem;
-  border-radius: 50%;
-  cursor: pointer;
-  outline: none;
-  transition: var(--transition-background);
-}
-.darkmode:hover {
-  opacity: 0.9;
-}
-.darkmode::after {
-  content: var(--darkmode-icon);
-  font-size: 1rem;
 }

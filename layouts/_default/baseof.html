@@ -4,7 +4,5 @@
   <body>
     {{- block "main" . }}{{- end }}
     {{- partial "footer.html" . -}}
-    {{ $main := resources.Get "js/main.js" }}
-    <script src="{{ $main.Permalink }}"></script>
   </body>
 </html>
