@@ -4,9 +4,9 @@ header_button_cta:
   title: "Get evcc"
 ---
 
-# Lade dein Auto mit eigener PV
+# Lade dein Auto mit eigenem PV-Strom
 
-evcc ist angetreten, die Nachhaltigkeit beim Laden unserer Elektroautos noch weiter zu optimieren. Dazu ermöglicht evcc das Laden mit möglichst viel selbsterzeugten Strom. Im optimalen Fall ist dies sogar ohne Änderung in der Haus-Installation möglich.
+evcc ist angetreten, die Nachhaltigkeit beim Laden unserer Elektroautos zu optimieren. Dazu ermöglicht evcc das Laden mit möglichst viel selbsterzeugten Strom. Im optimalen Fall ist dies sogar ohne Änderung in der Haus-Installation möglich.
 
 ---
 
@@ -25,11 +25,11 @@ evcc ist angetreten, die Nachhaltigkeit beim Laden unserer Elektroautos noch wei
 
 Den eigenen Sonnenstrom zum Laden des Autos zu verwenden bedeutet den Eigenverbrauch zu erhöhen und damit den Strom nicht zu verkaufen sondern selbst zu verwenden.
 
-Unterstütze Wallboxen ermöglichen es die Stromstärke mit der das Auto geladen wird zu verändern. Wenn mehr Sonnenstrom erzeugt wird, teilt evcc der Wallbox mit dem Auto zu erlauben mit höherer Leistung zu laden. Wenn wieder weniger Strom erzeugt wird, wird die Leistung begrenzt oder sogar komplett pausiert.
+Unterstützte Wallboxen ermöglichen es die Stromstärke mit der das Auto geladen wird zu verändern. Wenn viel Sonnenstrom erzeugt wird, erlaubt evcc der Wallbox das angeschlossene Auto mit hoher Leistung zu laden. Wird weniger Strom erzeugt verlangsamt oder pausiert evcc den Ladevorgang.
 
-Damit evcc nun entscheiden kann wie die Wallbox geregelt werden soll, ist ein Messgerät am Netzanschluss der Hausinstallation notwendig, welches den aktuellen PV Überschuß an evcc melden kann.
+Damit evcc die Wallbox bestmöglich steuern kann, ist ein Messgerät am Netzanschluss der Hausinstallation notwendig. Aus dem aktuellen Hausverbrauch und den Daten der Solaranlage errechnet evcc den zur Verfügung stehenden Überschuss.
 
-Wenn eine unterstütze PV Installation vorhanden ist, kann evcc auch die aktuelle PV-Leistung anzeigen. Ist eine unterstütze Hausbatterie vorhanden, kann auch deren Kapazität angezeigt werden. Und wenn sogar ein unterstützes Elektroauto vorhanden ist, kann evcc die Ladung bei einem gewünschten Batterieladestand beendet werden. Und das sind nur einige Beispiele was mit evcc möglich ist oder in Zukunft möglich sein wird!
+Wenn eine unterstützte PV Installation vorhanden ist, kann evcc auch die aktuelle PV-Leistung anzeigen. Ist eine unterstützte Hausbatterie vorhanden, kann auch deren Kapazität angezeigt werden. Und wenn sogar ein unterstützets Elektroauto vorhanden ist, kann evcc die Ladung bei einem gewünschten Batterieladestand beendet werden. Und das sind nur einige Beispiele was mit evcc möglich ist oder in Zukunft möglich sein wird!
 
 ---
 
@@ -63,9 +63,9 @@ Audi • BMW • Ford • Hyundai • Kia • Nissan • Porsche • Renault •
 
 ## Für wen sich evcc eignet
 
-Beim momentanen Stand der Entwicklung wird etwas Grundwissen im Bereich der Installation der Software auf einem Computer (Linux, NAS, Raspberry Pi) entweder als Binary oder mit Docker benötigt. Dazu muss auch eine Konfigurationsdatei manuell in einem bestimmten Format (toml) editiert werden. Für einige System existieren bereits Beispielkonfigurationen.
+Beim momentanen Stand der Entwicklung wird Linux-Grundwissen für die Installation der Software benötigt. evcc läuft auf beliebiger Computer-Hardware (Linux, NAS, Raspberry PI) - entweder als Binary oder mit Docker benötigt. Die Konfiguration erfolgt momentan noch manuell über eine toml Datei. Für einige Systeme existieren bereits [Beispielkonfigurationen](https://github.com/andig/evcc-config).
 
-Neben der Software muss eine ausreichende Haus-Installation vorhanden sein. Vor allem das Messgerät für den PV-Überschuß muss vom gewählten Computer erreichbar sein und ausgelesen werden können. Falls so ein Gerät nicht bereits vorhanden ist, ist es notwendig dass ein Elektriker ein entpsrechendes installiert. Je nach vorhandenem PV System kann ein solches auch schon vorhanden sein.
+Neben der Software muss eine ausreichende Haus-Installation vorhanden sein. Vor allem das Messgerät für den PV-Überschuß muss vom gewählten Computer erreichbar sein und ausgelesen werden können. Falls so ein Gerät nicht bereits vorhanden ist, ist es notwendig dass ein Elektriker ein entsprechendes installiert. Je nach vorhandenem PV-System kann ein solches auch schon vorhanden sein.
 
 ---
 
@@ -73,15 +73,16 @@ Neben der Software muss eine ausreichende Haus-Installation vorhanden sein. Vor 
 
 ### Aktiv teilnehmen
 
-Werde Teil unseres Entwicklungsteams und hilf dein installiertes System zu unterstützen, Fehler zu korrigieren, die Dokumentation zu verbessern oder deinen Freunden und Bekannten von den Möglichkeiten von evcc zu erzählen.
+Werde Teil unseres Entwicklungsteams und hilf dein installiertes System zu unterstützen, Fehler zu korrigieren und die Dokumentation zu verbessern. 
+Erzähle deinen Freunden und Bekannten von den Möglichkeiten die evcc bietet.
 
-Komm in unseren Chat und lerne uns kennen: [Slack](https://join.slack.com/t/evccgroup/shared_invite/zt-fw52e6lt-tdazCp1LPdPlYuKz3PvTAw)
+Komm in unseren Chat, lerne uns kennen und diskutiere mit: [Slack](https://join.slack.com/t/evccgroup/shared_invite/zt-fw52e6lt-tdazCp1LPdPlYuKz3PvTAw)
 
 ### Finanzieller Support
 
 Alle Beteiligten arbeiten an evcc in ihrer Freizeit. Du kannst uns gerne mit einer Spende unterstützen.
 
-Arbeitest du in einer Firma welche Wallboxen, Messgeräte oder PV System anbietet und möchtet auch euren Kunden das Laden mit eigenem Sonnenstrom ermöglichen? Sprecht uns gerne für ein sponsoring an um eure Hardware in evcc zu unterstützen.
+Arbeitest du in einer Firma welche Wallboxen, Messgeräte oder PV-Systeme anbietet? Möchtest du euren Kunden das Laden mit eigenem Sonnenstrom ermöglichen? Sprich uns gerne an. Hardware Sponsoring hilft uns die Fähigkeiten von evcc auszubauen.
 
 ---
 
