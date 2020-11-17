@@ -4,7 +4,7 @@ header_button_cta:
   title: "Get evcc"
 ---
 
-# Lade dein Auto mit eigenem PV-Strom
+# Sonne tanken. Ganz einfach.
 
 evcc ist angetreten, die Nachhaltigkeit beim Laden unserer Elektroautos zu optimieren. Dazu ermöglicht evcc das Laden mit möglichst viel selbsterzeugten Strom. Im optimalen Fall ist dies sogar ohne Änderung in der Haus-Installation möglich.
 
