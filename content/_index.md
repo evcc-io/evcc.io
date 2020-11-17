@@ -27,7 +27,7 @@ Den eigenen Sonnenstrom zum Laden des Autos zu verwenden bedeutet den Eigenverbr
 
 Unterstützte Wallboxen ermöglichen es die Stromstärke mit der das Auto geladen wird zu verändern. Wenn viel Sonnenstrom erzeugt wird, erlaubt evcc der Wallbox das angeschlossene Auto mit hoher Leistung zu laden. Wird weniger Strom erzeugt verlangsamt oder pausiert evcc den Ladevorgang.
 
-Damit evcc die Wallbox bestmöglich steuern kann, ist ein Messgerät am Netzanschluss der Hausinstallation notwendig. Aus dem aktuellen Hausverbrauch und den Daten der Solaranlage errechnet evcc den zur Verfügung stehenden Überschuss.
+Damit evcc die Wallbox bestmöglich steuern kann, ist ein Messgerät am Netzanschluss der Hausinstallation notwendig. Durch dieses Messgerät kennt evcc den momentanen PV Überschuß und kann die Ladeleistung entsprechend anpassen.
 
 Wenn eine unterstützte PV Installation vorhanden ist, kann evcc auch die aktuelle PV-Leistung anzeigen. Ist eine unterstützte Hausbatterie vorhanden, kann auch deren Kapazität angezeigt werden. Und wenn sogar ein unterstützets Elektroauto vorhanden ist, kann evcc die Ladung bei einem gewünschten Batterieladestand beendet werden. Und das sind nur einige Beispiele was mit evcc möglich ist oder in Zukunft möglich sein wird!
 
