@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "https://website.evcc.io/"
 relativeURLs = true
 languageCode = "de-de"
 title = "evcc ⚡️ solar powered car charging"

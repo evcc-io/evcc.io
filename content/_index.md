@@ -4,44 +4,52 @@ header_button_cta:
   title: "Get evcc"
 ---
 
-# Extensible solar powered car charging
+# Sonne tanken. Ganz einfach.
 
-evcc ist angetreten, unser Leben mit Elektrizität einfach, verlässlich und komplett sorgenfrei zu gestalten. Unterwegs, zu Hause und bei der Stromerzeugung. Intelligent, praktisch, sicher und ökologisch.
+evcc ist angetreten, die Nachhaltigkeit beim Laden unserer Elektroautos zu optimieren. Dazu ermöglicht evcc das Laden mit möglichst viel selbsterzeugten Strom. Im optimalen Fall ist dies sogar ohne Änderung in der Haus-Installation möglich.
 
 ---
 
 ## Was EVCC besonders macht
 
-- Lade dein E-Auto mit eigenen Sonnenstrom laden
-- Spricht mit vielen Autos, Wechselrichter und Wallboxen
-- Intuitive und aufgeräumte Benutzeroberfläche
+- Lade dein E-Auto mit selbst erzeugtem Sonnenstrom
+- Nutze bereits vorhandene Systeme (PV, Wallboxen)
+- Intuitive und übersichtliche Benutzeroberfläche
 - 100% Open Source
-
----
-
-## Unterstützte Systeme
-
-### Autos
-
-Audi • BMW • Ford • Tesla • Nissan • Renault • Porsche • Volkswagen • anything scriptable
-
-### Wechselrichter
-
-SMA • KOSTAL • Fronius • SolarEdge • STECA • E3DC • Tesla PowerWall • Eastron SDM • MPM3PM • SBC ALE3 • Discovergy • anything scriptable
-
-### Wallboxen
-
-Wallbe • Phoenix • ESL Walli • go-eCharger • NRGkick • SimpleEVSE • EVSEWifi • KEBA • BMW • openWB • Mobile Charger Connect • anything scriptable
 
 ---
 
 ## Wie evcc funktioniert
 
-![alt text](img/schema.png "title")
+![alt text](img/schema.png "Darstellung der Funktionsweise")
 
-## Für wen sich evcc eignet
+Den eigenen Sonnenstrom zum Laden des Autos zu verwenden bedeutet den Eigenverbrauch zu erhöhen und damit den Strom nicht zu verkaufen sondern selbst zu verwenden.
 
-Wie wäre es einen Bereich hinzuzufügen: “Für wen ist EVCC geeigenet?” oder etwas ähnliches? Das ist etwas das sich ändern wird mit dem Fortschritt der Entwicklung, aber mann muss eben heute schon etwas Grundkentnisse in Linux mitbringen. Dazu kommt noch dass eine gewissen technische Grundausstattung erforderlich ist, z.B. ein auslesbarer Stromzähler der den PV Überschuß messen kann. Also 2 Aspekte dabei, Anwender und auch Hausinstallation
+Unterstützte Wallboxen ermöglichen es die Stromstärke mit der das Auto geladen wird zu verändern. Wenn viel Sonnenstrom erzeugt wird, erlaubt evcc der Wallbox das angeschlossene Auto mit hoher Leistung zu laden. Wird weniger Strom erzeugt verlangsamt oder pausiert evcc den Ladevorgang.
+
+Damit evcc die Wallbox bestmöglich steuern kann, ist ein Messgerät am Netzanschluss der Hausinstallation notwendig. Aus dem aktuellen Hausverbrauch und den Daten der Solaranlage errechnet evcc den zur Verfügung stehenden Überschuss.
+
+Wenn eine unterstützte PV Installation vorhanden ist, kann evcc auch die aktuelle PV-Leistung anzeigen. Ist eine unterstützte Hausbatterie vorhanden, kann auch deren Kapazität angezeigt werden. Und wenn sogar ein unterstützets Elektroauto vorhanden ist, kann evcc die Ladung bei einem gewünschten Batterieladestand beendet werden. Und das sind nur einige Beispiele was mit evcc möglich ist oder in Zukunft möglich sein wird!
+
+---
+
+## Unterstützte Systeme
+
+### Wallboxen
+
+go-eCharger • EVSEWifi • KEBA • NRGkick • openWB • Phoenix • Porsche Mobile Charger Connect • SimpleEVSE • Wallbe
+
+### Messgeräte
+
+Discovergy • Eastron SDM • SMA Home Manager & Energy Meter • weitere ModBus & MQTT basierte Systeme
+
+### Wechselrichter
+
+E3DC • Fronius • KOSTAL • SMA • SolarEdge • Tesla PowerWall
+
+### Autos
+
+Audi • BMW • Ford • Hyundai • Kia • Nissan • Porsche • Renault • Tesla • Volkswagen
 
 ---
 
@@ -49,7 +57,15 @@ Wie wäre es einen Bereich hinzuzufügen: “Für wen ist EVCC geeigenet?” ode
 
 [hier kommen Screenshots]
 
-[Demo ansehen](http://78.47.130.164:7070/)
+[Demo ansehen](https://demo.evcc.io/)
+
+---
+
+## Für wen sich evcc eignet
+
+Beim momentanen Stand der Entwicklung wird Linux-Grundwissen für die Installation der Software benötigt. evcc läuft auf beliebiger Computer-Hardware (Linux, NAS, Raspberry PI) - entweder als Binary oder mit Docker benötigt. Die Konfiguration erfolgt momentan noch manuell über eine toml Datei. Für einige Systeme existieren bereits [Beispielkonfigurationen](https://github.com/andig/evcc-config).
+
+Neben der Software muss eine ausreichende Haus-Installation vorhanden sein. Vor allem das Messgerät für den PV-Überschuß muss vom gewählten Computer erreichbar sein und ausgelesen werden können. Falls so ein Gerät nicht bereits vorhanden ist, ist es notwendig dass ein Elektriker ein entsprechendes installiert. Je nach vorhandenem PV-System kann ein solches auch schon vorhanden sein.
 
 ---
 
@@ -57,13 +73,16 @@ Wie wäre es einen Bereich hinzuzufügen: “Für wen ist EVCC geeigenet?” ode
 
 ### Aktiv teilnehmen
 
-Werde Teil unseres Entwicklungsteams und vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Werde Teil unseres Entwicklungsteams und hilf dein installiertes System zu unterstützen, Fehler zu korrigieren und die Dokumentation zu verbessern. 
+Erzähle deinen Freunden und Bekannten von den Möglichkeiten die evcc bietet.
 
-Have we caught your attention? We appreciate your feedback at this early stage of our product. Do not hesitate to contact us. In fact, if your interested, we'd love to give you a tour of the prototype we built.
+Komm in unseren Chat, lerne uns kennen und diskutiere mit: [Slack](https://join.slack.com/t/evccgroup/shared_invite/zt-fw52e6lt-tdazCp1LPdPlYuKz3PvTAw)
 
 ### Finanzieller Support
 
-Duis laborum ullamco veniam ullamco fugiat Lorem. Veniam culpa consectetur dolore amet tempor magna tempor nisi sunt eu aute reprehenderit et. Fugiat aliqua consectetur adipisicing enim. Qui ipsum dolor laboris incididunt eu irure sunt mollit.
+Alle Beteiligten arbeiten an evcc in ihrer Freizeit. Du kannst uns gerne mit einer Spende unterstützen.
+
+Arbeitest du in einer Firma welche Wallboxen, Messgeräte oder PV-Systeme anbietet? Möchtest du euren Kunden das Laden mit eigenem Sonnenstrom ermöglichen? Sprich uns gerne an. Hardware Sponsoring hilft uns die Fähigkeiten von evcc auszubauen.
 
 ---
 
