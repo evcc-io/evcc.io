@@ -21,7 +21,7 @@ evcc ist angetreten, die Nachhaltigkeit beim Laden unserer Elektroautos zu optim
 
 ## Wie evcc funktioniert
 
-![alt text](img/schema.png "Darstellung der Funktionsweise")
+![alt text](img/evcc-schema-hover.svg "Darstellung der Funktionsweise")
 
 Den eigenen Sonnenstrom zum Laden des Autos zu verwenden bedeutet den Eigenverbrauch zu erhöhen und damit den Strom nicht zu verkaufen sondern selbst zu verwenden.
 
