@@ -27,32 +27,6 @@
 	.st21{fill:#FFFFFF;stroke:#AAAAAA;stroke-width:2;stroke-miterlimit:10;}
 	.st22{fill:none;stroke:#00E207;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;}
 	.st23{fill:#666666;}
-
-	  body {
-  margin: 100px;
-}
-
-.Hotspot {
-    fill: red;
-    pointer-events: all;
-    opacity: 0.5;
-}
-
-.Hotspot:hover,  
-    .Hotspot:focus { 
-		cursor: pointer;
-}
-
-.Beschriftung {
-    opacity: 0;
-}
-
-.Hotspot:hover + .Beschriftung,
-    .Hotspot:focus + .Beschriftung { 
-		opacity: 1;
-} 
-
-.Beschriftung { transition: .3s; }
 </style>
 <g id="Ebene_1">
 	<g id="Ebene_1_1_">
@@ -176,46 +150,46 @@
 	<path class="st7" d="M495.709,123.96h9.491l-6.327,12.655h6.327l-11.864,22.145l2.373-15.818H487.8L495.709,123.96z"/>
 	<line class="st22" x1="490.5" y1="379.21" x2="490.5" y2="403.21"/>
 </g>
-<g class="Hotspot">
+<g id="Hotspot_PV">
 	<rect x="133.13" y="91.276" class="st10" width="139.787" height="118.737"/>
 </g>
-<g class="Beschriftung">
+<g id="Beschriftung_PV">
 	<path class="st23" d="M300,79.821H124c-6.6,0-12-5.4-12-12v-30c0-6.6,5.4-12,12-12h176c6.6,0,12,5.4,12,12v30
 		C312,74.421,306.6,79.821,300,79.821z"/>
 	<text transform="matrix(1 0 0 1 131.6924 48.8192)"><tspan x="0" y="0" class="st2 st18 st19">Photovoltaik-Anlage /</tspan><tspan x="25.106" y="19.2" class="st2 st18 st19">Wechselrichter</tspan></text>
 	<polygon class="st23" points="212,88.322 222,78.322 202,78.322 	"/>
 </g>
-<g class="Hotspot">
+<g id="Hotspot_evcc">
 	<rect x="443.685" y="95.389" class="st10" width="106.763" height="90.609"/>
 </g>
-<g class="Beschriftung">
+<g id="Beschriftung_evcc">
 	<path class="st23" d="M585,79.821H409c-6.6,0-12-5.4-12-12v-30c0-6.6,5.4-12,12-12h176c6.6,0,12,5.4,12,12v30
 		C597,74.421,591.6,79.821,585,79.821z"/>
 	<text transform="matrix(1 0 0 1 480.0503 56.6199)" class="st2 st18 st19">evcc</text>
 	<polygon class="st23" points="497,88.322 507,78.322 487,78.322 	"/>
 </g>
-<g class="Hotspot">
+<g id="Hotspot_Netzanschluß">
 	<rect x="157.203" y="340.33" class="st10" width="120.074" height="105.126"/>
 </g>
-<g class="Beschriftung">
+<g id="Beschriftung_Netzanschluß">
 	<path class="st23" d="M124,460.179h176c6.6,0,12,5.4,12,12v30c0,6.6-5.4,12-12,12H124c-6.6,0-12-5.4-12-12v-30
 		C112,465.579,117.4,460.179,124,460.179z"/>
 	<text transform="matrix(1 0 0 1 161.1973 490.9785)" class="st2 st18 st19">Netzanschluß</text>
 	<polygon class="st23" points="212,451.678 202,461.678 222,461.678 	"/>
 </g>
-<g class="Hotspot">
+<g id="Hotspot_Wallbox">
 	<rect x="447.476" y="350" class="st10" width="92.446" height="92.446"/>
 </g>
-<g class="Beschriftung">
+<g id="Beschriftung_Wallbox">
 	<path class="st23" d="M408.5,460.179h176c6.6,0,12,5.4,12,12v30c0,6.6-5.4,12-12,12h-176c-6.6,0-12-5.4-12-12v-30
 		C396.5,465.579,401.9,460.179,408.5,460.179z"/>
 	<text transform="matrix(1 0 0 1 424.8242 490.9785)" class="st2 st18 st19">Steuerbare Wallbox</text>
 	<polygon class="st23" points="496.5,451.678 486.5,461.678 506.5,461.678 	"/>
 </g>
-<g class="Hotspot">
+<g id="Hotspot_Elektroauto">
 	<rect x="698.316" y="350" class="st10" width="213.684" height="84.893"/>
 </g>
-<g class="Beschriftung">
+<g id="Beschriftung_Elektroauto">
 	<path class="st23" d="M724,460.179h176c6.6,0,12,5.4,12,12v30c0,6.6-5.4,12-12,12H724c-6.6,0-12-5.4-12-12v-30
 		C712,465.579,717.4,460.179,724,460.179z"/>
 	<text transform="matrix(1 0 0 1 769.8457 490.9785)" class="st2 st18 st19">Elektroauto</text>
