@@ -2,7 +2,6 @@
   --grid-gutter: 25px;
   --layout-width: 990px;
   --page-background: #FFFFFF;
-  --header-background: #EBF3FD;
   --text-color: #18191A;
   --text-font-size: 24px;
   --accent-color: #0085FF;
@@ -78,7 +77,7 @@ a:hover {
 }
 
 .header {
-  background-color: var(--header-background);
+  background: linear-gradient(180deg, rgba(204,255,255,1) 0%, rgba(204,255,255,1) 96.5%, rgba(204,204,204,1) 96.5%);
 }
 
 .header__inner {

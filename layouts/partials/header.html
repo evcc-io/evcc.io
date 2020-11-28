@@ -19,6 +19,9 @@
         {{ .Params.header_button_cta.title }}
       </a>
     </div>
-    <img class="header__hero" src="img/hero.svg" />
+    <picture class="header__hero">
+      <source srcset="img/hero-s.svg" media="(max-width: 499px)" />
+      <img src="img/hero.svg" />
+    </picture>
   </div>
 </header>
