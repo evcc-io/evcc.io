@@ -9,6 +9,7 @@
   --accent-hover-color: #0085FFAA;
   --light-background: #F1F1F4;
   --infobox-background: #0FDD42;
+  --infobox-color: #18191A;
   --6-cols: 100%;
   --4-cols: calc(4 * 100% / 6);
   --2-cols: calc(2 * 100% / 6);
@@ -98,6 +99,7 @@ a:hover {
   top: 24px;
   display: flex;
   align-items: center;
+  color: #18191A;
 }
 
 
@@ -111,7 +113,7 @@ a:hover {
 }
 
 .header__logo__letters {
-  fill: var(--text-color);
+  fill: #18191A;
 }
 
 .header__logo svg {
@@ -223,6 +225,7 @@ a:hover {
   padding: 5px 40px 12px;
   width: calc(var(--4-cols) - var(--grid-gutter) * 2);
   background-color: var(--infobox-background);
+  color: var(--infobox-color);
 }
 
 @media (max-width: 499px) {
