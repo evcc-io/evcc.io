@@ -33,6 +33,8 @@ Wenn eine unterstützte PV Installation vorhanden ist, kann evcc auch die aktuel
 
 ---
 
+{{< infobox >}}
+
 ## Unterstützte Systeme
 
 ### Wallboxen
@@ -50,6 +52,8 @@ E3DC • Fronius • KOSTAL • SMA • SolarEdge • Tesla PowerWall
 ### Autos
 
 Audi • BMW • Ford • Hyundai • Kia • Nissan • Porsche • Renault • Tesla • Volkswagen
+
+{{< /infobox >}}
 
 ---
 

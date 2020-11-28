@@ -7,6 +7,7 @@
   --accent-color: #0085FF;
   --accent-hover-color: #0085FFAA;
   --light-background: #F1F1F4;
+  --infobox-background: #0FDD42;
   --6-cols: 100%;
   --4-cols: calc(4 * 100% / 6);
   --2-cols: calc(2 * 100% / 6);
@@ -214,6 +215,26 @@ a:hover {
   right: 0;
   bottom: 0;
   border-left: var(--grid-gutter) solid var(--page-background);
+}
+
+.content aside {
+  margin: 0 auto;
+  padding: var(--grid-gutter);
+  width: calc(var(--4-cols) - var(--grid-gutter) * 2);
+  background-color: var(--infobox-background);
+}
+
+.content aside p {
+  width: 100%;
+}
+
+@media (max-width: 499px) {
+  .content aside {
+    width: 100%;
+  }
+  .content aside p {
+    padding: 0;
+  }
 }
 
 hr {
