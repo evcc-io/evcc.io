@@ -42,6 +42,7 @@
   font-weight: normal;
   src: local('Roboto'), local('Roboto-Regular'),
       url('../fonts/roboto-v20-latin-regular.woff2') format('woff2');
+  font-display: swap;
 }
 
 @font-face {
@@ -50,6 +51,7 @@
   font-weight: bold;
   src: local('Roboto Bold'), local('Roboto-Bold'),
        url('../fonts/roboto-v20-latin-bold.woff2') format('woff2');
+  font-display: swap;
 }
 
 html {
