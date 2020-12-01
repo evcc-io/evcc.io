@@ -1,1 +1,4 @@
-<img class="image--full" {{ with .Get "src" }}src="{{ . }}"{{ end }} {{ with .Get "alt" }}alt="{{ . }}"{{ end }}>
+<picture class="image--full">
+  <source {{ with .Get "src-s" }}srcset="{{ . }}"{{ end }} media="(max-width: 499px)" />
+  <img {{ with .Get "src" }}src="{{ . }}"{{ end }} {{ with .Get "alt" }}alt="{{ . }}"{{ end }}/>
+</picture>
