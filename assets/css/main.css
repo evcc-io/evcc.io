@@ -225,11 +225,12 @@ a:hover {
   width: calc(var(--4-cols) - var(--grid-gutter) * 2);
   background-color: var(--infobox-background);
   color: var(--infobox-color);
+  border-radius: 20px 20px 20px 20px;
 }
 
 @media (max-width: 499px) {
   .infobox {
-    width: 100%;
+    width: 90%;
   }
 }
 
