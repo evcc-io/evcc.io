@@ -257,7 +257,7 @@ h1, h2, h3 {
   text-align: center;
   line-height: 1.1em;
   padding: 0 var(--grid-gutter);
-  margin: 1em 0;
+  margin: 2em 0 1em 0;
 }
 
 h1 {
