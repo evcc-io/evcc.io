@@ -90,6 +90,6 @@ Arbeitest du in einer Firma welche Wallboxen, Messgeräte oder PV-Systeme anbiet
 
 ---
 
-## Implemented in [Go](https://golang.org)
+## Implementiert in [Go](https://golang.org)
 
 ![EVCC Gopher](img/ccs-gopher.svg)
