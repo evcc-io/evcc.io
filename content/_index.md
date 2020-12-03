@@ -1,7 +1,7 @@
 ---
 header_button_cta:
   url: "https://github.com/andig/evcc"
-  title: "Get evcc"
+  title: "evcc herunterladen"
 ---
 
 # Sonne tanken. Ganz einfach.
@@ -30,6 +30,8 @@ Unterstützte Wallboxen ermöglichen es die Stromstärke mit der das Auto gelade
 Damit evcc die Wallbox bestmöglich steuern kann, ist ein Messgerät am Netzanschluss der Hausinstallation notwendig. Durch dieses Messgerät kennt evcc den momentanen PV-Überschuss und kann die Ladeleistung entsprechend anpassen.
 
 Wenn eine unterstützte PV-Installation vorhanden ist, kann evcc auch die aktuelle PV-Leistung anzeigen. Ist eine unterstützte Hausbatterie vorhanden, kann auch deren Kapazität angezeigt werden. Und wenn sogar ein unterstütztes Elektroauto vorhanden ist, kann evcc die Ladung bei einem gewünschten Batterieladestand beendet werden. Und das sind nur einige Beispiele was mit evcc möglich ist oder in Zukunft möglich sein wird!
+
+[evcc herunterladen](https://github.com/andig/evcc)
 
 ---
 
