@@ -81,7 +81,7 @@ a:hover {
 }
 
 .header {
-  background: linear-gradient(180deg, rgba(204,255,255,1) 0%, rgba(204,255,255,1) 96.5%, rgba(204,204,204,1) 96.5%);
+  background: linear-gradient(180deg, #FFFFFF 0%, #D7FEFE 96.5%, rgba(204,204,204,1) 96.5%);
 }
 
 .header__inner {
@@ -252,12 +252,13 @@ hr {
   margin: 3rem 0;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
   font-weight: bold;
   text-align: center;
   line-height: 1.1em;
   padding: 0 var(--grid-gutter);
-  margin: 2em 0 1em 0;
+  margin: 2em auto 1em;
+  width: var(--5-cols);
 }
 
 h1 {
@@ -270,6 +271,14 @@ h2 {
 
 h3 {
   font-size: 1.33rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.1rem;
 }
 
 p + h3 {

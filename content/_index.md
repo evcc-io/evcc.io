@@ -1,7 +1,7 @@
 ---
 header_button_cta:
   url: "https://github.com/andig/evcc"
-  title: "evcc herunterladen"
+  title: "evcc auf GitHub"
 ---
 
 # Sonne tanken. Ganz einfach.
@@ -86,7 +86,7 @@ Komm in unseren Chat, lerne uns kennen und diskutiere mit: [Slack](https://join.
 
 ### Finanzieller Support
 
-Alle Beteiligten arbeiten an evcc in ihrer Freizeit. Du kannst uns gerne mit einer Spende [unterstützen](https://github.com/sponsors/andig). 
+Alle Beteiligten arbeiten an evcc in ihrer Freizeit. Du kannst uns gerne mit einer Spende [unterstützen](https://github.com/sponsors/andig).
 
 Arbeitest du in einer Firma welche Wallboxen, Messgeräte oder PV-Systeme anbietet? Möchtest du euren Kunden das Laden mit eigenem Sonnenstrom ermöglichen? Sprich uns gerne an. Hardware Sponsoring hilft uns die Fähigkeiten von evcc auszubauen.
 
