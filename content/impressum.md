@@ -8,16 +8,13 @@ header_button_cta:
 
 ## Angaben gemäß § 5 TMG
 
-Max Mustermann\
-Musterstraße 111\
-Gebäude 44\
-90210 Musterstadt
+Michael Geers\
+Neuenkirchener Str. 23a\
+49593 Bersenbrück
 
 ## Kontakt
 
-Telefon: +49 (0) 123 44 55 66\
-Telefax: +49 (0) 123 44 55 99\
-E-Mail: mustermann@musterfirma.de
+E-Mail: info@evcc.io
 
 ### Haftung für Inhalte
 

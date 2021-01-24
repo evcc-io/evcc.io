@@ -36,19 +36,8 @@ Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit
 
 ## 2. Hosting und Content Delivery Networks (CDN)
 
-### Externes Hosting
-
-Diese Website wird bei einem externen Dienstleister gehostet (Hoster). Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert. Hierbei kann es sich v. a. um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Websitezugriffe und sonstige Daten, die über eine Website generiert werden, handeln.
-
-Der Einsatz des Hosters erfolgt zum Zwecke der Vertragserfüllung gegenüber unseren potenziellen und bestehenden Kunden (Art. 6 Abs. 1 lit. b DSGVO) und im Interesse einer sicheren, schnellen und effizienten Bereitstellung unseres Online-Angebots durch einen professionellen Anbieter (Art. 6 Abs. 1 lit. f DSGVO).
-
-Unser Hoster wird Ihre Daten nur insoweit verarbeiten, wie dies zur Erfüllung seiner Leistungspflichten erforderlich ist und unsere Weisungen in Bezug auf diese Daten befolgen.
-
-Wir setzen folgenden Hoster ein:
-
-Musterhosting AG\
-Musterweg 100\
-90210 Musterstadt
+Datenschutzerklärung für die Nutzung von GitHub Pages
+Diese Website wird auf Servern von [Github Inc.](https://www.github.com/), 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA gehostet. Beachten Sie daher auch die [GitHub Privacy Policy](https://docs.github.com/en/github/site-policy/github-privacy-statement#how-you-can-access-and-control-the-information-we-collect).
 
 ## 3. Allgemeine Hinweise und Pflicht­informationen
 
@@ -64,12 +53,11 @@ Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Ko
 
 Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
 
-Beispielfirma\
-Musterweg 10\
-90210 Musterstadt
+Michael Geers\
+Neuenkirchener Str. 23a\
+49593 Bersenbrück
 
-Telefon: +49 (0) 123 44 55 66\
-E-Mail: info@beispielfirma.de
+E-Mail: info@evcc.io
 
 Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.
 
