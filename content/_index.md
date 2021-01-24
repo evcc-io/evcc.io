@@ -6,7 +6,7 @@ header_button_cta:
 
 # Sonne tanken. Ganz einfach.
 
-evcc ist angetreten, die Nachhaltigkeit beim Laden unserer Elektroautos zu optimieren. Dazu ermöglicht evcc das Laden mit möglichst viel selbsterzeugtem Strom. Im optimalen Fall ist dies sogar ohne Änderung an der Haus-Installation möglich.
+evcc ist angetreten, die Nachhaltigkeit beim Laden unserer Elektroautos zu optimieren. Dazu ermöglicht evcc das Laden mit möglichst viel selbsterzeugten Strom. Im Idealfall ist dies sogar ohne weitere Änderung in der bestehenden Haus-Elektroinstallation möglich.
 
 [evcc herunterladen](https://github.com/andig/evcc)
 
@@ -15,7 +15,7 @@ evcc ist angetreten, die Nachhaltigkeit beim Laden unserer Elektroautos zu optim
 ## Was evcc besonders macht
 
 - Lade dein E-Auto mit selbst erzeugtem Sonnenstrom
-- Nutze bereits vorhandene Systeme (PV, Wallboxen)
+- Nutze bereits vorhandene Systeme (PV- und Batteriewechselrichter, Wallboxen, Energiezähler)
 - Intuitive und übersichtliche Benutzeroberfläche
 - 100% Open Source
 
@@ -25,13 +25,15 @@ evcc ist angetreten, die Nachhaltigkeit beim Laden unserer Elektroautos zu optim
 
 {{< full_width_image src="img/evcc-schema.svg" src-s="img/evcc-schema-s.svg" alt="Darstellung der Funktionsweise" >}}
 
-Den eigenen Sonnenstrom zum Laden des Autos zu verwenden bedeutet den Eigenverbrauch zu erhöhen und damit den Strom nicht zu verkaufen sondern selbst zu verwenden.
+Den eigenen Sonnenstrom zum Laden des Autos zu verwenden bedeutet den Eigenverbrauch zu erhöhen und damit den Strom nicht ins Netz abzugeben sondern selbst zu nutzen.
 
-Unterstützte Wallboxen ermöglichen es die Stromstärke mit der das Auto geladen wird zu verändern. Wenn viel Sonnenstrom erzeugt wird, erlaubt evcc der Wallbox das angeschlossene Auto mit hoher Leistung zu laden. Wird weniger Strom erzeugt verlangsamt oder pausiert evcc den Ladevorgang.
+Unterstützte Wallboxen ermöglichen es die Stromstärke mit der das Auto geladen wird zu steuern. Wenn viel Sonnenstrom erzeugt wird, erlaubt evcc der Wallbox das angeschlossene Auto mit hoher Leistung zu laden. Wird weniger Strom erzeugt verlangsamt oder pausiert evcc den Ladevorgang.
 
-Damit evcc die Wallbox bestmöglich steuern kann, ist ein Messgerät am Netzanschluss der Hausinstallation notwendig. Durch dieses Messgerät kennt evcc den momentanen PV-Überschuss und kann die Ladeleistung entsprechend anpassen.
+Damit evcc die Ladung bestmöglich regeln kann, ist ein Messgerät (=auslesbarer Energiezähler) am Netzanschluss der Hausinstallation notwendig. Durch dieses Messgerät kennt evcc den momentanen Energieüberschuss und kann die Ladeleistung kontinuierlich anpassen.
 
-Wenn eine unterstützte PV-Installation vorhanden ist, kann evcc auch die aktuelle PV-Leistung anzeigen. Ist eine unterstützte Hausbatterie vorhanden, kann auch deren Kapazität angezeigt werden. Und wenn sogar ein unterstütztes Elektroauto vorhanden ist, kann evcc die Ladung bei einem gewünschten Batterieladestand beendet werden. Und das sind nur einige Beispiele was mit evcc möglich ist oder in Zukunft möglich sein wird!
+Wenn eine unterstützte Photovoltaikanlage vorhanden ist, kann evcc auch die aktuelle PV-Leistung anzeigen. Ist ein unterstützter Energiespeicher vorhanden, kann auch dessen Ladezustand angezeigt werden. Und wenn sogar ein unterstütztes Elektroauto vorhanden ist, kann evcc automatisch dessen momentanen Batterieladezustand übermittelt bekommen und so den benötigten Reichweitenbedarf sicherstellen - auch wenn die Sonne ab und an mal nicht so viel scheint. Und das sind nur einige Beispiele was mit evcc möglich ist oder in Zukunft möglich sein wird!
+
+Sollte es dennoch mal ganz schnell gehen müssen lässt sich auf Wunsch das Fahrzeug auch jederzeit mit maximaler Leistung laden.
 
 ---
 
@@ -69,9 +71,10 @@ Audi • BMW • Ford • Hyundai • Kia • Nissan • Porsche • Renault •
 
 ## Für wen sich evcc eignet
 
-Beim momentanen Stand der Entwicklung wird Linux-Grundwissen für die Installation der Software benötigt. evcc läuft auf beliebiger Computer-Hardware (Linux, NAS, Raspberry PI) - entweder als Binary oder mit Docker benötigt. Die Konfiguration erfolgt momentan noch manuell über eine toml Datei. Für einige Systeme existieren bereits [Beispielkonfigurationen](https://github.com/andig/evcc-config).
+Beim momentanen Stand der Entwicklung wird mindestens etwas Linux-Grundwissen für die Installation der Software benötigt. evcc läuft auf beliebiger Computer-Hardware (Linux, NAS, Raspberry PI) - entweder als Binary oder mit Docker benötigt. Die Konfiguration erfolgt momentan noch manuell über eine yaml-Datei. Für einige Systeme existieren bereits [Beispielkonfigurationen](https://github.com/andig/evcc-config).
 
-Neben der Software muss eine ausreichende Haus-Installation vorhanden sein. Vor allem das Messgerät für den PV-Überschuss muss vom gewählten Computer erreichbar sein und ausgelesen werden können. Falls so ein Gerät nicht bereits vorhanden ist, ist es notwendig dass ein Elektriker ein entsprechendes installiert. Je nach vorhandenem PV-System kann ein solches auch schon vorhanden sein.
+Neben der Software muss eine ausreichende Haus-Installation vorhanden und eine Vernetzung der Komponenten gegeben sein.
+Vor allem das Messgerät für den Energieüberschuss muss vom gewählten Computer erreichbar sein und ausgelesen werden können. Falls so ein Energiezähler bzw. Messmodul nicht bereits vorhanden ist, ist es notwendig dass ein Elektriker ein entsprechendes installiert. Bei einem existierenden PV-System ist eine solche Messeinrichtung recht häufig schon vorhanden, bei einem installierten Batteriespeichersystem sogar regelmäßig.
 
 ---
 
