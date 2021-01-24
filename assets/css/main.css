@@ -2,12 +2,14 @@
   --grid-gutter: 25px;
   --layout-width: 990px;
   --page-background: #FFFFFF;
-  --header-background: #EBF3FD;
   --text-color: #18191A;
   --text-font-size: 24px;
-  --accent-color: #0085FF;
-  --accent-hover-color: #0085FFAA;
+  --small-text-font-size: 19px;
+  --accent-color: #0074E0;
+  --accent-hover-color: #0074E0AA;
   --light-background: #F1F1F4;
+  --infobox-background: #0FDD42;
+  --infobox-color: #18191A;
   --6-cols: 100%;
   --4-cols: calc(4 * 100% / 6);
   --2-cols: calc(2 * 100% / 6);
@@ -40,6 +42,7 @@
   font-weight: normal;
   src: local('Roboto'), local('Roboto-Regular'),
       url('../fonts/roboto-v20-latin-regular.woff2') format('woff2');
+  font-display: swap;
 }
 
 @font-face {
@@ -48,12 +51,12 @@
   font-weight: bold;
   src: local('Roboto Bold'), local('Roboto-Bold'),
        url('../fonts/roboto-v20-latin-bold.woff2') format('woff2');
+  font-display: swap;
 }
 
 html {
   font-family: Roboto, sans-serif;
   font-size: var(--text-font-size);
-  transition: font-size 0.25s ease-in;
 }
 
 body {
@@ -78,7 +81,7 @@ a:hover {
 }
 
 .header {
-  background-color: var(--header-background);
+  background: linear-gradient(180deg, #FFFFFF 0%, #D7FEFE 96.5%, rgba(204,204,204,1) 96.5%);
 }
 
 .header__inner {
@@ -97,6 +100,7 @@ a:hover {
   top: 24px;
   display: flex;
   align-items: center;
+  color: #18191A;
 }
 
 
@@ -110,7 +114,7 @@ a:hover {
 }
 
 .header__logo__letters {
-  fill: var(--text-color);
+  fill: #18191A;
 }
 
 .header__logo svg {
@@ -168,7 +172,7 @@ a:hover {
 }
 
 .content img {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -217,17 +221,44 @@ a:hover {
   border-left: var(--grid-gutter) solid var(--page-background);
 }
 
+.infobox {
+  margin: 0 auto;
+  padding: 5px 40px 12px;
+  width: calc(var(--4-cols) - var(--grid-gutter) * 2);
+  background-color: var(--infobox-background);
+  color: var(--infobox-color);
+  border-radius: 30px 30px 30px 30px;
+}
+
+@media (max-width: 499px) {
+  .infobox {
+    width: 90%;
+  }
+}
+
+.infobox h2,
+.infobox h3 {
+  padding: 0;
+}
+
+.infobox p {
+  width: 100%;
+  padding: 0;
+  font-size: var(--small-text-font-size);
+}
+
 hr {
   border: none;
   margin: 3rem 0;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
   font-weight: bold;
   text-align: center;
   line-height: 1.1em;
   padding: 0 var(--grid-gutter);
-  margin: 1em 0;
+  margin: 2em auto 1em;
+  width: var(--5-cols);
 }
 
 h1 {
@@ -240,6 +271,14 @@ h2 {
 
 h3 {
   font-size: 1.33rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.1rem;
 }
 
 p + h3 {
