@@ -40,13 +40,13 @@ Und noch etwas kann evcc: Ist ein unterstützter Batteriespeicher vorhanden, wir
 
 ### Wallboxen & Steckdosen
 
-AVM FritzDECT • go-eCharger • EVSEWifi • smartWB • KEBA • NRGkick • openWB • Phoenix Contact • Porsche Mobile Charger Connect • EVSE DIN • Tasmota • TinkerForge WARP • Wallbe
+AVM FritzDECT • go-eCharger • EVSEWifi • smartWB • KEBA • NRGkick • openWB • Phoenix Contact • Porsche Mobile Charger Connect • EVSE DIN • Tasmota • TinkerForge WARP • Wallbe • Shelly
 ### Energiemessgeräte
 Discovergy • Eastron SDM • KOSTAL Smart Energy Meter • SMA Sunny Home Manager & Energy Meter • vzlogger
 ### Wechselrichter & Speichersysteme
 E3DC • Fronius • Kaco • KOSTAL • SMA • SolarEdge • SolarLog • sonnen • Tesla PowerWall
 ### Fahrzeuge
-Audi • BMW • Ford • Hyundai • Kia • Mini • Nissan • NIU (E-Scooter) • Porsche • PSA • Renault • Seat • ŠKODA • Tesla • Volkswagen • Volvo
+Audi • BMW • Ford • Hyundai • Kia • Mini • Nissan • NIU (E-Scooter) • Opel • Porsche • Peugeot • Renault • Seat • ŠKODA • Tesla • Volkswagen • Volvo
 {{< /infobox >}}
 
 evcc setzt bei der Anbindung der Komponenten auf weit verbreitete Schnittstellen und Protokolle, wie z.B. Modbus, SunSpec, HTTP, JSON, REST sowie MQTT.
@@ -63,7 +63,7 @@ Um sich auch mit anderen, übergeordneten Energiemanagern abzusprechen hat evcc 
 
 ## Für wen sich evcc eignet (und für wen noch nicht)
 
-Beim momentanen Stand der Entwicklung wird mindestens etwas Linux-Grundwissen für die Installation der Software benötigt. evcc läuft auf unterschiedlichster Computer-Hardware und Betriebssystemen (Windows 64bit, Linux, NAS, Raspberry Pi, macOS uvm.) - entweder als Binary oder im Docker-Container. All dies wird durch evcc bereitgestellt.
+Beim momentanen Stand der Entwicklung wird mindestens etwas IT-Grundwissen für die Installation der Software benötigt. evcc läuft auf unterschiedlichster Computer-Hardware und Betriebssystemen (Windows 64bit, Linux, NAS, Raspberry Pi, macOS uvm.) - entweder als Binary oder im Docker-Container. All dies wird durch evcc bereitgestellt.
 Die Konfiguration erfolgt momentan noch manuell über eine speziell formatierte [YAML](https://de.wikipedia.org/wiki/YAML)-Datei. Für viele verbreitete Komponenten und typische Konstellationen existieren  [Beispielkonfigurationen](https://github.com/andig/evcc-config). Aber eben noch nicht für alle.
 
 Neben der Software evcc, muss eine entsprechende Haus-Installation vorhanden und eine Vernetzung der Komponenten gegeben sein.
@@ -71,6 +71,8 @@ Vor allem das Messgerät für den Energieüberschuss muss vom gewählten Compute
 
 Die besondere Stärke von evcc ist die Flexibilät bei der Anbindung der vorhandenen Komponenten die kaum Einschränkungen kennt.
 Durch die Vielzahl der am Markt verfügbaren und im Bestand verbauten PV-, Speicher- und Energiemesskomponenten, deren individuelle Verschaltung vor Ort, verschiedener Softwareversionsstände usw. ist es aber leider - speziell für Einsteiger - nicht immer ganz einfach auf Anhieb eine dazu passende Grundkonfiguration für evcc zu erstellen. Unterstützung bietet dabei jedoch eine integrierten Scanfunktion, die das eigene Netzwerk nach bekannten Geräten durchsuchen kann und somit zumindest eine Hilfestellung bietet. Dennoch ist etwas technisches Verständnis und eine möglichst gute Kenntnis des Anlagenaufbaus für die Ersteinrichtung notwendig. Ist dieser Schritt aber einmal gemeistert ist die Benutzung kinderleicht.
+
+evcc funktioniert optimal mit einem Netzzähler, dennoch kann es (mit Einschränkungen) aber auch nur mit einem Erzeugungszähler oder ganz ohne PV-Anlage betrieben werden.
 
 ---
 
