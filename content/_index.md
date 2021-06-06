@@ -39,14 +39,60 @@ Und noch etwas kann evcc: Ist ein unterstützter Batteriespeicher vorhanden, wir
 ## Unterstützte und getestete Komponenten
 
 ### Wallboxen & Steckdosen
+AVM FritzDECT
+• Easee
+• EVSE DIN
+• EVSEWifi
+• go-eCharger
+• KEBA
+• NRGkick
+• openWB
+• Phoenix Contact
+• Porsche Mobile Charger Connect
+• Shelly
+• smartWB
+• Tasmota
+• TinkerForge WARP
+• Wallbe
 
-AVM FritzDECT • go-eCharger • EVSEWifi • smartWB • KEBA • NRGkick • openWB • Phoenix Contact • Porsche Mobile Charger Connect • EVSE DIN • Tasmota • TinkerForge WARP • Wallbe • Shelly
 ### Energiemessgeräte
-Discovergy • Eastron SDM • KOSTAL Smart Energy Meter • SMA Sunny Home Manager & Energy Meter • vzlogger
+Discovergy
+• Eastron SDM
+• KOSTAL Smart Energy Meter
+• SMA Sunny Home Manager & Energy Meter
+• vzlogger
+
 ### Wechselrichter & Speichersysteme
-E3DC • Fronius • Kaco • KOSTAL • SMA • SolarEdge • SolarLog • sonnen • Tesla PowerWall
+E3DC
+• Fronius
+• Kaco
+• KOSTAL
+• SMA
+• SolarEdge
+• SolarLog
+• sonnen
+• Tesla PowerWall
+
 ### Fahrzeuge
-Audi • BMW • Ford • Hyundai • Kia • Mini • Nissan • NIU (E-Scooter) • Opel • Porsche • Peugeot • Renault • Seat • ŠKODA • Tesla • Volkswagen • Volvo
+Audi
+• BMW
+• Citroën
+• Ford
+• Hyundai
+• Kia
+• Mini
+• Nissan
+• NIU (E-Scooter)
+• Opel
+• OVMS
+• Peugeot
+• Porsche
+• Renault
+• Seat
+• ŠKODA
+• Tesla
+• Volkswagen
+• Volvo
 {{< /infobox >}}
 
 evcc setzt bei der Anbindung der Komponenten auf weit verbreitete Schnittstellen und Protokolle, wie z.B. Modbus, SunSpec, HTTP, JSON, REST sowie MQTT.
