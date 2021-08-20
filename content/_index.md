@@ -142,9 +142,3 @@ Oder komm in unseren Chat, lerne uns kennen und diskutiere mit uns: [Slack](http
 Alle Beteiligten arbeiten an evcc in ihrer Freizeit. Du kannst uns gerne mit einer Spende [unterstützen](https://github.com/sponsors/andig).
 
 Arbeitest du in einer Firma welche Wallboxen, Energiemesssysteme oder PV-Systeme anbietet? Möchtest du euren Kunden das Laden mit eigenem Sonnenstrom ermöglichen? Sprich uns gerne an. Eigene Code-Beiträge und Hardware-Sponsoring helfen uns die Fähigkeiten von evcc auszubauen.
-
----
-
-## evcc ist implementiert in [Go](https://golang.org) und [Vue](https://vuejs.org)
-
-![EVCC Gopher](img/ccs-gopher.svg)
