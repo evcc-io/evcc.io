@@ -1,6 +1,6 @@
 ---
 header_button_cta:
-  url: "https://github.com/andig/evcc"
+  url: "https://github.com/evcc-io/evcc"
   title: "evcc auf GitHub"
 ---
 
@@ -110,7 +110,7 @@ Um sich auch mit anderen, übergeordneten Energiemanagern abzusprechen hat evcc 
 ## Für wen sich evcc eignet (und für wen noch nicht)
 
 Beim momentanen Stand der Entwicklung wird mindestens etwas IT-Grundwissen für die Installation der Software benötigt. evcc läuft auf unterschiedlichster Computer-Hardware und Betriebssystemen (Windows 64bit, Linux, NAS, Raspberry Pi, macOS uvm.) - entweder als Binary oder im Docker-Container. All dies wird durch evcc bereitgestellt.
-Die Konfiguration erfolgt momentan noch manuell über eine speziell formatierte [YAML](https://de.wikipedia.org/wiki/YAML)-Datei. Für viele verbreitete Komponenten und typische Konstellationen existieren  [Beispielkonfigurationen](https://github.com/andig/evcc-config). Aber eben noch nicht für alle.
+Die Konfiguration erfolgt momentan noch manuell über eine speziell formatierte [YAML](https://de.wikipedia.org/wiki/YAML)-Datei. Für viele verbreitete Komponenten und typische Konstellationen existieren  [Beispielkonfigurationen](https://github.com/evcc-io/evcc-config). Aber eben noch nicht für alle.
 
 Neben der Software evcc, muss eine entsprechende Haus-Installation vorhanden und eine Vernetzung der Komponenten gegeben sein.
 Vor allem das Messgerät für den Energieüberschuss muss vom gewählten Computer erreichbar sein und ausgelesen werden können. Falls ein geeigneter Energiezähler bzw. ein dazu passendes Messmodul nicht bereits vorhanden ist, ist es ggf. notwendig dass ein Elektriker ein entsprechendes installiert. Bei einem existierenden PV-System ist eine solche Messeinrichtung recht häufig schon vorhanden, bei einem installierten Batteriespeichersystem sogar regelmäßig.
@@ -124,7 +124,7 @@ evcc funktioniert optimal mit einem Netzzähler, dennoch kann es (mit Einschrän
 
 ## Download
 
-[evcc herunterladen](https://github.com/andig/evcc)
+[evcc herunterladen](https://github.com/evcc-io/evcc)
 
 ---
 
@@ -134,7 +134,7 @@ evcc funktioniert optimal mit einem Netzzähler, dennoch kann es (mit Einschrän
 
 Werde Teil unseres Entwicklungsteams und hilf mit, dein installiertes System zu unterstützen, Fehler zu korrigieren und die Dokumentation zu verbessern.
 
-Informiere dich, stelle Fragen und erhalte Unterstützung von anderen Anwendern und Entwicklern im [Forum](https://github.com/andig/evcc/discussions).
+Informiere dich, stelle Fragen und erhalte Unterstützung von anderen Anwendern und Entwicklern im [Forum](https://github.com/evcc-io/evcc/discussions).
 Oder komm in unseren Chat, lerne uns kennen und diskutiere mit uns: [Slack](https://join.slack.com/t/evccgroup/shared_invite/zt-fw52e6lt-tdazCp1LPdPlYuKz3PvTAw)
 
 ### Finanzieller Support

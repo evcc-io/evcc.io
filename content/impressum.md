@@ -1,6 +1,6 @@
 ---
 header_button_cta:
-  url: "https://github.com/andig/evcc"
+  url: "https://github.com/evcc-io/evcc"
   title: "evcc auf GitHub"
 ---
 
