@@ -1,21 +1,28 @@
----
-header_button_cta:
-  url: "https://github.com/evcc-io/evcc"
-  title: "evcc auf GitHub"
----
 
 # Sonne tanken. Ganz einfach.
 
-evcc ist angetreten, die Nachhaltigkeit beim Laden unserer Elektrofahrzeuge zu optimieren. Dazu ermöglicht evcc das Laden mit möglichst viel selbsterzeugten Strom. In den meisten Fällen ist das sogar ohne weitere Änderung an der bestehenden Haus-Elektroinstallation möglich.
+evcc ist angetreten, die Nachhaltigkeit beim Laden unserer Elektrofahrzeuge zu optimieren. Dazu ermöglicht evcc das Laden mit möglichst viel selbsterzeugten Solarstrom. In den meisten Fällen ist das sogar ohne weitere Änderung an der bestehenden Haus-Elektroinstallation möglich.
 
 ---
 
 ## Was evcc besonders macht
 
-- Lade dein Elektrofahrzeug mit selbst erzeugtem Sonnenstrom
+- Lade dein Elektrofahrzeug eigenem PV Überschussstrom
 - Nutze bereits vorhandene Systeme (PV- und Batteriewechselrichter, Wallboxen, Energiezähler)
 - Intuitive und übersichtliche Benutzeroberfläche
 - 100 % Open Source
+
+---
+
+## Responsive Benutzeroberfläche
+
+{{< screenshots class="content-gallery" >}}
+  {{< screenshot-entry src="1_evcc-interface-mobile" >}}
+  {{< screenshot-entry src="2_evcc-interface-mobile-details" >}}
+  {{< screenshot-entry src="3_evcc-interface-mobile-confetti" >}}
+  {{< screenshot-entry src="4_evcc-interface-tablet-portrait" >}}
+  {{< screenshot-entry src="5_evcc-interface-tablet-landscape" >}}
+{{< /screenshots >}}
 
 ---
 
@@ -101,12 +108,6 @@ Um sich auch mit anderen, übergeordneten Energiemanagern abzusprechen hat evcc 
 
 ---
 
-## Demo
-
-[Demo der Benutzeroberfläche ansehen](https://demo.evcc.io/)
-
----
-
 ## Für wen sich evcc eignet (und für wen noch nicht)
 
 Beim momentanen Stand der Entwicklung wird mindestens etwas IT-Grundwissen für die Installation der Software benötigt. evcc läuft auf unterschiedlichster Computer-Hardware und Betriebssystemen (Windows 64bit, Linux, NAS, Raspberry Pi, macOS uvm.) - entweder als Binary oder im Docker-Container. All dies wird durch evcc bereitgestellt.
@@ -124,7 +125,7 @@ evcc funktioniert optimal mit einem Netzzähler, dennoch kann es (mit Einschrän
 
 ## Download
 
-[evcc herunterladen](https://github.com/evcc-io/evcc)
+[evcc auf Github](https://github.com/evcc-io/evcc)
 
 ---
 
