@@ -25,10 +25,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --page-background: #18191A;
-    --header-background: #18191A;
+    --page-background: #00002D;
+    --header-background: #00002D;
     --light-background: rgba(241,241,244,0.1);
     --text-color: #F1F1F4;
+    --accent-color: #0FDD42;
   }
 }
 
@@ -119,6 +120,10 @@ a:hover {
 
 .header__button {
   margin-right: var(--grid-gutter);
+}
+
+.header__hero__wrapper {
+  background: #ffffff;
 }
 
 .header__hero {
