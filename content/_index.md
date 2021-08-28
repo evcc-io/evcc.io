@@ -7,7 +7,7 @@ evcc ist angetreten, die Nachhaltigkeit beim Laden unserer Elektrofahrzeuge zu o
 
 ## Was evcc besonders macht
 
-- Lade dein Elektrofahrzeug eigenem PV Überschussstrom
+- Lade dein Elektrofahrzeug mit eigenem PV Überschussstrom
 - Nutze bereits vorhandene Systeme (PV- und Batteriewechselrichter, Wallboxen, Energiezähler)
 - Intuitive und übersichtliche Benutzeroberfläche
 - 100 % Open Source
@@ -32,11 +32,11 @@ evcc ist angetreten, die Nachhaltigkeit beim Laden unserer Elektrofahrzeuge zu o
 
 Den eigenen Sonnenstrom zum Laden des Autos zu verwenden bedeutet den Eigenverbrauch zu erhöhen und damit den Strom nicht ins Netz abzugeben sondern selbst zu nutzen.
 
-Bereits heute werden zahlreiche Hersteller von Wallboxen unterstützen und evcc ermöglicht es die Stromstärke, mit der das Auto geladen wird, zu steuern. as heißt, wenn viel Sonnenstrom erzeugt wird, erlaubt evcc das angeschlossene Auto mit hoher Leistung zu laden. Wird weniger Strom erzeugt, verlangsamt oder pausiert evcc den Ladevorgang.
+Bereits heute werden zahlreiche Hersteller von Wallboxen unterstützt und evcc ermöglicht es die Stromstärke, mit der das Auto geladen wird, zu steuern. Das heißt, wenn viel Sonnenstrom erzeugt wird, erlaubt evcc das angeschlossene Auto mit hoher Leistung zu laden. Wird weniger Strom erzeugt, verlangsamt oder pausiert evcc den Ladevorgang.
 
-Damit evcc die Ladung bestmöglichst regeln kann, ist ein Messgerät (= auslesbarer Energiezähler) am Netzanschluss der Hausinstallation notwendig. Durch dieses Messgerät kennt evcc den momentanen Energieüberschuss und kann die Ladeleistung kontinuierlich anpassen. Das Gute ist, dass in fast jeder vorhandenen PV-Anlage ein entsprechendes Geräte bereits vorhanden ist oder einfach nachgerüstet werden kann.
+Damit evcc die Ladung bestmöglich regeln kann, ist ein Messgerät (= auslesbarer Energiezähler) am Netzanschluss der Hausinstallation notwendig. Durch dieses Messgerät kennt evcc den momentanen Energieüberschuss und kann die Ladeleistung kontinuierlich anpassen. Das Gute ist, dass in fast jeder vorhandenen PV-Anlage ein entsprechendes Geräte bereits vorhanden ist oder einfach nachgerüstet werden kann.
 
-Ist ein durch evcc unterstütztes Elektrofahrzeug eingerichtet, kann  dessen momentaner Batterieladezustand und Reichweite angezeigt und in der Ladeplanung mit berücksichtigt werden - auch, wenn die Sonne ab und an mal nicht so viel scheint, bleibt so die Mobilität sichergestellt.
+Ist ein durch evcc unterstütztes Elektrofahrzeug eingerichtet, kann dessen momentaner Batterieladezustand und Reichweite angezeigt und in der Ladeplanung mit berücksichtigt werden - auch, wenn die Sonne ab und an mal nicht so viel scheint, bleibt so die Mobilität sichergestellt.
 
 Und noch etwas kann evcc: Ist ein unterstützter Batteriespeicher vorhanden, wird auch dessen Ladezustand gesteuert und mit Sonnenstrom versorgt.
 
@@ -116,8 +116,8 @@ Die Konfiguration erfolgt momentan noch manuell über eine speziell formatierte 
 Neben der Software evcc, muss eine entsprechende Haus-Installation vorhanden und eine Vernetzung der Komponenten gegeben sein.
 Vor allem das Messgerät für den Energieüberschuss muss vom gewählten Computer erreichbar sein und ausgelesen werden können. Falls ein geeigneter Energiezähler bzw. ein dazu passendes Messmodul nicht bereits vorhanden ist, ist es ggf. notwendig dass ein Elektriker ein entsprechendes installiert. Bei einem existierenden PV-System ist eine solche Messeinrichtung recht häufig schon vorhanden, bei einem installierten Batteriespeichersystem sogar regelmäßig.
 
-Die besondere Stärke von evcc ist die Flexibilät bei der Anbindung der vorhandenen Komponenten die kaum Einschränkungen kennt.
-Durch die Vielzahl der am Markt verfügbaren und im Bestand verbauten PV-, Speicher- und Energiemesskomponenten, deren individuelle Verschaltung vor Ort, verschiedener Softwareversionsstände usw. ist es aber leider - speziell für Einsteiger - nicht immer ganz einfach auf Anhieb eine dazu passende Grundkonfiguration für evcc zu erstellen. Unterstützung bietet dabei jedoch eine integrierten Scanfunktion, die das eigene Netzwerk nach bekannten Geräten durchsuchen kann und somit zumindest eine Hilfestellung bietet. Dennoch ist etwas technisches Verständnis und eine möglichst gute Kenntnis des Anlagenaufbaus für die Ersteinrichtung notwendig. Ist dieser Schritt aber einmal gemeistert ist die Benutzung kinderleicht.
+Die besondere Stärke von evcc ist die Flexibilität bei der Anbindung der vorhandenen Komponenten die kaum Einschränkungen kennt.
+Durch die Vielzahl der am Markt verfügbaren und im Bestand verbauten PV-, Speicher- und Energiemesskomponenten, deren individuelle Verschaltung vor Ort, verschiedener Softwareversionsstände usw. ist es aber leider - speziell für Einsteiger - nicht immer ganz einfach auf Anhieb eine dazu passende Grundkonfiguration für evcc zu erstellen. Unterstützung bietet dabei jedoch eine integrierte Scanfunktion, die das eigene Netzwerk nach bekannten Geräten durchsuchen kann und somit zumindest eine Hilfestellung bietet. Dennoch ist etwas technisches Verständnis und eine möglichst gute Kenntnis des Anlagenaufbaus für die Ersteinrichtung notwendig. Ist dieser Schritt aber einmal gemeistert ist die Benutzung kinderleicht.
 
 evcc funktioniert optimal mit einem Netzzähler, dennoch kann es (mit Einschränkungen) aber auch nur mit einem Erzeugungszähler oder ganz ohne PV-Anlage betrieben werden.
 
