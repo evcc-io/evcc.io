@@ -1,3 +1,8 @@
+---
+header_button_cta:
+  url: "https://github.com/evcc-io/evcc"
+  title: "evcc auf GitHub"
+---
 
 # Sonne tanken. Ganz einfach.
 
@@ -17,18 +22,18 @@ evcc ist angetreten, die Nachhaltigkeit beim Laden unserer Elektrofahrzeuge zu o
 ## Responsive Benutzeroberfläche
 
 {{< screenshots class="content-gallery" >}}
-  {{< screenshot-entry src="1_evcc-interface-mobile" >}}
-  {{< screenshot-entry src="2_evcc-interface-mobile-details" >}}
-  {{< screenshot-entry src="3_evcc-interface-mobile-confetti" >}}
-  {{< screenshot-entry src="4_evcc-interface-tablet-portrait" >}}
-  {{< screenshot-entry src="5_evcc-interface-tablet-landscape" >}}
+  {{< screenshot-entry src="1_evcc-interface-mobile" width="508" >}}
+  {{< screenshot-entry src="2_evcc-interface-mobile-details" width="507" >}}
+  {{< screenshot-entry src="3_evcc-interface-mobile-confetti" width="507" >}}
+  {{< screenshot-entry src="4_evcc-interface-tablet-portrait" width="729" >}}
+  {{< screenshot-entry src="5_evcc-interface-tablet-landscape" width="1386" >}}
 {{< /screenshots >}}
 
 ---
 
 ## Wie evcc funktioniert
 
-{{< full_width_image src="img/evcc-schema.svg" alt="Darstellung der Funktionsweise" >}}
+{{< full_width_image src="img/evcc-schema.svg" alt="Darstellung der Funktionsweise" width="200" height="100" >}}
 
 Den eigenen Sonnenstrom zum Laden des Autos zu verwenden bedeutet den Eigenverbrauch zu erhöhen und damit den Strom nicht ins Netz abzugeben sondern selbst zu nutzen.
 

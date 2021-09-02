@@ -1,4 +1,5 @@
 {{- $src := .Get "src" -}}
+{{- $width := .Get "width" -}}
 <a href="img/screenshots/{{$src}}.png" class="screenshot" data-glightbox>
-  <img src="img/screenshots-small/{{$src}}.png" alt="image" />
+  <img src="img/screenshots-small/{{$src}}.png" height="1000" width="{{$width}}" alt="image" />
 </a>

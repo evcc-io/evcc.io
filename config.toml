@@ -3,6 +3,10 @@ relativeURLs = true
 languageCode = "de-de"
 title = "evcc ⚡️ Open Source Lösung für PV Überschussladung"
 
+[site]
+  [params]
+  description = "evcc ermöglicht es Elektrofahrzeuge mit möglichst viel selbsterzeugten Solarstrom zu laden."
+
 [minify]
   disableSVG = true
   disableHTML = true
