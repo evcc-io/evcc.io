@@ -130,6 +130,7 @@ a:hover {
   display: block;
   margin: 0 auto;
   height: auto;
+  width: auto;
   max-width: 1400px;
 }
 
@@ -163,12 +164,6 @@ a:hover {
 .content img {
   width: 100%;
   display: block;
-}
-
-.content img[src$="gopher.svg"] {
-  width: 180px;
-  height: 250px;
-  margin: 0 auto 100px;
 }
 
 .content ul {
@@ -286,10 +281,14 @@ p + h3 {
 .screenshots {
   height: 550px;
 }
-.screenshots_inner {
+.screenshots_container {
   position: absolute;
   left: 0;
   right: 0;
+  display: flex;
+  justify-content: center;
+}
+.screenshots_inner {
   max-width: 100%;
   overflow-x: auto;
   display: flex;
@@ -311,4 +310,9 @@ p + h3 {
 }
 .glightbox-clean .gslide-media {
   box-shadow: none !important;
+}
+.image--full {
+  max-width: 100%;
+  width: auto;
+  height: auto;
 }
