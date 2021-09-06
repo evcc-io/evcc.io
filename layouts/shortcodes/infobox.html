@@ -1,3 +1,7 @@
+{{- $title := .Get "title" -}}
 <aside class="infobox">
-  {{.Inner | markdownify}}
+  <h2>{{$title}}</h2>
+  <div class="infobox_inner">
+    {{ .Inner }}
+  </div>
 </aside>

@@ -45,12 +45,8 @@ Ist ein durch evcc unterstütztes Elektrofahrzeug eingerichtet, kann dessen mome
 
 Und noch etwas kann evcc: Ist ein unterstützter Batteriespeicher vorhanden, wird auch dessen Ladezustand gesteuert und mit Sonnenstrom versorgt.
 
----
-
-{{< infobox >}}
-## Unterstützte und getestete Komponenten
-
-### Wallboxen & Steckdosen
+{{< infobox title="Unterstützte und getestete Komponenten" >}}
+{{< infobox-entry title="Wallboxen & Steckdosen" img="img/evcc-illu-wallbox.svg" >}}
 AVM FritzDECT
 • Easee
 • EVSE DIN
@@ -66,15 +62,15 @@ AVM FritzDECT
 • Tasmota
 • TinkerForge WARP
 • Wallbe
-
-### Energiemessgeräte
+{{< /infobox-entry >}}
+{{< infobox-entry title="Energiemessgeräte" img="img/evcc-illu-energiemessung.svg" >}}
 Discovergy
 • Eastron SDM
 • KOSTAL Smart Energy Meter
 • SMA Sunny Home Manager & Energy Meter
 • vzlogger
-
-### Wechselrichter & Speichersysteme
+{{< /infobox-entry >}}
+{{< infobox-entry title="Wechselrichter & Speichersysteme" img="img/evcc-illu-wechselrichter.svg" >}}
 E3DC
 • Fronius
 • Kaco
@@ -84,8 +80,8 @@ E3DC
 • SolarLog
 • sonnen
 • Tesla PowerWall
-
-### Fahrzeuge
+{{< /infobox-entry >}}
+{{< infobox-entry title="Fahrzeuge" img="img/evcc-illu-fahrzeuge.svg" >}}
 Audi
 • BMW
 • Citroën
@@ -105,6 +101,7 @@ Audi
 • Tesla
 • Volkswagen
 • Volvo
+{{< /infobox-entry >}}
 {{< /infobox >}}
 
 evcc setzt bei der Anbindung der Komponenten auf weit verbreitete Schnittstellen und Protokolle, wie z.B. Modbus, SunSpec, HTTP, JSON, REST sowie MQTT.
