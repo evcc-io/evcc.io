@@ -206,9 +206,9 @@ a:hover {
 }
 
 .infobox {
-  margin: 0 auto;
-  padding: 5px 40px 12px;
-  width: calc(var(--4-cols) - var(--grid-gutter) * 2);
+  margin: 40px auto;
+  padding: 40px;
+  width: calc(var(--6-cols) - var(--grid-gutter) * 2);
   background-color: var(--infobox-background);
   color: var(--infobox-color);
   border-radius: 30px 30px 30px 30px;
@@ -223,12 +223,44 @@ a:hover {
 .infobox h2,
 .infobox h3 {
   padding: 0;
+  margin-top: 0;
 }
 
-.infobox p {
-  width: 100%;
-  padding: 0;
+.infobox h2  {
+  max-width: 500px;
+}
+
+.infobox_entry {
+  padding: 16px;
+  margin-bottom: 8px;
+  text-align: center;
   font-size: var(--small-text-font-size);
+  line-height: 1.5em;
+}
+
+@media (min-width: 750px) {
+  .infobox_entry {
+    padding: 32px;
+    margin-bottom: 40px;
+  }
+}
+
+.infobox_inner {
+  display: block;
+}
+
+@media (min-width: 750px) {
+  .infobox_inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+.infobox_entry img {
+  height: 140px;
+  width: 140px;
+  margin: 0 auto;
 }
 
 hr {

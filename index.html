@@ -139,11 +139,14 @@
 <p>Damit evcc die Ladung bestmöglich regeln kann, ist ein Messgerät (= auslesbarer Energiezähler) am Netzanschluss der Hausinstallation notwendig. Durch dieses Messgerät kennt evcc den momentanen Energieüberschuss und kann die Ladeleistung kontinuierlich anpassen. Das Gute ist, dass in fast jeder vorhandenen PV-Anlage ein entsprechendes Geräte bereits vorhanden ist oder einfach nachgerüstet werden kann.</p>
 <p>Ist ein durch evcc unterstütztes Elektrofahrzeug eingerichtet, kann dessen momentaner Batterieladezustand und Reichweite angezeigt und in der Ladeplanung mit berücksichtigt werden - auch, wenn die Sonne ab und an mal nicht so viel scheint, bleibt so die Mobilität sichergestellt.</p>
 <p>Und noch etwas kann evcc: Ist ein unterstützter Batteriespeicher vorhanden, wird auch dessen Ladezustand gesteuert und mit Sonnenstrom versorgt.</p>
-<hr>
 <aside class="infobox">
-  <h2 id="unterstützte-und-getestete-komponenten">Unterstützte und getestete Komponenten</h2>
-<h3 id="wallboxen--steckdosen">Wallboxen &amp; Steckdosen</h3>
-<p>AVM FritzDECT
+  <h2>Unterstützte und getestete Komponenten</h2>
+  <div class="infobox_inner">
+    
+<div class="infobox_entry">
+  <img src="img/evcc-illu-wallbox.svg" alt="Wallboxen &amp; Steckdosen" />
+  <h3>Wallboxen &amp; Steckdosen</h3>
+  AVM FritzDECT
 • Easee
 • EVSE DIN
 • EVSEWifi
@@ -157,15 +160,23 @@
 • smartWB
 • Tasmota
 • TinkerForge WARP
-• Wallbe</p>
-<h3 id="energiemessgeräte">Energiemessgeräte</h3>
-<p>Discovergy
+• Wallbe
+</div>
+
+<div class="infobox_entry">
+  <img src="img/evcc-illu-energiemessung.svg" alt="Energiemessgeräte" />
+  <h3>Energiemessgeräte</h3>
+  Discovergy
 • Eastron SDM
 • KOSTAL Smart Energy Meter
 • SMA Sunny Home Manager &amp; Energy Meter
-• vzlogger</p>
-<h3 id="wechselrichter--speichersysteme">Wechselrichter &amp; Speichersysteme</h3>
-<p>E3DC
+• vzlogger
+</div>
+
+<div class="infobox_entry">
+  <img src="img/evcc-illu-wechselrichter.svg" alt="Wechselrichter &amp; Speichersysteme" />
+  <h3>Wechselrichter &amp; Speichersysteme</h3>
+  E3DC
 • Fronius
 • Kaco
 • KOSTAL
@@ -173,9 +184,13 @@
 • SolarEdge
 • SolarLog
 • sonnen
-• Tesla PowerWall</p>
-<h3 id="fahrzeuge">Fahrzeuge</h3>
-<p>Audi
+• Tesla PowerWall
+</div>
+
+<div class="infobox_entry">
+  <img src="img/evcc-illu-fahrzeuge.svg" alt="Fahrzeuge" />
+  <h3>Fahrzeuge</h3>
+  Audi
 • BMW
 • Citroën
 • Ford
@@ -193,8 +208,11 @@
 • ŠKODA
 • Tesla
 • Volkswagen
-• Volvo</p>
+• Volvo
+</div>
 
+
+  </div>
 </aside>
 <p>evcc setzt bei der Anbindung der Komponenten auf weit verbreitete Schnittstellen und Protokolle, wie z.B. Modbus, SunSpec, HTTP, JSON, REST sowie MQTT.
 Damit lassen sich nahezu alle am Markt verfügbaren und vorhandenen Produkte herstellerunabhängig nach den jeweiligen Erfordernissen und örtlichen Gegebenheiten anbinden.
