@@ -41,8 +41,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: normal;
-  src: local('Roboto'), local('Roboto-Regular'),
-      url('../fonts/roboto-v20-latin-regular.woff2') format('woff2');
+  src: url('/fonts/roboto-v20-latin-regular.woff2') format('woff2');
   font-display: swap;
 }
 
@@ -50,14 +49,49 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: bold;
-  src: local('Roboto Bold'), local('Roboto-Bold'),
-       url('../fonts/roboto-v20-latin-bold.woff2') format('woff2');
+  src: url('/fonts/roboto-v20-latin-bold.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/roboto-mono-v13-latin-regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: bold;
+  src: url('/fonts/roboto-mono-v13-latin-bold.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: italic;
+  font-weight: normal;
+  src: url('/fonts/roboto-mono-v13-latin-italic.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: italic;
+  font-weight: bold;
+  src: url('../fonts/roboto-mono-v13-latin-bold-italic.woff2') format('woff2');
   font-display: swap;
 }
 
 html {
   font-family: Roboto, sans-serif;
   font-size: var(--text-font-size);
+}
+
+pre, code {
+  font-family: 'Roboto Mono', monospace;
 }
 
 body {
@@ -152,6 +186,12 @@ a:hover {
   height: auto;
   width: auto;
   max-width: 1400px;
+}
+
+.header_back_to_blog {
+  margin: 2em auto 0;
+  padding: 0 var(--grid-gutter);
+  width: var(--4-cols);
 }
 
 .button {
@@ -367,4 +407,42 @@ p + h3 {
   max-width: 100%;
   width: auto;
   height: auto;
+}
+
+.highlight pre {
+  padding: 16px;
+  overflow: hidden;
+  overflow-x: auto;
+  font-size: 0.8em;
+  line-height: 1.75em;
+}
+
+.highlight pre span {
+  font-weight: normal !important;
+}
+
+.blog-preview {
+  margin: 100px 0;
+}
+
+.blog-preview h3 {
+  margin: 0
+}
+
+.blog-preview small {
+  display: block;
+  text-align: center;
+  margin: 0.75rem 0;
+  font-size: 0.75rem;
+}
+
+.blog-preview p {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.blog-preview .more {
+  display: block;
+  text-align: center;
+  margin: 0.75rem 0;
 }

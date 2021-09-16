@@ -2,12 +2,13 @@
   {{- partial "header.html" . -}}
   <main class="content">
     {{ .Content }}
-    <ul>
-      {{ range .Pages.ByDate.Reverse }}
-      <li>
-        <a href="{{.URL}}">{{.Title}}</a>
-      </li>
-      {{ end }}
-    </ul>
+    {{ range .Pages.ByDate.Reverse }}
+      <div class="blog-preview">
+        <h3><a href="{{.URL}}">{{.Title}}</a></h3>
+        <small>{{.Date.Format "January 2006"}}</small>
+        <p>{{ .Summary }}</p>
+        <div class="more"><a href="{{.URL}}">&gt; weiterlesen</a></div>
+      </div>
+    {{ end }}
   </main>
 {{ end }}

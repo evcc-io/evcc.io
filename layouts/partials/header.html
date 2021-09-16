@@ -17,13 +17,10 @@
       </a>
       <nav class="header__navigation">
         {{ $currentPage := . }}
-        {{ range .Site.Menus.main }}
-          <a
-            href="{{ .URL }}"
-            data-id="{{ .Identifier }}"
-            class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}"
-            >{{ .Title }}</a>
-        {{ end }}
+        {{ $isBlog := eq $currentPage.Section "blog" }}
+        <a href="/blog/" {{ if $isBlog }}class="active"{{ end }}>Blog</a>
+        <a href="https://github.com/evcc-io/evcc/wiki">Docs</a>
+        <a href="https://github.com/evcc-io/evcc" data-id="github">Github</a>
       </nav>
       <div class="header__button">
         <a
@@ -47,5 +44,10 @@
       alt="Elektroauto lädt Solarstrom an einer Wallbox. Person verwendet evcc auf dem Smartphone."
     />
   </div>
+  {{ end }}
+  {{ if .Params.date }}
+    <div class="header_back_to_blog">
+      <a href="/blog/">zur Blog Übersicht</a>
+    </div>
   {{ end }}
 </header>
