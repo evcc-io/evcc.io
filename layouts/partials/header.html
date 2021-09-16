@@ -14,8 +14,17 @@
           />
           <path d="M0 0h170v76H0z" fill="none" />
         </svg>
-        <span>Sonne tanken.</span>
       </a>
+      <nav class="header__navigation">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+          <a
+            href="{{ .URL }}"
+            data-id="{{ .Identifier }}"
+            class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}"
+            >{{ .Title }}</a>
+        {{ end }}
+      </nav>
       <div class="header__button">
         <a
           class="github-button"
@@ -28,6 +37,7 @@
       </div>
     </div>
   </div>
+  {{ if .Params.hero }}
   <div class="header__hero__wrapper">
     <img
       class="header__hero"
@@ -37,4 +47,5 @@
       alt="Elektroauto lädt Solarstrom an einer Wallbox. Person verwendet evcc auf dem Smartphone."
     />
   </div>
+  {{ end }}
 </header>

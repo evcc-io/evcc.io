@@ -10,3 +10,21 @@ title = "evcc ⚡️ Open Source Lösung für PV Überschussladung"
 [minify]
   disableSVG = true
   disableHTML = true
+
+[menu]
+#[[menu.main]]
+#  identifier = '1_main'
+#  title = 'Home'
+#  url = '/'
+[[menu.main]]
+  identifier = '2_blog'
+  title = 'Blog'
+  url = '/blog/'
+[[menu.main]]
+  identifier = '3_docs'
+  title = 'Docs'
+  url = 'https://github.com/evcc-io/evcc/wiki'
+[[menu.main]]
+  identifier = '4_github'
+  title = 'Github'
+  url = 'https://github.com/evcc-io/evcc'

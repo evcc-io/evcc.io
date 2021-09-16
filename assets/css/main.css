@@ -95,8 +95,8 @@ a:hover {
 }
 
 .header__logo {
-  display: flex;
-  align-items: center;
+  display: block;
+  text-align: center;
   color: #18191A;
 }
 
@@ -106,20 +106,40 @@ a:hover {
 
 .header__logo svg {
   height: 64px;
+  display: block;
 }
 
-.header__logo span {
-  font-size: 16px;
+.header__navigation {
+  display: flex;
+  flex-grow: 1;
 }
 
-@media (max-width: 499px) {
-  .header__logo span {
+.header__navigation a {
+  color: #18191A;
+  font-size: 20px;
+  padding: 14px 8px 8px;
+}
+
+.header__navigation a.active {
+  text-decoration: underline;
+}
+
+@media (min-width: 500px) {
+  .header__navigation a[data-id="4_github"] {
     display: none;
   }
 }
 
+
 .header__button {
+  margin-top: 6px;
   margin-right: var(--grid-gutter);
+}
+
+@media (max-width: 499px) {
+  .header__button {
+    display: none;
+  }
 }
 
 .header__hero__wrapper {

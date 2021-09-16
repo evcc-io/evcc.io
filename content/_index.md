@@ -1,7 +1,5 @@
 ---
-header_button_cta:
-  url: "https://github.com/evcc-io/evcc"
-  title: "evcc auf GitHub"
+hero: true
 ---
 
 # Sonne tanken. Ganz einfach.

@@ -1,0 +1,13 @@
+{{ define "main" }}
+  {{- partial "header.html" . -}}
+  <main class="content">
+    {{ .Content }}
+    <ul>
+      {{ range .Pages.ByDate.Reverse }}
+      <li>
+        <a href="{{.URL}}">{{.Title}}</a>
+      </li>
+      {{ end }}
+    </ul>
+  </main>
+{{ end }}
