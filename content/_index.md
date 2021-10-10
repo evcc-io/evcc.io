@@ -1,6 +1,6 @@
 ---
 header_button_cta:
-  url: "https://github.com/evcc-io/evcc/#readme"
+  url: "https://github.com/evcc-io/evcc#readme"
   title: "evcc auf GitHub"
 ---
 
