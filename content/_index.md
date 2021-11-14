@@ -1,8 +1,3 @@
----
-header_button_cta:
-  url: "https://github.com/evcc-io/evcc#readme"
-  title: "evcc auf GitHub"
----
 
 # Sonne tanken. Ganz einfach.
 
@@ -110,24 +105,20 @@ Um sich auch mit anderen, übergeordneten Energiemanagern abzusprechen hat evcc 
 
 ---
 
-## Für wen sich evcc eignet (und für wen noch nicht)
+## Installiere evcc bei dir zuhause
 
-Beim momentanen Stand der Entwicklung wird mindestens etwas IT-Grundwissen für die Installation der Software benötigt. evcc läuft auf unterschiedlichster Computer-Hardware und Betriebssystemen (Windows 64bit, Linux, NAS, Raspberry Pi, macOS uvm.) - entweder als Binary oder im Docker-Container. All dies wird durch evcc bereitgestellt.
-Die Konfiguration erfolgt momentan noch manuell über eine speziell formatierte [YAML](https://de.wikipedia.org/wiki/YAML)-Datei. Für viele verbreitete Komponenten und typische Konstellationen existieren  [Beispielkonfigurationen](https://github.com/evcc-io/evcc-config). Aber eben noch nicht für alle.
+### Systemvorraussetzung
 
-Neben der Software evcc, muss eine entsprechende Haus-Installation vorhanden und eine Vernetzung der Komponenten gegeben sein.
-Vor allem das Messgerät für den Energieüberschuss muss vom gewählten Computer erreichbar sein und ausgelesen werden können. Falls ein geeigneter Energiezähler bzw. ein dazu passendes Messmodul nicht bereits vorhanden ist, ist es ggf. notwendig dass ein Elektriker ein entsprechendes installiert. Bei einem existierenden PV-System ist eine solche Messeinrichtung recht häufig schon vorhanden, bei einem installierten Batteriespeichersystem sogar regelmäßig.
+evcc ist in Go geschrieben und sehr effizient. Es wird weder viel CPU noch RAM benötigt. Typischerweise läuft evcc auf einem __Raspberry Pi__ oder in __Docker__ (z.B. Synology NAS) in deinem Haus. Windows, macOS und Linux werden auch unterstützt.
 
-Die besondere Stärke von evcc ist die Flexibilität bei der Anbindung der vorhandenen Komponenten die kaum Einschränkungen kennt.
-Durch die Vielzahl der am Markt verfügbaren und im Bestand verbauten PV-, Speicher- und Energiemesskomponenten, deren individuelle Verschaltung vor Ort, verschiedener Softwareversionsstände usw. ist es aber leider - speziell für Einsteiger - nicht immer ganz einfach auf Anhieb eine dazu passende Grundkonfiguration für evcc zu erstellen. Unterstützung bietet dabei jedoch eine integrierte Scanfunktion, die das eigene Netzwerk nach bekannten Geräten durchsuchen kann und somit zumindest eine Hilfestellung bietet. Dennoch ist etwas technisches Verständnis und eine möglichst gute Kenntnis des Anlagenaufbaus für die Ersteinrichtung notwendig. Ist dieser Schritt aber einmal gemeistert ist die Benutzung kinderleicht.
+### evcc einrichten
 
-evcc funktioniert optimal mit einem Netzzähler, dennoch kann es (mit Einschränkungen) aber auch nur mit einem Erzeugungszähler oder ganz ohne PV-Anlage betrieben werden.
+evcc ist sehr flexibel. Die Ersteinrichtung erfordert aktuell aber noch einige technische Kentnisse. Wenn dich die Verwendung der Kommandozeile nicht schockt und du schon mal eine YAML Datei bearbeitet hast, steht der Installation nichts im Weg.
+In der Dokumentation erfährst du alles was du wissen musst.
 
----
-
-## Download
-
-[evcc auf Github](https://github.com/evcc-io/evcc)
+{{< button-cta url="https://docs.evcc.io/">}}
+Getting Started
+{{</ button-cta>}}
 
 ---
 
@@ -142,6 +133,6 @@ Oder komm in unseren Chat, lerne uns kennen und diskutiere mit uns: [Slack](http
 
 ### Finanzieller Support
 
-Alle Beteiligten arbeiten an evcc in ihrer Freizeit. Du kannst uns gerne mit einer Spende [unterstützen](https://github.com/sponsors/andig).
+Alle Beteiligten arbeiten an evcc in ihrer Freizeit. Du kannst uns gerne [als Github Sponsor unterstützen](https://docs.evcc.io/docs/sponsorship).
 
 Arbeitest du in einer Firma welche Wallboxen, Energiemesssysteme oder PV-Systeme anbietet? Möchtest du euren Kunden das Laden mit eigenem Sonnenstrom ermöglichen? Sprich uns gerne an. Eigene Code-Beiträge und Hardware-Sponsoring helfen uns die Fähigkeiten von evcc auszubauen.
