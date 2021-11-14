@@ -87,7 +87,7 @@ a:hover {
 
 .header__inner {
   margin: 0 auto;
-  height: 100px;
+  height: 80px;
   max-width: var(--layout-width);
   display: flex;
   justify-content: space-between;
@@ -109,19 +109,33 @@ a:hover {
 }
 
 .header__logo span {
-  font-size: 16px;
-}
-
-@media (max-width: 499px) {
-  .header__logo span {
-    display: none;
-  }
+  font-size: 18px;
 }
 
 .header__button {
+  padding-top: 8px;
   margin-right: var(--grid-gutter);
 }
 
+.header__navigation {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.header__navigation__item {
+  color: #18191A;
+  font-size: 18px;
+  padding: 8px;
+  margin-right: 8px;
+}
+
+@media (max-width: 499px) {
+  .header__logo span,
+  .header__navigation__item--github {
+    display: none;
+  }
+}
 .header__hero__wrapper {
   background: #ffffff;
 }
@@ -134,19 +148,24 @@ a:hover {
   max-width: 1400px;
 }
 
-.button {
+.content .button-container {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.content .button {
   background-color: var(--accent-color);
   font-weight: bold;
-  font-size: 16px;
-  padding: 14px 28px;
+  font-size: 1em;
+  padding: 0.75em 2em;
   color: #ffffff;
   text-decoration: none;
-  border-radius: 24px;
+  border-radius: 2em;
   transition: background-color 0.2s ease-in;
 }
 
-.button:hover {
-  background-color: var(--accent-hover-color);
+.content .button:hover {
+  text-decoration: underline;
 }
 
 .content {
