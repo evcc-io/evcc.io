@@ -367,3 +367,28 @@ p + h3 {
   width: auto;
   height: auto;
 }
+
+.sponsors {
+  margin-bottom: 2em;
+}
+.sponsor-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  margin: 0 0 1em;
+  padding: 0;
+}
+.sponsor-logos a {
+  display: block;
+  margin-bottom: 1em;
+}
+.sponsor-logos img {
+  width: auto;
+  height: 75px;
+  display: block;
+}
+.github-sponsors {
+  display: flex;
+  justify-content: center;
+}
