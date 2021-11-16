@@ -391,4 +391,12 @@ p + h3 {
 .github-sponsors {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
+.github-sponsors a {
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  margin: 4px;
+  border-radius: 50%;
 }
