@@ -17,7 +17,7 @@ jobs:
       - name: Generate Sponsors 💖
         uses: JamesIves/github-sponsors-readme-action@1.0.5
         with:
-          token: ${{ secrets.SPONSORS_PAT }}
+          token: ${{ secrets.GH_API_TOKEN }}
           file: 'layouts/shortcodes/sponsors.html'
 
       - name: Setup Hugo
