@@ -42,44 +42,79 @@ Und noch etwas kann evcc: Ist ein unterstützter Batteriespeicher vorhanden, wir
 
 {{< infobox title="Unterstützte und getestete Komponenten" >}}
 {{< infobox-entry title="Wallboxen & Steckdosen" img="img/evcc-illu-wallbox.svg" >}}
-AVM FritzDECT
-• Easee
-• EVSE DIN
-• EVSEWifi
+ABL eMHx
+• Alfen NG9xx
+• DaheimLaden Wallbox
+• cFos PowerBrain
+• Easee Home
+• EVSE-Wifi
 • go-eCharger
-• KEBA
-• NRGkick
-• openWB
-• Phoenix Contact
+• Heidelberg Energy Control
+• i-CHARGE CION
+• KEBA KeContact P30
+• Mennekes Amtron Xtra
 • Porsche Mobile Charger Connect
-• Shelly
+• NRGKick
+• OpenWB
+• Phoenix Contact
+• TinkerForge WARP Charger
+• Simple EVSE
 • smartWB
-• Tasmota
-• TinkerForge WARP
 • Wallbe
+• SENEC.Wallbox pro
+---
+AVM FritzDECT
+• Shelly
+• Tasmota
+• TP-LINK Smart Plug
+---
+EEBUS
 {{< /infobox-entry >}}
-{{< infobox-entry title="Energiemessgeräte" img="img/evcc-illu-energiemessung.svg" >}}
-Discovergy
+{{< infobox-entry title="Energiemesstechnik" img="img/evcc-illu-energiemessung.svg" >}}
+ABB
+• Bernecker Engineering
+• DDM
+• DZG
+• Discovergy
 • Eastron SDM
+• Inepro
 • KOSTAL Smart Energy Meter
+• ORNO
+• Phoenix Contact
+• PowerDog
+• Powerfox PowerOpti
+• SBC
 • SMA Sunny Home Manager & Energy Meter
+• Schneider Electric
+• SolarEdge
+• SolarLog
 • vzlogger
+---
+SunSpec-kompatibel
 {{< /infobox-entry >}}
 {{< infobox-entry title="Wechselrichter & Speichersysteme" img="img/evcc-illu-wechselrichter.svg" >}}
 E3DC
 • Fronius
+• Huawei
 • Kaco
 • KOSTAL
+• LG ESS
+• RCT Power
+• SENEC.Home
 • SMA
 • SolarEdge
-• SolarLog
 • sonnen
 • Tesla PowerWall
+• VARTA Energiespeicher
+---
+SunSpec-kompatibel
 {{< /infobox-entry >}}
 {{< infobox-entry title="Fahrzeuge" img="img/evcc-illu-fahrzeuge.svg" >}}
 Audi
 • BMW
 • Citroën
+• DS Automobiles
+• Fiat
 • Ford
 • Hyundai
 • Kia
@@ -94,9 +129,11 @@ Audi
 • Seat
 • ŠKODA
 • Tesla
+• Tronity
 • Volkswagen
 • Volvo
 {{< /infobox-entry >}}
+...und viele mehr via frei konfigurierbarer Modbus-, HTTP- und MQTT-Unterstützung!
 {{< /infobox >}}
 
 evcc setzt bei der Anbindung der Komponenten auf weit verbreitete Schnittstellen und Protokolle, wie z.B. Modbus, SunSpec, HTTP, JSON, REST sowie MQTT.
