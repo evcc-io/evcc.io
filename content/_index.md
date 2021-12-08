@@ -62,11 +62,13 @@ ABL eMHx
 • smartWB
 • Wallbe
 • SENEC.Wallbox pro
+
 ---
 AVM FritzDECT
 • Shelly
 • Tasmota
 • TP-LINK Smart Plug
+
 ---
 EEBUS
 {{< /infobox-entry >}}
@@ -89,6 +91,7 @@ ABB
 • SolarEdge
 • SolarLog
 • vzlogger
+
 ---
 SunSpec-kompatibel
 {{< /infobox-entry >}}
@@ -106,6 +109,7 @@ E3DC
 • sonnen
 • Tesla PowerWall
 • VARTA Energiespeicher
+
 ---
 SunSpec-kompatibel
 {{< /infobox-entry >}}
