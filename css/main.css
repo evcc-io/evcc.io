@@ -121,6 +121,7 @@ a:hover {
   display: flex;
   flex-grow: 1;
   justify-content: flex-end;
+  overflow: hidden;
 }
 
 .header__navigation__item {
@@ -128,14 +129,21 @@ a:hover {
   font-size: 18px;
   padding: 8px;
   margin-right: 8px;
+  overflow: hidden;
 }
 
 @media (max-width: 499px) {
   .header__logo span,
-  .header__navigation__item--github {
+  .hide-sm {
     display: none;
   }
 }
+@media (min-width: 500px) {
+  .hide-lg {
+    display: none;
+  }
+}
+
 .header__hero__wrapper {
   background: #ffffff;
 }
