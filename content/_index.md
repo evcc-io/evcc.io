@@ -165,7 +165,7 @@ Oder komm in unseren Chat, lerne uns kennen und diskutiere mit uns: [Slack](http
 
 ### Finanzieller Support
 
-Alle Beteiligten arbeiten an evcc in ihrer Freizeit. Du kannst uns gerne [als Github Sponsor unterstützen](https://docs.evcc.io/docs/sponsorship).
+Alle Beteiligten arbeiten an evcc in ihrer Freizeit. Du kannst uns gerne [als GitHub Sponsor unterstützen](https://docs.evcc.io/docs/sponsorship).
 
 Arbeitest du in einer Firma welche Wallboxen, Energiemesssysteme oder PV-Systeme anbietet? Möchtest du euren Kunden das Laden mit eigenem Sonnenstrom ermöglichen? Sprich uns gerne an. Eigene Code-Beiträge und Hardware-Sponsoring helfen uns die Fähigkeiten von evcc auszubauen.
 

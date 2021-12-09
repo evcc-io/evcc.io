@@ -32,7 +32,7 @@ Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit
 ## 2. Hosting und Content Delivery Networks (CDN)
 
 Datenschutzerklärung für die Nutzung von GitHub Pages
-Diese Website wird auf Servern von [Github Inc.](https://www.github.com/), 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA gehostet. Beachten Sie daher auch die [GitHub Privacy Policy](https://docs.github.com/en/github/site-policy/github-privacy-statement#how-you-can-access-and-control-the-information-we-collect).
+Diese Website wird auf Servern von [GitHub Inc.](https://www.github.com/), 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA gehostet. Beachten Sie daher auch die [GitHub Privacy Policy](https://docs.github.com/en/github/site-policy/github-privacy-statement#how-you-can-access-and-control-the-information-we-collect).
 
 ## 3. Allgemeine Hinweise und Pflicht­informationen
 
