@@ -63,14 +63,10 @@ ABL eMHx
 • Wallbe
 • SENEC.Wallbox pro
 
----
 AVM FritzDECT
 • Shelly
 • Tasmota
 • TP-LINK Smart Plug
-
----
-EEBUS
 {{< /infobox-entry >}}
 {{< infobox-entry title="Energiemesstechnik" img="img/evcc-illu-energiemessung.svg" >}}
 ABB
@@ -90,10 +86,8 @@ ABB
 • Schneider Electric
 • SolarEdge
 • SolarLog
+• SunSpec-kompatibel
 • vzlogger
-
----
-SunSpec-kompatibel
 {{< /infobox-entry >}}
 {{< infobox-entry title="Wechselrichter & Speichersysteme" img="img/evcc-illu-wechselrichter.svg" >}}
 E3DC
@@ -107,11 +101,9 @@ E3DC
 • SMA
 • SolarEdge
 • sonnen
+• SunSpec-kompatibel
 • Tesla PowerWall
 • VARTA Energiespeicher
-
----
-SunSpec-kompatibel
 {{< /infobox-entry >}}
 {{< infobox-entry title="Fahrzeuge" img="img/evcc-illu-fahrzeuge.svg" >}}
 Audi
@@ -137,7 +129,6 @@ Audi
 • Volkswagen
 • Volvo
 {{< /infobox-entry >}}
-...und viele mehr via frei konfigurierbarer Modbus-, HTTP- und MQTT-Unterstützung!
 {{< /infobox >}}
 
 evcc setzt bei der Anbindung der Komponenten auf weit verbreitete Schnittstellen und Protokolle, wie z.B. Modbus, SunSpec, HTTP, JSON, REST sowie MQTT.
