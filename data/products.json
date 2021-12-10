@@ -1,0 +1,22 @@
+{
+    "wallboxes": {
+        "name": "wallboxes",
+        "values": ["ABL eMHx", "Alfen NG9xx", "DaheimLaden Wallbox", "cFos PowerBrain", "Easee Home", "EVSE-Wifi", "go-eCharger", "Heidelberg Energy Control", "i-CHARGE CION", "KEBA KeContact P30", "Mennekes Amtron Xtra", "Porsche Mobile Charger Connect", "NRGKick", "OpenWB", "Phoenix Contact", "TinkerForge WARP Charger", "Simple EVSE", "smartWB", "Wallbe", "SENEC.Wallbox pro"]
+    },
+    "smart_plugs": {
+        "name": "smart_plugs",
+        "values": ["AVM FritzDECT", "Shelly", "Tasmota", "TP-LINK Smart Plug"]
+    },
+    "meters": {
+        "name": "meters",
+        "values": ["ABB", "Bernecker Engineering", "DDM", "DZG", "Discovergy", "Eastron SDM", "Inepro", "KOSTAL Smart Energy Meter", "ORNO", "Phoenix Contact", "PowerDog", "Powerfox PowerOpti", "SBC", "SMA Sunny Home Manager & Energy Meter", "Schneider Electric", "SolarEdge", "SolarLog", "SunSpec-kompatibel", "vzlogger"]
+    },
+    "systems": {
+        "name": "systems",
+        "values": ["E3DC", "Fronius", "Huawei", "Kaco", "KOSTAL", "LG ESS", "RCT Power", "SENEC.Home", "SMA", "SolarEdge", "sonnen", "SunSpec-kompatibel", "Tesla PowerWall", "VARTA Energiespeicher"]
+    },
+    "vehicles": {
+        "name": "vehicles",
+        "values": ["Audi", "BMW", "Citroën", "DS Automobiles", "Fiat", "Ford", "Hyundai", "Kia", "Mini", "Nissan", "NIU (E-Scooter)", "Opel", "OVMS", "Peugeot", "Porsche", "Renault", "Seat", "ŠKODA", "Tesla", "Tronity", "Volkswagen", "Volvo"]
+    }
+}

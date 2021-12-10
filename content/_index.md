@@ -41,94 +41,22 @@ Ist ein durch evcc unterstütztes Elektrofahrzeug eingerichtet, kann dessen mome
 Und noch etwas kann evcc: Ist ein unterstützter Batteriespeicher vorhanden, wird auch dessen Ladezustand gesteuert und mit Sonnenstrom versorgt.
 
 {{< infobox title="Unterstützte und getestete Komponenten" >}}
-{{< infobox-entry title="Wallboxen & Steckdosen" img="img/evcc-illu-wallbox.svg" >}}
-ABL eMHx
-• Alfen NG9xx
-• DaheimLaden Wallbox
-• cFos PowerBrain
-• Easee Home
-• EVSE-Wifi
-• go-eCharger
-• Heidelberg Energy Control
-• i-CHARGE CION
-• KEBA KeContact P30
-• Mennekes Amtron Xtra
-• Porsche Mobile Charger Connect
-• NRGKick
-• OpenWB
-• Phoenix Contact
-• TinkerForge WARP Charger
-• Simple EVSE
-• smartWB
-• Wallbe
-• SENEC.Wallbox pro
+  {{< infobox-entry title="Wallboxen & Steckdosen" img="img/evcc-illu-wallbox.svg" >}}
+    {{< infobox-content group="wallboxes">}}
+    {{< infobox-content group="smart_plugs">}}
+  {{< /infobox-entry >}}
 
-AVM FritzDECT
-• Shelly
-• Tasmota
-• TP-LINK Smart Plug
-{{< /infobox-entry >}}
-{{< infobox-entry title="Energiemesstechnik" img="img/evcc-illu-energiemessung.svg" >}}
-ABB
-• Bernecker Engineering
-• DDM
-• DZG
-• Discovergy
-• Eastron SDM
-• Inepro
-• KOSTAL Smart Energy Meter
-• ORNO
-• Phoenix Contact
-• PowerDog
-• Powerfox PowerOpti
-• SBC
-• SMA Sunny Home Manager & Energy Meter
-• Schneider Electric
-• SolarEdge
-• SolarLog
-• SunSpec-kompatibel
-• vzlogger
-{{< /infobox-entry >}}
-{{< infobox-entry title="Wechselrichter & Speichersysteme" img="img/evcc-illu-wechselrichter.svg" >}}
-E3DC
-• Fronius
-• Huawei
-• Kaco
-• KOSTAL
-• LG ESS
-• RCT Power
-• SENEC.Home
-• SMA
-• SolarEdge
-• sonnen
-• SunSpec-kompatibel
-• Tesla PowerWall
-• VARTA Energiespeicher
-{{< /infobox-entry >}}
-{{< infobox-entry title="Fahrzeuge" img="img/evcc-illu-fahrzeuge.svg" >}}
-Audi
-• BMW
-• Citroën
-• DS Automobiles
-• Fiat
-• Ford
-• Hyundai
-• Kia
-• Mini
-• Nissan
-• NIU (E-Scooter)
-• Opel
-• OVMS
-• Peugeot
-• Porsche
-• Renault
-• Seat
-• ŠKODA
-• Tesla
-• Tronity
-• Volkswagen
-• Volvo
-{{< /infobox-entry >}}
+  {{< infobox-entry title="Energiemesstechnik" img="img/evcc-illu-energiemessung.svg" >}}
+    {{< infobox-content group="meters">}}
+  {{< /infobox-entry >}}
+
+  {{< infobox-entry title="Wechselrichter & Speichersysteme" img="img/evcc-illu-wechselrichter.svg" >}}
+    {{< infobox-content group="systems">}}
+  {{< /infobox-entry >}}
+
+  {{< infobox-entry title="Fahrzeuge" img="img/evcc-illu-fahrzeuge.svg" >}}
+    {{< infobox-content group="vehicles">}}
+  {{< /infobox-entry >}}
 {{< /infobox >}}
 
 evcc setzt bei der Anbindung der Komponenten auf weit verbreitete Schnittstellen und Protokolle, wie z.B. Modbus, SunSpec, HTTP, JSON, REST sowie MQTT.
