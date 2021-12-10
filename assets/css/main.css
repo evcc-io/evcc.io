@@ -350,6 +350,12 @@ p + h3 {
   right: 0;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
+}
+@media (min-width: 750px) {
+  .screenshots_container {
+    width: 95%;
+  }
 }
 .screenshots_inner {
   max-width: 100%;
