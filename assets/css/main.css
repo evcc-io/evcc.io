@@ -290,6 +290,10 @@ a:hover {
   margin: 0 auto;
 }
 
+.infobox_entry p.products {
+  width: var(--6-cols);
+}
+
 hr {
   border: none;
   margin: 3rem 0;
