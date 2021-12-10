@@ -379,6 +379,13 @@ p + h3 {
   width: auto;
   height: auto;
 }
+@media (min-width: 750px) {
+  img.image--full {
+    width: calc(var(--6-cols) - var(--grid-gutter) * 2);
+    border-radius: 30px;
+    margin: 40px auto;
+  }
+}
 
 .sponsors {
   margin-bottom: 2em;
