@@ -87,6 +87,7 @@
       height="354"
       src="./img/evcc-hero.svg"
       alt="Elektroauto lädt Solarstrom an einer Wallbox. Person verwendet evcc auf dem Smartphone."
+      draggable="false"
     />
   </div>
 </header>
@@ -138,7 +139,7 @@
 
 <hr>
 <h2 id="wie-evcc-funktioniert">Wie evcc funktioniert</h2>
-<img class="image--full" src="img/evcc-schema.svg" alt="Darstellung der Funktionsweise" width="200" height="100" />
+<img class="image--full" src="img/evcc-schema.svg" alt="Darstellung der Funktionsweise" width="200" height="100" draggable="false"/>
 
 <p>Den eigenen Sonnenstrom zum Laden des Autos zu verwenden bedeutet den Eigenverbrauch zu erhöhen und damit den Strom nicht ins Netz abzugeben sondern selbst zu nutzen.</p>
 <p>Bereits heute werden zahlreiche Hersteller von Wallboxen unterstützt und evcc ermöglicht es die Stromstärke, mit der das Auto geladen wird, zu steuern. Das heißt, wenn viel Sonnenstrom erzeugt wird, erlaubt evcc das angeschlossene Auto mit hoher Leistung zu laden. Wird weniger Strom erzeugt, verlangsamt oder pausiert evcc den Ladevorgang.</p>
@@ -149,104 +150,115 @@
   <h2>Unterstützte und getestete Komponenten</h2>
   <div class="infobox_inner">
     
-<div class="infobox_entry">
-  <img src="img/evcc-illu-wallbox.svg" alt="Wallboxen &amp; Steckdosen" width="140" height="140" />
+  <div class="infobox_entry">
+  <img src="img/evcc-illu-wallbox.svg" alt="Wallboxen &amp; Steckdosen" width="140" height="140" draggable="false" />
   <h3>Wallboxen &amp; Steckdosen</h3>
-  <p>ABL eMHx
-• Alfen NG9xx
-• DaheimLaden Wallbox
-• cFos PowerBrain
-• Easee Home
-• EVSE-Wifi
-• go-eCharger
-• Heidelberg Energy Control
-• i-CHARGE CION
-• KEBA KeContact P30
-• Mennekes Amtron Xtra
-• Porsche Mobile Charger Connect
-• NRGKick
-• OpenWB
-• Phoenix Contact
-• TinkerForge WARP Charger
-• Simple EVSE
-• smartWB
-• Wallbe
-• SENEC.Wallbox pro</p>
-<p>AVM FritzDECT
-• Shelly
-• Tasmota
-• TP-LINK Smart Plug</p>
-
+  
+    
+<p class="products group-wallboxes">
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            ABL eMHx • Alfen NG9xx • DaheimLaden Wallbox • cFos PowerBrain • Easee Home • EVSE-Wifi • go-eCharger • Heidelberg Energy Control • i-CHARGE CION • KEBA KeContact P30 • Mennekes Amtron Xtra • Porsche Mobile Charger Connect • NRGKick • OpenWB • Phoenix Contact • TinkerForge WARP Charger • Simple EVSE • smartWB • Wallbe • SENEC.Wallbox pro
+        
+    
+</p>
+    
+<p class="products group-smart_plugs">
+    
+        
+    
+        
+            AVM FritzDECT • Shelly • Tasmota • TP-LINK Smart Plug
+        
+    
+        
+    
+        
+    
+        
+    
+</p>
+  
 </div>
 
-<div class="infobox_entry">
-  <img src="img/evcc-illu-energiemessung.svg" alt="Energiemesstechnik" width="140" height="140" />
+
+  <div class="infobox_entry">
+  <img src="img/evcc-illu-energiemessung.svg" alt="Energiemesstechnik" width="140" height="140" draggable="false" />
   <h3>Energiemesstechnik</h3>
-  ABB
-• Bernecker Engineering
-• DDM
-• DZG
-• Discovergy
-• Eastron SDM
-• Inepro
-• KOSTAL Smart Energy Meter
-• ORNO
-• Phoenix Contact
-• PowerDog
-• Powerfox PowerOpti
-• SBC
-• SMA Sunny Home Manager &amp; Energy Meter
-• Schneider Electric
-• SolarEdge
-• SolarLog
-• SunSpec-kompatibel
-• vzlogger
+  
+    
+<p class="products group-meters">
+    
+        
+            ABB • Bernecker Engineering • DDM • DZG • Discovergy • Eastron SDM • Inepro • KOSTAL Smart Energy Meter • ORNO • Phoenix Contact • PowerDog • Powerfox PowerOpti • SBC • SMA Sunny Home Manager & Energy Meter • Schneider Electric • SolarEdge • SolarLog • SunSpec-kompatibel • vzlogger
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+</p>
+  
 </div>
 
-<div class="infobox_entry">
-  <img src="img/evcc-illu-wechselrichter.svg" alt="Wechselrichter &amp; Speichersysteme" width="140" height="140" />
+
+  <div class="infobox_entry">
+  <img src="img/evcc-illu-wechselrichter.svg" alt="Wechselrichter &amp; Speichersysteme" width="140" height="140" draggable="false" />
   <h3>Wechselrichter &amp; Speichersysteme</h3>
-  E3DC
-• Fronius
-• Huawei
-• Kaco
-• KOSTAL
-• LG ESS
-• RCT Power
-• SENEC.Home
-• SMA
-• SolarEdge
-• sonnen
-• SunSpec-kompatibel
-• Tesla PowerWall
-• VARTA Energiespeicher
+  
+    
+<p class="products group-systems">
+    
+        
+    
+        
+    
+        
+            E3DC • Fronius • Huawei • Kaco • KOSTAL • LG ESS • RCT Power • SENEC.Home • SMA • SolarEdge • sonnen • SunSpec-kompatibel • Tesla PowerWall • VARTA Energiespeicher
+        
+    
+        
+    
+        
+    
+</p>
+  
 </div>
 
-<div class="infobox_entry">
-  <img src="img/evcc-illu-fahrzeuge.svg" alt="Fahrzeuge" width="140" height="140" />
+
+  <div class="infobox_entry">
+  <img src="img/evcc-illu-fahrzeuge.svg" alt="Fahrzeuge" width="140" height="140" draggable="false" />
   <h3>Fahrzeuge</h3>
-  Audi
-• BMW
-• Citroën
-• DS Automobiles
-• Fiat
-• Ford
-• Hyundai
-• Kia
-• Mini
-• Nissan
-• NIU (E-Scooter)
-• Opel
-• OVMS
-• Peugeot
-• Porsche
-• Renault
-• Seat
-• ŠKODA
-• Tesla
-• Tronity
-• Volkswagen
-• Volvo
+  
+    
+<p class="products group-vehicles">
+    
+        
+    
+        
+    
+        
+    
+        
+            Audi • BMW • Citroën • DS Automobiles • Fiat • Ford • Hyundai • Kia • Mini • Nissan • NIU (E-Scooter) • Opel • OVMS • Peugeot • Porsche • Renault • Seat • ŠKODA • Tesla • Tronity • Volkswagen • Volvo
+        
+    
+        
+    
+</p>
+  
 </div>
 
 
