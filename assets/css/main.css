@@ -400,11 +400,13 @@ p + h3 {
 }
 .sponsor-logos a {
   display: block;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 .sponsor-logos img {
+  max-width: 300px;
+  max-height: 75px;
   width: auto;
-  height: 75px;
+  height: auto;
   display: block;
 }
 .github-sponsors {
