@@ -18,13 +18,13 @@ jobs:
         uses: JamesIves/github-sponsors-readme-action@1.0.5
         with:
           token: ${{ secrets.GH_API_TOKEN }}
-          file: 'layouts/shortcodes/sponsors.html'
+          file: "layouts/shortcodes/sponsors.html"
           minimum: 500
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "0.75.1"
+          hugo-version: "0.91.2"
           # extended: true
 
       - name: Build
