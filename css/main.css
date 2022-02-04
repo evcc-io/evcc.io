@@ -1,15 +1,15 @@
 :root {
   --grid-gutter: 25px;
   --layout-width: 990px;
-  --page-background: #FFFFFF;
-  --text-color: #18191A;
+  --page-background: #ffffff;
+  --text-color: #18191a;
   --text-font-size: 24px;
   --small-text-font-size: 19px;
-  --accent-color: #0074E0;
-  --accent-hover-color: #0074E0AA;
-  --light-background: #F1F1F4;
-  --infobox-background: #0FDD42;
-  --infobox-color: #18191A;
+  --accent-color: #0074e0;
+  --accent-hover-color: #0074e0aa;
+  --light-background: #f1f1f4;
+  --infobox-background: #0fdd42;
+  --infobox-color: #18191a;
   --6-cols: 100%;
   --4-cols: calc(4 * 100% / 6);
   --2-cols: calc(2 * 100% / 6);
@@ -25,11 +25,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --page-background: #00002D;
-    --header-background: #00002D;
-    --light-background: rgba(241,241,244,0.1);
-    --text-color: #F1F1F4;
-    --accent-color: #0FDD42;
+    --page-background: #00002d;
+    --header-background: #00002d;
+    --light-background: rgba(241, 241, 244, 0.1);
+    --text-color: #f1f1f4;
+    --accent-color: #0fdd42;
   }
 }
 
@@ -38,20 +38,20 @@
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
-  src: local('Roboto'), local('Roboto-Regular'),
-      url('../fonts/roboto-v20-latin-regular.woff2') format('woff2');
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/roboto-v20-latin-regular.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
-  src: local('Roboto Bold'), local('Roboto-Bold'),
-       url('../fonts/roboto-v20-latin-bold.woff2') format('woff2');
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+    url("../fonts/roboto-v20-latin-bold.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -82,7 +82,7 @@ a:hover {
 }
 
 .header__top {
-  background: linear-gradient(#fff, #F3FFFF);
+  background: linear-gradient(#fff, #f3ffff);
 }
 
 .header__inner {
@@ -97,11 +97,11 @@ a:hover {
 .header__logo {
   display: flex;
   align-items: center;
-  color: #18191A;
+  color: #18191a;
 }
 
 .header__logo__letters {
-  fill: #18191A;
+  fill: #18191a;
 }
 
 .header__logo svg {
@@ -125,7 +125,7 @@ a:hover {
 }
 
 .header__navigation__item {
-  color: #18191A;
+  color: #18191a;
   font-size: 18px;
   padding: 8px;
   margin-right: 8px;
@@ -209,7 +209,7 @@ a:hover {
 }
 
 .content li::before {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   top: 0;
@@ -224,7 +224,7 @@ a:hover {
 }
 
 .content li::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -253,7 +253,7 @@ a:hover {
   margin-top: 0;
 }
 
-.infobox h2  {
+.infobox h2 {
   max-width: 500px;
 }
 
@@ -299,7 +299,11 @@ hr {
   margin: 3rem 0;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: bold;
   text-align: center;
   line-height: 1.1em;
@@ -341,6 +345,11 @@ p + h3 {
   display: block;
   padding: 0.5em;
 }
+footer .icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.3em;
+}
 .screenshots {
   height: 550px;
 }
@@ -369,7 +378,7 @@ p + h3 {
   height: 500px;
 }
 .goverlay {
-  background: rgba(255,255,255,.95) !important;
+  background: rgba(255, 255, 255, 0.95) !important;
 }
 .glightbox-clean .gslide-media {
   box-shadow: none !important;
