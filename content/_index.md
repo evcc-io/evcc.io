@@ -1,4 +1,3 @@
-
 # Sonne tanken. Ganz einfach.
 
 evcc ist angetreten, die Nachhaltigkeit beim Laden unserer Elektrofahrzeuge zu optimieren. Dazu ermöglicht evcc das Laden mit möglichst viel selbsterzeugten Solarstrom. In den meisten Fällen ist das sogar ohne weitere Änderung an der bestehenden Haus-Elektroinstallation möglich.
@@ -17,11 +16,11 @@ evcc ist angetreten, die Nachhaltigkeit beim Laden unserer Elektrofahrzeuge zu o
 ## Responsive Benutzeroberfläche
 
 {{< screenshots class="content-gallery" >}}
-  {{< screenshot-entry src="1_evcc-interface-mobile" width="508" >}}
-  {{< screenshot-entry src="2_evcc-interface-mobile-details" width="507" >}}
-  {{< screenshot-entry src="3_evcc-interface-mobile-confetti" width="507" >}}
-  {{< screenshot-entry src="4_evcc-interface-tablet-portrait" width="729" >}}
-  {{< screenshot-entry src="5_evcc-interface-tablet-landscape" width="1386" >}}
+{{< screenshot-entry src="1_evcc-interface-mobile" width="508" >}}
+{{< screenshot-entry src="2_evcc-interface-mobile-details" width="507" >}}
+{{< screenshot-entry src="3_evcc-interface-mobile-confetti" width="507" >}}
+{{< screenshot-entry src="4_evcc-interface-tablet-portrait" width="729" >}}
+{{< screenshot-entry src="5_evcc-interface-tablet-landscape" width="1386" >}}
 {{< /screenshots >}}
 
 ---
@@ -41,22 +40,22 @@ Ist ein durch evcc unterstütztes Elektrofahrzeug eingerichtet, kann dessen mome
 Und noch etwas kann evcc: Ist ein unterstützter Batteriespeicher vorhanden, wird auch dessen Ladezustand gesteuert und mit Sonnenstrom versorgt.
 
 {{< infobox title="Unterstützte und getestete Komponenten" >}}
-  {{< infobox-entry title="Wallboxen & Steckdosen" img="img/evcc-illu-wallbox.svg" >}}
-    {{< infobox-content group="wallboxes">}}
-    {{< infobox-content group="smart_plugs">}}
-  {{< /infobox-entry >}}
+{{< infobox-entry title="Wallboxen & Steckdosen" img="img/evcc-illu-wallbox.svg" >}}
+{{< infobox-content group="wallboxes">}}
+{{< infobox-content group="smart_plugs">}}
+{{< /infobox-entry >}}
 
-  {{< infobox-entry title="Energiemesstechnik" img="img/evcc-illu-energiemessung.svg" >}}
-    {{< infobox-content group="meters">}}
-  {{< /infobox-entry >}}
+{{< infobox-entry title="Energiemesstechnik" img="img/evcc-illu-energiemessung.svg" >}}
+{{< infobox-content group="meters">}}
+{{< /infobox-entry >}}
 
-  {{< infobox-entry title="Wechselrichter & Speichersysteme" img="img/evcc-illu-wechselrichter.svg" >}}
-    {{< infobox-content group="systems">}}
-  {{< /infobox-entry >}}
+{{< infobox-entry title="Wechselrichter & Speichersysteme" img="img/evcc-illu-wechselrichter.svg" >}}
+{{< infobox-content group="systems">}}
+{{< /infobox-entry >}}
 
-  {{< infobox-entry title="Fahrzeuge" img="img/evcc-illu-fahrzeuge.svg" >}}
-    {{< infobox-content group="vehicles">}}
-  {{< /infobox-entry >}}
+{{< infobox-entry title="Fahrzeuge" img="img/evcc-illu-fahrzeuge.svg" >}}
+{{< infobox-content group="vehicles">}}
+{{< /infobox-entry >}}
 {{< /infobox >}}
 
 evcc setzt bei der Anbindung der Komponenten auf weit verbreitete Schnittstellen und Protokolle, wie z.B. Modbus, SunSpec, HTTP, JSON, REST sowie MQTT.
@@ -69,7 +68,7 @@ Um sich auch mit anderen, übergeordneten Energiemanagern abzusprechen hat evcc 
 
 ### Systemvorraussetzung
 
-evcc ist in Go geschrieben und sehr effizient. Es wird weder viel CPU noch RAM benötigt. Typischerweise läuft evcc auf einem __Raspberry Pi__ oder in __Docker__ (z.B. Synology NAS) in deinem Haus. Windows, macOS und Linux werden auch unterstützt.
+evcc ist in Go geschrieben und sehr effizient. Es wird weder viel CPU noch RAM benötigt. Typischerweise läuft evcc auf einem **Raspberry Pi** oder in **Docker** (z.B. Synology NAS) in deinem Haus. Windows, macOS und Linux werden auch unterstützt.
 
 ### evcc einrichten
 
@@ -89,7 +88,7 @@ Getting Started
 Werde Teil unseres Entwicklungsteams und hilf mit, dein installiertes System zu unterstützen, Fehler zu korrigieren und die Dokumentation zu verbessern.
 
 Informiere dich, stelle Fragen und erhalte Unterstützung von anderen Anwendern und Entwicklern im [Forum](https://github.com/evcc-io/evcc/discussions).
-Oder komm in unseren Chat, lerne uns kennen und diskutiere mit uns: [Slack](https://join.slack.com/t/evccgroup/shared_invite/zt-fw52e6lt-tdazCp1LPdPlYuKz3PvTAw)
+Oder komm in unseren Chat, lerne uns kennen und diskutiere mit uns: [Slack](https://join.slack.com/t/evccgroup/shared_invite/zt-14yub38w0-7xDdOMo3Wy7AwdrNrAtWsQ)
 
 ### Finanzieller Support
 
