@@ -1,5 +1,8 @@
 name: github pages
 
+env:
+  SLACK_INVITE_URL: ${{ secrets.SLACK_INVITE_URL }}
+
 on:
   push:
     branches:

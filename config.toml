@@ -10,3 +10,7 @@ title = "evcc - Sonne tanken ☀️🚘 - PV-Überschussladen für steuerbare Wa
 [minify]
   disableSVG = true
   disableHTML = true
+
+[security]
+  [security.funcs]
+    getenv = ["SLACK_INVITE_URL"]

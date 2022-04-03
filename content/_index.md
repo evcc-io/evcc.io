@@ -88,7 +88,7 @@ Getting Started
 Werde Teil unseres Entwicklungsteams und hilf mit, dein installiertes System zu unterstützen, Fehler zu korrigieren und die Dokumentation zu verbessern.
 
 Informiere dich, stelle Fragen und erhalte Unterstützung von anderen Anwendern und Entwicklern im [Forum](https://github.com/evcc-io/evcc/discussions).
-Oder komm in unseren Chat, lerne uns kennen und diskutiere mit uns: [Slack](https://join.slack.com/t/evccgroup/shared_invite/zt-14yub38w0-7xDdOMo3Wy7AwdrNrAtWsQ)
+Oder komm in unseren Chat, lerne uns kennen und diskutiere mit uns: [Slack]({{< slack-link >}})
 
 ### Finanzieller Support
 
