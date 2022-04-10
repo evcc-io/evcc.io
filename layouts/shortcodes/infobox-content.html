@@ -1,8 +1,4 @@
 {{ $group := .Get "group" }}
 <p class="products group-{{$group}}">
-    {{ range .Site.Data.products }}
-        {{ if eq .name $group }}
-            {{ delimit .values " • " }}
-        {{ end }}
-    {{ end }}
+    {{ delimit (index .Site.Data.brands $group) " • " }}
 </p>

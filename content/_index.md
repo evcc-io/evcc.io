@@ -50,7 +50,7 @@ Und noch etwas kann evcc: Ist ein unterstützter Batteriespeicher vorhanden, wir
 {{< /infobox-entry >}}
 
 {{< infobox-entry title="Wechselrichter & Speichersysteme" img="img/evcc-illu-wechselrichter.svg" >}}
-{{< infobox-content group="systems">}}
+{{< infobox-content group="pv_battery">}}
 {{< /infobox-entry >}}
 
 {{< infobox-entry title="Fahrzeuge" img="img/evcc-illu-fahrzeuge.svg" >}}
