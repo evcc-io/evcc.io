@@ -41,20 +41,20 @@ Und noch etwas kann evcc: Ist ein unterstützter Batteriespeicher vorhanden, wir
 
 {{< infobox title="Unterstützte und getestete Komponenten" >}}
 {{< infobox-entry title="Wallboxen & Steckdosen" img="img/evcc-illu-wallbox.svg" >}}
-{{< infobox-content group="wallboxes">}}
-{{< infobox-content group="smart_plugs">}}
+{{< infobox-content group="Chargers">}}
+{{< infobox-content group="SmartPlugs">}}
 {{< /infobox-entry >}}
 
 {{< infobox-entry title="Energiemesstechnik" img="img/evcc-illu-energiemessung.svg" >}}
-{{< infobox-content group="meters">}}
+{{< infobox-content group="Meters">}}
 {{< /infobox-entry >}}
 
 {{< infobox-entry title="Wechselrichter & Speichersysteme" img="img/evcc-illu-wechselrichter.svg" >}}
-{{< infobox-content group="pv_battery">}}
+{{< infobox-content group="PVBattery">}}
 {{< /infobox-entry >}}
 
 {{< infobox-entry title="Fahrzeuge" img="img/evcc-illu-fahrzeuge.svg" >}}
-{{< infobox-content group="vehicles">}}
+{{< infobox-content group="Vehicles">}}
 {{< /infobox-entry >}}
 {{< /infobox >}}
 
