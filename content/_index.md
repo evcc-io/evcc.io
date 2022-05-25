@@ -16,11 +16,12 @@ evcc ist angetreten, die Nachhaltigkeit beim Laden unserer Elektrofahrzeuge zu o
 ## Responsive Benutzeroberfläche
 
 {{< screenshots class="content-gallery" >}}
-{{< screenshot-entry src="1_evcc-interface-mobile" width="508" >}}
-{{< screenshot-entry src="2_evcc-interface-mobile-details" width="507" >}}
-{{< screenshot-entry src="3_evcc-interface-mobile-confetti" width="507" >}}
-{{< screenshot-entry src="4_evcc-interface-tablet-portrait" width="729" >}}
-{{< screenshot-entry src="5_evcc-interface-tablet-landscape" width="1386" >}}
+{{< screenshot-entry src="1_evcc_interface_mobile" width="508" >}}
+{{< screenshot-entry src="2_evcc_interface_mobile_details" width="507" >}}
+{{< screenshot-entry src="3_evcc_interface_mobile_timer" width="507" >}}
+{{< screenshot-entry src="4_evcc_interface_tablet" width="1387" >}}
+{{< screenshot-entry src="5_evcc_interface_tablet_details" width="1387" >}}
+{{< screenshot-entry src="6_evcc_interface_tablet_solar" width="728" >}}
 {{< /screenshots >}}
 
 ---
