@@ -31,6 +31,15 @@
     --text-color: #f1f1f4;
     --accent-color: #0fdd42;
   }
+  .light-only {
+    display: none !important;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .dark-only {
+    display: none !important;
+  }
 }
 
 * {
