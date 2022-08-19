@@ -1,5 +1,8 @@
 {{- $src := .Get "src" -}}
 {{- $width := .Get "width" -}}
-<a href="img/screenshots/{{$src}}.png" class="screenshot" data-glightbox>
-  <img src="img/screenshots-small/{{$src}}.png" height="1000" width="{{$width}}" alt="image" />
+<a href="img/screenshots/{{$src}}_light.png" class="screenshot light-only" data-glightbox data-gallery="light">
+  <img src="img/screenshots-small/{{$src}}_light.png" height="1000" width="{{$width}}" alt="{{$src}}" loading="lazy" />
 </a>
+<a href="img/screenshots/{{$src}}_dark.png" class="screenshot dark-only" data-glightbox data-gallery="dark">
+  <img src="img/screenshots-small/{{$src}}_dark.png" height="1000" width="{{$width}}" alt="{{$src}}" loading="lazy" />
+</a> 
