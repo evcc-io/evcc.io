@@ -119,6 +119,7 @@ a:hover {
 
 .header__logo span {
   font-size: 18px;
+  white-space: nowrap;
 }
 
 .header__button {
@@ -167,10 +168,10 @@ a:hover {
 
 .content .button-container {
   text-align: center;
-  margin-bottom: 4rem;
 }
 
 .content .button {
+  display: inline-block;
   background-color: var(--accent-color);
   font-weight: bold;
   font-size: 1em;
