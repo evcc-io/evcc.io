@@ -1,0 +1,11 @@
+{{- $icon := .Get "icon" -}}
+{{- $title := .Get "title" -}}
+{{- $color := .Get "color" -}}
+{{- $description := .Get "description" -}}
+<div class="feature feature--{{$color}}">
+  <div class="title">
+    <shopicon-regular-{{$icon}} class="icon" size="l"></shopicon-regular-{{$icon}}>
+    <h3>{{$title}}</h3>
+  </div>
+  <p>{{$description}}</p>
+</div>

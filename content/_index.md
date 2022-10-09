@@ -2,18 +2,32 @@
 
 evcc ist angetreten, die Nachhaltigkeit beim Laden unserer Elektrofahrzeuge zu optimieren. Dazu ermöglicht evcc das Laden mit möglichst viel selbsterzeugten Solarstrom. In den meisten Fällen ist das sogar ohne weitere Änderung an der bestehenden Haus-Elektroinstallation möglich.
 
+{{< features >}}
+{{< feature-entry
+    icon="sun"
+    title="Sonnenstrom laden"
+    description="evcc lädt dein Fahrzeug automatisch wenn die Sonne scheint. Total komfortabel." >}}
+{{< feature-entry
+    icon="coinjar"
+    title="Geld sparen"
+    description="Erhöhe deine Autarkie indem du Überschussstrom selbst nutzt anstatt ihn einzuspeisen. Das spart bares Geld." >}}
+{{< feature-entry
+    icon="eco1"
+    title="Klima schonen"
+    description="Grünstromverträge sind bilanziell CO₂-neutral. Laden an der eigenen PV-Anlage ist immer emmissionsfrei." >}}
+{{< feature-entry
+    icon="polygon"
+    title="Netze entlasten"
+    description="Hilf bei der Denzentralisierung des Stromnetztes. Verringere den Druck auf Kraftwerks- und Trassenausbau. Strom lokal nutzen ist die Zukunft." >}}
+{{< /features >}}
+
 ---
 
-## Was evcc besonders macht
+## Wir 💚 gute Benutzeroberflächen
 
-- Lade dein Elektrofahrzeug mit eigenem PV Überschussstrom
-- Nutze bereits vorhandene Systeme (PV- und Batteriewechselrichter, Wallboxen, Energiezähler)
-- Intuitive und übersichtliche Benutzeroberfläche
-- 100 % Open Source
+Wir möchten, dass PV-Strom-Laden für alle einfach möglich wird. Im Optimalfall funktioniert das ganz ohne manuelles Regeln und Einstellen. Wenn du aber doch mal sehen willst, was das System so macht haben wir **eine aufgeräumte und responsive Weboberfläche** parat.
 
----
-
-## Responsive Benutzeroberfläche
+{{< theme-switch >}}
 
 {{< screenshots class="content-gallery" >}}
 {{< screenshot-entry src="1_evcc_mobile_standard" width="508" >}}
@@ -27,17 +41,13 @@ evcc ist angetreten, die Nachhaltigkeit beim Laden unserer Elektrofahrzeuge zu o
 
 ## Wie evcc funktioniert
 
+**evcc läuft bei dir zu Hause**, beispielsweise auf einem Raspberry Pi.
+
 {{< full_width_image src="img/evcc-schema.svg" alt="Darstellung der Funktionsweise" width="200" height="100" >}}
 
-Den eigenen Sonnenstrom zum Laden des Autos zu verwenden bedeutet den Eigenverbrauch zu erhöhen und damit den Strom nicht ins Netz abzugeben sondern selbst zu nutzen.
+**evcc regelt deine steuerbare Wallbox** abhängig von der aktuellen PV-Produktion und deinem Hausverbrauch. Produzierst du mehr Strom als benötigt startet evcc den Ladevorgang des Autos und passt die Stromstärke über den Tagesverlauf permanent an. Reicht der Überschussstrom nicht mehr aus weil Waschmaschine, Spülmaschine und der Herd gerade laufen pausiert evcc das Autoladen zeitweise.
 
-Bereits heute werden zahlreiche Hersteller von Wallboxen unterstützt und evcc ermöglicht es die Stromstärke, mit der das Auto geladen wird, zu steuern. Das heißt, wenn viel Sonnenstrom erzeugt wird, erlaubt evcc das angeschlossene Auto mit hoher Leistung zu laden. Wird weniger Strom erzeugt, verlangsamt oder pausiert evcc den Ladevorgang.
-
-Damit evcc die Ladung bestmöglich regeln kann, ist ein Messgerät (= auslesbarer Energiezähler) am Netzanschluss der Hausinstallation notwendig. Durch dieses Messgerät kennt evcc den momentanen Energieüberschuss und kann die Ladeleistung kontinuierlich anpassen. Das Gute ist, dass in fast jeder vorhandenen PV-Anlage ein entsprechendes Gerät bereits vorhanden ist oder einfach nachgerüstet werden kann.
-
-Ist ein durch evcc unterstütztes Elektrofahrzeug eingerichtet, kann dessen momentaner Batterieladezustand und Reichweite angezeigt und in der Ladeplanung mit berücksichtigt werden - auch, wenn die Sonne ab und an mal nicht so viel scheint, bleibt so die Mobilität sichergestellt.
-
-Und noch etwas kann evcc: Ist ein unterstützter Batteriespeicher vorhanden, wird auch dessen Ladezustand gesteuert und mit Sonnenstrom versorgt.
+Damit evcc die Ladung regeln kann, ist ein **auslesbarer Energiezähler** am Netzanschluss erforderlich. Bei den meisten Photovoltaik-Installationen ist so ein Messzähler schon vorhanden. Wir haben Schnittstellen für fast alle Hersteller implementiert.
 
 {{< infobox title="Unterstützte und getestete Komponenten" >}}
 {{< infobox-entry title="Wallboxen & Steckdosen" img="img/evcc-illu-wallbox.svg" >}}
@@ -56,11 +66,74 @@ Und noch etwas kann evcc: Ist ein unterstützter Batteriespeicher vorhanden, wir
 {{< infobox-entry title="Fahrzeuge" img="img/evcc-illu-fahrzeuge.svg" >}}
 {{< infobox-content group="Vehicles">}}
 {{< /infobox-entry >}}
+
 {{< /infobox >}}
 
-evcc setzt bei der Anbindung der Komponenten auf weit verbreitete Schnittstellen und Protokolle, wie z.B. Modbus, SunSpec, HTTP, JSON, REST sowie MQTT.
-Damit lassen sich nahezu alle am Markt verfügbaren und vorhandenen Produkte herstellerunabhängig nach den jeweiligen Erfordernissen und örtlichen Gegebenheiten anbinden.
-Um sich auch mit anderen, übergeordneten Energiemanagern abzusprechen hat evcc zusätzliche Unterstützung der Protokolle SEMP und EEBUS integriert.
+Da evcc deine Wallbox steuert, funktioniert PV-Überschussladen mit allen dort angeschlossenen Fahrzeugen. Hat **dein Auto eine Online-API** kann evcc zusätzlich Informationen über den Ladestand und die Reichweite abfragen und anzeigen. Dadurch werden Funktionen wir Ladelimit, Zielzeitladen oder Mindestreichweite freigeschaltet.
+
+Hast du **einen Batteriespeicher im Haus** können wir auch diesen berücksichtigen. Seine Energie kann zum Autoladen mitverwendet werden und du kannst sicherstellen, dass der Hausakku abends trotzdem noch gefüllt ist um ohne Netzbezug über die Nacht zu kommen.
+
+### Balkonkraftwerke, Steckdosen, E-Bikes, ...
+
+Der Kern von evcc ist das Laden von Elektroautos an der eigenen PV-Anlage. Allerdings unterstützen wir auch kleinere Installationen. evcc steuert nicht nur Wallboxen sondern auch **Smarte Steckdose**. Du kannst damit dein **E-Bike-Akku**, **E-Scooter**, **Akkuladegerät** oder eine **Powerbank** laden oder deine **Wärmepumpe**, **Elektroheizung** oder einen **Heizstab** schalten. Die Kombinationsmöglichkeiten sind hier vielfältig.
+
+---
+
+## Funktionen
+
+### Sonnenoptimiertes Laden
+
+### Automatische Phasenumschaltung
+
+### Integration Hausspeicher
+
+### Ladelimit
+
+### Mindestreichweite
+
+### Geplante Abfahrt
+
+### Energiesituation im Blick
+
+### Variable Stromtarife
+
+
+---
+
+## Was evcc besonders macht
+
+{{< features >}}
+{{< feature-entry
+    icon="eco4"
+    title="Unterstützt deine Geräte"
+    description="Nutze PV-Überschussladen mit existierender Hardware. Wechselrichter und Wallbox müssen nicht vom gleichen Hersteller kommen." >}}
+{{< feature-entry
+    icon="github"
+    title="100% Open Source"
+    description="Wie sind überzeugt von offener Software. Das schafft Nachvollziehbarkeit und Vertrauen und führt zu besserer Qualität." >}}
+{{< feature-entry
+    icon="receivepayment"
+    title="Community-finanziert"
+    description="Eure Sponsorenbeiträge stellen die Weiterenticklung sicher und machen uns unabhängig von großen Firmen. Danke!" >}}
+{{< feature-entry
+    icon="shield"
+    title="Dein Haus, deine Daten"
+    description="Wir mistrauen Datenkraken. Deine Energiedaten sind privat und bleiben auf deiner eigenen evcc Instanz." >}}
+{{< feature-entry
+    icon="zoomout1"
+    title="Minimaler Footprint"
+    description="evcc ist in Go geschrieben und dadurch extrem ressourcensparend. Selbst der kleinste Raspberry Pi ist vollkommen ausreichend." >}}
+{{< /features >}}
+
+---
+
+## evcc ist vernetzt und erweiterbar
+
+evcc setzt bei der Anbindung der Komponenten auf weit verbreitete Schnittstellen und Protokolle, wie z.B. **Modbus, SunSpec, HTTP, JSON, OCPP, REST sowie MQTT**. Wenn du spezielle Anforderungen hast, kannst du mit **JavaScript oder Shell-Scripten** auch deine eigenen Geräte implementieren.
+
+Energie- und Ladedaten lassen sich zu **InfluxDB** exportieren lassen und du kannst dich über Ereignisse wie "Ladevorang beendet" via **Pushover, Telegram oder E-Mail** benachrichtigen lassen.
+
+Um sich auch mit anderen, übergeordneten Energiemanagern abzusprechen hat evcc zusätzliche Unterstützung der Protokolle **SEMP und EEBUS** (experimentell) integriert. Zudem kannst du evcc via **REST-API und MQTT** fernsteuern.
 
 ---
 
