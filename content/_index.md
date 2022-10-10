@@ -4,6 +4,10 @@ evcc ist angetreten, die Nachhaltigkeit beim Laden unserer Elektrofahrzeuge zu o
 
 ---
 
+{{< live-telemetry >}}
+
+---
+
 ## Was evcc besonders macht
 
 - Lade dein Elektrofahrzeug mit eigenem PV Überschussstrom
