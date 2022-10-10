@@ -14,6 +14,19 @@
   --4-cols: calc(4 * 100% / 6);
   --2-cols: calc(2 * 100% / 6);
   --1-col: calc(1 * 100% / 6);
+
+  /* app colors */
+  --evcc-green: #baffcb;
+  --evcc-dark-green: #0fde41;
+  --evcc-darker-green: #0ba631;
+  --evcc-darkest-green: #076f20;
+  --evcc-yellow: #faf000;
+  --evcc-dark-yellow: #bbb400;
+  --evcc-gray: #93949e;
+
+  --evcc-accent1: var(--evcc-dark-yellow);
+  --evcc-accent2: var(--evcc-darker-green);
+  --evcc-accent3: var(--evcc-darkest-green);
 }
 
 @media (max-width: 499px) {
@@ -30,6 +43,10 @@
     --light-background: rgba(241, 241, 244, 0.1);
     --text-color: #f1f1f4;
     --accent-color: #0fdd42;
+    --evcc-gray: #b5b6c3;
+    --evcc-accent1: var(--evcc-yellow);
+    --evcc-accent2: var(--evcc-dark-green);
+    --evcc-accent3: var(--evcc-darker-green);
   }
   .light-only {
     display: none !important;
@@ -309,6 +326,16 @@ hr {
   margin: 3rem 0;
 }
 
+.fineprint {
+  font-size: var(--small-text-font-size);
+  color: var(--evcc-gray);
+}
+
+.fineprint a {
+  color: var(--evcc-gray);
+  text-decoration: underline;
+}
+
 h1,
 h2,
 h3,
@@ -439,4 +466,60 @@ footer .icon {
   overflow: hidden;
   margin: 4px;
   border-radius: 50%;
+}
+
+.telemetry_inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.telemetry_box {
+  display: flex;
+  align-items: flex-start;
+  white-space: nowrap;
+  margin: var(--grid-gutter);
+}
+
+.telemetry_box:nth-child(1) {
+  color: var(--evcc-accent2);
+}
+
+.telemetry_box:nth-child(2) {
+  color: var(--evcc-accent1);
+}
+
+.telemetry_box:nth-child(3) {
+  color: var(--evcc-accent3);
+}
+
+.telemetry_icon {
+  margin-right: 1em;
+  width: 4rem !important;
+  flex-shrink: 0;
+}
+
+.telemetry_title {
+  font-size: var(--small-text-font-size);
+  font-weight: bold;
+}
+
+.telemetry_value {
+  display: block;
+  font-weight: bold;
+  font-size: 2em;
+  margin: 0.1em 0;
+}
+
+.telemetry_unit {
+  font-size: var(--small-text-font-size);
+}
+
+.telemetry_sub {
+  font-size: var(--small-text-font-size);
+  color: var(--evcc-gray);
+}
+
+.telemetry .fineprint {
+  text-align: center;
 }
