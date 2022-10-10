@@ -17,17 +17,16 @@
 
   /* app colors */
   --evcc-green: #baffcb;
-	--evcc-dark-green: #0fde41;
-	--evcc-darker-green: #0ba631;
-	--evcc-darkest-green: #076f20;
-	--evcc-yellow: #faf000;
-	--evcc-dark-yellow: #bbb400;
+  --evcc-dark-green: #0fde41;
+  --evcc-darker-green: #0ba631;
+  --evcc-darkest-green: #076f20;
+  --evcc-yellow: #faf000;
+  --evcc-dark-yellow: #bbb400;
   --evcc-gray: #93949e;
 
-
   --evcc-accent1: var(--evcc-dark-yellow);
-	--evcc-accent2: var(--evcc-darker-green);
-	--evcc-accent3: var(--evcc-darkest-green);
+  --evcc-accent2: var(--evcc-darker-green);
+  --evcc-accent3: var(--evcc-darkest-green);
 }
 
 @media (max-width: 499px) {
