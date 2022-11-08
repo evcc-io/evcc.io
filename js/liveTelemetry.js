@@ -253,7 +253,7 @@
   }();
 
   // <stdin>
-  var UPDATE_INTERVAL_SECONDS = 5;
+  var UPDATE_INTERVAL_SECONDS = 10;
   function createCounter(id, value, decimalPlaces) {
     return new CountUp(id, value, {
       startVal: value,
