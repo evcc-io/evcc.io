@@ -8,18 +8,19 @@ on:
   push:
     branches:
       - main # Set a branch to deploy
-
+  schedule:
+    - cron: 0 5 * * 0-6
 jobs:
   deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           submodules: true # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
       - name: Generate Sponsors 💖
-        uses: JamesIves/github-sponsors-readme-action@1.0.5
+        uses: JamesIves/github-sponsors-readme-action@v1
         with:
           token: ${{ secrets.GH_API_TOKEN }}
           file: "layouts/shortcodes/sponsors.html"
