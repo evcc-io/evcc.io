@@ -19,13 +19,23 @@ jobs:
           submodules: true # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Generate Sponsors 💖
+      - name: Generate Sponsors 💚🙋‍♂️
         uses: JamesIves/github-sponsors-readme-action@v1
         with:
           token: ${{ secrets.GH_API_TOKEN }}
           file: "layouts/shortcodes/sponsors.html"
           minimum: 500
+          organization: false
+          marker: andig-sponsors
+
+      - name: Generate Sponsors 💚🏢
+        uses: JamesIves/github-sponsors-readme-action@v1
+        with:
+          token: ${{ secrets.GH_API_TOKEN_ORG }}
+          file: "layouts/shortcodes/sponsors.html"
+          minimum: 500
           organization: true
+          marker: org-sponsors
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
