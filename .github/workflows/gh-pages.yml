@@ -20,16 +20,16 @@ jobs:
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
       - name: Generate Sponsors 💚🏢
-        uses: naltatis/github-sponsors-readme-action@v1.2
+        uses: naltatis/github-sponsors-readme-action@v1.3
         with:
-          token: ${{ secrets.GH_API_TOKEN_ORG }}
+          token: ${{ secrets.GH_API_TOKEN }}
           file: "layouts/shortcodes/sponsors.html"
           minimum: 500
           organization: true
           marker: org-sponsors
 
       - name: Generate Sponsors 💚🙋‍♂️
-        uses: naltatis/github-sponsors-readme-action@v1.2
+        uses: naltatis/github-sponsors-readme-action@v1.3
         with:
           token: ${{ secrets.GH_API_TOKEN }}
           file: "layouts/shortcodes/sponsors.html"
