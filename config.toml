@@ -1,8 +1,17 @@
 baseURL = ""
 relativeURLs = true
-languageCode = "de-de"
-title = "evcc - Sonne tanken ☀️🚘 - PV-Überschussladen für steuerbare Wallboxen"
 
+languageCode = "de-de"
+defaultContentLanguage = "de"
+[languages]
+  [languages.de]
+    weight = 1
+    languageName = "Deutsch"
+    title = "evcc - Sonne tanken ☀️🚘 - PV-Überschussladen für steuerbare Wallboxen"
+  [languages.en]
+    weight = 2
+    languageName = "English"
+    title = "evcc - Sunny tank ☀️🚘 - PV Surplus Charging for compatible Wallboxes"
 [site]
   [params]
   description = "evcc ermöglicht es Elektrofahrzeuge mit möglichst viel selbsterzeugten Solarstrom zu laden."

@@ -14,14 +14,19 @@
           />
           <path d="M0 0h170v76H0z" fill="none" />
         </svg>
-        <span>Sonne tanken</span>
+        <span>{{i18n "sonne_tanken"}}</span>
       </a>
       <nav class="header__navigation">
-        <a href="https://docs.evcc.io/blog" class="header__navigation__item">Blog</a>
-        <a href="https://docs.evcc.io" class="header__navigation__item hide-lg">Doku</a>
-        <a href="https://docs.evcc.io" class="header__navigation__item hide-sm">Dokumentation</a>
+        <a href="https://docs.evcc.io/blog" class="header__navigation__item">{{ i18n "blog" }}</a>
+        <a href="https://docs.evcc.io" class="header__navigation__item hide-lg">{{ i18n "dokumentation-short" }}</a>
+        <a href="https://docs.evcc.io" class="header__navigation__item hide-sm">{{ i18n "dokumentation" }}</a>
         <a href="https://github.com/evcc-io/evcc" class="header__navigation__item">GitHub</a>
-      </nav>
+        {{ range $.Site.Home.AllTranslations }}
+        {{ if not (eq .Language.Lang $.Site.Language.Lang) }}
+        <a href="{{ .Permalink }}" class="header__navigation__item">{{ .Language.LanguageName }}</a>
+        {{ end }}
+        {{ end }}
+      </nav>  
       <div class="header__button hide-sm">
         <a
           class="github-button"
