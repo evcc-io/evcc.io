@@ -43,13 +43,16 @@
 [hier]
   other = 'Hier'
 
+[blog]
+  other = 'Blog'
+
 [sonne_tanken]
   other = 'Sonne tanken'
 
 [dokumentation]
   other = 'Dokumentation'
 
-[dockumentation-short]
+[dokumentation-short]
   other = 'Docu'
 
 [impressum]
