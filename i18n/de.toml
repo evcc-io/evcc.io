@@ -37,17 +37,11 @@
 [siet_date]
   other = 'Siet {{ . }}'
 
-[zusammengefasste_ladedaten]
-  other = 'teilnehmende Sponsoren haben zu diesen aggregierten Lastdaten beigetragen'
-
-[erfahrst_du_wie_du_mit_dabei_sein_kannst]
-  other = 'erfährst du, wie du mit dabei sein kannst'
-
 [startseite]
   other = 'Startseite'
 
 [hier]
-  other = 'hier'
+  other = 'Hier'
 
 [sonne_tanken]
   other = 'Sonne tanken'

@@ -37,17 +37,11 @@
 [siet_date]
   other = 'Since {{ . }}'
 
-[zusammengefasste_ladedaten]
-  other = 'participating Sponsors contributed to this summarised data'
-
-[erfahrst_du_wie_du_mit_dabei_sein_kannst]
-  other = 'Find out you can contribute'
-
 [startseite]
   other = 'Home'
 
 [hier]
-  other = 'here'
+  other = 'Here'
 
 [sonne_tanken]
   other = 'Sunny tank'
