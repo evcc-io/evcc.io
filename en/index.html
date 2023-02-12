@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="de"><head>
+<html lang="en"><head>
 	<meta name="generator" content="Hugo 0.91.2" />
   <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-  <title>evcc - Sonne tanken ☀️🚘 - PV-Überschussladen für steuerbare Wallboxen</title>
+  <title>evcc - Solar Charging ☀️🚘 - Connects Your EV Charger With Your PV System</title>
 
   
   
@@ -16,9 +16,9 @@
   
   
   
+  <link rel="alternate" hreflang="de" href="de/" />
   
   
-  <link rel="alternate" hreflang="en" href="en/" />
   
   
   
@@ -26,7 +26,7 @@
   <meta property="og:title" content="" />
 <meta property="og:description" content="evcc ermöglicht es Elektrofahrzeuge mit möglichst viel selbsterzeugten Solarstrom zu laden." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="/" /><meta property="og:site_name" content="evcc - Sonne tanken ☀️🚘 - PV-Überschussladen für steuerbare Wallboxen" />
+<meta property="og:url" content="/en/" /><meta property="og:site_name" content="evcc - Solar Charging ☀️🚘 - Connects Your EV Charger With Your PV System" />
 
 
   <meta name="twitter:card" content="summary"/>
@@ -36,7 +36,7 @@
   <meta itemprop="name" content="">
 <meta itemprop="description" content="evcc ermöglicht es Elektrofahrzeuge mit möglichst viel selbsterzeugten Solarstrom zu laden.">
 
-<link href="./css/main.css" rel="stylesheet" />
+<link href="../css/main.css" rel="stylesheet" />
 <link
     rel="preload"
     href="fonts/roboto-v20-latin-regular.woff2"
@@ -55,7 +55,7 @@
 <body><header class="header">
   <div class="header__top">
     <div class="header__inner">
-      <a href="./" class="header__logo">
+      <a href="../" class="header__logo">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 76">
           <title>evcc Logo</title>
           <path
@@ -68,19 +68,19 @@
           />
           <path d="M0 0h170v76H0z" fill="none" />
         </svg>
-        <span>Sonne tanken</span>
+        <span>solar charging</span>
       </a>
       <nav class="header__navigation">
         <a href="https://docs.evcc.io/blog" class="header__navigation__item">Blog</a>
-        <a href="https://docs.evcc.io" class="header__navigation__item hide-lg">Doku</a>
-        <a href="https://docs.evcc.io" class="header__navigation__item hide-sm">Dokumentation</a>
+        <a href="https://docs.evcc.io" class="header__navigation__item hide-lg">Docs</a>
+        <a href="https://docs.evcc.io" class="header__navigation__item hide-sm">Documentation</a>
         <a href="https://github.com/evcc-io/evcc" class="header__navigation__item">GitHub</a>
         <div class="header__navigation__item header__navigation__item--translation">
         
-          <a href="./" class="header__navigation__lang header__navigation__lang--active">DE</a>
+          <a href="../" class="header__navigation__lang">DE</a>
           <span> | </span>
         
-          <a href="./en/" class="header__navigation__lang">EN</a>
+          <a href="../en/" class="header__navigation__lang header__navigation__lang--active">EN</a>
           
         
         </div>
@@ -92,25 +92,27 @@
       class="header__hero"
       width="1440"
       height="354"
-      src="./img/evcc-hero.svg"
+      src="../img/evcc-hero.svg"
       alt="Elektroauto lädt Solarstrom an einer Wallbox. Person verwendet evcc auf dem Smartphone."
       draggable="false"
     />
   </div>
 </header>
 <main class="content">
-  <h1 id="sonne-tanken-ganz-einfach">Sonne tanken. Ganz einfach.</h1>
-<p>evcc ist angetreten, die Nachhaltigkeit beim Laden unserer Elektrofahrzeuge zu optimieren. Dazu ermöglicht evcc das Laden mit möglichst viel selbsterzeugten Solarstrom. In den meisten Fällen ist das sogar ohne weitere Änderung an der bestehenden Haus-Elektroinstallation möglich.</p>
+  <h1 id="solar-charging-super-simple">Solar Charging. Super simple.</h1>
+<p>evcc optimises sustainability when charging electric vehicles.
+It enables charging using as much self-generated power as possible.
+And best of all, it can do so in most cases without any further modification to your house&rsquo;s existing electrical installation.</p>
 <hr>
 <aside class="telemetry" id="live">
-  <h2>Livedaten aus der Community</h2>
+  <h2>Live Data from the Community</h2>
   <div class="telemetry_inner">
     <div class="telemetry_box">
       <shopicon-regular-car3 class="telemetry_icon" size="xl"></shopicon-regular-car3>
       <div class="telemetry_details">
         <div class="telemetry_main">
           <div class="telemetry_title">
-            Ladeleistung
+            Charging Power
           </div>
           <div class="telemetry_value">
             <span id="telemetry--power"></span>
@@ -118,7 +120,7 @@
           </div>
 
         </div>
-        <div class="telemetry_sub"><span id="telemetry--activeClients"></span> Aktive Nutzer</div>
+        <div class="telemetry_sub"><span id="telemetry--activeClients"></span> active clients</div>
       </div>
     </div>
     <div class="telemetry_box">
@@ -126,14 +128,14 @@
       <div class="telemetry_details">
         <div class="telemetry_main">
           <div class="telemetry_title">
-            Sonnenanteil
+            Sun Share
           </div>
           <div class="telemetry_value">
             <span id="telemetry--greenPower"></span>
             <span class="telemetry_unit">%</span>
           </div>
         </div>
-        <div class="telemetry_sub">PV &amp; Hausakku</div>
+        <div class="telemetry_sub">PV &amp; battery</div>
       </div>
     </div>
     <div class="telemetry_box">
@@ -141,7 +143,7 @@
       <div class="telemetry_details">
         <div class="telemetry_main">
           <div class="telemetry_title">
-            Sonnenenergie
+            Solar Energy
           </div>
           <div class="telemetry_value">
             <span id="telemetry--greenEnergy"></span>
@@ -149,39 +151,39 @@
           </div>
         </div>
         <div class="telemetry_sub">
-          seit Oktober 2022
+          since October 2022
         </div>
       </div>
     </div>
   </div>
   <p class="fineprint">
-    Zusammengefasste Ladedaten von <span id="telemetry--totalClients"></span> teilnehmenden Sponsoren.
+    <span id="telemetry--totalClients"></span> participating sponsors contributed to this summarised data.
     <br>
-    <a href="https://docs.evcc.io/docs/reference/configuration/telemetry">Hier</a> erfährst du, wie du mit dabei sein kannst.
+    Find out how you can contribute <a href="https://docs.evcc.io/docs/reference/configuration/telemetry">here</a>!
   </p>
 </aside>
 <hr>
-<h2 id="was-evcc-besonders-macht">Was evcc besonders macht</h2>
+<h2 id="what-makes-evcc-special">What makes evcc special?</h2>
 <ul>
-<li>Lade dein Elektrofahrzeug mit eigenem PV Überschussstrom</li>
-<li>Nutze bereits vorhandene Systeme (PV- und Batteriewechselrichter, Wallboxen, Energiezähler)</li>
-<li>Intuitive und übersichtliche Benutzeroberfläche</li>
+<li>Charge your EV with your excess solar power</li>
+<li>Use your existing systems (solar and battery inverters, wallboxes, energy meters, etc.)</li>
+<li>Intuitive, clean, and responsive user interface</li>
 <li>100 % Open Source</li>
 </ul>
 <hr>
-<h2 id="responsive-benutzeroberfläche">Responsive Benutzeroberfläche</h2>
+<h2 id="responsive-interface">Responsive Interface</h2>
 <div class="screenshots">
   <div class="screenshots_container">
     <div class="screenshots_inner">
       
 <a
-  href="./img/screenshots/1_evcc_mobile_standard_light.png"
+  href="../img/screenshots/1_evcc_mobile_standard_light.png"
   class="screenshot light-only"
   data-glightbox
   data-gallery="light"
 >
   <img
-    src="./img/screenshots-small/1_evcc_mobile_standard_light.png"
+    src="../img/screenshots-small/1_evcc_mobile_standard_light.png"
     height="1000"
     width="508"
     alt="1_evcc_mobile_standard"
@@ -189,13 +191,13 @@
   />
 </a>
 <a
-  href="./img/screenshots/1_evcc_mobile_standard_dark.png"
+  href="../img/screenshots/1_evcc_mobile_standard_dark.png"
   class="screenshot dark-only"
   data-glightbox
   data-gallery="dark"
 >
   <img
-    src="./img/screenshots-small/1_evcc_mobile_standard_dark.png"
+    src="../img/screenshots-small/1_evcc_mobile_standard_dark.png"
     height="1000"
     width="508"
     alt="1_evcc_mobile_standard"
@@ -203,13 +205,13 @@
   />
 </a>
 <a
-  href="./img/screenshots/2_evcc_mobile_details_light.png"
+  href="../img/screenshots/2_evcc_mobile_details_light.png"
   class="screenshot light-only"
   data-glightbox
   data-gallery="light"
 >
   <img
-    src="./img/screenshots-small/2_evcc_mobile_details_light.png"
+    src="../img/screenshots-small/2_evcc_mobile_details_light.png"
     height="1000"
     width="508"
     alt="2_evcc_mobile_details"
@@ -217,13 +219,13 @@
   />
 </a>
 <a
-  href="./img/screenshots/2_evcc_mobile_details_dark.png"
+  href="../img/screenshots/2_evcc_mobile_details_dark.png"
   class="screenshot dark-only"
   data-glightbox
   data-gallery="dark"
 >
   <img
-    src="./img/screenshots-small/2_evcc_mobile_details_dark.png"
+    src="../img/screenshots-small/2_evcc_mobile_details_dark.png"
     height="1000"
     width="508"
     alt="2_evcc_mobile_details"
@@ -231,13 +233,13 @@
   />
 </a>
 <a
-  href="./img/screenshots/3_evcc_mobile_savings_light.png"
+  href="../img/screenshots/3_evcc_mobile_savings_light.png"
   class="screenshot light-only"
   data-glightbox
   data-gallery="light"
 >
   <img
-    src="./img/screenshots-small/3_evcc_mobile_savings_light.png"
+    src="../img/screenshots-small/3_evcc_mobile_savings_light.png"
     height="1000"
     width="508"
     alt="3_evcc_mobile_savings"
@@ -245,13 +247,13 @@
   />
 </a>
 <a
-  href="./img/screenshots/3_evcc_mobile_savings_dark.png"
+  href="../img/screenshots/3_evcc_mobile_savings_dark.png"
   class="screenshot dark-only"
   data-glightbox
   data-gallery="dark"
 >
   <img
-    src="./img/screenshots-small/3_evcc_mobile_savings_dark.png"
+    src="../img/screenshots-small/3_evcc_mobile_savings_dark.png"
     height="1000"
     width="508"
     alt="3_evcc_mobile_savings"
@@ -259,13 +261,13 @@
   />
 </a>
 <a
-  href="./img/screenshots/4_evcc_tablet_standard_light.png"
+  href="../img/screenshots/4_evcc_tablet_standard_light.png"
   class="screenshot light-only"
   data-glightbox
   data-gallery="light"
 >
   <img
-    src="./img/screenshots-small/4_evcc_tablet_standard_light.png"
+    src="../img/screenshots-small/4_evcc_tablet_standard_light.png"
     height="1000"
     width="1387"
     alt="4_evcc_tablet_standard"
@@ -273,13 +275,13 @@
   />
 </a>
 <a
-  href="./img/screenshots/4_evcc_tablet_standard_dark.png"
+  href="../img/screenshots/4_evcc_tablet_standard_dark.png"
   class="screenshot dark-only"
   data-glightbox
   data-gallery="dark"
 >
   <img
-    src="./img/screenshots-small/4_evcc_tablet_standard_dark.png"
+    src="../img/screenshots-small/4_evcc_tablet_standard_dark.png"
     height="1000"
     width="1387"
     alt="4_evcc_tablet_standard"
@@ -287,13 +289,13 @@
   />
 </a>
 <a
-  href="./img/screenshots/5_evcc_tablet_details_light.png"
+  href="../img/screenshots/5_evcc_tablet_details_light.png"
   class="screenshot light-only"
   data-glightbox
   data-gallery="light"
 >
   <img
-    src="./img/screenshots-small/5_evcc_tablet_details_light.png"
+    src="../img/screenshots-small/5_evcc_tablet_details_light.png"
     height="1000"
     width="1387"
     alt="5_evcc_tablet_details"
@@ -301,13 +303,13 @@
   />
 </a>
 <a
-  href="./img/screenshots/5_evcc_tablet_details_dark.png"
+  href="../img/screenshots/5_evcc_tablet_details_dark.png"
   class="screenshot dark-only"
   data-glightbox
   data-gallery="dark"
 >
   <img
-    src="./img/screenshots-small/5_evcc_tablet_details_dark.png"
+    src="../img/screenshots-small/5_evcc_tablet_details_dark.png"
     height="1000"
     width="1387"
     alt="5_evcc_tablet_details"
@@ -329,21 +331,21 @@
 </script>
 
 <hr>
-<h2 id="wie-evcc-funktioniert">Wie evcc funktioniert</h2>
-<img class="image--full" src="img/evcc-schema.svg" alt="Darstellung der Funktionsweise" width="200" height="100" draggable="false"/>
+<h2 id="how-evcc-works">How evcc works</h2>
+<img class="image--full" src="../img/evcc-schema.svg" alt="How it works" width="200" height="100" draggable="false"/>
 
-<p>Den eigenen Sonnenstrom zum Laden des Autos zu verwenden bedeutet den Eigenverbrauch zu erhöhen und damit den Strom nicht ins Netz abzugeben sondern selbst zu nutzen.</p>
-<p>Bereits heute werden zahlreiche Hersteller von Wallboxen unterstützt und evcc ermöglicht es die Stromstärke, mit der das Auto geladen wird, zu steuern. Das heißt, wenn viel Sonnenstrom erzeugt wird, erlaubt evcc das angeschlossene Auto mit hoher Leistung zu laden. Wird weniger Strom erzeugt, verlangsamt oder pausiert evcc den Ladevorgang.</p>
-<p>Damit evcc die Ladung bestmöglich regeln kann, ist ein Messgerät (= auslesbarer Energiezähler) am Netzanschluss der Hausinstallation notwendig. Durch dieses Messgerät kennt evcc den momentanen Energieüberschuss und kann die Ladeleistung kontinuierlich anpassen. Das Gute ist, dass in fast jeder vorhandenen PV-Anlage ein entsprechendes Gerät bereits vorhanden ist oder einfach nachgerüstet werden kann.</p>
-<p>Ist ein durch evcc unterstütztes Elektrofahrzeug eingerichtet, kann dessen momentaner Batterieladezustand und Reichweite angezeigt und in der Ladeplanung mit berücksichtigt werden - auch, wenn die Sonne ab und an mal nicht so viel scheint, bleibt so die Mobilität sichergestellt.</p>
-<p>Und noch etwas kann evcc: Ist ein unterstützter Batteriespeicher vorhanden, wird auch dessen Ladezustand gesteuert und mit Sonnenstrom versorgt.</p>
+<p>Using your own solar power to charge the car helps increase self-consumption - that is, using the electricity yourself instead of supplying it to the grid.</p>
+<p>evcc makes it possible to control the current of your wallbox. We already support a wide range of chargers. If a lot of solar power is being generated, evcc allows the charger to charge the car with lots of solar power. Inversely, if less solar power is available, evcc slows down (or even pauses) charging.</p>
+<p>evcc needs a grid energy meter to work properly. Using this measuring device, evcc knows the current excess of energy and can continuously adjust the charging power appropriately. The good news - almost every existing solar systems already contain the necessary energy meters. If not, you can easily add your own.</p>
+<p>If a supported vehicle is set up, evcc can take its current battery charging status and range into account when planning charging - even if the sun&rsquo;s not out, it&rsquo;ll still make sure you&rsquo;ll have enough range for your daily trips.</p>
+<p>And if you have a supported battery storage system available, evcc can also control its state of charge, managing it against your vehicle seamlessly.</p>
 <aside class="infobox">
-  <h2>Unterstützte und getestete Komponenten</h2>
+  <h2>Supported and Tested Components</h2>
   <div class="infobox_inner">
     
 <div class="infobox_entry">
-  <img src="img/evcc-illu-wallbox.svg" alt="Wallboxen &amp; Steckdosen" width="140" height="140" draggable="false" />
-  <h3>Wallboxen &amp; Steckdosen</h3>
+  <img src="../img/evcc-illu-wallbox.svg" alt="Wallboxes &amp; Sockets" width="140" height="140" draggable="false" />
+  <h3>Wallboxes &amp; Sockets</h3>
   
 
 <p class="products group-Chargers">
@@ -358,8 +360,8 @@
 
 
 <div class="infobox_entry">
-  <img src="img/evcc-illu-energiemessung.svg" alt="Energiemesstechnik" width="140" height="140" draggable="false" />
-  <h3>Energiemesstechnik</h3>
+  <img src="../img/evcc-illu-energiemessung.svg" alt="Energy Measurement" width="140" height="140" draggable="false" />
+  <h3>Energy Measurement</h3>
   
 
 <p class="products group-Meters">
@@ -370,8 +372,8 @@
 
 
 <div class="infobox_entry">
-  <img src="img/evcc-illu-wechselrichter.svg" alt="Wechselrichter &amp; Speichersysteme" width="140" height="140" draggable="false" />
-  <h3>Wechselrichter &amp; Speichersysteme</h3>
+  <img src="../img/evcc-illu-wechselrichter.svg" alt="Inverters &amp; Storage Systems" width="140" height="140" draggable="false" />
+  <h3>Inverters &amp; Storage Systems</h3>
   
 
 <p class="products group-PVBattery">
@@ -382,8 +384,8 @@
 
 
 <div class="infobox_entry">
-  <img src="img/evcc-illu-fahrzeuge.svg" alt="Fahrzeuge" width="140" height="140" draggable="false" />
-  <h3>Fahrzeuge</h3>
+  <img src="../img/evcc-illu-fahrzeuge.svg" alt="Vehicles" width="140" height="140" draggable="false" />
+  <h3>Vehicles</h3>
   
 
 <p class="products group-Vehicles">
@@ -395,38 +397,36 @@
 
   </div>
 </aside>
-<p>evcc setzt bei der Anbindung der Komponenten auf weit verbreitete Schnittstellen und Protokolle, wie z.B. Modbus, SunSpec, HTTP, JSON, REST sowie MQTT.
-Damit lassen sich nahezu alle am Markt verfügbaren und vorhandenen Produkte herstellerunabhängig nach den jeweiligen Erfordernissen und örtlichen Gegebenheiten anbinden.
-Um sich auch mit anderen, übergeordneten Energiemanagern abzusprechen hat evcc zusätzliche Unterstützung der Protokolle SEMP und EEBUS integriert.</p>
+<p>evcc can work with a number of widely used interfaces and protocols, such as Modbus, SunSpec, HTTP, JSON, REST, and MQTT.
+This means that almost all products available on the market today can be connected to evcc.
+And in order to work properly with other, high-level energy management systems, evcc also includes support for the SEMP and EEBUS protocols.</p>
 <hr>
-<h2 id="installiere-evcc-bei-dir-zuhause">Installiere evcc bei dir zuhause</h2>
-<h3 id="systemvorraussetzung">Systemvorraussetzung</h3>
-<p>evcc ist in Go geschrieben und sehr effizient. Es wird weder viel CPU noch RAM benötigt. Typischerweise läuft evcc auf einem <strong>Raspberry Pi</strong> oder in <strong>Docker</strong> (z.B. Synology NAS) in deinem Haus. Windows, macOS und Linux werden auch unterstützt.</p>
-<h3 id="evcc-einrichten">evcc einrichten</h3>
-<p>evcc ist sehr flexibel. Die Ersteinrichtung erfordert aktuell aber noch einige technische Kentnisse. Wenn dich die Verwendung der Kommandozeile nicht schockt und du schon mal eine YAML Datei bearbeitet hast, steht der Installation nichts im Weg.
-In der Dokumentation erfährst du alles was du wissen musst.</p>
+<h2 id="install-evcc-at-your-home">Install evcc at your home</h2>
+<h3 id="system-requirements">System Requirements</h3>
+<p>evcc is written in Go, and is extremely efficient. You don&rsquo;t need a system with a lot of CPU or RAM - typically you can run it on a <strong>Raspberry Pi</strong> or in <strong>Docker</strong> (e.g. Synology NAS). Windows, macOS and Linux are all fully supported.</p>
+<h3 id="setting-up-evcc">Setting up evcc</h3>
+<p>evcc is very flexible. However, the initial setup still requires a fair amount of technical knowledge. If you&rsquo;re familiar with the command line, and you&rsquo;ve ever edited a YAML file, then you should be able to get it configured. You&rsquo;ll find everyting you need to know in the documentation.</p>
 <p class="button-container">
   <a href="https://docs.evcc.io/" class="button button--cta">
     
-Getting Started
+Getting Started (German)
 
   </a>
 </p>
 <hr>
-<h2 id="unterstütze-das-projekt">Unterstütze das Projekt</h2>
-<h3 id="aktiv-teilnehmen">Aktiv teilnehmen</h3>
-<p>Werde Teil unseres Entwicklungsteams und hilf mit, dein installiertes System zu unterstützen, Fehler zu korrigieren und die Dokumentation zu verbessern.</p>
-<p>Informiere dich, stelle Fragen und erhalte Unterstützung von anderen Anwendern und Entwicklern im <a href="https://github.com/evcc-io/evcc/discussions">Forum</a>.
-Oder komm in unseren Chat, lerne uns kennen und diskutiere mit uns: <a href="./slack">Slack</a></p>
-<h3 id="finanzieller-support">Finanzieller Support</h3>
-<p>Alle Beteiligten arbeiten an evcc in ihrer Freizeit. Du kannst uns gerne <a href="https://docs.evcc.io/docs/sponsorship">als GitHub Sponsor unterstützen</a>.</p>
-<p>Arbeitest du in einer Firma welche Wallboxen, Energiemesssysteme oder PV-Systeme anbietet? Möchtest du euren Kunden das Laden mit eigenem Sonnenstrom ermöglichen? Sprich uns gerne an. Eigene Code-Beiträge und Hardware-Sponsoring helfen uns die Fähigkeiten von evcc auszubauen.</p>
-<h2 id="sponsoren">Sponsoren</h2>
+<h2 id="support-the-project">Support the Project</h2>
+<h3 id="actively-participating">Actively Participating</h3>
+<p>Join the development team, and help us support the project by fixing bugs, adding features, and improving documentation.</p>
+<p>You can get in touch, ask questions, and get support from other users in the <a href="https://github.com/evcc-io/evcc/discussions">Forum</a>. Feel free to chat with us on our <a href="../slack">Slack</a>. We don&rsquo;t bite!</p>
+<h3 id="financial-support">Financial Support</h3>
+<p>Everyone working on evcc is doing it in their spare time. You&rsquo;re welcome to support us as a <a href="https://docs.evcc.io/docs/sponsorship">GitHub sponsor</a>.</p>
+<p>You work for a company which offers wallboxes, energy measurement systems, or solar / PV systems? Do you want to help enable your customers to charge their cars with their own solar power? Get in touch with us. Contributing code or sponsoring us with hardware greatly helps us to expand evcc&rsquo;s capabilities.</p>
+<h2 id="sponsors">Sponsors</h2>
 <div class="sponsors">
   <div class="sponsor-logos">
     <a href="https://www.h2d2.de/" target="blank"
       ><img
-        src="./img/sponsors/h2d2.svg"
+        src="../img/sponsors/h2d2.svg"
         title="H2D2 - UX und UI Agentur aus Berlin"
         width="70"
         height="70"
@@ -434,7 +434,7 @@ Oder komm in unseren Chat, lerne uns kennen und diskutiere mit uns: <a href="./s
     /></a>
     <a href="https://www.daheimladen.de/" target="blank"
       ><img
-        src="./img/sponsors/daheimladen.png"
+        src="../img/sponsors/daheimladen.png"
         title="DaheimLaden Wallboxen"
         width="600"
         height="60"
@@ -442,14 +442,14 @@ Oder komm in unseren Chat, lerne uns kennen und diskutiere mit uns: <a href="./s
     /></a>
     <a href="https://www.tinkerforge.com/" target="blank"
       ><img
-        src="./img/sponsors/warp-by-tinkerforge.png"
+        src="../img/sponsors/warp-by-tinkerforge.png"
         title="Warp by Tinkerforge"
         width="200"
         loading="lazy"
     /></a>
     <a href="https://dadapower.de/" target="blank"
       ><img
-        src="./img/sponsors/dadapower.svg"
+        src="../img/sponsors/dadapower.svg"
         title="DaDaPower"
         width="1850"
         height="350"
@@ -480,14 +480,14 @@ Oder komm in unseren Chat, lerne uns kennen und diskutiere mit uns: <a href="./s
   <a href="https://www.instagram.com/evcc.io/">
     <shopicon-regular-instagram class="icon"></shopicon-regular-instagram>Instagram
   </a>
-  <a href="./slack">
-    <shopicon-regular-chat class="icon"></shopicon-regular-chat>Entwickler Slack
+  <a href="../slack">
+    <shopicon-regular-chat class="icon"></shopicon-regular-chat>Developer Slack
   </a>
-  <a href="https://docs.evcc.io">Dokumentation</a>
-  <a href="./impressum/">Impressum</a>
-  <a href="./datenschutz/">Datenschutz</a>
+  <a href="https://docs.evcc.io">Documentation</a>
+  <a href="../impressum/">Legal Notice</a>
+  <a href="../datenschutz/">Privacy Policy</a>
 </footer>
-<script src="./js/liveTelemetry.js" type="module"></script><script
+<script src="../js/liveTelemetry.js" type="module"></script><script
       src="https://cdn.jsdelivr.net/npm/@h2d2/shopicons@1.7.0/umd/regular.js"
       async
     ></script>
