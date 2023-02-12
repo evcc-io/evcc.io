@@ -1,0 +1,62 @@
+[evcc]
+  other = 'evcc'
+
+[github]
+  other = 'GitHub'
+
+[twitter]
+  other = 'Twitter'
+
+[mastodon]
+  other = 'Mastodon'
+
+[instagram]
+  other = 'Instagram'
+
+[slack]
+  other = 'Entwickler Slack'
+
+[livedaten_aus_der_community]
+  other = 'Livedaten aus der Community'
+
+[ladeleistung]
+  other = 'Ladeleistung'
+
+[aktive_nutzer]
+  other = 'Aktive Nutzer'
+
+[sonnenanteil]
+  other = 'Sonnenanteil'
+
+[pv_hausakku]
+  other = 'PV & Hausakku'
+
+[sonnenenergie]
+  other = 'Sonnenenergie'
+
+[siet_date]
+  other = 'seit {{ . }}'
+
+[startseite]
+  other = 'Startseite'
+
+[hier]
+  other = 'Hier'
+
+[blog]
+  other = 'Blog'
+
+[sonne_tanken]
+  other = 'Sonne tanken'
+
+[dokumentation]
+  other = 'Dokumentation'
+
+[dokumentation-short]
+  other = 'Doku'
+
+[impressum]
+  other = 'Impressum'
+
+[datenschutz]
+  other = 'Datenschutz'
