@@ -15,6 +15,14 @@
   {{ end }}
   <meta name="viewport" content="width=device-width" />
 
+  {{ if .Site.IsMultiLingual }}
+  {{ range .Site.Languages }}
+  {{ if ne . $.Site.Language }}
+  <link rel="alternate" hreflang="{{.}}" href="{{ $.Site.BaseURL }}{{.}}/" />
+  {{ end }}
+  {{ end }}
+  {{ end }}
+
   {{ template "_internal/opengraph.html" . }}
   {{ template "_internal/twitter_cards.html" . }}
   {{ template "_internal/schema.html" . }}
@@ -35,5 +43,4 @@
     type="font/woff2"
     crossorigin
   />
-  <script async defer src="https://buttons.github.io/buttons.js" async></script>
 </head>

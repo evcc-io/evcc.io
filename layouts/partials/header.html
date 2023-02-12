@@ -21,22 +21,13 @@
         <a href="https://docs.evcc.io" class="header__navigation__item hide-lg">{{ i18n "dokumentation-short" }}</a>
         <a href="https://docs.evcc.io" class="header__navigation__item hide-sm">{{ i18n "dokumentation" }}</a>
         <a href="https://github.com/evcc-io/evcc" class="header__navigation__item">GitHub</a>
-        {{ range $.Site.Home.AllTranslations }}
-        {{ if not (eq .Language.Lang $.Site.Language.Lang) }}
-        <a href="{{ .Permalink }}" class="header__navigation__item">{{ .Language.LanguageName }}</a>
+        <div class="header__navigation__item header__navigation__item--translation">
+        {{ range $index, $element := $.Site.Home.AllTranslations }}
+          <a href="{{ .Permalink }}" class="header__navigation__lang{{ if (eq .Language.Lang $.Site.Language.Lang) }} header__navigation__lang--active{{ end }}">{{ .Language.LanguageName }}</a>
+          {{ if not (eq (add $index 1) (len $.Site.Home.AllTranslations)) }}<span> | </span>{{ end }}
         {{ end }}
-        {{ end }}
-      </nav>  
-      <div class="header__button hide-sm">
-        <a
-          class="github-button"
-          href="https://github.com/evcc-io/evcc"
-          data-size="large"
-          data-show-count="true"
-          aria-label="Star evcc-io/evcc on GitHub"
-          >Star</a
-        >
-      </div>
+        </div>
+      </nav>
     </div>
   </div>
   <div class="header__hero__wrapper">

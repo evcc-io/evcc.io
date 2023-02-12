@@ -149,23 +149,36 @@ a:hover {
   flex-grow: 1;
   justify-content: flex-end;
   overflow: hidden;
+  flex-wrap: wrap;
 }
 
 .header__navigation__item {
   color: #18191a;
   font-size: 18px;
-  padding: 8px;
+  padding: 2px 8px;
   margin-right: 8px;
   overflow: hidden;
 }
 
-@media (max-width: 499px) {
+.header__navigation__lang {
+  color: #18191a;
+}
+
+.header__navigation__lang--active {
+  color: #18191a;
+  text-decoration: underline;
+}
+
+@media (max-width: 699px) {
   .header__logo span,
   .hide-sm {
     display: none;
   }
+  .header__navigation__item--translation {
+    display: block;
+  }
 }
-@media (min-width: 500px) {
+@media (min-width: 700px) {
   .hide-lg {
     display: none;
   }
