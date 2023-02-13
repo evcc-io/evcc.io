@@ -1,4 +1,4 @@
-# Solar Charging. Super simple.
+# Solar charging. Super simple.
 
 evcc optimises sustainability when charging electric vehicles.
 It enables charging using as much self-generated power as possible.
@@ -19,7 +19,7 @@ And best of all, it can do so in most cases without any further modification to 
 
 ---
 
-## Responsive Interface
+## Responsive interface
 
 {{< screenshots class="content-gallery" >}}
 {{< screenshot-entry src="1_evcc_mobile_standard" width="508" >}}
@@ -72,7 +72,7 @@ And in order to work properly with other, high-level energy management systems, 
 
 ## Install evcc at your home
 
-### System Requirements
+### System requirements
 
 evcc is written in Go, and is extremely efficient. You don't need a system with a lot of CPU or RAM - typically you can run it on a **Raspberry Pi** or in **Docker** (e.g. Synology NAS). Windows, macOS and Linux are all fully supported.
 
@@ -86,15 +86,15 @@ Getting Started (German)
 
 ---
 
-## Support the Project
+## Support the project
 
-### Actively Participating
+### Actively participating
 
 Join the development team, and help us support the project by fixing bugs, adding features, and improving documentation.
 
 You can get in touch, ask questions, and get support from other users in the [Forum](https://github.com/evcc-io/evcc/discussions). Feel free to chat with us on our [Slack](/slack). We don't bite!
 
-### Financial Support
+### Financial support
 
 Everyone working on evcc is doing it in their spare time. You're welcome to support us as a [GitHub sponsor](https://docs.evcc.io/docs/sponsorship).
 
