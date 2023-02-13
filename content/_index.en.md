@@ -45,21 +45,21 @@ If a supported vehicle is set up, evcc can take its current battery charging sta
 
 And if you have a supported battery storage system available, evcc can also control its state of charge, managing it against your vehicle seamlessly.
 
-{{< infobox title="Supported and Tested Components" >}}
-{{< infobox-entry title="Wallboxes & Sockets" img="/img/evcc-illu-wallbox.svg" >}}
+{{< infobox title="supported & tested systems" >}}
+{{< infobox-entry title="wallboxes & sockets" img="/img/evcc-illu-wallbox.svg" >}}
 {{< infobox-content group="Chargers">}}
 {{< infobox-content group="SmartPlugs">}}
 {{< /infobox-entry >}}
 
-{{< infobox-entry title="Energy Measurement" img="/img/evcc-illu-energiemessung.svg" >}}
+{{< infobox-entry title="energy measurement" img="/img/evcc-illu-energiemessung.svg" >}}
 {{< infobox-content group="Meters">}}
 {{< /infobox-entry >}}
 
-{{< infobox-entry title="Inverters & Storage Systems" img="/img/evcc-illu-wechselrichter.svg" >}}
+{{< infobox-entry title="inverters & storage" img="/img/evcc-illu-wechselrichter.svg" >}}
 {{< infobox-content group="PVBattery">}}
 {{< /infobox-entry >}}
 
-{{< infobox-entry title="Vehicles" img="/img/evcc-illu-fahrzeuge.svg" >}}
+{{< infobox-entry title="vehicles" img="/img/evcc-illu-fahrzeuge.svg" >}}
 {{< infobox-content group="Vehicles">}}
 {{< /infobox-entry >}}
 {{< /infobox >}}
