@@ -18,7 +18,7 @@ hugo server -D
 
 ### Artwork
 
-evcc logos, icons and vector files can be found in [/artork](https://github.com/evcc-io/evcc.io/tree/main/artwork). Screenshots of the UI are located in [/static/img/screenshots](https://github.com/evcc-io/evcc.io/tree/main/static/img/screenshots). Feel free to use them if you create content about evcc or build software/integrations in the evcc ecosystem.
+evcc logos, icons and vector files can be found in [/artwork](https://github.com/evcc-io/evcc.io/tree/main/artwork). Screenshots of the UI are located in [/static/img/screenshots](https://github.com/evcc-io/evcc.io/tree/main/static/img/screenshots). Feel free to use them if you create content about evcc or build software/integrations in the evcc ecosystem.
 
 ### Colors
 
