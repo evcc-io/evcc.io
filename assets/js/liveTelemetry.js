@@ -25,12 +25,12 @@ function render(data) {
 
   const chargePower = data.chargePower / 1e3;
   const greenPower = (100 / data.chargePower) * data.greenPower;
-  const greenEnergy = data.greenEnergy / 1e3;
+  const greenEnergy = data.greenEnergy / 1e6;
 
   if (!powerCount) {
-    powerCount = createCounter("telemetry--power", chargePower, 1);
+    powerCount = createCounter("telemetry--power", chargePower, 0);
     greenPowerCount = createCounter("telemetry--greenPower", greenPower, 1);
-    greenEnergyCount = createCounter("telemetry--greenEnergy", greenEnergy, 0);
+    greenEnergyCount = createCounter("telemetry--greenEnergy", greenEnergy, 2);
   } else {
     powerCount.update(chargePower);
     greenPowerCount.update(greenPower);

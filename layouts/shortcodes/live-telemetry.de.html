@@ -2,7 +2,10 @@
   <h2>{{ i18n "livedaten_aus_der_community" }}</h2>
   <div class="telemetry_inner">
     <div class="telemetry_box">
-      <shopicon-regular-car3 class="telemetry_icon" size="xl"></shopicon-regular-car3>
+      <shopicon-regular-car3
+        class="telemetry_icon"
+        size="xl"
+      ></shopicon-regular-car3>
       <div class="telemetry_details">
         <div class="telemetry_main">
           <div class="telemetry_title">
@@ -12,13 +15,17 @@
             <span id="telemetry--power"></span>
             <span class="telemetry_unit">kW</span>
           </div>
-
         </div>
-        <div class="telemetry_sub"><span id="telemetry--activeClients"></span> {{ i18n "aktive_nutzer" }}</div>
+        <div class="telemetry_sub">
+          <span id="telemetry--activeClients"></span> {{ i18n "aktive_nutzer" }}
+        </div>
       </div>
     </div>
     <div class="telemetry_box">
-      <shopicon-regular-sun class="telemetry_icon" size="xl"></shopicon-regular-sun>
+      <shopicon-regular-sun
+        class="telemetry_icon"
+        size="xl"
+      ></shopicon-regular-sun>
       <div class="telemetry_details">
         <div class="telemetry_main">
           <div class="telemetry_title">
@@ -33,7 +40,10 @@
       </div>
     </div>
     <div class="telemetry_box">
-      <shopicon-regular-eco1 class="telemetry_icon" size="xl"></shopicon-regular-eco1>
+      <shopicon-regular-eco1
+        class="telemetry_icon"
+        size="xl"
+      ></shopicon-regular-eco1>
       <div class="telemetry_details">
         <div class="telemetry_main">
           <div class="telemetry_title">
@@ -41,7 +51,7 @@
           </div>
           <div class="telemetry_value">
             <span id="telemetry--greenEnergy"></span>
-            <span class="telemetry_unit">MWh</span>
+            <span class="telemetry_unit">GWh</span>
           </div>
         </div>
         <div class="telemetry_sub">
@@ -51,8 +61,12 @@
     </div>
   </div>
   <p class="fineprint">
-    Zusammengefasste Ladedaten von <span id="telemetry--totalClients"></span> teilnehmenden Sponsoren.
-    <br>
-    <a href="https://docs.evcc.io/docs/reference/configuration/telemetry">{{ i18n "hier" }}</a> erfährst du, wie du mit dabei sein kannst.
+    Zusammengefasste Ladedaten von
+    <span id="telemetry--totalClients"></span> teilnehmenden Sponsoren.
+    <br />
+    <a href="https://docs.evcc.io/docs/reference/configuration/telemetry"
+      >{{ i18n "hier" }}</a
+    >
+    erfährst du, wie du mit dabei sein kannst.
   </p>
 </aside>
