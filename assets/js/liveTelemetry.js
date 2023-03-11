@@ -30,7 +30,7 @@ function render(data) {
   if (!powerCount) {
     powerCount = createCounter("telemetry--power", chargePower, 1);
     greenPowerCount = createCounter("telemetry--greenPower", greenPower, 1);
-    greenEnergyCount = createCounter("telemetry--greenEnergy", greenEnergy, 2);
+    greenEnergyCount = createCounter("telemetry--greenEnergy", greenEnergy, 0);
   } else {
     powerCount.update(chargePower);
     greenPowerCount.update(greenPower);
