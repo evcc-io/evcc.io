@@ -36,27 +36,16 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --page-background: #00002d;
-    --header-background: #00002d;
-    --light-background: rgba(241, 241, 244, 0.1);
-    --text-color: #f1f1f4;
-    --accent-color: #0fdd42;
-    --evcc-gray: #b5b6c3;
-    --evcc-accent1: var(--evcc-yellow);
-    --evcc-accent2: var(--evcc-dark-green);
-    --evcc-accent3: var(--evcc-darker-green);
-  }
-  .light-only {
-    display: none !important;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  .dark-only {
-    display: none !important;
-  }
+:root.dark {
+  --page-background: #00002d;
+  --header-background: #00002d;
+  --light-background: rgba(241, 241, 244, 0.1);
+  --text-color: #f1f1f4;
+  --accent-color: #0fdd42;
+  --evcc-gray: #b5b6c3;
+  --evcc-accent1: var(--evcc-yellow);
+  --evcc-accent2: var(--evcc-dark-green);
+  --evcc-accent3: var(--evcc-darker-green);
 }
 
 * {
@@ -176,7 +165,7 @@ a:hover {
   }
   .header__navigation__item--translation {
     display: block;
-  }
+}
 }
 @media (min-width: 700px) {
   .hide-lg {
@@ -274,7 +263,7 @@ a:hover {
 
 .infobox {
   margin: 40px auto;
-  padding: 40px;
+  padding: 40px 16px;
   width: calc(var(--6-cols) - var(--grid-gutter) * 2);
   background-color: var(--infobox-background);
   color: var(--infobox-color);
@@ -294,12 +283,11 @@ a:hover {
 }
 
 .infobox h2 {
-  max-width: 600px;
+  max-width: 500px;
 }
 
 .infobox_entry {
-  padding: 16px;
-  margin-bottom: 8px;
+  padding: 8px; 
   text-align: center;
   font-size: var(--small-text-font-size);
   line-height: 1.5em;
@@ -308,7 +296,6 @@ a:hover {
 @media (min-width: 750px) {
   .infobox_entry {
     padding: 32px;
-    margin-bottom: 40px;
   }
 }
 
@@ -418,10 +405,23 @@ footer .icon {
   padding: 1rem;
 }
 .screenshot {
+  margin-left: 1rem;
   display: block;
 }
-.screenshot + .screenshot {
-  margin-left: 1rem;
+.screenshot {
+  position: relative;
+}
+.screenshot_link--dark {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 500ms linear;
+  pointer-events: none;
+}
+:root.dark .screenshot_link--dark {
+  opacity: 1;
+  pointer-events: auto;
 }
 .screenshot img {
   width: auto;
@@ -535,4 +535,12 @@ footer .icon {
 
 .telemetry .fineprint {
   text-align: center;
+}
+
+:root.dark [data-theme=dark] {
+  text-decoration: underline;
+}
+
+:root:not(.dark) [data-theme=light] {
+  text-decoration: underline;
 }
