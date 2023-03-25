@@ -1,2 +1,4 @@
+{{ $js := resources.Get "js/main.js"| js.Build }}
+<script src="{{ $js.Permalink }}" async type="module"></script>
 {{ $js := resources.Get "js/liveTelemetry.js" | js.Build }}
-<script src="{{ $js.Permalink }}" type="module"></script>
+<script src="{{ $js.Permalink }}" async type="module"></script>

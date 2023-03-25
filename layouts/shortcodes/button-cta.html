@@ -1,5 +1,8 @@
+{{- $target := or (.Get "target") "_self" -}}
+{{- $url := .Get "url" }}
+
 <p class="button-container">
-  <a href="{{ .Get "url" }}" class="button button--cta">
+  <a href="{{ $url }}" target="{{ $target }}" class="button button--cta">
     {{ .Inner }}
   </a>
 </p>

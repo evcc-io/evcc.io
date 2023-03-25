@@ -17,7 +17,11 @@ evcc ist angetreten, die Nachhaltigkeit beim Laden unserer Elektrofahrzeuge zu o
 
 ---
 
-## Responsive Benutzeroberfläche
+## Wir 💚 gute Benutzeroberflächen
+
+Wir möchten, dass PV-Strom-Laden für alle einfach möglich wird. Im Optimalfall funktioniert das ganz ohne manuelles Regeln und Einstellen. Wenn du aber doch mal sehen willst, was das System so macht, haben wir **eine aufgeräumte und responsive Weboberfläche** parat.
+
+{{< theme-switch >}}
 
 {{< screenshots class="content-gallery" >}}
 {{< screenshot-entry src="1_evcc_mobile_standard" width="508" >}}
@@ -27,11 +31,17 @@ evcc ist angetreten, die Nachhaltigkeit beim Laden unserer Elektrofahrzeuge zu o
 {{< screenshot-entry src="5_evcc_tablet_details" width="1387" >}}
 {{< /screenshots >}}
 
+Wir haben eine Beispiel-Installation aufgesetzt mit der du die Oberfäche schon mal ausprobieren kannst.
+
+{{< button-cta url="https://demo.evcc.io/" target="_blank">}}
+Demo Instanz ansehen
+{{</ button-cta>}}
+
 ---
 
 ## Wie evcc funktioniert
 
-{{< full_width_image src="img/evcc-schema.svg" alt="Darstellung der Funktionsweise" width="200" height="100" >}}
+{{< full_width_image src="/img/evcc-schema.svg" alt="Darstellung der Funktionsweise" width="200" height="100" >}}
 
 Den eigenen Sonnenstrom zum Laden des Autos zu verwenden bedeutet den Eigenverbrauch zu erhöhen und damit den Strom nicht ins Netz abzugeben sondern selbst zu nutzen.
 

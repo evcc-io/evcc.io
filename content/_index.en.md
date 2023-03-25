@@ -19,7 +19,11 @@ And best of all, it can do so in most cases without any further modification to 
 
 ---
 
-## Responsive interface
+## We 💚 good UI
+
+We want make solar charging easy for everyone. In the best case scenario, this works without manual interventions and regular setting adjustments. But if you do want to see what the system is doing, we have a **clean and responsive web interface** ready to go.
+
+{{< theme-switch >}}
 
 {{< screenshots class="content-gallery" >}}
 {{< screenshot-entry src="1_evcc_mobile_standard" width="508" >}}
@@ -28,6 +32,12 @@ And best of all, it can do so in most cases without any further modification to 
 {{< screenshot-entry src="4_evcc_tablet_standard" width="1387" >}}
 {{< screenshot-entry src="5_evcc_tablet_details" width="1387" >}}
 {{< /screenshots >}}
+
+We have set up a sample installation you can use to try the interface.
+
+{{< button-cta url="https://demo.evcc.io/" target="_blank">}}
+Try Demo UI
+{{</ button-cta>}}
 
 ---
 
