@@ -23,6 +23,6 @@ evcc logos, icons and vector files can be found in [/artwork](https://github.com
 ### Colors
 
 - logo green: #0FDD42
-- logo black: #18191A
+- logo black: #1c2445
 
 The UI uses variations of these colors. The source of truth is the [app.css](https://github.com/evcc-io/evcc/blob/master/assets/css/app.css#L25-L30).

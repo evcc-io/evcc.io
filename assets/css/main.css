@@ -2,14 +2,14 @@
   --grid-gutter: 25px;
   --layout-width: 990px;
   --page-background: #ffffff;
-  --text-color: #18191a;
+  --text-color: #1c2445;
   --text-font-size: 24px;
   --small-text-font-size: 19px;
   --accent-color: #0074e0;
   --accent-hover-color: #0074e0aa;
   --light-background: #f1f1f4;
   --infobox-background: #0fdd42;
-  --infobox-color: #18191a;
+  --infobox-color: #1c2445;
   --6-cols: 100%;
   --4-cols: calc(4 * 100% / 6);
   --2-cols: calc(2 * 100% / 6);
@@ -112,11 +112,11 @@ a:hover {
 .header__logo {
   display: flex;
   align-items: center;
-  color: #18191a;
+  color: #1c2445;
 }
 
 .header__logo__letters {
-  fill: #18191a;
+  fill: #1c2445;
 }
 
 .header__logo svg {
@@ -142,7 +142,7 @@ a:hover {
 }
 
 .header__navigation__item {
-  color: #18191a;
+  color: #1c2445;
   font-size: 18px;
   padding: 2px 8px;
   margin-right: 8px;
@@ -150,11 +150,11 @@ a:hover {
 }
 
 .header__navigation__lang {
-  color: #18191a;
+  color: #1c2445;
 }
 
 .header__navigation__lang--active {
-  color: #18191a;
+  color: #1c2445;
   text-decoration: underline;
 }
 
