@@ -23,9 +23,9 @@ const $totalClients = document.querySelector("#telemetry--totalClients");
 function render(data) {
   document.querySelector(".telemetry").style.display = "block";
 
-  const chargePower = data.chargePower / 1e3;
+  const chargePower = data.chargePower / 1e3; // W -> kW
   const greenPower = (100 / data.chargePower) * data.greenPower;
-  const greenEnergy = data.greenEnergy / 1e6;
+  const greenEnergy = data.greenEnergy / 1e3; // kWh -> MWh
 
   if (!powerCount) {
     powerCount = createCounter("telemetry--power", chargePower, 0);
