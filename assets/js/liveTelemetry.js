@@ -27,7 +27,7 @@ function render(data) {
 
   const chargePower = fmtKW(data.chargePower / 1e3); // W -> kW
   const greenEnergy = fmtKWh(data.greenEnergy); // kWh
-  const greenShare = (100 / data.chargePower) * data.greenEnergy; // in %
+  const greenShare = (100 / data.chargePower) * data.greenPower; // in %
 
   if (!powerCount) {
     powerCount = createCounter(
