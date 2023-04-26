@@ -275,7 +275,7 @@
     document.querySelector(".telemetry").style.display = "block";
     const chargePower = fmtKW(data.chargePower / 1e3);
     const greenEnergy = fmtKWh(data.greenEnergy);
-    const greenShare = 100 / data.chargePower * data.greenEnergy;
+    const greenShare = 100 / data.chargePower * data.greenPower;
     if (!powerCount) {
       powerCount = createCounter("telemetry--power", chargePower.value, chargePower.decimals);
       greenEnergyCount = createCounter("telemetry--greenEnergy", greenEnergy.value, greenEnergy.decimals);
