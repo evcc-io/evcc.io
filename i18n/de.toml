@@ -23,7 +23,7 @@
   other = 'Ladeleistung'
 
 [aktive_nutzer]
-  other = 'Aktive Nutzer'
+  other = 'aktive Nutzer'
 
 [sonnenanteil]
   other = 'Sonnenanteil'

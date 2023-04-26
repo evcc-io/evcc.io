@@ -23,7 +23,7 @@
   other = 'Charging Power'
 
 [aktive_nutzer]
-  other = 'Active Users'
+  other = 'active Users'
 
 [sonnenanteil]
   other = 'Sun Share'

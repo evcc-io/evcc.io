@@ -13,11 +13,11 @@
           </div>
           <div class="telemetry_value">
             <span id="telemetry--power"></span>
-            <span class="telemetry_unit">kW</span>
+            <span id="telemetry--chargePowerUnit" class="telemetry_unit"></span>
           </div>
         </div>
         <div class="telemetry_sub">
-          <span id="telemetry--activeClients"></span> active clients
+          <span id="telemetry--activeClients"></span> {{ i18n "aktive_nutzer" }}
         </div>
       </div>
     </div>
@@ -32,7 +32,7 @@
             {{ i18n "sonnenanteil" }}
           </div>
           <div class="telemetry_value">
-            <span id="telemetry--greenPower"></span>
+            <span id="telemetry--greenShare"></span>
             <span class="telemetry_unit">%</span>
           </div>
         </div>
@@ -51,7 +51,7 @@
           </div>
           <div class="telemetry_value">
             <span id="telemetry--greenEnergy"></span>
-            <span class="telemetry_unit">MWh</span>
+            <span id="telemetry--greenEnergyUnit" class="telemetry_unit"></span>
           </div>
         </div>
         <div class="telemetry_sub">

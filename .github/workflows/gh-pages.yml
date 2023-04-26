@@ -19,6 +19,15 @@ jobs:
           submodules: true # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: npm install
+        run: npm ci
+      - name: npm test
+        run: npm test
+
       - name: Generate Sponsors 💚🏢
         uses: naltatis/github-sponsors-readme-action@v1.3
         with:
