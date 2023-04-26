@@ -265,24 +265,28 @@
     });
   }
   var powerCount = null;
-  var greenPowerCount = null;
+  var greenShareCount = null;
   var greenEnergyCount = null;
   var $activeClients = document.querySelector("#telemetry--activeClients");
   var $totalClients = document.querySelector("#telemetry--totalClients");
+  var $chargePowerUnit = document.querySelector("#telemetry--chargePowerUnit");
+  var $unitGreenEnergy = document.querySelector("#telemetry--greenEnergyUnit");
   function render(data) {
     document.querySelector(".telemetry").style.display = "block";
-    const chargePower = data.chargePower / 1e3;
-    const greenPower = 100 / data.chargePower * data.greenPower;
-    const greenEnergy = data.greenEnergy / 1e3;
+    const chargePower = fmtKW(data.chargePower / 1e3);
+    const greenEnergy = fmtKWh(data.greenEnergy);
+    const greenShare = 100 / data.chargePower * data.greenEnergy;
     if (!powerCount) {
-      powerCount = createCounter("telemetry--power", chargePower, 0);
-      greenPowerCount = createCounter("telemetry--greenPower", greenPower, 1);
-      greenEnergyCount = createCounter("telemetry--greenEnergy", greenEnergy, 2);
+      powerCount = createCounter("telemetry--power", chargePower.value, chargePower.decimals);
+      greenEnergyCount = createCounter("telemetry--greenEnergy", greenEnergy.value, greenEnergy.decimals);
+      greenShareCount = createCounter("telemetry--greenShare", greenShare, 1);
     } else {
-      powerCount.update(chargePower);
-      greenPowerCount.update(greenPower);
-      greenEnergyCount.update(greenEnergy);
+      powerCount.update(chargePower.value);
+      greenEnergyCount.update(greenEnergy.value);
+      greenShareCount.update(greenShare);
     }
+    $chargePowerUnit.innerText = chargePower.unit;
+    $unitGreenEnergy.innerText = greenEnergy.unit;
     $activeClients.innerText = data.activeClients;
     $totalClients.innerText = data.totalClients;
   }
@@ -291,6 +295,27 @@
       console.error(err);
       document.querySelector(".telemetry").style.display = "none";
     });
+  }
+  function fmtKW(kW) {
+    if (kW < 1e3) {
+      return { value: kW, decimals: 0, unit: "kW" };
+    } else if (kW < 1e4) {
+      return { value: kW / 1e3, decimals: 2, unit: "MW" };
+    } else if (kW < 1e5) {
+      return { value: kW / 1e3, decimals: 1, unit: "MW" };
+    } else if (kW < 1e6) {
+      return { value: kW / 1e3, decimals: 0, unit: "MW" };
+    } else if (kW < 1e7) {
+      return { value: kW / 1e6, decimals: 2, unit: "GW" };
+    } else if (kW < 1e8) {
+      return { value: kW / 1e6, decimals: 1, unit: "GW" };
+    }
+    return { value: kW / 1e6, decimals: 0, unit: "GW" };
+  }
+  function fmtKWh(kWh) {
+    const result = fmtKW(kWh);
+    result.unit += "h";
+    return result;
   }
   setInterval(update, UPDATE_INTERVAL_SECONDS * 1e3);
   update();

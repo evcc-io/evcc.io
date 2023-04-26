@@ -39,14 +39,14 @@
 <link href="./css/main.css" rel="stylesheet" />
 <link
     rel="preload"
-    href="fonts/roboto-v20-latin-regular.woff2"
+    href="./fonts/roboto-v20-latin-regular.woff2"
     as="font"
     type="font/woff2"
     crossorigin
   />
   <link
     rel="preload"
-    href="fonts/roboto-v20-latin-bold.woff2"
+    href="./fonts/roboto-v20-latin-bold.woff2"
     as="font"
     type="font/woff2"
     crossorigin
@@ -117,11 +117,11 @@
           </div>
           <div class="telemetry_value">
             <span id="telemetry--power"></span>
-            <span class="telemetry_unit">kW</span>
+            <span id="telemetry--chargePowerUnit" class="telemetry_unit"></span>
           </div>
         </div>
         <div class="telemetry_sub">
-          <span id="telemetry--activeClients"></span> Aktive Nutzer
+          <span id="telemetry--activeClients"></span> aktive Nutzer
         </div>
       </div>
     </div>
@@ -136,7 +136,7 @@
             Sonnenanteil
           </div>
           <div class="telemetry_value">
-            <span id="telemetry--greenPower"></span>
+            <span id="telemetry--greenShare"></span>
             <span class="telemetry_unit">%</span>
           </div>
         </div>
@@ -155,7 +155,7 @@
           </div>
           <div class="telemetry_value">
             <span id="telemetry--greenEnergy"></span>
-            <span class="telemetry_unit">MWh</span>
+            <span id="telemetry--greenEnergyUnit" class="telemetry_unit"></span>
           </div>
         </div>
         <div class="telemetry_sub">
