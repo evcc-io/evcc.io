@@ -15,7 +15,7 @@ defaultContentLanguageInSubdir = false
     title = "evcc - Solar Charging ☀️🚘 - Connects Your EV Charger With Your PV System"
 [site]
   [params]
-  description = "evcc ermöglicht es Elektrofahrzeuge mit möglichst viel selbsterzeugten Solarstrom zu laden."
+  description = "evcc ermöglicht es, Elektrofahrzeuge mit möglichst viel selbsterzeugtem Solarstrom zu laden."
 
 [minify]
   disableSVG = true
