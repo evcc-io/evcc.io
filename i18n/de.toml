@@ -34,7 +34,7 @@
 [sonnenenergie]
   other = 'Sonnenenergie'
 
-[siet_date]
+[seit_date]
   other = 'seit {{ . }}'
 
 [startseite]

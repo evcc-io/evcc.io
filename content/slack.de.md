@@ -1,5 +1,5 @@
 # Slack Einladung
 
-Du wirst weitergeleitet ...
+Du wirst weitergeleitet …
 
 {{< redirect-slack >}}
