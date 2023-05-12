@@ -55,6 +55,10 @@ If a supported vehicle is set up, evcc can take its current battery charging sta
 
 And if you have a supported battery storage system available, evcc can also control its state of charge, managing it against your vehicle seamlessly.
 
+## Works with your existing devices
+
+We're no friends of **closed ecosystems**, **cloud services** and **expensive energy management systems**. evcc is a local solution that runs on your hardware and lets your devices work together intelligently - no matter the manufacturer.
+
 {{< infobox title="Supported & Tested Systems" >}}
 {{< infobox-entry title="wallboxes & sockets" img="/img/evcc-illu-wallbox.svg" >}}
 {{< infobox-content group="Chargers">}}
@@ -74,9 +78,13 @@ And if you have a supported battery storage system available, evcc can also cont
 {{< /infobox-entry >}}
 {{< /infobox >}}
 
-evcc can work with a number of widely used interfaces and protocols, such as Modbus, SunSpec, HTTP, JSON, REST, and MQTT.
-This means that almost all products available on the market today can be connected to evcc.
-And in order to work properly with other, high-level energy management systems, evcc also includes support for the SEMP and EEBUS protocols.
+More details can be found in our [documentation](https://docs.evcc.io/docs/devices/chargers/). If your device is not supported yet, let us know on [GitHub](https://github.com/evcc-io/evcc). If it has an interface we can connect it.
+
+### Plugin architecture and smart home integration
+
+You have a special setup or use exotic devices? evcc comes with a **flexible plugin architecture** and allows you to build custom implementations via Modbus, SunSpec, HTTP, JSON, REST, MQTT, JavaScript and Shell.
+
+Already have a smart home system? We integrate nicely with Home Assistant, openHAB and ioBroker. evcc even works with higher-level energy managers and can take commands via SEMP and EEBUS protocol.
 
 ---
 
@@ -96,6 +104,16 @@ Getting Started (German)
 
 ---
 
+## Professional support
+
+You are a solar installer or electrician, you set up charging solutions professionally and you need support in setting up evcc? Unfortunately, we cannot provide individual support. However, if you need advice, support or training, we will be happy to refer you to experts and power users from the community who know the system very well.
+
+{{< button-cta url="mailto:pro-support@evcc.io">}}
+Request support
+{{</ button-cta>}}
+
+---
+
 ## Support the project
 
 ### Actively participating
@@ -106,9 +124,13 @@ You can get in touch, ask questions, and get support from other users in the [Fo
 
 ### Financial support
 
-Everyone working on evcc is doing it in their spare time. You're welcome to support us as a [GitHub sponsor](https://docs.evcc.io/docs/sponsorship).
+In order to sustain a project of this size we need your support. Here you can learn more about our [sponsoring model](https://docs.evcc.io/docs/sponsorship).
 
 You work for a company which offers wallboxes, energy measurement systems, or solar / PV systems? Do you want to help enable your customers to charge their cars with their own solar power? Get in touch with us. Contributing code or sponsoring us with hardware greatly helps us to expand evcc's capabilities.
+
+{{< button-cta url="mailto:info@evcc.io">}}
+Contact us
+{{</ button-cta>}}
 
 ## Sponsors
 
