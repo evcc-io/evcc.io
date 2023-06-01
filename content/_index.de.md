@@ -15,6 +15,20 @@ evcc ist angetreten, um die Nachhaltigkeit beim Laden unserer Elektrofahrzeuge z
 - Intuitive und übersichtliche Benutzeroberfläche
 - 100 % Open Source
 
+### Laden, wenn die Sonne scheint
+
+{{< split >}}
+{{< split-entry-image >}}
+{{< svg-animation src="/img/solar-surplus.svg" id="solar-surplus" >}}
+{{</ split-entry-image>}}
+{{< split-entry-text >}}
+Dein Ladevorgang startet sobald genug eigener Sonnenstrom produziert wird.
+Die Ladeleistung wird permanent an den verfügbaren Überschuss angepasst.
+
+**Das erhöht Autarkie und spart Geld.**
+{{</ split-entry-text>}}
+{{</ split>}}
+
 ---
 
 ## Wir 💚 gute Benutzeroberflächen
@@ -108,7 +122,7 @@ Erste Schritte
 
 Du bist Solarteur oder Elektriker, richtest beruflich Ladelösungen ein und brauchst Unterstützung bei der Einrichtung von evcc? Wir können leider keinen individuellen Support leisten. Für eine Beratung, Betreuung oder Schulung vermitteln wir dich aber gerne an Experten und Poweruser aus der Community, die das System sehr gut kennen.
 
-{{< button-cta url="mailto:pro-support@evcc.io">}}
+{{< button-cta url="mailto:info@evcc.io?subject=Anfrage professioneller evcc Support">}}
 Anfrage stellen
 {{</ button-cta>}}
 

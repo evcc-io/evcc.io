@@ -555,3 +555,41 @@ footer .icon {
 :root:not(.dark) [data-theme=light] {
   text-decoration: underline;
 }
+
+.split {
+  padding: 0;
+  width: calc(var(--6-cols) - var(--grid-gutter) * 2);
+  display: flex;
+  align-items: center;
+}
+
+.split-entry {
+  margin: 40px auto;
+  flex: 1;
+  flex-basis: 100%;
+  padding: 0 var(--grid-gutter);
+}
+
+.split-entry.split-entry--text > * {
+  width: auto;
+  padding: 0;
+}
+
+.split-entry.split-entry--image > * {
+  border-radius: 30px;
+}
+
+@media (max-width: 699px) {
+  .split {
+    display: block;
+    width: auto;
+  }
+  
+  .split-entry {
+    padding: 0;
+  }
+
+  .split-entry.split-entry--image > * {
+    border-radius: 0;
+  }
+}

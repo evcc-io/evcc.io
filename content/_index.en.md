@@ -17,6 +17,20 @@ And best of all, it can do so in most cases without any further modification to 
 - Intuitive, clean, and responsive user interface
 - 100 % Open Source
 
+### Charge when the sun is shining
+
+{{< split >}}
+{{< split-entry-image >}}
+{{< svg-animation src="/img/solar-surplus.svg" id="solar-surplus" >}}
+{{</ split-entry-image>}}
+{{< split-entry-text >}}
+Your charging process starts as soon as enough solar power is produced.
+The charging power is permanently adjusted to the available surplus.
+
+**This increases self-sufficiency and saves money.**
+{{</ split-entry-text>}}
+{{</ split>}}
+
 ---
 
 ## We 💚 good UI
@@ -108,7 +122,7 @@ Getting Started (German)
 
 You are a solar installer or electrician, you set up charging solutions professionally and you need support in setting up evcc? Unfortunately, we cannot provide individual support. However, if you need advice, support or training, we will be happy to refer you to experts and power users from the community who know the system very well.
 
-{{< button-cta url="mailto:pro-support@evcc.io">}}
+{{< button-cta url="mailto:info@evcc.io?subject=Request professional evcc support">}}
 Request support
 {{</ button-cta>}}
 
