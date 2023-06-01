@@ -557,6 +557,7 @@ footer .icon {
 }
 
 .split {
+  margin: 40px auto;
   padding: 0;
   width: calc(var(--6-cols) - var(--grid-gutter) * 2);
   display: flex;
@@ -564,7 +565,6 @@ footer .icon {
 }
 
 .split-entry {
-  margin: 40px auto;
   flex: 1;
   flex-basis: 100%;
   padding: 0 var(--grid-gutter);
@@ -591,5 +591,10 @@ footer .icon {
 
   .split-entry.split-entry--image > * {
     border-radius: 0;
+  }
+
+  .split-entry.split-entry--text > * {
+    padding: 0 var(--grid-gutter);
+    width: var(--4-cols);
   }
 }
