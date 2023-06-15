@@ -22,7 +22,7 @@ evcc ist angetreten, um die Nachhaltigkeit beim Laden unserer Elektrofahrzeuge z
 {{< svg-animation src="/img/solar-surplus.svg" id="solar-surplus" >}}
 {{</ split-entry-image>}}
 {{< split-entry-text >}}
-Dein Ladevorgang startet sobald genug eigener Sonnenstrom produziert wird.
+Dein Ladevorgang startet, sobald genug eigener Sonnenstrom produziert wird.
 Die Ladeleistung wird permanent an den verfügbaren Überschuss angepasst.
 
 **Das erhöht Autarkie und spart Geld.**
@@ -65,11 +65,11 @@ Damit evcc die Ladung bestmöglich regeln kann, ist ein Messgerät (= auslesbare
 
 Ist ein von evcc unterstütztes Elektrofahrzeug eingerichtet, kann sein momentaner Batterieladezustand und die Reichweite angezeigt und in der Ladeplanung berücksichtigt werden. Auch wenn die Sonne ab und an mal nicht so viel scheint, bleibt so die Mobilität sichergestellt.
 
-Und noch etwas kann evcc: Ist ein unterstützter Batteriespeicher vorhanden, wird auch dessen Ladezustand gesteuert und mit Sonnenstrom versorgt.
+Und noch etwas kann evcc: Ist ein unterstützter Batteriespeicher vorhanden, wird auch dessen Ladezustand gesteuert und er mit Sonnenstrom versorgt.
 
 ## Funktioniert mit deinen bestehenden Geräten
 
-Wir sind keine Freunde von **geschlossenen Ökosystemen**, **Clouddiensten** und **teuren Energiemanagementsystemen**. evcc ist eine lokale Lösung, die auf deiner eigenen Hardware läuft und deine Geräte intelligent zusammenspielen lässt - egal von welchem Hersteller.
+Wir sind keine Freunde von **geschlossenen Ökosystemen**, **Clouddiensten** und **teuren Energiemanagementsystemen**. evcc ist eine lokale Lösung, die auf deiner eigenen Hardware läuft und deine Geräte intelligent zusammenspielen lässt – egal von welchem Hersteller.
 
 {{< infobox title="Unterstützte und getestete Komponenten" >}}
 {{< infobox-entry title="Wallboxen & Steckdosen" img="img/evcc-illu-wallbox.svg" >}}
@@ -90,11 +90,11 @@ Wir sind keine Freunde von **geschlossenen Ökosystemen**, **Clouddiensten** und
 {{< /infobox-entry >}}
 {{< /infobox >}}
 
-Mehr Details findest du in unserer [Dokumentation](https://docs.evcc.io/docs/devices/chargers/). Ist dein Gerät noch nicht unterstützt dann lass es uns auf [GitHub](https://github.com/evcc-io/evcc) wissen. Wenn es eine Schnittstelle hat können wir es anbinden.
+Mehr Details findest du in unserer [Dokumentation](https://docs.evcc.io/docs/devices/chargers/). Ist dein Gerät noch nicht unterstützt, dann lass es uns auf [GitHub](https://github.com/evcc-io/evcc) wissen. Wenn es eine Schnittstelle hat, können wir es anbinden.
 
-### Plugin Architektur und Smarthome Integration
+### Plugin-Architektur und Smarthome-Integration
 
-Du hast ein spezielles Setup oder verwendest exotische Geräte? evcc kommt mit einer **flexiblen Plugin Architektur** und erlaubt es dir eigene Anbindungen über Modbus, SunSpec, HTTP, JSON, REST, MQTT, JavaScript und Shell zu entwickeln.
+Du hast ein spezielles Setup oder verwendest exotische Geräte? evcc kommt mit einer **flexiblen Plugin-Architektur** und erlaubt es dir, eigene Anbindungen über Modbus, SunSpec, HTTP, JSON, REST, MQTT, JavaScript und Shell zu entwickeln.
 
 Zudem gibt es Integrationen für Home Assistant, openHAB und ioBroker.
 Um sich auch mit anderen, übergeordneten Energiemanagern abzusprechen, hat evcc zusätzlich eine Unterstützung der Protokolle SEMP und EEBUS integriert.
@@ -122,7 +122,7 @@ Erste Schritte
 
 Du bist Solarteur oder Elektriker, richtest beruflich Ladelösungen ein und brauchst Unterstützung bei der Einrichtung von evcc? Wir können leider keinen individuellen Support leisten. Für eine Beratung, Betreuung oder Schulung vermitteln wir dich aber gerne an Experten und Poweruser aus der Community, die das System sehr gut kennen.
 
-{{< button-cta url="mailto:info@evcc.io?subject=Anfrage professioneller evcc Support">}}
+{{< button-cta url="mailto:info@evcc.io?subject=Anfrage professioneller evcc-Support">}}
 Anfrage stellen
 {{</ button-cta>}}
 
@@ -139,7 +139,7 @@ Oder komm in unseren Chat, lerne uns kennen und diskutiere mit uns: [Slack](/sla
 
 ### Finanzieller Support
 
-Um ein Projekt dieser Größenordnung nachhaltig vorrantreiben zu können brauchen wir eure Unterstützung. Hier erfährst du mehr über unser [Sponsoring Modell](https://docs.evcc.io/docs/sponsorship).
+Um ein Projekt dieser Größenordnung nachhaltig vorantreiben zu können, brauchen wir eure Unterstützung. Hier erfährst du mehr über unser [Sponsoring Modell](https://docs.evcc.io/docs/sponsorship).
 
 Arbeitest du in einer Firma, die Wallboxen, Energiemesssysteme oder PV-Systeme anbietet? Möchtest du euren Kunden das Laden mit eigenem Sonnenstrom ermöglichen? Sprich uns gerne an. Eigene Code-Beiträge und Hardware-Sponsoring helfen uns, die Fähigkeiten von evcc auszubauen.
 
