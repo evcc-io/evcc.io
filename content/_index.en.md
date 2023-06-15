@@ -1,6 +1,6 @@
 # Solar charging. Super simple.
 
-evcc optimises sustainability when charging electric vehicles.
+evcc optimizes sustainability when charging electric vehicles.
 It enables charging using as much self-generated power as possible.
 And best of all, it can do so in most cases without any further modification to your house's existing electrical installation.
 
@@ -35,7 +35,7 @@ The charging power is permanently adjusted to the available surplus.
 
 ## We 💚 good UI
 
-We want make solar charging easy for everyone. In the best case scenario, this works without manual interventions and regular setting adjustments. But if you do want to see what the system is doing, we have a **clean and responsive web interface** ready to go.
+We want make solar charging easy for everyone. In the best-case scenario, this works without manual interventions and regular setting adjustments. But if you do want to see what the system is doing, we have a **clean and responsive web interface** ready to go.
 
 {{< theme-switch >}}
 
@@ -63,7 +63,7 @@ Using your own solar power to charge the car helps increase self-consumption - t
 
 evcc makes it possible to control the current of your wallbox. We already support a wide range of chargers. If a lot of solar power is being generated, evcc allows the charger to charge the car with lots of solar power. Inversely, if less solar power is available, evcc slows down (or even pauses) charging.
 
-evcc needs a grid energy meter to work properly. Using this measuring device, evcc knows the current excess of energy and can continuously adjust the charging power appropriately. The good news - almost every existing solar systems already contain the necessary energy meters. If not, you can easily add your own.
+evcc needs a grid energy meter to work properly. Using this measuring device, evcc knows the current excess of energy and can continuously adjust the charging power appropriately. The good news - almost every existing solar system already contains the necessary energy meter. If not, you can easily add your own.
 
 If a supported vehicle is set up, evcc can take its current battery charging status and range into account when planning charging - even if the sun's not out, it'll still make sure you'll have enough range for your daily trips.
 
@@ -92,7 +92,7 @@ We're no friends of **closed ecosystems**, **cloud services** and **expensive en
 {{< /infobox-entry >}}
 {{< /infobox >}}
 
-More details can be found in our [documentation](https://docs.evcc.io/docs/devices/chargers/). If your device is not supported yet, let us know on [GitHub](https://github.com/evcc-io/evcc). If it has an interface we can connect it.
+More details can be found in our [documentation](https://docs.evcc.io/docs/devices/chargers/). If your device is not supported yet, let us know on [GitHub](https://github.com/evcc-io/evcc). If it has an interface, we can connect it.
 
 ### Plugin architecture and smart home integration
 
@@ -110,7 +110,7 @@ evcc is written in Go, and is extremely efficient. You don't need a system with 
 
 ### Setting up evcc
 
-evcc is very flexible. However, the initial setup still requires a fair amount of technical knowledge. If you're familiar with the command line, and you've ever edited a YAML file, then you should be able to get it configured. You'll find everyting you need to know in the documentation.
+evcc is very flexible. However, the initial setup still requires a fair amount of technical knowledge. If you're familiar with the command line, and you've ever edited a YAML file, then you should be able to get it configured. You'll find everything you need to know in the documentation.
 
 {{< button-cta url="https://docs.evcc.io/">}}
 Getting Started (German)
