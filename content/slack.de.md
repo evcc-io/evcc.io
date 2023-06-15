@@ -1,4 +1,4 @@
-# Slack Einladung
+# Slack-Einladung
 
 Du wirst weitergeleitet …
 
