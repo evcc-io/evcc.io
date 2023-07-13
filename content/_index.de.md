@@ -25,7 +25,20 @@ evcc ist angetreten, um die Nachhaltigkeit beim Laden unserer Elektrofahrzeuge z
 Dein Ladevorgang startet sobald genug eigener Sonnenstrom produziert wird.
 Die Ladeleistung wird permanent an den verfügbaren Überschuss angepasst.
 
-**Das erhöht Autarkie und spart Geld.**
+Das erhöht Autarkie und spart Geld.
+{{</ split-entry-text>}}
+{{</ split>}}
+
+### Grünen & günstigen Netzstrom nutzen
+
+{{< split >}}
+{{< split-entry-image >}}
+{{< svg-animation src="/img/dynamic-grid.svg" id="dynamic-grid" >}}
+{{</ split-entry-image>}}
+{{< split-entry-text >}}
+Zu wenig Sonne oder keine PV-Anlage? Lade, wenn viel Erneuerbare verfügbar sind und unterstütze damit die Energiewende.
+
+Mit einem [dynamischen Stromtarif](https://docs.evcc.io/docs/reference/configuration/tariffs/) sparst du sogar ordentlich Geld.
 {{</ split-entry-text>}}
 {{</ split>}}
 

@@ -27,7 +27,20 @@ And best of all, it can do so in most cases without any further modification to 
 Your charging process starts as soon as enough solar power is produced.
 The charging power is permanently adjusted to the available surplus.
 
-**This increases self-sufficiency and saves money.**
+This increases self-sufficiency and saves money.
+{{</ split-entry-text>}}
+{{</ split>}}
+
+### Use green & cheap grid power
+
+{{< split >}}
+{{< split-entry-image >}}
+{{< svg-animation src="/img/dynamic-grid.svg" id="dynamic-grid" >}}
+{{</ split-entry-image>}}
+{{< split-entry-text >}}
+Too little sun or no PV system? Charge when the renewables share is high to support the energy revolution.
+
+With a [dynamic electricity tariff](https://docs.evcc.io/docs/reference/configuration/tariffs/) you even save a lot of money.
 {{</ split-entry-text>}}
 {{</ split>}}
 
