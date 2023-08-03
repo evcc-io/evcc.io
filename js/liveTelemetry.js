@@ -273,6 +273,7 @@
   var $unitGreenEnergy = document.querySelector("#telemetry--greenEnergyUnit");
   function render(data) {
     document.querySelector(".telemetry").style.display = "block";
+    data.greenEnergy = 55123456;
     const chargePower = fmtKW(data.chargePower / 1e3);
     const greenEnergy = fmtKWh(data.greenEnergy);
     const greenShare = 100 / data.chargePower * data.greenPower;
