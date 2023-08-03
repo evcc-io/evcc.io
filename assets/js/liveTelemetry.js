@@ -25,6 +25,9 @@ const $unitGreenEnergy = document.querySelector("#telemetry--greenEnergyUnit");
 function render(data) {
   document.querySelector(".telemetry").style.display = "block";
 
+  // quick fix: using a save static value because data source currently returns unplausible value
+  data.greenEnergy = 55123456;
+
   const chargePower = fmtKW(data.chargePower / 1e3); // W -> kW
   const greenEnergy = fmtKWh(data.greenEnergy); // kWh
   const greenShare = (100 / data.chargePower) * data.greenPower; // in %
