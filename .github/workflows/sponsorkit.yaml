@@ -1,4 +1,4 @@
-name: Sponsorkit
+name: sponsorkit
 
 on:
   workflow_dispatch:
@@ -30,6 +30,6 @@ jobs:
         uses: EndBug/add-and-commit@v4
         with:
           message: "chore: update sponsors.svg"
-          add: "static/img/github/.*/sponsors.*"
+          add: "static/img/github"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

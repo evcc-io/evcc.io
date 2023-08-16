@@ -3,3 +3,4 @@ public/
 .hugo_build.lock
 .DS_store
 .env
+.cache.json
