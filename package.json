@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/naltatis/evcc.io#readme",
   "dependencies": {
-    "prettier-plugin-go-template": "0.0.10"
+    "prettier-plugin-go-template": "0.0.10",
+    "sponsorkit": "^0.8.7"
   },
   "devDependencies": {
     "happy-dom": "^9.9.2",
