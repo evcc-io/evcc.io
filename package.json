@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "sponsorkit": "npm run sponsorkit:evcc-io && npm run sponsorkit:andig",
+    "sponsorkit:evcc-io": "env GITHUB_LOGIN=evcc-io GITHUB_TYPE=organization npx sponsorkit",
+    "sponsorkit:andig": "env GITHUB_LOGIN=andig GITHUB_TYPE=user npx sponsorkit"
   },
   "repository": {
     "type": "git",
