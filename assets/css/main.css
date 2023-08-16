@@ -480,16 +480,11 @@ footer .icon {
   display: block;
 }
 .github-sponsors {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  text-align: center;
 }
-.github-sponsors a {
-  width: 35px;
-  height: 35px;
-  overflow: hidden;
-  margin: 4px;
-  border-radius: 50%;
+.github-sponsors object {
+  width: 100%;
+  max-width: 800px;
 }
 
 .telemetry_inner {

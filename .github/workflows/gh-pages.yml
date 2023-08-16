@@ -28,24 +28,6 @@ jobs:
       - name: npm test
         run: npm test
 
-      # - name: Generate Sponsors 💚🏢
-      #   uses: naltatis/github-sponsors-readme-action@v1.3
-      #   with:
-      #     token: ${{ secrets.GH_API_TOKEN }}
-      #     file: "layouts/shortcodes/sponsors.html"
-      #     minimum: 500
-      #     organization: true
-      #     marker: org-sponsors
-
-      # - name: Generate Sponsors 💚🙋‍♂️
-      #   uses: naltatis/github-sponsors-readme-action@v1.3
-      #   with:
-      #     token: ${{ secrets.GH_API_TOKEN }}
-      #     file: "layouts/shortcodes/sponsors.html"
-      #     minimum: 500
-      #     organization: false
-      #     marker: andig-sponsors
-
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
