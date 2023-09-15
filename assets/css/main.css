@@ -145,8 +145,13 @@ a:hover {
   color: #1c2445;
   font-size: 18px;
   padding: 2px 8px;
-  margin-right: 8px;
   overflow: hidden;
+}
+
+.header__navigation__item .icon {
+  width: 24px;
+  height: 24px;
+  display: block;
 }
 
 .header__navigation__lang {
@@ -158,6 +163,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.header__navigation__item--translation {
+  margin-right: 8px
+}
+
 @media (max-width: 699px) {
   .header__logo span,
   .hide-sm {
@@ -165,7 +174,8 @@ a:hover {
   }
   .header__navigation__item--translation {
     display: block;
-}
+    margin-right: 0px
+  }
 }
 @media (min-width: 700px) {
   .hide-lg {

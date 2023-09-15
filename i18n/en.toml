@@ -1,62 +1,65 @@
 [evcc]
-  other = 'evcc'
+other = 'evcc'
 
 [github]
-  other = 'GitHub'
+other = 'GitHub'
+
+[shirts]
+other = 'Shirts & Hoodies'
 
 [twitter]
-  other = 'Twitter'
+other = 'Twitter'
 
 [mastodon]
-  other = 'Mastodon'
+other = 'Mastodon'
 
 [instagram]
-  other = 'Instagram'
+other = 'Instagram'
 
 [slack]
-  other = 'Developer Slack'
+other = 'Developer Slack'
 
 [livedaten_aus_der_community]
-  other = 'Live Data from the Community'
+other = 'Live Data from the Community'
 
 [ladeleistung]
-  other = 'Charging Power'
+other = 'Charging Power'
 
 [aktive_nutzer]
-  other = 'active Users'
+other = 'active Users'
 
 [sonnenanteil]
-  other = 'Sun Share'
+other = 'Sun Share'
 
 [pv_hausakku]
-  other = 'PV & battery'
+other = 'PV & battery'
 
 [sonnenenergie]
-  other = 'Solar Energy'
+other = 'Solar Energy'
 
 [seit_date]
-  other = 'since {{ . }}'
+other = 'since {{ . }}'
 
 [startseite]
-  other = 'Home'
+other = 'Home'
 
 [hier]
-  other = 'Here'
+other = 'Here'
 
 [blog]
-  other = 'Blog'
+other = 'Blog'
 
 [sonne_tanken]
-  other = 'solar charging'
+other = 'solar charging'
 
 [dokumentation]
-  other = 'Documentation'
+other = 'Documentation'
 
 [dokumentation-short]
-  other = 'Docs'
+other = 'Docs'
 
 [impressum]
-  other = 'Legal Notice'
+other = 'Legal Notice'
 
 [datenschutz]
-  other = 'Privacy Policy'
+other = 'Privacy Policy'
