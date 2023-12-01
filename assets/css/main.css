@@ -603,3 +603,16 @@ footer .icon {
     width: var(--4-cols);
   }
 }
+
+.only-light {
+  display: block;
+}
+
+.only-dark {
+  display: none;
+}
+
+:root.dark .only-light,
+:root:not(.dark) .only-dark {
+  display: none;
+}
