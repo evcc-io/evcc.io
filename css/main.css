@@ -492,6 +492,33 @@ footer .icon {
   height: auto;
   display: block;
 }
+.team {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.team-member {
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+  width: 150px;
+  margin-bottom: 2rem;
+}
+.team-member img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+.team-member-name {
+  margin: 1rem 0;
+}
+.team-member-name small {
+  display: block;
+  margin: 0.25em 0;
+}
 .github-sponsors {
   text-align: center;
 }
