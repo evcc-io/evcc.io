@@ -163,3 +163,7 @@ Sprich uns an
 ## Sponsoren
 
 {{< sponsors >}}
+
+## Core Team
+
+{{< team >}}

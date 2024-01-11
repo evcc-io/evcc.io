@@ -162,3 +162,7 @@ Contact us
 ## Sponsors
 
 {{< sponsors >}}
+
+## Core Team
+
+{{< team >}}
