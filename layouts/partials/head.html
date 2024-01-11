@@ -5,13 +5,13 @@
   <title>{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}</title>
 
   {{ with .Site.Params.favicon }}
-    <link rel="shortcut icon" href="{{ . | absURL }}" type="image/png" />
+  <link rel="shortcut icon" href="{{ . | absURL }}" type="image/png" />
   {{ end }}
   {{ with .Site.Params.description }}
-    <meta name="description" content="{{ . }}" />
+  <meta name="description" content="{{ . }}" />
   {{ end }}
   {{ with .Site.Params.meta.keywords }}
-    <meta name="keywords" content="{{ . }}" />
+  <meta name="keywords" content="{{ . }}" />
   {{ end }}
   <meta name="viewport" content="width=device-width" />
 
@@ -29,18 +29,6 @@
 
   {{- partial "head/styling.html" . -}}
 
-  <link
-    rel="preload"
-    href="/fonts/roboto-v20-latin-regular.woff2"
-    as="font"
-    type="font/woff2"
-    crossorigin
-  />
-  <link
-    rel="preload"
-    href="/fonts/roboto-v20-latin-bold.woff2"
-    as="font"
-    type="font/woff2"
-    crossorigin
-  />
+  <link rel="preload" href="/fonts/roboto-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/roboto-v20-latin-bold.woff2" as="font" type="font/woff2" crossorigin />
 </head>

@@ -7,8 +7,11 @@ other = 'GitHub'
 [shirts]
 other = 'Shirts & Hoodies'
 
-[twitter]
-other = 'Twitter'
+[threads]
+other = 'Threads'
+
+[bluesky]
+other = 'Bluesky'
 
 [mastodon]
 other = 'Mastodon'
