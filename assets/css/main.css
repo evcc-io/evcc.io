@@ -502,8 +502,9 @@ footer .icon {
   text-align: center;
   color: inherit;
   text-decoration: none;
-  width: 150px;
+  width: 100px;
   margin-bottom: 2rem;
+  font-size: var(--small-text-font-size);
 }
 .team-member img {
   display: block;
