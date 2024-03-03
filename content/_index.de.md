@@ -65,7 +65,7 @@ Damit evcc die Ladung bestmöglich regeln kann, ist ein Messgerät (= auslesbare
 
 Ist ein von evcc unterstütztes Elektrofahrzeug eingerichtet, kann sein momentaner Batterieladezustand und die Reichweite angezeigt und in der Ladeplanung berücksichtigt werden. Auch wenn die Sonne ab und an mal nicht so viel scheint, bleibt so die Mobilität sichergestellt.
 
-Und noch etwas kann evcc: Ist ein unterstützter Batteriespeicher vorhanden, wird auch dessen Ladezustand gesteuert und er mit Sonnenstrom versorgt.
+Und noch etwas kann evcc: Ist ein unterstützter Batteriespeicher vorhanden, wird auch dessen Ladezustand gesteuert und der Speicher mit Sonnenstrom versorgt.
 
 ## Funktioniert mit deinen bestehenden Geräten
 
