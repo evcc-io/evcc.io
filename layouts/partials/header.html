@@ -13,8 +13,10 @@
         <span>{{i18n "sonne_tanken"}}</span>
       </a>
       <nav class="header__navigation">
-        <a href="https://docs.evcc.io" class="header__navigation__item hide-lg">{{ i18n "dokumentation-short" }}</a>
-        <a href="https://docs.evcc.io" class="header__navigation__item hide-sm">{{ i18n "dokumentation" }}</a>
+        <a href="{{ .Site.Params.BlogUrl }}" class="header__navigation__item">{{ i18n "blog" }}</a>
+        <a href="{{ .Site.Params.DocsUrl }}" class="header__navigation__item hide-lg">{{ i18n "dokumentation-short"
+          }}</a>
+        <a href="{{ .Site.Params.DocsUrl }}" class="header__navigation__item hide-sm">{{ i18n "dokumentation" }}</a>
         <a href="https://github.com/evcc-io/evcc" class="header__navigation__item" title='{{ i18n "github" }}'
           target="_blank">
           <shopicon-regular-github class="icon"></shopicon-regular-github>
