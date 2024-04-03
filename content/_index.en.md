@@ -135,7 +135,7 @@ Getting Started (German)
 
 You are a solar installer or electrician, you set up charging solutions professionally and you need support in setting up evcc? Unfortunately, we cannot provide individual support. However, if you need advice, support or training, we will be happy to refer you to experts and power users from the community who know the system very well.
 
-{{< button-cta url="mailto:info@evcc.io?subject=Request professional evcc support">}}
+{{< button-cta url="mailto:pro-support@evcc.io?subject=Request professional evcc support">}}
 Request support
 {{</ button-cta>}}
 

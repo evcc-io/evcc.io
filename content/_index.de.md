@@ -135,7 +135,7 @@ Erste Schritte
 
 Du bist Solarteur oder Elektriker, richtest beruflich Ladelösungen ein und brauchst Unterstützung bei der Einrichtung von evcc? Wir können leider keinen individuellen Support leisten. Für eine Beratung, Betreuung oder Schulung vermitteln wir dich aber gerne an Experten und Poweruser aus der Community, die das System sehr gut kennen.
 
-{{< button-cta url="mailto:info@evcc.io?subject=Anfrage professioneller evcc-Support">}}
+{{< button-cta url="mailto:pro-support@evcc.io?subject=Anfrage professioneller evcc-Support">}}
 Anfrage stellen
 {{</ button-cta>}}
 
