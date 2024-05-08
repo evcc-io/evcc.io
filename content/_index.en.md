@@ -40,7 +40,7 @@ This increases self-sufficiency and saves money.
 {{< split-entry-text >}}
 Too little sun or no PV system? Charge when the renewables share is high to support the energy revolution.
 
-With a [dynamic electricity tariff](https://docs.evcc.io/docs/reference/configuration/tariffs/) you even save a lot of money.
+With a [dynamic electricity tariff](https://docs.evcc.io/en/docs/features/dynamic-prices) you even save a lot of money.
 {{</ split-entry-text>}}
 {{</ split>}}
 

@@ -38,7 +38,7 @@ Das erhöht Autarkie und spart Geld.
 {{< split-entry-text >}}
 Zu wenig Sonne oder keine PV-Anlage? Lade, wenn viel Erneuerbare verfügbar sind und unterstütze damit die Energiewende.
 
-Mit einem [dynamischen Stromtarif](https://docs.evcc.io/docs/reference/configuration/tariffs/) sparst du sogar ordentlich Geld.
+Mit einem [dynamischen Stromtarif](https://docs.evcc.io/docs/features/dynamic-prices) sparst du sogar ordentlich Geld.
 {{</ split-entry-text>}}
 {{</ split>}}
 
