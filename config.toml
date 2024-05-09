@@ -17,8 +17,8 @@ defaultContentLanguageInSubdir = false
     languageName = "EN"
     title = "evcc - Solar Charging ☀️🚘 - Connects Your EV Charger With Your PV System"
     [languages.en.params]
-      docsUrl = "https://docs.evcc.io/en/docs/Home/"
-      blogUrl = "https://docs.evcc.io/en/blog/"
+      docsUrl = "https://docs.evcc.io/en/docs/Home"
+      blogUrl = "https://docs.evcc.io/en/blog"
 [site]
   [params]
   description = "evcc ermöglicht es, Elektrofahrzeuge mit möglichst viel selbsterzeugtem Solarstrom zu laden."
