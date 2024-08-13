@@ -5,8 +5,8 @@
   --text-color: #1c2445;
   --text-font-size: 24px;
   --small-text-font-size: 19px;
-  --accent-color: #0074e0;
-  --accent-hover-color: #0074e0aa;
+  --accent-color: #0ba631;
+  --accent-hover-color: #076f20;
   --light-background: #f1f1f4;
   --infobox-background: #0fdd42;
   --infobox-color: #1c2445;
@@ -14,6 +14,9 @@
   --4-cols: calc(4 * 100% / 6);
   --2-cols: calc(2 * 100% / 6);
   --1-col: calc(1 * 100% / 6);
+  --button-background: var(--accent-color);
+  --button-background-hover: var(--accent-hover-color);
+  --button-color: var(--page-background);
 
   /* app colors */
   --evcc-green: #baffcb;
@@ -46,6 +49,10 @@
   --evcc-accent1: var(--evcc-yellow);
   --evcc-accent2: var(--evcc-dark-green);
   --evcc-accent3: var(--evcc-darker-green);
+
+  --button-background: var(-accent-color);
+  --button-background-hover: var(--accent-color);
+  --button-color: var(--page-background);
 }
 
 * {
@@ -201,18 +208,18 @@ a:hover {
 
 .content .button {
   display: inline-block;
-  background-color: var(--accent-color);
+  background-color: var(--button-background);
   font-weight: bold;
   font-size: 1em;
   padding: 0.75em 2em;
-  color: #ffffff;
+  color: var(--button-color);
   text-decoration: none;
   border-radius: 2em;
   transition: background-color 0.2s ease-in;
 }
 
 .content .button:hover {
-  text-decoration: underline;
+  background-color: var(--button-background-hover);
 }
 
 .content {
@@ -646,4 +653,31 @@ footer .icon {
 :root.dark .only-light,
 :root:not(.dark) .only-dark {
   display: none;
+}
+
+.youtube {
+  display: block;
+  position: relative;
+  margin: 0 var(--grid-gutter);
+}
+
+.youtube__thumb {
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+.youtube__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+  width: 30%;
+  height: auto;
+  transition: opacity 0.2s ease-in;
+}
+
+.youtube:hover .youtube__play {
+  opacity: 0.8;
 }
