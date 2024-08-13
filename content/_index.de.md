@@ -141,6 +141,14 @@ Anfrage stellen
 
 ---
 
+## c't Magazin erklärt evcc
+
+{{< youtube link="https://www.youtube.com/watch?v=MoBpEXHMNjI" thumb="video/evcc-ct-youtube-video.webp" title="c't erklärt evcc" width="1000" height="563" >}}
+
+In diesem YouTube Video der c't Redaktion bekommst du einen schnellen Überblick über evcc, wie es funktioniert und was es kann.
+
+---
+
 ## Unterstütze das Projekt
 
 ### Aktiv teilnehmen

@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ $.Site.Language }}">
-  {{- partial "head.html" . -}}
+{{- partial "head.html" . -}}
 
-  <body>
-    {{- block "main" . }}{{- end }}
-    {{- partial "footer.html" . -}}
-    {{- partial "head/scripts.html" . -}}
-    <script
-      src="https://cdn.jsdelivr.net/npm/@h2d2/shopicons@1.7.0/umd/regular.js"
-      async
-    ></script>
-  </body>
+<body>
+  {{- block "main" . }}{{- end }}
+  {{- partial "footer.html" . -}}
+  {{- partial "head/scripts.html" . -}}
+</body>
+
 </html>
