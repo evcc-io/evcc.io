@@ -1,21 +1,17 @@
 # Sonne tanken. Ganz einfach.
 
-evcc ist angetreten, um die Nachhaltigkeit beim Laden unserer Elektrofahrzeuge zu optimieren. Dazu ermöglicht evcc das Laden mit möglichst viel selbsterzeugtem Solarstrom. In den meisten Fällen ist das sogar ohne weitere Änderung an der bestehenden Haus-Elektroinstallation möglich.
+evcc ist ein Energie-Management-System mit Fokus auf Elektromobilität.
+Die Software steuert deine [Wallbox oder Schaltsteckdose](#devices).
+Um intelligente Entscheidungen zu treffen, kommuniziert es auch mit deinem [Fahrzeug, Wechselrichter oder Hausspeicher](#devices).
+Die Software ist Open-Source und lebt von der Community.
+
+{{< button-cta url="https://docs.evcc.io/docs/installation" target="_blank" subline="Raspberry Pi, Docker und co.">}}
+Jetzt loslegen
+{{</ button-cta>}}
 
 ---
 
-{{< live-telemetry >}}
-
----
-
-## Was evcc besonders macht
-
-- Lade dein Elektrofahrzeug mit eigenem PV-Überschussstrom
-- Nutze bereits vorhandene Systeme (PV- und Batteriewechselrichter, Wallboxen, Energiezähler)
-- Intuitive und übersichtliche Benutzeroberfläche
-- 100 % Open Source
-
-### Laden, wenn die Sonne scheint
+## Laden, wenn die Sonne scheint
 
 {{< split >}}
 {{< split-entry-image >}}
@@ -29,7 +25,11 @@ Das erhöht Autarkie und spart Geld.
 {{</ split-entry-text>}}
 {{</ split>}}
 
-### Grünen & günstigen Netzstrom nutzen
+{{< live-telemetry >}}
+
+---
+
+## Grünen & günstigen Netzstrom nutzen
 
 {{< split >}}
 {{< split-entry-image >}}
@@ -46,7 +46,7 @@ Mit einem [dynamischen Stromtarif](https://docs.evcc.io/docs/features/dynamic-pr
 
 ## Wir 💚 gute Benutzeroberflächen
 
-Wir möchten, dass PV-Strom-Laden für alle einfach möglich wird. Im Optimalfall funktioniert das ganz ohne manuelles Regeln und Einstellen. Wenn du aber doch mal sehen willst, was das System so macht, haben wir **eine aufgeräumte und responsive Weboberfläche** parat.
+Wir möchten, dass PV-Strom-Laden für alle einfach wird. Im Optimalfall funktioniert das ganz ohne manuelles Regeln und Einstellen. Wenn du aber doch mal sehen willst, was das System so macht, haben wir **eine aufgeräumte und responsive Weboberfläche** parat.
 
 {{< theme-switch >}}
 
@@ -66,23 +66,11 @@ Demo-Instanz ansehen
 
 ---
 
-## Wie evcc funktioniert
+## Wir sprechen mit allen Herstellern {#devices}
 
-{{< full_width_image src="/img/evcc-schema.svg" alt="Darstellung der Funktionsweise" width="200" height="100" >}}
-
-Den eigenen Sonnenstrom zum Laden des Autos zu verwenden, bedeutet, den Eigenverbrauch zu erhöhen und damit den Strom selbst zu nutzen, statt ihn ins Netz abzugeben.
-
-Bereits heute werden zahlreiche Hersteller von Wallboxen unterstützt, und evcc ermöglicht es, die Stromstärke zu steuern, mit der das Auto geladen wird. Das heißt, wenn viel Sonnenstrom erzeugt wird, erlaubt evcc, das angeschlossene Auto mit hoher Leistung zu laden. Wird weniger Strom erzeugt, verlangsamt oder pausiert evcc den Ladevorgang.
-
-Damit evcc die Ladung bestmöglich regeln kann, ist ein Messgerät (= auslesbarer Energiezähler) am Netzanschluss der Hausinstallation notwendig. Durch dieses Messgerät kennt evcc den momentanen Energieüberschuss und kann die Ladeleistung kontinuierlich anpassen. Das Gute ist, dass in fast jeder vorhandenen PV-Anlage ein entsprechendes Gerät bereits vorhanden ist oder einfach nachgerüstet werden kann.
-
-Ist ein von evcc unterstütztes Elektrofahrzeug eingerichtet, kann sein momentaner Batterieladezustand und die Reichweite angezeigt und in der Ladeplanung berücksichtigt werden. Auch wenn die Sonne ab und an mal nicht so viel scheint, bleibt so die Mobilität sichergestellt.
-
-Und noch etwas kann evcc: Ist ein unterstützter Batteriespeicher vorhanden, wird auch dessen Ladezustand gesteuert und der Speicher mit Sonnenstrom versorgt.
-
-## Funktioniert mit deinen bestehenden Geräten
-
-Wir sind keine Freunde von **geschlossenen Ökosystemen**, **Clouddiensten** und **teuren Energiemanagementsystemen**. evcc ist eine lokale Lösung, die auf deiner eigenen Hardware läuft und deine Geräte intelligent zusammenspielen lässt – egal von welchem Hersteller.
+Wir sind keine Freunde von geschlossenen Ökosystemen, Clouddiensten und proprietären Lösungen.
+evcc läuft auf **deiner eigenen Hardware** und lässt deine Geräte intelligent zusammenspielen – **egal von welchem Hersteller**.
+Auch an deinen Daten haben wir kein Interesse.
 
 {{< infobox title="Unterstützte und getestete Komponenten" >}}
 {{< infobox-entry title="Wallboxen & Steckdosen" img="img/evcc-illu-wallbox.svg" >}}
@@ -112,21 +100,54 @@ Du hast ein spezielles Setup oder verwendest exotische Geräte? evcc kommt mit e
 Zudem gibt es Integrationen für Home Assistant, openHAB und ioBroker.
 Um sich auch mit anderen, übergeordneten Energiemanagern abzusprechen, hat evcc zusätzlich eine Unterstützung der Protokolle SEMP und EEBUS integriert.
 
+## Wie evcc funktioniert
+
+{{< full_width_image src="/img/evcc-schema.svg" alt="Darstellung der Funktionsweise" width="200" height="100" >}}
+
+Die Funktionsweise von evcc ist relativ einfach.
+Das System sammelt aktuelle Informationen über die Energieerzeugung, den Zustand des Hausakkus, den aktuellen Strompreis und den Ladezustand des Elektroautos.
+
+Mit dieser Daten regelt evcc die Wallbox, um deinen [PV-Überschuss](https://docs.evcc.io/docs/features/solar-charging) maximal zu nutzen.
+Hast du einen dynamischen Stromtarif, kannst du einen [Ladeplan](https://docs.evcc.io/docs/features/plans) oder eine [Preisgrenze](https://docs.evcc.io/docs/features/dynamic-prices) definieren, um in den günstigsten Zeiten zu laden.
+
+### Fahrzeugintegration
+
+Bietet dein [Elektroauto eine API](https://docs.evcc.io/docs/features/vehicle), kann evcc Informationen wie den aktuellen Ladestand abfragen.
+Diese Daten können genutzt werden, um Komfortfunktionen wie [Ladelimits](https://docs.evcc.io/docs/features/limits) zur Akkupflege oder einen [Mindestladestand](https://docs.evcc.io/docs/features/limits) für sofortiges Aufladen zu definieren.
+
+In der Oberfläche kannst du deine [Ladevorgänge](https://docs.evcc.io/docs/features/sessions) sehen.
+Sofern dein Fahrzeug dies unterstützt, wird neben dem Sonnenanteil und den angefallenen Kosten auch der Kilometerstand angezeigt.
+
+### Hausakkuintegration
+
+Über die [Hausbatteriesteuerung](https://docs.evcc.io/docs/features/battery) definierst du, ob die Überschussenergie zuerst in den Hausakku oder ins Elektroauto fließen soll.
+Neuere Hybridwechselrichter können auch direkt über evcc gesteuert werden.
+Dadurch kann evcc das ungewollte Entladen des Hausakkus verhindern oder ihn in den Wintermonaten gezielt zu Zeiten mit günstigem Netzstrom laden.
+
+### Große Anlagen, kleine Anlagen
+
+Auch komplexere Szenarien wie das Laden von mehreren Fahrzeuge, die Einbindung mehrerer PV- und Speichersysteme oder ein [Lastmanagement](https://docs.evcc.io/docs/features/loadmanagement) um den Hausanschluss nicht zu überlasten, sind möglich.
+
+Hast du eine Balkon-PV-Anlage und schaltbare Steckdosen?
+Auch dann hilft dir evcc, um deinen E-Bike-Akku mit Sonnenstrom zu laden oder deine Eiswürfelmaschine bei Überschuss zu aktivieren.
+Viele Mikrowechselrichter und smarte Steckdosen werden unterstützt.
+
 ---
 
 ## Installiere evcc bei dir zuhause
 
 ### Systemvoraussetzung
 
-evcc ist in Go geschrieben und sehr effizient. Es wird weder viel CPU noch RAM benötigt. Typischerweise läuft evcc auf einem **Raspberry Pi** oder in **Docker** (z.B. Synology NAS) bei dir zuhause. Windows, macOS und Linux werden auch unterstützt.
+evcc ist in Go geschrieben und sehr effizient: es wird weder viel CPU noch RAM benötigt. Typischerweise läuft evcc auf einem **Raspberry Pi** oder in **Docker** (z.B. Synology NAS) bei dir zuhause. Windows, macOS und Linux werden auch unterstützt.
 
 ### evcc einrichten
 
-evcc ist sehr flexibel. Die Ersteinrichtung erfordert aktuell aber noch einige technische Kenntnisse. Wenn dich die Verwendung der Kommandozeile nicht schockt und du schon mal eine YAML-Datei bearbeitet hast, steht der Installation nichts im Weg.
+evcc ist sehr flexibel. Die Ersteinrichtung erfordert aktuell aber noch einige technische Kenntnisse.
+Wenn dich die Verwendung der Kommandozeile nicht schockt und du schon mal eine YAML-Datei bearbeitet hast, steht der Installation nichts im Weg.
 In der Dokumentation erfährst du alles, was du wissen musst.
 
 {{< button-cta url="https://docs.evcc.io/">}}
-Erste Schritte
+Jetzt loslegen
 {{</ button-cta>}}
 
 ---
@@ -135,7 +156,7 @@ Erste Schritte
 
 Du bist Solarteur oder Elektriker, richtest beruflich Ladelösungen ein und brauchst Unterstützung bei der Einrichtung von evcc? Wir können leider keinen individuellen Support leisten. Für eine Beratung, Betreuung oder Schulung vermitteln wir dich aber gerne an Experten und Poweruser aus der Community, die das System sehr gut kennen.
 
-{{< button-cta url="mailto:pro-support@evcc.io?subject=Anfrage professioneller evcc-Support">}}
+{{< button-cta url="mailto:pro-support@evcc.io?subject=Anfrage professioneller evcc-Support" type="secondary">}}
 Anfrage stellen
 {{</ button-cta>}}
 
@@ -164,7 +185,7 @@ Um ein Projekt dieser Größenordnung nachhaltig vorantreiben zu können, brauch
 
 Arbeitest du in einer Firma, die Wallboxen, Energiemesssysteme oder PV-Systeme anbietet? Möchtest du euren Kunden das Laden mit eigenem Sonnenstrom ermöglichen? Sprich uns gerne an. Eigene Code-Beiträge und Hardware-Sponsoring helfen uns, die Fähigkeiten von evcc auszubauen.
 
-{{< button-cta url="mailto:info@evcc.io">}}
+{{< button-cta url="mailto:info@evcc.io" type="secondary">}}
 Sprich uns an
 {{</ button-cta>}}
 

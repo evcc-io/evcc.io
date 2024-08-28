@@ -1,8 +1,13 @@
 {{- $target := or (.Get "target") "_self" -}}
 {{- $url := .Get "url" }}
+{{- $subline := .Get "subline" }}
+{{- $type := or (.Get "type") "cta" -}}
 
 <p class="button-container">
-  <a href="{{ $url }}" target="{{ $target }}" class="button button--cta">
+  <a href="{{ $url }}" target="{{ $target }}" class="button button--{{ $type }}">
     {{ .Inner }}
   </a>
+  {{ with $subline }}
+  <small class="button-subline fineprint">{{ $subline }}</small>
+  {{ end }}
 </p>
