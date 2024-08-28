@@ -206,6 +206,11 @@ a:hover {
   text-align: center;
 }
 
+.content .button-subline {
+  display: block;
+  margin: 0.5em 0;
+}
+
 .content .button {
   display: inline-block;
   background-color: var(--button-background);
@@ -220,6 +225,18 @@ a:hover {
 
 .content .button:hover {
   background-color: var(--button-background-hover);
+}
+
+.content .button--secondary {
+  background-color: transparent;
+  border: 2px solid var(--button-background);
+  color: var(--button-background);
+}
+
+.content .button--secondary:hover {
+  background-color: transparent;
+  border-color: var(--button-background-hover);
+  color: var(--button-background-hover);
 }
 
 .content {

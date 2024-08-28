@@ -1,23 +1,17 @@
 # Solar charging. Super simple.
 
-evcc optimizes sustainability when charging electric vehicles.
-It enables charging using as much self-generated power as possible.
-And best of all, it can do so in most cases without any further modification to your house's existing electrical installation.
+evcc is an energy management system with a focus on electromobility.
+The software controls your [EV charger or smart plug](./#devices).
+It communicates with your [vehicle, inverter or home storage](./#devices) to make intelligent charging decisions.
+The software is open source and community-driven.
+
+{{< button-cta url="https://docs.evcc.io/en/docs/installation" target="_blank" subline="Raspberry Pi, Docker and co.">}}
+Get Started
+{{</ button-cta>}}
 
 ---
 
-{{< live-telemetry >}}
-
----
-
-## What makes evcc special?
-
-- Charge your EV with your excess solar power
-- Use your existing systems (solar and battery inverters, wallboxes, energy meters, etc.)
-- Intuitive, clean, and responsive user interface
-- 100 % Open Source
-
-### Charge when the sun is shining
+## Charge when the sun is shining
 
 {{< split >}}
 {{< split-entry-image >}}
@@ -31,7 +25,11 @@ This increases self-sufficiency and saves money.
 {{</ split-entry-text>}}
 {{</ split>}}
 
-### Use green & cheap grid power
+{{< live-telemetry >}}
+
+---
+
+## Use green & cheap grid power
 
 {{< split >}}
 {{< split-entry-image >}}
@@ -48,7 +46,7 @@ With a [dynamic electricity tariff](https://docs.evcc.io/en/docs/features/dynami
 
 ## We 💚 good UI
 
-We want make solar charging easy for everyone. In the best-case scenario, this works without manual interventions and regular setting adjustments. But if you do want to see what the system is doing, we have a **clean and responsive web interface** ready to go.
+We want to make solar charging easy for everyone. In the best-case scenario, this works without manual interventions and regular setting adjustments. But if you do want to see what the system is doing, we have a **clean and responsive web interface** ready to go.
 
 {{< theme-switch >}}
 
@@ -63,30 +61,18 @@ We want make solar charging easy for everyone. In the best-case scenario, this w
 We have set up a sample installation you can use to try the interface.
 
 {{< button-cta url="https://demo.evcc.io/" target="_blank">}}
-Try Demo UI
+Try demo instance
 {{</ button-cta>}}
 
 ---
 
-## How evcc works
+## We communicate with all manufacturers {#devices}
 
-{{< full_width_image src="/img/evcc-schema.svg" alt="How it works" width="200" height="100" >}}
+Closed ecosystems, cloud services and proprietary solutions are not our cup of tea.
+evcc runs on **your own hardware** and lets your devices work together intelligently - **no matter the manufacturer.**
+We are also not interested in your data.
 
-Using your own solar power to charge the car helps increase self-consumption - that is, using the electricity yourself instead of supplying it to the grid.
-
-evcc makes it possible to control the current of your wallbox. We already support a wide range of chargers. If a lot of solar power is being generated, evcc allows the charger to charge the car with lots of solar power. Inversely, if less solar power is available, evcc slows down (or even pauses) charging.
-
-evcc needs a grid energy meter to work properly. Using this measuring device, evcc knows the current excess of energy and can continuously adjust the charging power appropriately. The good news - almost every existing solar system already contains the necessary energy meter. If not, you can easily add your own.
-
-If a supported vehicle is set up, evcc can take its current battery charging status and range into account when planning charging - even if the sun's not out, it'll still make sure you'll have enough range for your daily trips.
-
-And if you have a supported battery storage system available, evcc can also control its state of charge, managing it against your vehicle seamlessly.
-
-## Works with your existing devices
-
-We're no friends of **closed ecosystems**, **cloud services** and **expensive energy management systems**. evcc is a local solution that runs on your hardware and lets your devices work together intelligently - no matter the manufacturer.
-
-{{< infobox title="Supported & Tested Systems" >}}
+{{< infobox title="Supported & tested systems" >}}
 {{< infobox-entry title="wallboxes & sockets" img="/img/evcc-illu-wallbox.svg" >}}
 {{< infobox-content group="Chargers">}}
 {{< infobox-content group="SmartPlugs">}}
@@ -105,7 +91,7 @@ We're no friends of **closed ecosystems**, **cloud services** and **expensive en
 {{< /infobox-entry >}}
 {{< /infobox >}}
 
-More details can be found in our [documentation](https://docs.evcc.io/docs/devices/chargers/). If your device is not supported yet, let us know on [GitHub](https://github.com/evcc-io/evcc). If it has an interface, we can connect it.
+More details can be found in our [documentation](https://docs.evcc.io/en/docs/devices/chargers/). If your device is not supported yet, let us know on [GitHub](https://github.com/evcc-io/evcc). If it has an interface, we can connect it.
 
 ### Plugin architecture and smart home integration
 
@@ -113,29 +99,62 @@ You have a special setup or use exotic devices? evcc comes with a **flexible plu
 
 Already have a smart home system? We integrate nicely with Home Assistant, openHAB and ioBroker. evcc even works with higher-level energy managers and can take commands via SEMP and EEBUS protocol.
 
+## How evcc works
+
+{{< full_width_image src="/img/evcc-schema.svg" alt="How it works" width="200" height="100" >}}
+
+The core functionality of evcc is relatively simple.
+The system collects information about energy generation, the state of the home battery, the electricity price, and the charging status of the electric vehicle.
+
+With this data, evcc controls your EV charger to maximize your [PV surplus](https://docs.evcc.io/en/docs/features/solar-charging) usage.
+If you have a dynamic electricity tariff, you can define a [charging plan](https://docs.evcc.io/en/docs/features/plans) or set a [price limit](https://docs.evcc.io/en/docs/features/dynamic-prices) and charge at the cheapest times.
+
+### Vehicle integration
+
+If your [electric vehicle has an API](https://docs.evcc.io/en/docs/features/vehicle), evcc can query information like the current charge level.
+This data can be used to enable comfort functions like [charge limits](https://docs.evcc.io/en/docs/features/limits) for battery care or a [minimum charge level](https://docs.evcc.io/en/docs/features/limits) for immediate charging when needed.
+
+You can see all [charging sessions](https://docs.evcc.io/en/docs/features/sessions) in the web interface.
+If your vehicle supports it, you'll not only see solar share and costs per session but also the odometer reading of your vehicle.
+
+### Home battery integration
+
+With the [home battery control](https://docs.evcc.io/en/docs/features/battery), you can define whether surplus energy should first flow into the home battery or the electric vehicle.
+Newer hybrid inverters can also be controlled directly via evcc.
+This way, evcc can prevent the unwanted discharge of the home battery or charge the home battery at times of low grid prices in the winter months.
+
+### Large systems, small systems
+
+Even more complex scenarios like charging multiple vehicles, integrating multiple PV and storage systems, or [load management](https://docs.evcc.io/en/docs/features/loadmanagement) to avoid overloading the home connection are possible.
+
+Do you have a balcony PV system and switchable sockets?
+Even then, evcc helps you to charge your e-bike battery with solar power or activate your ice cube machine when there is a surplus.
+Many micro inverters and smart sockets are supported.
+
 ---
 
 ## Install evcc at your home
 
 ### System requirements
 
-evcc is written in Go, and is extremely efficient. You don't need a system with a lot of CPU or RAM - typically you can run it on a **Raspberry Pi** or in **Docker** (e.g. Synology NAS). Windows, macOS and Linux are all fully supported.
+evcc is written in Go, and is extremely efficient: you don't need a system with a lot of CPU or RAM.
+Typically you can run it on a **Raspberry Pi** or in **Docker** (e.g. Synology NAS). Windows, macOS and Linux are all fully supported.
 
 ### Setting up evcc
 
 evcc is very flexible. However, the initial setup still requires a fair amount of technical knowledge. If you're familiar with the command line, and you've ever edited a YAML file, then you should be able to get it configured. You'll find everything you need to know in the documentation.
 
-{{< button-cta url="https://docs.evcc.io/">}}
-Getting Started (German)
+{{< button-cta url="https://docs.evcc.io/en/">}}
+Get Started
 {{</ button-cta>}}
 
 ---
 
 ## Professional support
 
-You are a solar installer or electrician, you set up charging solutions professionally and you need support in setting up evcc? Unfortunately, we cannot provide individual support. However, if you need advice, support or training, we will be happy to refer you to experts and power users from the community who know the system very well.
+You are a solar installer or electrician, you set up charging solutions professionally and you need support with configuring evcc? Unfortunately, we cannot provide individual support. However, if you need advice, support or training, we will be happy to refer you to experts and power users from the community who know the system very well.
 
-{{< button-cta url="mailto:pro-support@evcc.io?subject=Request professional evcc support">}}
+{{< button-cta url="mailto:pro-support@evcc.io?subject=Request professional evcc support" type="secondary">}}
 Request support
 {{</ button-cta>}}
 
@@ -151,11 +170,11 @@ You can get in touch, ask questions, and get support from other users in the [Fo
 
 ### Financial support
 
-In order to sustain a project of this size we need your support. Here you can learn more about our [sponsoring model](https://docs.evcc.io/docs/sponsorship).
+In order to sustain a project of this size we need your support. Here you can learn more about our [sponsoring model](https://docs.evcc.io/en/docs/sponsorship).
 
 You work for a company which offers wallboxes, energy measurement systems, or solar / PV systems? Do you want to help enable your customers to charge their cars with their own solar power? Get in touch with us. Contributing code or sponsoring us with hardware greatly helps us to expand evcc's capabilities.
 
-{{< button-cta url="mailto:info@evcc.io">}}
+{{< button-cta url="mailto:info@evcc.io" type="secondary">}}
 Contact us
 {{</ button-cta>}}
 
