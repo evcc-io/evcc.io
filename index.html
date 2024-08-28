@@ -83,16 +83,42 @@
   </div>
 </header><main class="content">
   <h1 id="sonne-tanken-ganz-einfach">Sonne tanken. Ganz einfach.</h1>
-<p>evcc ist angetreten, um die Nachhaltigkeit beim Laden unserer Elektrofahrzeuge zu optimieren. Dazu ermöglicht evcc das Laden mit möglichst viel selbsterzeugtem Solarstrom. In den meisten Fällen ist das sogar ohne weitere Änderung an der bestehenden Haus-Elektroinstallation möglich.</p>
+<p>evcc ist ein Energie-Management-System mit Fokus auf Elektromobilität.
+Die Software steuert deine <a href="#devices">Wallbox oder Schaltsteckdose</a>.
+Um intelligente Entscheidungen zu treffen, kommuniziert es auch mit deinem <a href="#devices">Fahrzeug, Wechselrichter oder Hausspeicher</a>.
+Die Software ist Open-Source und lebt von der Community.</p>
+<p class="button-container">
+  <a href="https://docs.evcc.io/docs/installation" target="_blank" class="button button--cta">
+    
+Jetzt loslegen
+
+  </a>
+  
+  <small class="button-subline fineprint">Raspberry Pi, Docker und co.</small>
+  
+</p>
 <hr>
+<h2 id="laden-wenn-die-sonne-scheint">Laden, wenn die Sonne scheint</h2>
+<div class="split">
+  
+<div class="split-entry split-entry--image">
+  
+<object id="solar-surplus" type="image/svg+xml" data="/img/solar-surplus.svg"></object>
+
+</div>
+<div class="split-entry split-entry--text">
+  <p>Dein Ladevorgang startet, sobald genug eigener Sonnenstrom produziert wird.
+Die Ladeleistung wird permanent an den verfügbaren Überschuss angepasst.</p>
+<p>Das erhöht Autarkie und spart Geld.</p>
+
+</div>
+
+</div>
 <aside class="telemetry" id="live">
   <h2>Livedaten aus der Community</h2>
   <div class="telemetry_inner">
     <div class="telemetry_box">
-      <shopicon-regular-car3
-        class="telemetry_icon"
-        size="xl"
-      ></shopicon-regular-car3>
+      <shopicon-regular-car3 class="telemetry_icon" size="xl"></shopicon-regular-car3>
       <div class="telemetry_details">
         <div class="telemetry_main">
           <div class="telemetry_title">
@@ -109,10 +135,7 @@
       </div>
     </div>
     <div class="telemetry_box">
-      <shopicon-regular-sun
-        class="telemetry_icon"
-        size="xl"
-      ></shopicon-regular-sun>
+      <shopicon-regular-sun class="telemetry_icon" size="xl"></shopicon-regular-sun>
       <div class="telemetry_details">
         <div class="telemetry_main">
           <div class="telemetry_title">
@@ -127,10 +150,7 @@
       </div>
     </div>
     <div class="telemetry_box">
-      <shopicon-regular-eco1
-        class="telemetry_icon"
-        size="xl"
-      ></shopicon-regular-eco1>
+      <shopicon-regular-eco1 class="telemetry_icon" size="xl"></shopicon-regular-eco1>
       <div class="telemetry_details">
         <div class="telemetry_main">
           <div class="telemetry_title">
@@ -151,38 +171,12 @@
     Zusammengefasste Ladedaten von
     <span id="telemetry--totalClients"></span> teilnehmenden Sponsoren.
     <br />
-    <a href="https://docs.evcc.io/docs/reference/configuration/telemetry"
-      >Hier</a
-    >
+    <a href="https://docs.evcc.io/docs/reference/configuration/telemetry">Hier</a>
     erfährst du, wie du mit dabei sein kannst.
   </p>
 </aside>
-
 <hr>
-<h2 id="was-evcc-besonders-macht">Was evcc besonders macht</h2>
-<ul>
-<li>Lade dein Elektrofahrzeug mit eigenem PV-Überschussstrom</li>
-<li>Nutze bereits vorhandene Systeme (PV- und Batteriewechselrichter, Wallboxen, Energiezähler)</li>
-<li>Intuitive und übersichtliche Benutzeroberfläche</li>
-<li>100 % Open Source</li>
-</ul>
-<h3 id="laden-wenn-die-sonne-scheint">Laden, wenn die Sonne scheint</h3>
-<div class="split">
-  
-<div class="split-entry split-entry--image">
-  
-<object id="solar-surplus" type="image/svg+xml" data="/img/solar-surplus.svg"></object>
-
-</div>
-<div class="split-entry split-entry--text">
-  <p>Dein Ladevorgang startet, sobald genug eigener Sonnenstrom produziert wird.
-Die Ladeleistung wird permanent an den verfügbaren Überschuss angepasst.</p>
-<p>Das erhöht Autarkie und spart Geld.</p>
-
-</div>
-
-</div>
-<h3 id="grünen--günstigen-netzstrom-nutzen">Grünen &amp; günstigen Netzstrom nutzen</h3>
+<h2 id="grünen--günstigen-netzstrom-nutzen">Grünen &amp; günstigen Netzstrom nutzen</h2>
 <div class="split">
   
 <div class="split-entry split-entry--image">
@@ -199,7 +193,7 @@ Die Ladeleistung wird permanent an den verfügbaren Überschuss angepasst.</p>
 </div>
 <hr>
 <h2 id="wir--gute-benutzeroberflächen">Wir 💚 gute Benutzeroberflächen</h2>
-<p>Wir möchten, dass PV-Strom-Laden für alle einfach möglich wird. Im Optimalfall funktioniert das ganz ohne manuelles Regeln und Einstellen. Wenn du aber doch mal sehen willst, was das System so macht, haben wir <strong>eine aufgeräumte und responsive Weboberfläche</strong> parat.</p>
+<p>Wir möchten, dass PV-Strom-Laden für alle einfach wird. Im Optimalfall funktioniert das ganz ohne manuelles Regeln und Einstellen. Wenn du aber doch mal sehen willst, was das System so macht, haben wir <strong>eine aufgeräumte und responsive Weboberfläche</strong> parat.</p>
 <p>
   Du kannst zwischen <a href="#" data-theme="light">Light-</a> und
   <a href="#" data-theme="dark">Dark-Mode</a> wählen.
@@ -364,27 +358,19 @@ Die Ladeleistung wird permanent an den verfügbaren Überschuss angepasst.</p>
   </div>
 </div>
 <p>Wir haben eine Beispiel-Installation aufgesetzt, mit der du die Oberfläche schon mal ausprobieren kannst.</p>
-
-
 <p class="button-container">
   <a href="https://demo.evcc.io/" target="_blank" class="button button--cta">
     
 Demo-Instanz ansehen
 
   </a>
+  
 </p>
-
 <hr>
-<h2 id="wie-evcc-funktioniert">Wie evcc funktioniert</h2>
-<img class="image--full" src="./img/evcc-schema.svg" alt="Darstellung der Funktionsweise" width="200" height="100" draggable="false"/>
-
-<p>Den eigenen Sonnenstrom zum Laden des Autos zu verwenden, bedeutet, den Eigenverbrauch zu erhöhen und damit den Strom selbst zu nutzen, statt ihn ins Netz abzugeben.</p>
-<p>Bereits heute werden zahlreiche Hersteller von Wallboxen unterstützt, und evcc ermöglicht es, die Stromstärke zu steuern, mit der das Auto geladen wird. Das heißt, wenn viel Sonnenstrom erzeugt wird, erlaubt evcc, das angeschlossene Auto mit hoher Leistung zu laden. Wird weniger Strom erzeugt, verlangsamt oder pausiert evcc den Ladevorgang.</p>
-<p>Damit evcc die Ladung bestmöglich regeln kann, ist ein Messgerät (= auslesbarer Energiezähler) am Netzanschluss der Hausinstallation notwendig. Durch dieses Messgerät kennt evcc den momentanen Energieüberschuss und kann die Ladeleistung kontinuierlich anpassen. Das Gute ist, dass in fast jeder vorhandenen PV-Anlage ein entsprechendes Gerät bereits vorhanden ist oder einfach nachgerüstet werden kann.</p>
-<p>Ist ein von evcc unterstütztes Elektrofahrzeug eingerichtet, kann sein momentaner Batterieladezustand und die Reichweite angezeigt und in der Ladeplanung berücksichtigt werden. Auch wenn die Sonne ab und an mal nicht so viel scheint, bleibt so die Mobilität sichergestellt.</p>
-<p>Und noch etwas kann evcc: Ist ein unterstützter Batteriespeicher vorhanden, wird auch dessen Ladezustand gesteuert und der Speicher mit Sonnenstrom versorgt.</p>
-<h2 id="funktioniert-mit-deinen-bestehenden-geräten">Funktioniert mit deinen bestehenden Geräten</h2>
-<p>Wir sind keine Freunde von <strong>geschlossenen Ökosystemen</strong>, <strong>Clouddiensten</strong> und <strong>teuren Energiemanagementsystemen</strong>. evcc ist eine lokale Lösung, die auf deiner eigenen Hardware läuft und deine Geräte intelligent zusammenspielen lässt – egal von welchem Hersteller.</p>
+<h2 id="devices">Wir sprechen mit allen Herstellern</h2>
+<p>Wir sind keine Freunde von geschlossenen Ökosystemen, Clouddiensten und proprietären Lösungen.
+evcc läuft auf <strong>deiner eigenen Hardware</strong> und lässt deine Geräte intelligent zusammenspielen – <strong>egal von welchem Hersteller</strong>.
+Auch an deinen Daten haben wir kein Interesse.</p>
 <aside class="infobox">
   <h2>Unterstützte und getestete Komponenten</h2>
   <div class="infobox_inner">
@@ -448,36 +434,54 @@ Demo-Instanz ansehen
 <p>Du hast ein spezielles Setup oder verwendest exotische Geräte? evcc kommt mit einer <strong>flexiblen Plugin-Architektur</strong> und erlaubt es dir, eigene Anbindungen über Modbus, SunSpec, HTTP, JSON, REST, MQTT, JavaScript und Shell zu entwickeln.</p>
 <p>Zudem gibt es Integrationen für Home Assistant, openHAB und ioBroker.
 Um sich auch mit anderen, übergeordneten Energiemanagern abzusprechen, hat evcc zusätzlich eine Unterstützung der Protokolle SEMP und EEBUS integriert.</p>
+<h2 id="wie-evcc-funktioniert">Wie evcc funktioniert</h2>
+<img class="image--full" src="./img/evcc-schema.svg" alt="Darstellung der Funktionsweise" width="200" height="100" draggable="false"/>
+
+<p>Die Funktionsweise von evcc ist relativ einfach.
+Das System sammelt aktuelle Informationen über die Energieerzeugung, den Zustand des Hausakkus, den aktuellen Strompreis und den Ladezustand des Elektroautos.</p>
+<p>Mit dieser Daten regelt evcc die Wallbox, um deinen <a href="https://docs.evcc.io/docs/features/solar-charging">PV-Überschuss</a> maximal zu nutzen.
+Hast du einen dynamischen Stromtarif, kannst du einen <a href="https://docs.evcc.io/docs/features/plans">Ladeplan</a> oder eine <a href="https://docs.evcc.io/docs/features/dynamic-prices">Preisgrenze</a> definieren, um in den günstigsten Zeiten zu laden.</p>
+<h3 id="fahrzeugintegration">Fahrzeugintegration</h3>
+<p>Bietet dein <a href="https://docs.evcc.io/docs/features/vehicle">Elektroauto eine API</a>, kann evcc Informationen wie den aktuellen Ladestand abfragen.
+Diese Daten können genutzt werden, um Komfortfunktionen wie <a href="https://docs.evcc.io/docs/features/limits">Ladelimits</a> zur Akkupflege oder einen <a href="https://docs.evcc.io/docs/features/limits">Mindestladestand</a> für sofortiges Aufladen zu definieren.</p>
+<p>In der Oberfläche kannst du deine <a href="https://docs.evcc.io/docs/features/sessions">Ladevorgänge</a> sehen.
+Sofern dein Fahrzeug dies unterstützt, wird neben dem Sonnenanteil und den angefallenen Kosten auch der Kilometerstand angezeigt.</p>
+<h3 id="hausakkuintegration">Hausakkuintegration</h3>
+<p>Über die <a href="https://docs.evcc.io/docs/features/battery">Hausbatteriesteuerung</a> definierst du, ob die Überschussenergie zuerst in den Hausakku oder ins Elektroauto fließen soll.
+Neuere Hybridwechselrichter können auch direkt über evcc gesteuert werden.
+Dadurch kann evcc das ungewollte Entladen des Hausakkus verhindern oder ihn in den Wintermonaten gezielt zu Zeiten mit günstigem Netzstrom laden.</p>
+<h3 id="große-anlagen-kleine-anlagen">Große Anlagen, kleine Anlagen</h3>
+<p>Auch komplexere Szenarien wie das Laden von mehreren Fahrzeuge, die Einbindung mehrerer PV- und Speichersysteme oder ein <a href="https://docs.evcc.io/docs/features/loadmanagement">Lastmanagement</a> um den Hausanschluss nicht zu überlasten, sind möglich.</p>
+<p>Hast du eine Balkon-PV-Anlage und schaltbare Steckdosen?
+Auch dann hilft dir evcc, um deinen E-Bike-Akku mit Sonnenstrom zu laden oder deine Eiswürfelmaschine bei Überschuss zu aktivieren.
+Viele Mikrowechselrichter und smarte Steckdosen werden unterstützt.</p>
 <hr>
 <h2 id="installiere-evcc-bei-dir-zuhause">Installiere evcc bei dir zuhause</h2>
 <h3 id="systemvoraussetzung">Systemvoraussetzung</h3>
-<p>evcc ist in Go geschrieben und sehr effizient. Es wird weder viel CPU noch RAM benötigt. Typischerweise läuft evcc auf einem <strong>Raspberry Pi</strong> oder in <strong>Docker</strong> (z.B. Synology NAS) bei dir zuhause. Windows, macOS und Linux werden auch unterstützt.</p>
+<p>evcc ist in Go geschrieben und sehr effizient: es wird weder viel CPU noch RAM benötigt. Typischerweise läuft evcc auf einem <strong>Raspberry Pi</strong> oder in <strong>Docker</strong> (z.B. Synology NAS) bei dir zuhause. Windows, macOS und Linux werden auch unterstützt.</p>
 <h3 id="evcc-einrichten">evcc einrichten</h3>
-<p>evcc ist sehr flexibel. Die Ersteinrichtung erfordert aktuell aber noch einige technische Kenntnisse. Wenn dich die Verwendung der Kommandozeile nicht schockt und du schon mal eine YAML-Datei bearbeitet hast, steht der Installation nichts im Weg.
+<p>evcc ist sehr flexibel. Die Ersteinrichtung erfordert aktuell aber noch einige technische Kenntnisse.
+Wenn dich die Verwendung der Kommandozeile nicht schockt und du schon mal eine YAML-Datei bearbeitet hast, steht der Installation nichts im Weg.
 In der Dokumentation erfährst du alles, was du wissen musst.</p>
-
-
 <p class="button-container">
   <a href="https://docs.evcc.io/" target="_self" class="button button--cta">
     
-Erste Schritte
+Jetzt loslegen
 
   </a>
+  
 </p>
-
 <hr>
 <h2 id="professioneller-support">Professioneller Support</h2>
 <p>Du bist Solarteur oder Elektriker, richtest beruflich Ladelösungen ein und brauchst Unterstützung bei der Einrichtung von evcc? Wir können leider keinen individuellen Support leisten. Für eine Beratung, Betreuung oder Schulung vermitteln wir dich aber gerne an Experten und Poweruser aus der Community, die das System sehr gut kennen.</p>
-
-
 <p class="button-container">
-  <a href="mailto:pro-support@evcc.io?subject=Anfrage%20professioneller%20evcc-Support" target="_self" class="button button--cta">
+  <a href="mailto:pro-support@evcc.io?subject=Anfrage%20professioneller%20evcc-Support" target="_self" class="button button--secondary">
     
 Anfrage stellen
 
   </a>
+  
 </p>
-
 <hr>
 <h2 id="ct-magazin-erklärt-evcc">c&rsquo;t Magazin erklärt evcc</h2>
 <a href="https://www.youtube.com/watch?v=MoBpEXHMNjI" target="_blank" class="youtube">
@@ -502,16 +506,14 @@ Oder komm in unseren Chat, lerne uns kennen und diskutiere mit uns: <a href="./s
 <h3 id="finanzieller-support">Finanzieller Support</h3>
 <p>Um ein Projekt dieser Größenordnung nachhaltig vorantreiben zu können, brauchen wir eure Unterstützung. Hier erfährst du mehr über unser <a href="https://docs.evcc.io/docs/sponsorship">Sponsoring Modell</a>.</p>
 <p>Arbeitest du in einer Firma, die Wallboxen, Energiemesssysteme oder PV-Systeme anbietet? Möchtest du euren Kunden das Laden mit eigenem Sonnenstrom ermöglichen? Sprich uns gerne an. Eigene Code-Beiträge und Hardware-Sponsoring helfen uns, die Fähigkeiten von evcc auszubauen.</p>
-
-
 <p class="button-container">
-  <a href="mailto:info@evcc.io" target="_self" class="button button--cta">
+  <a href="mailto:info@evcc.io" target="_self" class="button button--secondary">
     
 Sprich uns an
 
   </a>
+  
 </p>
-
 <h2 id="sponsoren">Sponsoren</h2>
 <div class="sponsors">
     <div class="sponsor-logos">

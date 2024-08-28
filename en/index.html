@@ -83,18 +83,42 @@
   </div>
 </header><main class="content">
   <h1 id="solar-charging-super-simple">Solar charging. Super simple.</h1>
-<p>evcc optimizes sustainability when charging electric vehicles.
-It enables charging using as much self-generated power as possible.
-And best of all, it can do so in most cases without any further modification to your house&rsquo;s existing electrical installation.</p>
+<p>evcc is an energy management system with a focus on electromobility.
+The software controls your <a href="./#devices">EV charger or smart plug</a>.
+It communicates with your <a href="./#devices">vehicle, inverter or home storage</a> to make intelligent charging decisions.
+The software is open source and community-driven.</p>
+<p class="button-container">
+  <a href="https://docs.evcc.io/en/docs/installation" target="_blank" class="button button--cta">
+    
+Get Started
+
+  </a>
+  
+  <small class="button-subline fineprint">Raspberry Pi, Docker and co.</small>
+  
+</p>
 <hr>
+<h2 id="charge-when-the-sun-is-shining">Charge when the sun is shining</h2>
+<div class="split">
+  
+<div class="split-entry split-entry--image">
+  
+<object id="solar-surplus" type="image/svg+xml" data="/img/solar-surplus.svg"></object>
+
+</div>
+<div class="split-entry split-entry--text">
+  <p>Your charging process starts as soon as enough solar power is produced.
+The charging power is permanently adjusted to the available surplus.</p>
+<p>This increases self-sufficiency and saves money.</p>
+
+</div>
+
+</div>
 <aside class="telemetry" id="live">
-  <h2>Live Data from the Community</h2>
+  <h2>Live data from the community</h2>
   <div class="telemetry_inner">
     <div class="telemetry_box">
-      <shopicon-regular-car3
-        class="telemetry_icon"
-        size="xl"
-      ></shopicon-regular-car3>
+      <shopicon-regular-car3 class="telemetry_icon" size="xl"></shopicon-regular-car3>
       <div class="telemetry_details">
         <div class="telemetry_main">
           <div class="telemetry_title">
@@ -111,10 +135,7 @@ And best of all, it can do so in most cases without any further modification to 
       </div>
     </div>
     <div class="telemetry_box">
-      <shopicon-regular-sun
-        class="telemetry_icon"
-        size="xl"
-      ></shopicon-regular-sun>
+      <shopicon-regular-sun class="telemetry_icon" size="xl"></shopicon-regular-sun>
       <div class="telemetry_details">
         <div class="telemetry_main">
           <div class="telemetry_title">
@@ -129,10 +150,7 @@ And best of all, it can do so in most cases without any further modification to 
       </div>
     </div>
     <div class="telemetry_box">
-      <shopicon-regular-eco1
-        class="telemetry_icon"
-        size="xl"
-      ></shopicon-regular-eco1>
+      <shopicon-regular-eco1 class="telemetry_icon" size="xl"></shopicon-regular-eco1>
       <div class="telemetry_details">
         <div class="telemetry_main">
           <div class="telemetry_title">
@@ -154,37 +172,11 @@ And best of all, it can do so in most cases without any further modification to 
     contributed to this summarized data.
     <br />
     Find out how you can contribute
-    <a href="https://docs.evcc.io/docs/reference/configuration/telemetry"
-      >here</a
-    >!
+    <a href="https://docs.evcc.io/docs/reference/configuration/telemetry">here</a>!
   </p>
 </aside>
-
 <hr>
-<h2 id="what-makes-evcc-special">What makes evcc special?</h2>
-<ul>
-<li>Charge your EV with your excess solar power</li>
-<li>Use your existing systems (solar and battery inverters, wallboxes, energy meters, etc.)</li>
-<li>Intuitive, clean, and responsive user interface</li>
-<li>100 % Open Source</li>
-</ul>
-<h3 id="charge-when-the-sun-is-shining">Charge when the sun is shining</h3>
-<div class="split">
-  
-<div class="split-entry split-entry--image">
-  
-<object id="solar-surplus" type="image/svg+xml" data="/img/solar-surplus.svg"></object>
-
-</div>
-<div class="split-entry split-entry--text">
-  <p>Your charging process starts as soon as enough solar power is produced.
-The charging power is permanently adjusted to the available surplus.</p>
-<p>This increases self-sufficiency and saves money.</p>
-
-</div>
-
-</div>
-<h3 id="use-green--cheap-grid-power">Use green &amp; cheap grid power</h3>
+<h2 id="use-green--cheap-grid-power">Use green &amp; cheap grid power</h2>
 <div class="split">
   
 <div class="split-entry split-entry--image">
@@ -201,12 +193,11 @@ The charging power is permanently adjusted to the available surplus.</p>
 </div>
 <hr>
 <h2 id="we--good-ui">We 💚 good UI</h2>
-<p>We want make solar charging easy for everyone. In the best-case scenario, this works without manual interventions and regular setting adjustments. But if you do want to see what the system is doing, we have a <strong>clean and responsive web interface</strong> ready to go.</p>
+<p>We want to make solar charging easy for everyone. In the best-case scenario, this works without manual interventions and regular setting adjustments. But if you do want to see what the system is doing, we have a <strong>clean and responsive web interface</strong> ready to go.</p>
 <p>
-  You can choose between <a href="#" data-theme="light">Light-</a> and
-  <a href="#" data-theme="dark">Dark-Mode.</a>
+  You can choose between <a href="#" data-theme="light">light-</a> and
+  <a href="#" data-theme="dark">dark-mode.</a>
 </p>
-
 <div class="screenshots">
   <div class="screenshots_container">
     <div class="screenshots_inner">
@@ -366,29 +357,21 @@ The charging power is permanently adjusted to the available surplus.</p>
   </div>
 </div>
 <p>We have set up a sample installation you can use to try the interface.</p>
-
-
 <p class="button-container">
   <a href="https://demo.evcc.io/" target="_blank" class="button button--cta">
     
-Try Demo UI
+Try demo instance
 
   </a>
+  
 </p>
-
 <hr>
-<h2 id="how-evcc-works">How evcc works</h2>
-<img class="image--full" src="../img/evcc-schema.svg" alt="How it works" width="200" height="100" draggable="false"/>
-
-<p>Using your own solar power to charge the car helps increase self-consumption - that is, using the electricity yourself instead of supplying it to the grid.</p>
-<p>evcc makes it possible to control the current of your wallbox. We already support a wide range of chargers. If a lot of solar power is being generated, evcc allows the charger to charge the car with lots of solar power. Inversely, if less solar power is available, evcc slows down (or even pauses) charging.</p>
-<p>evcc needs a grid energy meter to work properly. Using this measuring device, evcc knows the current excess of energy and can continuously adjust the charging power appropriately. The good news - almost every existing solar system already contains the necessary energy meter. If not, you can easily add your own.</p>
-<p>If a supported vehicle is set up, evcc can take its current battery charging status and range into account when planning charging - even if the sun&rsquo;s not out, it&rsquo;ll still make sure you&rsquo;ll have enough range for your daily trips.</p>
-<p>And if you have a supported battery storage system available, evcc can also control its state of charge, managing it against your vehicle seamlessly.</p>
-<h2 id="works-with-your-existing-devices">Works with your existing devices</h2>
-<p>We&rsquo;re no friends of <strong>closed ecosystems</strong>, <strong>cloud services</strong> and <strong>expensive energy management systems</strong>. evcc is a local solution that runs on your hardware and lets your devices work together intelligently - no matter the manufacturer.</p>
+<h2 id="devices">We communicate with all manufacturers</h2>
+<p>Closed ecosystems, cloud services and proprietary solutions are not our cup of tea.
+evcc runs on <strong>your own hardware</strong> and lets your devices work together intelligently - <strong>no matter the manufacturer.</strong>
+We are also not interested in your data.</p>
 <aside class="infobox">
-  <h2>Supported &amp; Tested Systems</h2>
+  <h2>Supported &amp; tested systems</h2>
   <div class="infobox_inner">
     
 <div class="infobox_entry">
@@ -445,57 +428,73 @@ Try Demo UI
 
   </div>
 </aside>
-<p>More details can be found in our <a href="https://docs.evcc.io/docs/devices/chargers/">documentation</a>. If your device is not supported yet, let us know on <a href="https://github.com/evcc-io/evcc">GitHub</a>. If it has an interface, we can connect it.</p>
+<p>More details can be found in our <a href="https://docs.evcc.io/en/docs/devices/chargers/">documentation</a>. If your device is not supported yet, let us know on <a href="https://github.com/evcc-io/evcc">GitHub</a>. If it has an interface, we can connect it.</p>
 <h3 id="plugin-architecture-and-smart-home-integration">Plugin architecture and smart home integration</h3>
 <p>You have a special setup or use exotic devices? evcc comes with a <strong>flexible plugin architecture</strong> and allows you to build custom implementations via Modbus, SunSpec, HTTP, JSON, REST, MQTT, JavaScript and Shell.</p>
 <p>Already have a smart home system? We integrate nicely with Home Assistant, openHAB and ioBroker. evcc even works with higher-level energy managers and can take commands via SEMP and EEBUS protocol.</p>
+<h2 id="how-evcc-works">How evcc works</h2>
+<img class="image--full" src="../img/evcc-schema.svg" alt="How it works" width="200" height="100" draggable="false"/>
+
+<p>The core functionality of evcc is relatively simple.
+The system collects information about energy generation, the state of the home battery, the electricity price, and the charging status of the electric vehicle.</p>
+<p>With this data, evcc controls your EV charger to maximize your <a href="https://docs.evcc.io/en/docs/features/solar-charging">PV surplus</a> usage.
+If you have a dynamic electricity tariff, you can define a <a href="https://docs.evcc.io/en/docs/features/plans">charging plan</a> or set a <a href="https://docs.evcc.io/en/docs/features/dynamic-prices">price limit</a> and charge at the cheapest times.</p>
+<h3 id="vehicle-integration">Vehicle integration</h3>
+<p>If your <a href="https://docs.evcc.io/en/docs/features/vehicle">electric vehicle has an API</a>, evcc can query information like the current charge level.
+This data can be used to enable comfort functions like <a href="https://docs.evcc.io/en/docs/features/limits">charge limits</a> for battery care or a <a href="https://docs.evcc.io/en/docs/features/limits">minimum charge level</a> for immediate charging when needed.</p>
+<p>You can see all <a href="https://docs.evcc.io/en/docs/features/sessions">charging sessions</a> in the web interface.
+If your vehicle supports it, you&rsquo;ll not only see solar share and costs per session but also the odometer reading of your vehicle.</p>
+<h3 id="home-battery-integration">Home battery integration</h3>
+<p>With the <a href="https://docs.evcc.io/en/docs/features/battery">home battery control</a>, you can define whether surplus energy should first flow into the home battery or the electric vehicle.
+Newer hybrid inverters can also be controlled directly via evcc.
+This way, evcc can prevent the unwanted discharge of the home battery or charge the home battery at times of low grid prices in the winter months.</p>
+<h3 id="large-systems-small-systems">Large systems, small systems</h3>
+<p>Even more complex scenarios like charging multiple vehicles, integrating multiple PV and storage systems, or <a href="https://docs.evcc.io/en/docs/features/loadmanagement">load management</a> to avoid overloading the home connection are possible.</p>
+<p>Do you have a balcony PV system and switchable sockets?
+Even then, evcc helps you to charge your e-bike battery with solar power or activate your ice cube machine when there is a surplus.
+Many micro inverters and smart sockets are supported.</p>
 <hr>
 <h2 id="install-evcc-at-your-home">Install evcc at your home</h2>
 <h3 id="system-requirements">System requirements</h3>
-<p>evcc is written in Go, and is extremely efficient. You don&rsquo;t need a system with a lot of CPU or RAM - typically you can run it on a <strong>Raspberry Pi</strong> or in <strong>Docker</strong> (e.g. Synology NAS). Windows, macOS and Linux are all fully supported.</p>
+<p>evcc is written in Go, and is extremely efficient: you don&rsquo;t need a system with a lot of CPU or RAM.
+Typically you can run it on a <strong>Raspberry Pi</strong> or in <strong>Docker</strong> (e.g. Synology NAS). Windows, macOS and Linux are all fully supported.</p>
 <h3 id="setting-up-evcc">Setting up evcc</h3>
 <p>evcc is very flexible. However, the initial setup still requires a fair amount of technical knowledge. If you&rsquo;re familiar with the command line, and you&rsquo;ve ever edited a YAML file, then you should be able to get it configured. You&rsquo;ll find everything you need to know in the documentation.</p>
-
-
 <p class="button-container">
-  <a href="https://docs.evcc.io/" target="_self" class="button button--cta">
+  <a href="https://docs.evcc.io/en/" target="_self" class="button button--cta">
     
-Getting Started (German)
+Get Started
 
   </a>
+  
 </p>
-
 <hr>
 <h2 id="professional-support">Professional support</h2>
-<p>You are a solar installer or electrician, you set up charging solutions professionally and you need support in setting up evcc? Unfortunately, we cannot provide individual support. However, if you need advice, support or training, we will be happy to refer you to experts and power users from the community who know the system very well.</p>
-
-
+<p>You are a solar installer or electrician, you set up charging solutions professionally and you need support with configuring evcc? Unfortunately, we cannot provide individual support. However, if you need advice, support or training, we will be happy to refer you to experts and power users from the community who know the system very well.</p>
 <p class="button-container">
-  <a href="mailto:pro-support@evcc.io?subject=Request%20professional%20evcc%20support" target="_self" class="button button--cta">
+  <a href="mailto:pro-support@evcc.io?subject=Request%20professional%20evcc%20support" target="_self" class="button button--secondary">
     
 Request support
 
   </a>
+  
 </p>
-
 <hr>
 <h2 id="support-the-project">Support the project</h2>
 <h3 id="actively-participating">Actively participating</h3>
 <p>Join the development team, and help us support the project by fixing bugs, adding features, and improving documentation.</p>
 <p>You can get in touch, ask questions, and get support from other users in the <a href="https://github.com/evcc-io/evcc/discussions">Forum</a>. Feel free to chat with us on our <a href="../slack">Slack</a>. We don&rsquo;t bite!</p>
 <h3 id="financial-support">Financial support</h3>
-<p>In order to sustain a project of this size we need your support. Here you can learn more about our <a href="https://docs.evcc.io/docs/sponsorship">sponsoring model</a>.</p>
+<p>In order to sustain a project of this size we need your support. Here you can learn more about our <a href="https://docs.evcc.io/en/docs/sponsorship">sponsoring model</a>.</p>
 <p>You work for a company which offers wallboxes, energy measurement systems, or solar / PV systems? Do you want to help enable your customers to charge their cars with their own solar power? Get in touch with us. Contributing code or sponsoring us with hardware greatly helps us to expand evcc&rsquo;s capabilities.</p>
-
-
 <p class="button-container">
-  <a href="mailto:info@evcc.io" target="_self" class="button button--cta">
+  <a href="mailto:info@evcc.io" target="_self" class="button button--secondary">
     
 Contact us
 
   </a>
+  
 </p>
-
 <h2 id="sponsors">Sponsors</h2>
 <div class="sponsors">
     <div class="sponsor-logos">
