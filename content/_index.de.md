@@ -91,7 +91,7 @@ Auch an deinen Daten haben wir kein Interesse.
 {{< /infobox-entry >}}
 {{< /infobox >}}
 
-Mehr Details findest du in unserer [Dokumentation](https://docs.evcc.io/docs/devices/chargers/). Ist dein Gerät noch nicht unterstützt, dann lass es uns auf [GitHub](https://github.com/evcc-io/evcc) wissen. Wenn es eine Schnittstelle hat, können wir es anbinden.
+Mehr Details findest du in unserer [Dokumentation](https://docs.evcc.io/docs/devices/chargers). Ist dein Gerät noch nicht unterstützt, dann lass es uns auf [GitHub](https://github.com/evcc-io/evcc) wissen. Wenn es eine Schnittstelle hat, können wir es anbinden.
 
 ### Plugin-Architektur und Smarthome-Integration
 
