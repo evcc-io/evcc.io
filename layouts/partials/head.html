@@ -15,7 +15,7 @@
   {{ end }}
   <meta name="viewport" content="width=device-width" />
 
-  {{ if .Site.IsMultiLingual }}
+  {{ if hugo.IsMultilingual }}
   {{ range .Site.Languages }}
   {{ if ne . $.Site.Language }}
   <link rel="alternate" hreflang="{{.}}" href="{{ $.Site.BaseURL }}{{.}}/" />
