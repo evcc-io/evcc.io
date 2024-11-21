@@ -51,11 +51,13 @@ We want to make solar charging easy for everyone. In the best-case scenario, thi
 {{< theme-switch >}}
 
 {{< screenshots class="content-gallery" >}}
-{{< screenshot-entry src="1_evcc_mobile_standard" width="508" >}}
-{{< screenshot-entry src="2_evcc_mobile_details" width="508" >}}
-{{< screenshot-entry src="3_evcc_mobile_savings" width="508" >}}
-{{< screenshot-entry src="4_evcc_tablet_standard" width="1387" >}}
-{{< screenshot-entry src="5_evcc_tablet_details" width="1387" >}}
+{{< screenshot-entry src="1_small_main" width="513" alt="evcc iPhone Screenshot: Energy flow and current charging process" >}}
+{{< screenshot-entry src="2_small_plan" width="513" alt="evcc iPhone Screenshot: Charging plan dialog with dynamic electricity prices" >}}
+{{< screenshot-entry src="3_small_battery" width="513" alt="evcc iPhone Screenshot: Home battery-dependent charging rules" >}}
+{{< screenshot-entry src="4_small_month_cost" width="513" alt="evcc iPhone Screenshot: Monthly overview with current costs" >}}
+{{< screenshot-entry src="5_large_main" width="1262" alt="evcc iPad Screenshot: Energy flow and current charging process" >}}
+{{< screenshot-entry src="6_large_year_solar" width="1262" alt="evcc iPad Screenshot: Solar share and annual statistics" >}}
+{{< screenshot-entry src="7_large_settings" width="1262" alt="evcc iPad Screenshot: Settings for price-dependent charging" >}}
 {{< /screenshots >}}
 
 We have set up a sample installation you can use to try the interface.

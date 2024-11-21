@@ -51,11 +51,13 @@ Wir möchten, dass PV-Strom-Laden für alle einfach wird. Im Optimalfall funktio
 {{< theme-switch >}}
 
 {{< screenshots class="content-gallery" >}}
-{{< screenshot-entry src="1_evcc_mobile_standard" width="508" >}}
-{{< screenshot-entry src="2_evcc_mobile_details" width="508" >}}
-{{< screenshot-entry src="3_evcc_mobile_savings" width="508" >}}
-{{< screenshot-entry src="4_evcc_tablet_standard" width="1387" >}}
-{{< screenshot-entry src="5_evcc_tablet_details" width="1387" >}}
+{{< screenshot-entry src="1_small_main" width="513" alt="evcc iPhone Screenshot: Energiefluss und aktueller Ladevorgang" >}}
+{{< screenshot-entry src="2_small_plan" width="513" alt="evcc iPhone Screenshot: Dialog Ladeplanung mit dynamischen Strompreisen" >}}
+{{< screenshot-entry src="3_small_battery" width="513" alt="evcc iPhone Screenshot: Dialog Hausakku-abhängige Laderegeln" >}}
+{{< screenshot-entry src="4_small_month_cost" width="513" alt="evcc iPhone Screenshot: Monatsübersicht mit aktuellen Kosten" >}}
+{{< screenshot-entry src="5_large_main" width="1262" alt="evcc iPad Screenshot: Energiefluss und aktueller Ladevorgang" >}}
+{{< screenshot-entry src="6_large_year_solar" width="1262" alt="evcc iPad Screenshot: Sonnenanteil und Jahresstatistik" >}}
+{{< screenshot-entry src="7_large_settings" width="1262" alt="evcc iPad Screenshot: Einstellungen preisabhängiges Laden" >}}
 {{< /screenshots >}}
 
 Wir haben eine Beispiel-Installation aufgesetzt, mit der du die Oberfläche schon mal ausprobieren kannst.
