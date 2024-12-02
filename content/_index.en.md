@@ -101,6 +101,22 @@ You have a special setup or use exotic devices? evcc comes with a **flexible plu
 
 Already have a smart home system? We integrate nicely with Home Assistant, openHAB and ioBroker. evcc even works with higher-level energy managers and can take commands via SEMP and EEBUS protocol.
 
+---
+
+## Community Portraits
+
+In our [blog](https://docs.evcc.io/en/blog) we regularly present evcc installations from the community. Here you get an insight into the [people](#community-person) and their [technology](#community-tech).
+
+{{< community >}}
+{{< community-entry img="andreas" name="Andreas from Wettringen" link="https://docs.evcc.io/en/blog/2024/11/14/andreas-aus-wettringen">}}
+{{< community-entry img="bastian" name="Bastian from Ahlhorn" link="https://docs.evcc.io/en/blog/2024/10/25/portrait-bastian-aus-alhorn">}}
+{{< community-entry img="tjarko" name="Tjarko from Großefehn" link="https://docs.evcc.io/en/blog/2024/09/21/portrait-tjarko-grossefehn">}}
+{{< community-entry img="christian" name="Christian from Trebbin" link="https://docs.evcc.io/en/blog/2024/08/25/portrait-christian-trebbin">}}
+{{< community-entry img="arne" name="Arne from Gifhorn" link="https://docs.evcc.io/en/blog/2024/08/09/portrait-arne-gifhorn">}}
+{{< /community >}}
+
+---
+
 ## How evcc works
 
 {{< full_width_image src="/img/evcc-schema.svg" alt="How it works" width="200" height="100" >}}

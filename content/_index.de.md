@@ -102,6 +102,22 @@ Du hast ein spezielles Setup oder verwendest exotische Geräte? evcc kommt mit e
 Zudem gibt es Integrationen für Home Assistant, openHAB und ioBroker.
 Um sich auch mit anderen, übergeordneten Energiemanagern abzusprechen, hat evcc zusätzlich eine Unterstützung der Protokolle SEMP und EEBUS integriert.
 
+---
+
+## Community Porträts
+
+In unserem [Blog](https://docs.evcc.io/blog) stellen wir regelmäßig evcc Installationen aus der Community vor. Hier bekommst du einen Einblick über die [Menschen](#community-person) und ihre [Technik](#community-tech).
+
+{{< community >}}
+{{< community-entry img="andreas" name="Andreas aus Wettringen" link="https://docs.evcc.io/blog/2024/11/14/andreas-aus-wettringen">}}
+{{< community-entry img="bastian" name="Bastian aus Ahlhorn" link="https://docs.evcc.io/blog/2024/10/25/portrait-bastian-aus-alhorn">}}
+{{< community-entry img="tjarko" name="Tjarko aus Großefehn" link="https://docs.evcc.io/blog/2024/09/21/portrait-tjarko-grossefehn">}}
+{{< community-entry img="christian" name="Christian aus Trebbin" link="https://docs.evcc.io/blog/2024/08/25/portrait-christian-trebbin">}}
+{{< community-entry img="arne" name="Arne aus Gifhorn" link="https://docs.evcc.io/blog/2024/08/09/portrait-arne-gifhorn">}}
+{{< /community >}}
+
+---
+
 ## Wie evcc funktioniert
 
 {{< full_width_image src="/img/evcc-schema.svg" alt="Darstellung der Funktionsweise" width="200" height="100" >}}

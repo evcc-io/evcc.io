@@ -1,0 +1,14 @@
+{{- $img := .Get "img" -}}
+{{- $title := .Get "title" -}}
+{{- $name := .Get "name" -}}
+{{- $link := .Get "link" -}}
+<a href="{{ $link }}" class="community-entry">
+  <div class="community-entry__imgs">
+    <img src="/img/community/{{ $img }}.webp" class="community-entry__person" height="300" width="400" alt="{{ $img }}"
+      loading="lazy" />
+    <img src="/img/community/{{ $img }}-{{ $.Site.Language }}.webp" class="community-entry__diagram" height="300"
+      width="400" alt="{{ $img }}" loading="lazy" />
+  </div>
+  <p>{{ $name }}</p>
+  <p>{{ $title }}</p>
+</a>

@@ -29,3 +29,54 @@ document
       target.scrollIntoView({ behavior: "smooth" });
     });
   });
+
+// community slider controls
+const $community = document.querySelector(".community_container");
+const $communityInner = document.querySelector(".community_inner");
+const $communityLeft = document.querySelector(".community_page_left");
+const $communityRight = document.querySelector(".community_page_right");
+const $personLink = document.querySelector("a[href$='#community-person']");
+const $techLink = document.querySelector("a[href$='#community-tech']");
+if ($community) {
+  const updateButtonVisibility = () => {
+    const scrollLeft = $communityInner.scrollLeft;
+    const maxScrollLeft =
+      $communityInner.scrollWidth - $communityInner.clientWidth;
+
+    $communityLeft.style.display = scrollLeft > 0 ? "block" : "none";
+    $communityRight.style.display =
+      scrollLeft < maxScrollLeft ? "block" : "none";
+  };
+
+  const scrollBy = 330;
+
+  $communityLeft.addEventListener("click", () => {
+    const current = $communityInner.scrollLeft;
+    const left = Math.max(0, current - scrollBy);
+    $communityInner.scrollTo({ left, behavior: "smooth" });
+  });
+
+  $communityRight.addEventListener("click", () => {
+    const current = $communityInner.scrollLeft;
+    const max = $communityInner.scrollWidth;
+    const left = Math.min(max, current + scrollBy);
+    $communityInner.scrollTo({ left, behavior: "smooth" });
+  });
+
+  $communityInner.addEventListener("scroll", updateButtonVisibility);
+  window.addEventListener("resize", updateButtonVisibility);
+
+  updateButtonVisibility();
+
+  $personLink.addEventListener("click", () => {
+    $community.classList.remove("community--tech");
+    $personLink.classList.add("community-selected");
+    $techLink.classList.remove("community-selected");
+  });
+  $techLink.addEventListener("click", () => {
+    $community.classList.add("community--tech");
+    $techLink.classList.add("community-selected");
+    $personLink.classList.remove("community-selected");
+  });
+  $personLink.classList.add("community-selected");
+}
