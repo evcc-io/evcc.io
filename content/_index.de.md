@@ -109,6 +109,7 @@ Um sich auch mit anderen, übergeordneten Energiemanagern abzusprechen, hat evcc
 In unserem [Blog](https://docs.evcc.io/blog) stellen wir regelmäßig evcc Installationen aus der Community vor und geben dir einen Einblick in die [Menschen](#community-person) und ihre [Technik](#community-tech).
 
 {{< community >}}
+{{< community-entry img="olaf" name="Olaf aus Bergisch Gladbach" link="https://docs.evcc.io/blog/2024/12/21/olaf-aus-bergisch-gladbach">}}
 {{< community-entry img="andreas" name="Andreas aus Wettringen" link="https://docs.evcc.io/blog/2024/11/14/andreas-aus-wettringen">}}
 {{< community-entry img="bastian" name="Bastian aus Ahlhorn" link="https://docs.evcc.io/blog/2024/10/25/portrait-bastian-aus-alhorn">}}
 {{< community-entry img="tjarko" name="Tjarko aus Großefehn" link="https://docs.evcc.io/blog/2024/09/21/portrait-tjarko-grossefehn">}}
