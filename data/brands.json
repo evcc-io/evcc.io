@@ -38,6 +38,7 @@
   "Heidelberg",
   "Hesotec",
   "Homecharge",
+  "IDM",
   "Innogy",
   "INRO",
   "Juice",
@@ -46,6 +47,7 @@
   "Kostal",
   "KSE",
   "LadeFoxx",
+  "Lambda",
   "LRT",
   "Mennekes",
   "my-PV",
@@ -94,7 +96,8 @@
   "Walther Werke",
   "Webasto",
   "Weidmüller",
-  "Zaptec"
+  "Zaptec",
+  "Zewotherm"
  ],
  "SmartPlugs": [
   "AVM",
