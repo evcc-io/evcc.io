@@ -4,9 +4,11 @@
 
   <title>{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}</title>
 
-  {{ with .Site.Params.favicon }}
-  <link rel="shortcut icon" href="{{ . | absURL }}" type="image/png" />
-  {{ end }}
+  <link rel=icon href="/favicon.ico" />
+  <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
   {{ with .Site.Params.description }}
   <meta name="description" content="{{ . }}" />
   {{ end }}
