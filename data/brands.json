@@ -123,7 +123,7 @@
  ],
  "SmartPlugs": [
   "AVM",
-  "Home Assistant Switch",
+  "Home Assistant",
   "Homematic IP",
   "HomeWizard",
   "myStrom",
