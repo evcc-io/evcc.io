@@ -77,7 +77,7 @@ We are also not interested in your data.
 {{< infobox title="Supported & tested systems" >}}
 {{< infobox-entry title="wallboxes & sockets" img="/img/evcc-illu-wallbox.svg" >}}
 {{< infobox-content group="Chargers">}}
-{{< infobox-content group="SmartPlugs">}}
+{{< infobox-content group="SmartSwitches">}}
 {{< /infobox-entry >}}
 
 {{< infobox-entry title="energy measurement" img="/img/evcc-illu-energiemessung.svg" >}}

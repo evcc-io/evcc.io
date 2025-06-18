@@ -77,7 +77,7 @@ Auch an deinen Daten haben wir kein Interesse.
 {{< infobox title="Unterstützte und getestete Komponenten" >}}
 {{< infobox-entry title="Wallboxen & Steckdosen" img="img/evcc-illu-wallbox.svg" >}}
 {{< infobox-content group="Chargers">}}
-{{< infobox-content group="SmartPlugs">}}
+{{< infobox-content group="SmartSwitches">}}
 {{< /infobox-entry >}}
 
 {{< infobox-entry title="Energiemesstechnik" img="img/evcc-illu-energiemessung.svg" >}}
