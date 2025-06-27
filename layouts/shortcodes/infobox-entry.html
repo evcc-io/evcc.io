@@ -1,6 +1,7 @@
 {{- $title := .Get "title" -}}
-{{- $img := .Get "img" -}}
-<div class="infobox_entry">
+{{- $area := .Get "area" -}}
+{{- $img := printf "/img/icons/%s.svg" $area -}}
+<div class="infobox_entry" style="grid-area: {{$area}};">
   <img src="{{$img}}" alt="{{$title}}" width="140" height="140" draggable="false" />
   <h3>{{$title}}</h3>
   {{ .Inner }}

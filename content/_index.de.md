@@ -75,22 +75,31 @@ evcc läuft auf **deiner eigenen Hardware** und lässt deine Geräte intelligent
 Auch an deinen Daten haben wir kein Interesse.
 
 {{< infobox title="Unterstützte und getestete Komponenten" >}}
-{{< infobox-entry title="Wallboxen & Steckdosen" img="img/evcc-illu-wallbox.svg" >}}
+
+{{< infobox-entry title="Wallboxen" area="charger" >}}
 {{< infobox-content group="Chargers">}}
-{{< infobox-content group="SmartSwitches">}}
 {{< /infobox-entry >}}
 
-{{< infobox-entry title="Energiemesstechnik" img="img/evcc-illu-energiemessung.svg" >}}
-{{< infobox-content group="Meters">}}
+{{< infobox-entry title="Fahrzeuge" area="vehicle" >}}
+{{< infobox-content group="Vehicles">}}
 {{< /infobox-entry >}}
 
-{{< infobox-entry title="Wechselrichter & Speichersysteme" img="img/evcc-illu-wechselrichter.svg" >}}
+{{< infobox-entry title="Wechselrichter & Speichersysteme" area="inverter" >}}
 {{< infobox-content group="PVBattery">}}
 {{< /infobox-entry >}}
 
-{{< infobox-entry title="Fahrzeuge" img="img/evcc-illu-fahrzeuge.svg" >}}
-{{< infobox-content group="Vehicles">}}
+{{< infobox-entry title="Smarte Schalter" area="smartswitch" >}}
+{{< infobox-content group="SmartSwitches">}}
 {{< /infobox-entry >}}
+
+{{< infobox-entry title="Wärmepumpen & Heizstäbe" area="heating" >}}
+{{< infobox-content group="Heating">}}
+{{< /infobox-entry >}}
+
+{{< infobox-entry title="Energiemesstechnik" area="meter" >}}
+{{< infobox-content group="Meters">}}
+{{< /infobox-entry >}}
+
 {{< /infobox >}}
 
 Mehr Details findest du in unserer [Dokumentation](https://docs.evcc.io/docs/devices/chargers). Ist dein Gerät noch nicht unterstützt, dann lass es uns auf [GitHub](https://github.com/evcc-io/evcc) wissen. Wenn es eine Schnittstelle hat, können wir es anbinden.
