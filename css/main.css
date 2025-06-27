@@ -326,6 +326,7 @@ a:hover {
   text-align: center;
   font-size: var(--small-text-font-size);
   line-height: 1.5em;
+  break-inside: avoid;
 }
 
 @media (min-width: 750px) {
@@ -342,7 +343,11 @@ a:hover {
   .infobox_inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-areas:
+      "charger     vehicle"
+      "charger     heating"
+      "inverter    meter"
+      "smartswitch meter";
   }
 }
 
