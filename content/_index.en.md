@@ -76,27 +76,27 @@ We are also not interested in your data.
 
 {{< infobox title="Supported & tested systems" >}}
 
-{{< infobox-entry title="EV Chargers" area="charger" >}}
+{{< infobox-entry title="chargers" area="charger" >}}
 {{< infobox-content group="Chargers">}}
 {{< /infobox-entry >}}
 
-{{< infobox-entry title="Vehicles" area="vehicle" >}}
+{{< infobox-entry title="vehicles" area="vehicle" >}}
 {{< infobox-content group="Vehicles">}}
 {{< /infobox-entry >}}
 
-{{< infobox-entry title="Solar & Storage" area="inverter" >}}
+{{< infobox-entry title="solar & storage" area="inverter" >}}
 {{< infobox-content group="PVBattery">}}
 {{< /infobox-entry >}}
 
-{{< infobox-entry title="Smart Switches" area="smartswitch" >}}
+{{< infobox-entry title="smart switches" area="smartswitch" >}}
 {{< infobox-content group="SmartSwitches">}}
 {{< /infobox-entry >}}
 
-{{< infobox-entry title="Heat Pumps & Electric Heaters" area="heating" >}}
+{{< infobox-entry title="heat pumps & electric heaters" area="heating" >}}
 {{< infobox-content group="Heating">}}
 {{< /infobox-entry >}}
 
-{{< infobox-entry title="Energy Meters" area="meter" >}}
+{{< infobox-entry title="energy meters" area="meter" >}}
 {{< infobox-content group="Meters">}}
 {{< /infobox-entry >}}
 
