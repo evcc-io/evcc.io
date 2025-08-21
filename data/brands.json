@@ -108,6 +108,7 @@
  ],
  "SmartSwitches": [
   "AVM",
+  "FRITZ!",
   "Home Assistant",
   "Homematic IP",
   "HomeWizard",
@@ -163,6 +164,7 @@
   "ESPHome",
   "FENECON",
   "FoxESS",
+  "FRITZ!",
   "Fronius",
   "Ginlong",
   "go-e",
@@ -246,6 +248,7 @@
   "Enphase",
   "FENECON",
   "FoxESS",
+  "FRITZ!",
   "Fronius",
   "Ginlong",
   "go-e",
