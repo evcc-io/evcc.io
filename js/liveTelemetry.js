@@ -1,5 +1,5 @@
 (() => {
-  // ns-hugo:/home/runner/work/evcc.io/evcc.io/assets/js/vendor/countUp.js
+  // ns-hugo-imp:/home/runner/work/evcc.io/evcc.io/assets/js/vendor/countUp.js
   var __assign = function() {
     __assign = Object.assign || function(t) {
       for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -13,7 +13,7 @@
   };
   var CountUp = (
     /** @class */
-    function() {
+    (function() {
       function CountUp2(target, endVal, options) {
         var _this = this;
         this.endVal = endVal;
@@ -251,7 +251,7 @@
         this.remaining = this.duration;
       };
       return CountUp2;
-    }()
+    })()
   );
 
   // <stdin>
@@ -269,12 +269,21 @@
   var powerCount = null;
   var greenShareCount = null;
   var greenEnergyCount = null;
-  var $activeClients = document.querySelector("#telemetry--activeClients");
-  var $totalClients = document.querySelector("#telemetry--totalClients");
-  var $chargePowerUnit = document.querySelector("#telemetry--chargePowerUnit");
-  var $unitGreenEnergy = document.querySelector("#telemetry--greenEnergyUnit");
+  var $activeClients;
+  var $totalClients;
+  var $chargePowerUnit;
+  var $unitGreenEnergy;
+  function initializeElements() {
+    $activeClients = document.querySelector("#telemetry--activeClients");
+    $totalClients = document.querySelector("#telemetry--totalClients");
+    $chargePowerUnit = document.querySelector("#telemetry--chargePowerUnit");
+    $unitGreenEnergy = document.querySelector("#telemetry--greenEnergyUnit");
+  }
   function render(data) {
-    document.querySelector(".telemetry").style.display = "block";
+    const telemetryElement = document.querySelector(".telemetry");
+    if (telemetryElement) {
+      telemetryElement.style.display = "block";
+    }
     data.greenEnergy = 55123456;
     const chargePower = fmtKW(data.chargePower / 1e3);
     const greenEnergy = fmtKWh(data.greenEnergy);
@@ -304,7 +313,10 @@
   function update() {
     fetch("https://api.evcc.io/v1/total").then((response) => response.json()).then(render).catch((err) => {
       console.error(err);
-      document.querySelector(".telemetry").style.display = "none";
+      const telemetryElement = document.querySelector(".telemetry");
+      if (telemetryElement) {
+        telemetryElement.style.display = "none";
+      }
     });
   }
   function fmtKW(kW) {
@@ -328,6 +340,9 @@
     result.unit += "h";
     return result;
   }
-  setInterval(update, UPDATE_INTERVAL_SECONDS * 1e3);
-  update();
+  if (typeof window !== "undefined" && !window.vitest) {
+    initializeElements();
+    setInterval(update, UPDATE_INTERVAL_SECONDS * 1e3);
+    update();
+  }
 })();
