@@ -17,13 +17,20 @@ let powerCount = null;
 let greenShareCount = null;
 let greenEnergyCount = null;
 
-const $activeClients = document.querySelector("#telemetry--activeClients");
-const $totalClients = document.querySelector("#telemetry--totalClients");
-const $chargePowerUnit = document.querySelector("#telemetry--chargePowerUnit");
-const $unitGreenEnergy = document.querySelector("#telemetry--greenEnergyUnit");
+let $activeClients, $totalClients, $chargePowerUnit, $unitGreenEnergy;
+
+function initializeElements() {
+  $activeClients = document.querySelector("#telemetry--activeClients");
+  $totalClients = document.querySelector("#telemetry--totalClients");
+  $chargePowerUnit = document.querySelector("#telemetry--chargePowerUnit");
+  $unitGreenEnergy = document.querySelector("#telemetry--greenEnergyUnit");
+}
 
 function render(data) {
-  document.querySelector(".telemetry").style.display = "block";
+  const telemetryElement = document.querySelector(".telemetry");
+  if (telemetryElement) {
+    telemetryElement.style.display = "block";
+  }
 
   // quick fix: using a save static value because data source currently returns unplausible value
   data.greenEnergy = 55123456;
@@ -61,7 +68,10 @@ function update() {
     .then(render)
     .catch((err) => {
       console.error(err);
-      document.querySelector(".telemetry").style.display = "none";
+      const telemetryElement = document.querySelector(".telemetry");
+      if (telemetryElement) {
+        telemetryElement.style.display = "none";
+      }
     });
 }
 
@@ -88,5 +98,9 @@ export function fmtKWh(kWh) {
   return result;
 }
 
-setInterval(update, UPDATE_INTERVAL_SECONDS * 1e3);
-update();
+// Only start automatic updates if we're not in a test environment
+if (typeof window !== "undefined" && !window.vitest) {
+  initializeElements();
+  setInterval(update, UPDATE_INTERVAL_SECONDS * 1e3);
+  update();
+}
