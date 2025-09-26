@@ -93,7 +93,7 @@
   "Tigo",
   "TinkerForge",
   "Ubitricity",
-  "V2C Trydan",
+  "V2C",
   "Vestel",
   "Victron",
   "Viridian EV",
@@ -145,6 +145,7 @@
  ],
  "Meters": [
   "A-Tronix",
+  "Aandewiel",
   "ABB",
   "Acrel",
   "Alpha ESS",
