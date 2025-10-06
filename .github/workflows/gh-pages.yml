@@ -12,6 +12,8 @@ on:
     - cron: 0 5 * * 0-6
 jobs:
   deploy:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
