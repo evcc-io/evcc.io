@@ -4,3 +4,4 @@ public/
 .DS_store
 .env
 .cache.json
+.claude/
