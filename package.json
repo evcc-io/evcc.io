@@ -24,7 +24,7 @@
     "sponsorkit": "^17.0.0"
   },
   "devDependencies": {
-    "happy-dom": "^19.0.2",
+    "happy-dom": "^20.0.0",
     "prettier": "^3.6.2",
     "vitest": "^3.2.4"
   }
