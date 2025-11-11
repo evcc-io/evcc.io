@@ -4,9 +4,9 @@
 <script src="{{ $js.Permalink }}" async type="module"></script>
 {{ $js := resources.Get "js/languageMismatch.js" | js.Build }}
 <script src="{{ $js.Permalink }}" async type="module"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/@h2d2/shopicons@1.7.0/umd/regular.js" async></script>
-<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+<link rel="stylesheet" href="/css/glightbox.min.css" />
+<script src="/js/shopicons-regular.js" async></script>
+<script src="/js/glightbox.min.js"></script>
 <script type="text/javascript">
     const lightbox = GLightbox({ selector: ".screenshot_link" });
 </script>

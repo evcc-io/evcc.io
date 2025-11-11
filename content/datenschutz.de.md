@@ -1,4 +1,3 @@
-
 # Datenschutz­erklärung
 
 ## 1. Datenschutz auf einen Blick
@@ -15,9 +14,9 @@ Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Des
 
 #### Wie erfassen wir Ihre Daten?
 
-Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben.
+Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie uns per E-Mail zusenden.
 
-Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.
+Andere Daten werden automatisch beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.
 
 #### Wofür nutzen wir Ihre Daten?
 
@@ -29,12 +28,50 @@ Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger
 
 Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.
 
-## 2. Hosting und Content Delivery Networks (CDN)
+## 2. Hosting
 
-Datenschutzerklärung für die Nutzung von GitHub Pages
-Diese Website wird auf Servern von [GitHub Inc.](https://www.github.com/), 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA gehostet. Beachten Sie daher auch die [GitHub Privacy Policy](https://docs.github.com/en/github/site-policy/github-privacy-statement#how-you-can-access-and-control-the-information-we-collect).
+### GitHub Pages
 
-## 3. Allgemeine Hinweise und Pflicht­informationen
+Diese Website wird auf Servern von [GitHub Inc.](https://www.github.com/), 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA gehostet.
+
+Beim Besuch dieser Website erfasst GitHub automatisch technische Informationen in Server-Logdateien, die Ihr Browser automatisch übermittelt. Dies umfasst:
+
+- IP-Adresse
+- Browsertyp und Browserversion
+- Verwendetes Betriebssystem
+- Referrer URL (zuvor besuchte Seite)
+- Datum und Uhrzeit des Zugriffs
+
+Diese Daten werden von GitHub zu Sicherheits- und Stabilitätszwecken erfasst und dienen der technischen Bereitstellung der Website. Die Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der technischen Bereitstellung und Sicherheit der Website).
+
+Da GitHub in den USA ansässig ist, erfolgt eine Übermittlung personenbezogener Daten in ein Drittland. GitHub hat sich den EU-Standardvertragsklauseln verpflichtet. Weitere Informationen finden Sie in der [GitHub Privacy Policy](https://docs.github.com/en/github/site-policy/github-privacy-statement) und den [GitHub Data Protection Addendum](https://docs.github.com/en/site-policy/privacy-policies/github-data-protection-agreement).
+
+Die erfassten Daten werden von GitHub entsprechend ihrer Datenschutzrichtlinien gespeichert und verarbeitet. Wir haben keinen direkten Zugriff auf diese Server-Logdateien.
+
+### Community-Telemetrie-Anzeige
+
+Auf der Startseite wird ein Live-Widget angezeigt, das aggregierte Statistiken der evcc-Community darstellt (z. B. Gesamtladeleistung, Anzahl aktiver Nutzer, Sonnenanteil). Diese Daten werden von unserem eigenen Dienst api.evcc.io bereitgestellt.
+
+Beim Laden dieser Anzeige werden keine personenbezogenen Daten von Ihnen als Website-Besucher erfasst oder übermittelt. Das Widget zeigt ausschließlich anonymisierte, aggregierte Daten von teilnehmenden evcc-Nutzern an, die sich freiwillig für das Telemetrie-Programm entschieden haben. Weitere Informationen zur Telemetrie-Teilnahme für evcc-Nutzer finden Sie in unserer [Dokumentation](https://docs.evcc.io/docs/reference/configuration/telemetry).
+
+## 3. Algolia DocSearch (Suchfunktion auf docs.evcc.io)
+
+Unsere Dokumentationsseite (docs.evcc.io) verwendet Algolia DocSearch für die Suchfunktion. Algolia ist ein Dienst der Algolia Inc., 589 Howard Street, Suite 5, San Francisco, CA 94105, USA.
+
+Wenn Sie die Suchfunktion nutzen, werden folgende Daten an Algolia übermittelt:
+
+- Ihre IP-Adresse
+- Ihre Suchanfragen
+- Browserinformationen (User-Agent)
+- Zeitstempel der Suchanfrage
+
+Die Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Bereitstellung einer funktionsfähigen Suchfunktion für unsere Dokumentation). Die Datenübermittlung erfolgt nur, wenn Sie aktiv die Suchfunktion verwenden.
+
+Da Algolia in den USA ansässig ist, erfolgt eine Übermittlung personenbezogener Daten in ein Drittland. Algolia ist nach dem EU-U.S. Data Privacy Framework zertifiziert. Weitere Informationen zum Datenschutz bei Algolia finden Sie in der [Algolia Privacy Policy](https://www.algolia.com/policies/privacy/).
+
+Die Suchanfragen werden von Algolia zu Analyse- und Verbesserungszwecken der Suchfunktion verarbeitet. Eine darüber hinausgehende Nutzung oder Weitergabe an Dritte erfolgt nicht.
+
+## 4. Allgemeine Hinweise und Pflicht­informationen
 
 ### Datenschutz
 
@@ -92,10 +129,13 @@ Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht 
 
 Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Hierzu können Sie sich jederzeit an uns wenden. Das Recht auf Einschränkung der Verarbeitung besteht in folgenden Fällen:
 
-- Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten, benötigen wir in der Regel Zeit, um dies zu überprüfen. Für die Dauer der Prüfung haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.
-- Wenn die Verarbeitung Ihrer personenbezogenen Daten unrechtmäßig geschah/geschieht, können Sie statt der Löschung die Einschränkung der Datenverarbeitung verlangen.
-- Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Ausübung, Verteidigung oder Geltendmachung von Rechtsansprüchen benötigen, haben Sie das Recht, statt der Löschung die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.
-- Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen Ihren und unseren Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen überwiegen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.
+Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten, benötigen wir in der Regel Zeit, um dies zu überprüfen. Für die Dauer der Prüfung haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.
+
+Wenn die Verarbeitung Ihrer personenbezogenen Daten unrechtmäßig geschah/geschieht, können Sie statt der Löschung die Einschränkung der Datenverarbeitung verlangen.
+
+Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Ausübung, Verteidigung oder Geltendmachung von Rechtsansprüchen benötigen, haben Sie das Recht, statt der Löschung die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.
+
+Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen Ihren und unseren Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen überwiegen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.
 
 Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt haben, dürfen diese Daten – von ihrer Speicherung abgesehen – nur mit Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen oder zum Schutz der Rechte einer anderen natürlichen oder juristischen Person oder aus Gründen eines wichtigen öffentlichen Interesses der Europäischen Union oder eines Mitgliedstaats verarbeitet werden.
 
