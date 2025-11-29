@@ -118,6 +118,7 @@ Um sich auch mit anderen, übergeordneten Energiemanagern abzusprechen, hat evcc
 In unserem [Blog](https://docs.evcc.io/blog) stellen wir regelmäßig evcc Installationen aus der Community vor und geben dir einen Einblick in die [Menschen](#community-person) und ihre [Technik](#community-tech).
 
 {{< community >}}
+{{< community-entry img="orv" name="Osnabrücker Ruderverein" link="https://docs.evcc.io/blog/2025/11/29/osnabruecker-ruderverein">}}
 {{< community-entry img="tobias" name="Tobias aus Trebur" link="https://docs.evcc.io/blog/2025/10/04/tobias-aus-trebur">}}
 {{< community-entry img="michael" name="Michael, Core Team" link="https://docs.evcc.io/blog/2025/06/30/michael-vom-core-team">}}
 {{< community-entry img="ulrike-gunther" name="Ulrike und Gunther aus Alzenau" link="https://docs.evcc.io/blog/2025/04/26/ulrike-und-gunther-aus-alzenau">}}

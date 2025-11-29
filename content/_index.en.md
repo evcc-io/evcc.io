@@ -117,6 +117,7 @@ Already have a smart home system? We integrate nicely with Home Assistant, openH
 In our [blog](https://docs.evcc.io/en/blog) we regularly present evcc installations from the community. Here you get an insight into the [people](#community-person) and their [technology](#community-tech).
 
 {{< community >}}
+{{< community-entry img="orv" name="Osnabrück Rowing Club" link="https://docs.evcc.io/en/blog/2025/11/29/osnabruecker-ruderverein">}}
 {{< community-entry img="tobias" name="Tobias from Trebur" link="https://docs.evcc.io/en/blog/2025/10/04/tobias-aus-trebur">}}
 {{< community-entry img="michael" name="Michael, Core Team" link="https://docs.evcc.io/en/blog/2025/06/30/michael-vom-core-team">}}
 {{< community-entry img="ulrike-gunther" name="Ulrike und Gunther from Alzenau" link="https://docs.evcc.io/en/blog/2025/04/26/ulrike-und-gunther-aus-alzenau">}}
