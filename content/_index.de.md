@@ -3,7 +3,7 @@
 evcc ist ein Energie-Management-System mit Fokus auf Elektromobilität.
 Die Software steuert deine [Wallbox oder Schaltsteckdose](#devices).
 Um intelligente Entscheidungen zu treffen, kommuniziert es auch mit deinem [Fahrzeug, Wechselrichter oder Hausspeicher](#devices).
-Die Software ist Open-Source und lebt von der Community.
+Die Software ist Open Source und lebt von der Community.
 
 {{< button-cta url="https://docs.evcc.io/docs/installation" target="_blank" subline="Raspberry Pi, Docker und co.">}}
 Jetzt loslegen
@@ -115,7 +115,7 @@ Um sich auch mit anderen, übergeordneten Energiemanagern abzusprechen, hat evcc
 
 ## Community Porträts
 
-In unserem [Blog](https://docs.evcc.io/blog) stellen wir regelmäßig evcc Installationen aus der Community vor und geben dir einen Einblick in die [Menschen](#community-person) und ihre [Technik](#community-tech).
+In unserem [Blog](https://docs.evcc.io/blog) stellen wir regelmäßig evcc-Installationen aus der Community vor und geben dir einen Einblick in die [Menschen](#community-person) und ihre [Technik](#community-tech).
 
 {{< community >}}
 {{< community-entry img="orv" name="Osnabrücker Ruderverein" link="https://docs.evcc.io/blog/2025/11/29/osnabruecker-ruderverein">}}
@@ -139,7 +139,7 @@ In unserem [Blog](https://docs.evcc.io/blog) stellen wir regelmäßig evcc Insta
 Die Funktionsweise von evcc ist relativ einfach.
 Das System sammelt aktuelle Informationen über die Energieerzeugung, den Zustand des Hausakkus, den aktuellen Strompreis und den Ladezustand des Elektroautos.
 
-Mit dieser Daten regelt evcc die Wallbox, um deinen [PV-Überschuss](https://docs.evcc.io/docs/features/solar-charging) maximal zu nutzen.
+Mit diesen Daten regelt evcc die Wallbox, um deinen [PV-Überschuss](https://docs.evcc.io/docs/features/solar-charging) maximal zu nutzen.
 Hast du einen dynamischen Stromtarif, kannst du einen [Ladeplan](https://docs.evcc.io/docs/features/plans) oder eine [Preisgrenze](https://docs.evcc.io/docs/features/dynamic-prices) definieren, um in den günstigsten Zeiten zu laden.
 
 ### Fahrzeugintegration
@@ -158,7 +158,7 @@ Dadurch kann evcc das ungewollte Entladen des Hausakkus verhindern oder ihn in d
 
 ### Große Anlagen, kleine Anlagen
 
-Auch komplexere Szenarien wie das Laden von mehreren Fahrzeuge, die Einbindung mehrerer PV- und Speichersysteme oder ein [Lastmanagement](https://docs.evcc.io/docs/features/loadmanagement) um den Hausanschluss nicht zu überlasten, sind möglich.
+Auch komplexere Szenarien wie das Laden von mehreren Fahrzeugen, die Einbindung mehrerer PV- und Speichersysteme oder ein [Lastmanagement](https://docs.evcc.io/docs/features/loadmanagement), um den Hausanschluss nicht zu überlasten, sind möglich.
 
 Hast du eine Balkon-PV-Anlage und schaltbare Steckdosen?
 Auch dann hilft dir evcc, um deinen E-Bike-Akku mit Sonnenstrom zu laden oder deine Eiswürfelmaschine bei Überschuss zu aktivieren.
@@ -170,7 +170,7 @@ Viele Mikrowechselrichter und smarte Steckdosen werden unterstützt.
 
 ### Systemvoraussetzung
 
-evcc ist in Go geschrieben und sehr effizient: es wird weder viel CPU noch RAM benötigt. Typischerweise läuft evcc auf einem **Raspberry Pi** oder in **Docker** (z.B. Synology NAS) bei dir zuhause. Windows, macOS und Linux werden auch unterstützt.
+evcc ist in Go geschrieben und sehr effizient: Es wird weder viel CPU noch RAM benötigt. Typischerweise läuft evcc auf einem **Raspberry Pi** oder in **Docker** (z.B. Synology NAS) bei dir zuhause. Windows, macOS und Linux werden auch unterstützt.
 
 ### evcc einrichten
 
@@ -198,7 +198,7 @@ Anfrage stellen
 
 {{< youtube link="https://www.youtube.com/watch?v=MoBpEXHMNjI" thumb="video/evcc-ct-youtube-video.webp" title="c't erklärt evcc" width="1000" height="563" >}}
 
-In diesem YouTube Video der c't Redaktion bekommst du einen schnellen Überblick über evcc, wie es funktioniert und was es kann.
+In diesem YouTube-Video der c't-Redaktion bekommst du einen schnellen Überblick über evcc, wie es funktioniert und was es kann.
 
 ---
 
@@ -213,7 +213,7 @@ Oder komm in unseren Chat, lerne uns kennen und diskutiere mit uns: [Slack](/sla
 
 ### Finanzieller Support
 
-Um ein Projekt dieser Größenordnung nachhaltig vorantreiben zu können, brauchen wir eure Unterstützung. Hier erfährst du mehr über unser [Sponsoring Modell](https://docs.evcc.io/docs/sponsorship).
+Um ein Projekt dieser Größenordnung nachhaltig vorantreiben zu können, brauchen wir eure Unterstützung. Hier erfährst du mehr über unser [Sponsoring-Modell](https://docs.evcc.io/docs/sponsorship).
 
 Arbeitest du in einer Firma, die Wallboxen, Energiemesssysteme oder PV-Systeme anbietet? Möchtest du euren Kunden das Laden mit eigenem Sonnenstrom ermöglichen? Sprich uns gerne an. Eigene Code-Beiträge und Hardware-Sponsoring helfen uns, die Fähigkeiten von evcc auszubauen.
 
