@@ -194,7 +194,7 @@ Anfrage stellen
 
 ---
 
-## c't Magazin erklärt evcc
+## c't-Magazin erklärt evcc
 
 {{< youtube link="https://www.youtube.com/watch?v=MoBpEXHMNjI" thumb="video/evcc-ct-youtube-video.webp" title="c't erklärt evcc" width="1000" height="563" >}}
 
