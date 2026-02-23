@@ -684,58 +684,72 @@ text {
 </a><a href="https://github.com/BiBo-HH" class="sponsorkit-link" target="_blank" id="BiBo-HH">
   
   <clipPath id="c0e4710">
-    <rect x="205" y="300" width="40" height="40" rx="20" ry="20" />
+    <rect x="155" y="300" width="40" height="40" rx="20" ry="20" />
   </clipPath>
-  <image x="205" y="300" width="40" height="40" href="data:image/webp;base64,UklGRnoBAABXRUJQVlA4IG4BAADwCwCdASoyADIAPm0skkWkIqGY/VQAQAbEsQBoXG7xd+Gtgl3AG6Af1nqAOgx/5Xsm/s3+3fsqgz6w5I8lDpdLnQTOn3GsJuyPpUGowz4oiSYzn2OYnHKCYE+E5sRMLe8KrHsW1M0QAAD+/i6NXxiBCtYm+omPlWbQwF3vmmcXb8d8AUdHvao31zJ8t2MUub6eNa5rwGA7T6fy5QNVxvlmsFFDSrMOuIWKOMjmQpOdz2QKiPL+8FzJPwmhKcgF8tfu+vpI/BBW+dV4ziBN/M+29/rSYRC/YKDvzV7RB+/o/L5yFGMsMqOTG11Pq+Pw+4/nbkUsst7Lz3+UAydfMWZOEQAYrbkJ3eCFjb+F9rMGD5yWjD0sYHtnO+aPLb6xtYDi5Bo4y+E07Wk2YsmqTmf/5crjcd3qTd/dVEoEc1SZuKd5cdsAo/Wl53dM7yjRSJ0QZ/LLkgddx/T5Xy0xbJUp9c2UBlKocxJwpPEyQAA=" clip-path="url(#c0e4710)"/>
+  <image x="155" y="300" width="40" height="40" href="data:image/webp;base64,UklGRnoBAABXRUJQVlA4IG4BAADwCwCdASoyADIAPm0skkWkIqGY/VQAQAbEsQBoXG7xd+Gtgl3AG6Af1nqAOgx/5Xsm/s3+3fsqgz6w5I8lDpdLnQTOn3GsJuyPpUGowz4oiSYzn2OYnHKCYE+E5sRMLe8KrHsW1M0QAAD+/i6NXxiBCtYm+omPlWbQwF3vmmcXb8d8AUdHvao31zJ8t2MUub6eNa5rwGA7T6fy5QNVxvlmsFFDSrMOuIWKOMjmQpOdz2QKiPL+8FzJPwmhKcgF8tfu+vpI/BBW+dV4ziBN/M+29/rSYRC/YKDvzV7RB+/o/L5yFGMsMqOTG11Pq+Pw+4/nbkUsst7Lz3+UAydfMWZOEQAYrbkJ3eCFjb+F9rMGD5yWjD0sYHtnO+aPLb6xtYDi5Bo4y+E07Wk2YsmqTmf/5crjcd3qTd/dVEoEc1SZuKd5cdsAo/Wl53dM7yjRSJ0QZ/LLkgddx/T5Xy0xbJUp9c2UBlKocxJwpPEyQAA=" clip-path="url(#c0e4710)"/>
 </a>
 <a href="https://github.com/IsyBox" class="sponsorkit-link" target="_blank" id="IsyBox">
   
   <clipPath id="cc7c29b">
-    <rect x="255" y="300" width="40" height="40" rx="20" ry="20" />
+    <rect x="205" y="300" width="40" height="40" rx="20" ry="20" />
   </clipPath>
-  <image x="255" y="300" width="40" height="40" href="data:image/webp;base64,UklGRoQBAABXRUJQVlA4IHgBAADQCQCdASoyADIAPm0wk0YkIyGhMfOYAIANiUAZeeRZvu0gO3t3Lt3nx0FvbGG08AVJfnr4619j+evC/ZzDZ5mXUlhn2B9Zb+M5GSyc4KoiNmLHklzxHoAA/umm7ZOoo168GRvx2BPT2W3JJHrMhRjTQAFUElm/U/wOaYlEGhnaSfT/7Dkg6b8h2q8RFCOmKDClsvcbWdMt/VbtBj11d8nAOr8V/6JJ1EaNtssEXFUWsMGLR/DYbYXAqwtqdh6h3sIXuDAwFquHHm7RTEgcpFUec8SIx/0lDSJcGdrihX+IzWad7lFNxCVxnK7DemQxB+5tb7ju+9TKiALwYxLo+4yWUj03z/KyKmtO+/VIPmnIK3uUQUcSvn4Sk3HF8qI3BR/Av0AeI4qpg6GeVvzBDvf+hFR9leP2/nW9U6bus3Mb9DTlrFVzwGVKng9NPKLk+NfmuqK5B9xd2sxCxwKCP8RCgRADqQ6/2ezLaIx1MKOd12khLsnAAAAA" clip-path="url(#cc7c29b)"/>
+  <image x="205" y="300" width="40" height="40" href="data:image/webp;base64,UklGRoQBAABXRUJQVlA4IHgBAADQCQCdASoyADIAPm0wk0YkIyGhMfOYAIANiUAZeeRZvu0gO3t3Lt3nx0FvbGG08AVJfnr4619j+evC/ZzDZ5mXUlhn2B9Zb+M5GSyc4KoiNmLHklzxHoAA/umm7ZOoo168GRvx2BPT2W3JJHrMhRjTQAFUElm/U/wOaYlEGhnaSfT/7Dkg6b8h2q8RFCOmKDClsvcbWdMt/VbtBj11d8nAOr8V/6JJ1EaNtssEXFUWsMGLR/DYbYXAqwtqdh6h3sIXuDAwFquHHm7RTEgcpFUec8SIx/0lDSJcGdrihX+IzWad7lFNxCVxnK7DemQxB+5tb7ju+9TKiALwYxLo+4yWUj03z/KyKmtO+/VIPmnIK3uUQUcSvn4Sk3HF8qI3BR/Av0AeI4qpg6GeVvzBDvf+hFR9leP2/nW9U6bus3Mb9DTlrFVzwGVKng9NPKLk+NfmuqK5B9xd2sxCxwKCP8RCgRADqQ6/2ezLaIx1MKOd12khLsnAAAAA" clip-path="url(#cc7c29b)"/>
 </a>
 <a href="https://christophhofmann.de" class="sponsorkit-link" target="_blank" id="hoffe86">
   
   <clipPath id="cbc1029">
-    <rect x="305" y="300" width="40" height="40" rx="20" ry="20" />
+    <rect x="255" y="300" width="40" height="40" rx="20" ry="20" />
   </clipPath>
-  <image x="305" y="300" width="40" height="40" href="data:image/webp;base64,UklGRngCAABXRUJQVlA4IGwCAABwDQCdASoyADIAPm0qkkakIiGhMBYLAIANiUAXZoopoippJoDpZcV8FlVuI6bZo413SQf3GD27gRgij+kYaFWvI8eK1ETSg3DUcnz3jG6Zt7rDE/+1Vp9ltMPitkQTYI3JJdYXV3RIAALTala3Re6mAR2gAABUhB2lb9mWnBEcHTy5fPiP+vpQrIo+6KODEzYzynrDSJ9xiRshs0IEx8AaPSpCPhlQ2LehmuQ1Sdu7EpfyYy26IdyFHoN7uKeJ2LgqnxqPSC2/t83z2bPDyJQN0u5irlK2EpRTEUKbyAMAuQ1hy3D83Vpb4Xdb3R5mAeGIaAC1Igpvd533ec0p+crQJsEax9V7yz3G/HwoSff3kv9KZsH+LP1D+bi0X4bbrGkFk5rMyQThmfrBLwpKflEfyQhOa2wndeQ8bbA0jkSONvIRzfbyBtLqNzVxo44djd9YfTGcYAWOPHDzULbWZhm1c/J3wjSfE02S6t71LkkXkqJ1zJIu3CvwoxOqKIy24VwIcw0kPLppdnlNdP8DQ6jl9AQdn5cyWBj3xwR7WNq6PmGbbP3MvfdjNzNtiiAi3BgBr0CMn3eBRnV5ktX3SsKuURTJGNzbdq3VPPmy8r+3sN9SRCndWTjpkiXEYhDFqiSN/I5a86ASW5KBhXKfQpzcwM8flef57gWrlZcsq6Ypjyys8E0RuDR1QIalAktIIha6mpo7GM7mLiGKW7+6XA72TsakqquC1UgXhoEAr2WRVvG5qF4OK5RW6U0KXndk9HC+bxhiKp4qZveZk6czbVPnTUXAe+v/2x7lTwKtt28m928vpCBp5gxQAAAAAA==" clip-path="url(#cbc1029)"/>
+  <image x="255" y="300" width="40" height="40" href="data:image/webp;base64,UklGRngCAABXRUJQVlA4IGwCAABwDQCdASoyADIAPm0qkkakIiGhMBYLAIANiUAXZoopoippJoDpZcV8FlVuI6bZo413SQf3GD27gRgij+kYaFWvI8eK1ETSg3DUcnz3jG6Zt7rDE/+1Vp9ltMPitkQTYI3JJdYXV3RIAALTala3Re6mAR2gAABUhB2lb9mWnBEcHTy5fPiP+vpQrIo+6KODEzYzynrDSJ9xiRshs0IEx8AaPSpCPhlQ2LehmuQ1Sdu7EpfyYy26IdyFHoN7uKeJ2LgqnxqPSC2/t83z2bPDyJQN0u5irlK2EpRTEUKbyAMAuQ1hy3D83Vpb4Xdb3R5mAeGIaAC1Igpvd533ec0p+crQJsEax9V7yz3G/HwoSff3kv9KZsH+LP1D+bi0X4bbrGkFk5rMyQThmfrBLwpKflEfyQhOa2wndeQ8bbA0jkSONvIRzfbyBtLqNzVxo44djd9YfTGcYAWOPHDzULbWZhm1c/J3wjSfE02S6t71LkkXkqJ1zJIu3CvwoxOqKIy24VwIcw0kPLppdnlNdP8DQ6jl9AQdn5cyWBj3xwR7WNq6PmGbbP3MvfdjNzNtiiAi3BgBr0CMn3eBRnV5ktX3SsKuURTJGNzbdq3VPPmy8r+3sN9SRCndWTjpkiXEYhDFqiSN/I5a86ASW5KBhXKfQpzcwM8flef57gWrlZcsq6Ypjyys8E0RuDR1QIalAktIIha6mpo7GM7mLiGKW7+6XA72TsakqquC1UgXhoEAr2WRVvG5qF4OK5RW6U0KXndk9HC+bxhiKp4qZveZk6czbVPnTUXAe+v/2x7lTwKtt28m928vpCBp5gxQAAAAAA==" clip-path="url(#cbc1029)"/>
 </a>
 <a href="https://github.com/pkienePK" class="sponsorkit-link" target="_blank" id="pkienePK">
   
   <clipPath id="cdebf1d">
-    <rect x="355" y="300" width="40" height="40" rx="20" ry="20" />
+    <rect x="305" y="300" width="40" height="40" rx="20" ry="20" />
   </clipPath>
-  <image x="355" y="300" width="40" height="40" href="data:image/webp;base64,UklGRkYBAABXRUJQVlA4IDoBAABwCACdASoyADIAPm0wkkWkIyGY+4wAQAbEoAz7fAG4A3P/qJd5lv0AG0sOSJfDo1ZJ0iTBWmWKMHQnemDcYBglocxAvOsU0QcsRFhAAP7uQNvYaivvG+AuGQM2Gzj2g+x+tho5lvzLgcUz+13SzbYY88frQFr7P/220QtM23orKELQ70TUyzc1PWISmn/nT+rfjfpy9hM1fLRPVt49L/vbNT6YjK/gN9j9e49JrIq/P+avt8qJjw2kTvmK6rCE/LCM4ID1cQ6N+QWH3LVeLvcehWE7c6032c9WpW1Ip88zGoZhjM90JEvxtArcSZEu5RTvErwrcstbqY8JBPRDKFCIALyV53OMb4BCe0Otn7Hm06a3k9uYxMpLqeJ5nKfcTw/uiM3ZcLKY5CfW19iNn3/raBJnt9fDxAAAAA==" clip-path="url(#cdebf1d)"/>
+  <image x="305" y="300" width="40" height="40" href="data:image/webp;base64,UklGRkYBAABXRUJQVlA4IDoBAABwCACdASoyADIAPm0wkkWkIyGY+4wAQAbEoAz7fAG4A3P/qJd5lv0AG0sOSJfDo1ZJ0iTBWmWKMHQnemDcYBglocxAvOsU0QcsRFhAAP7uQNvYaivvG+AuGQM2Gzj2g+x+tho5lvzLgcUz+13SzbYY88frQFr7P/220QtM23orKELQ70TUyzc1PWISmn/nT+rfjfpy9hM1fLRPVt49L/vbNT6YjK/gN9j9e49JrIq/P+avt8qJjw2kTvmK6rCE/LCM4ID1cQ6N+QWH3LVeLvcehWE7c6032c9WpW1Ip88zGoZhjM90JEvxtArcSZEu5RTvErwrcstbqY8JBPRDKFCIALyV53OMb4BCe0Otn7Hm06a3k9uYxMpLqeJ5nKfcTw/uiM3ZcLKY5CfW19iNn3/raBJnt9fDxAAAAA==" clip-path="url(#cdebf1d)"/>
 </a>
 <a href="https://github.com/HCekiM" class="sponsorkit-link" target="_blank" id="HCekiM">
   
   <clipPath id="c621919">
-    <rect x="405" y="300" width="40" height="40" rx="20" ry="20" />
+    <rect x="355" y="300" width="40" height="40" rx="20" ry="20" />
   </clipPath>
-  <image x="405" y="300" width="40" height="40" href="data:image/webp;base64,UklGRqIBAABXRUJQVlA4IJYBAABwCgCdASoyADIAPm0uk0YkIqGhMfVYAIANiWQA0fBkR4/Bu0YDPQBtp/MB5xnRM9TF6AHlkez0CXIkx77uPtNMuZZDPDJPwSK8tESE0Ze+1YSedDOD3x5FBb86AAD+/i8T+/ao9K79BB3kSAjPpq1g73VtfZ6Djbs+aO+TftsqbuRG46YGIXFmPiMMZTrLaM575jChvb25cCEsEnk7x2YPcBTt74jYYEDZzIv6W7Ed8XNyksF+sH7xQJtcThdpsgQHpf7xN6xUIDsvejb+nXrd5YRir57ln2mv/f6r/pw0k8qCi6nYtTfwmv7VslQ1H+W3EFsvhENkFInIFa7YvObEiBKj2sS4k65kDb9eJB+hC9w5sogm+hrJDGFT2/Z/fAty5C+fG/ol8tdvKXvhO5G+3mrgr6qVYaO8rVTzXhFsAR6E6bG56HH8GjXTRJonQSF9RO18FMHT7q+FtC45Kssy/LpnQ5ZBFgjO0DiiHJzinLWZ8N/H2Xbb1VMNqT8XA4trYvOGTKjehjni2mKAMUaJC0QAAAAA" clip-path="url(#c621919)"/>
+  <image x="355" y="300" width="40" height="40" href="data:image/webp;base64,UklGRqIBAABXRUJQVlA4IJYBAABwCgCdASoyADIAPm0uk0YkIqGhMfVYAIANiWQA0fBkR4/Bu0YDPQBtp/MB5xnRM9TF6AHlkez0CXIkx77uPtNMuZZDPDJPwSK8tESE0Ze+1YSedDOD3x5FBb86AAD+/i8T+/ao9K79BB3kSAjPpq1g73VtfZ6Djbs+aO+TftsqbuRG46YGIXFmPiMMZTrLaM575jChvb25cCEsEnk7x2YPcBTt74jYYEDZzIv6W7Ed8XNyksF+sH7xQJtcThdpsgQHpf7xN6xUIDsvejb+nXrd5YRir57ln2mv/f6r/pw0k8qCi6nYtTfwmv7VslQ1H+W3EFsvhENkFInIFa7YvObEiBKj2sS4k65kDb9eJB+hC9w5sogm+hrJDGFT2/Z/fAty5C+fG/ol8tdvKXvhO5G+3mrgr6qVYaO8rVTzXhFsAR6E6bG56HH8GjXTRJonQSF9RO18FMHT7q+FtC45Kssy/LpnQ5ZBFgjO0DiiHJzinLWZ8N/H2Xbb1VMNqT8XA4trYvOGTKjehjni2mKAMUaJC0QAAAAA" clip-path="url(#c621919)"/>
 </a>
 <a href="https://github.com/jliebermann-sys" class="sponsorkit-link" target="_blank" id="jliebermann-sys">
   
   <clipPath id="ce770bd">
-    <rect x="455" y="300" width="40" height="40" rx="20" ry="20" />
+    <rect x="405" y="300" width="40" height="40" rx="20" ry="20" />
   </clipPath>
-  <image x="455" y="300" width="40" height="40" href="data:image/webp;base64,UklGRoIBAABXRUJQVlA4IHYBAAAwCwCdASoyADIAPm0ukkWkIqGY/jQAQAbEoAeFs0/F34b2CnpAeYDccOoA57z2Zv2SwSX8AAixzKa/EWe95bsrE6J5CYVbFTOcInw/ejAHCUw9TLqAE2vNjkqgnyGyfM1jQAD+geY5spuL/X2ol134HEv4/jn7aWtvXY/9mkllu3aGKuWoA1d3RbjIGSAxVt3dX/G/HsfTjHELH3qh7tNdC/bbnQmYGwXk/6HY38HPxPyP+74SC2QyKgRnT0eE73EHM7K7n4goTy1CwQtIFJxjnNHc9Cw6aL4R7nyCoIAYbyDFZu4ISIsc70dwUy7RnCKLf0kSlEcQ9HVS4wEjfoPUj+9+D/xTn+C5rhXgNPHohboGElh+MaRadoDB1G83v3OqxOw6j5JxtWtic3W5AQrjc7qJz0cLvtjn+RaloSoIE4sTonOet9wlsN0GWZ85g1UoMQ6glbx97NiKPgA+U07HMsEd0JBruFVnLCwQabYOkbGIAgAAAA==" clip-path="url(#ce770bd)"/>
+  <image x="405" y="300" width="40" height="40" href="data:image/webp;base64,UklGRoIBAABXRUJQVlA4IHYBAAAwCwCdASoyADIAPm0ukkWkIqGY/jQAQAbEoAeFs0/F34b2CnpAeYDccOoA57z2Zv2SwSX8AAixzKa/EWe95bsrE6J5CYVbFTOcInw/ejAHCUw9TLqAE2vNjkqgnyGyfM1jQAD+geY5spuL/X2ol134HEv4/jn7aWtvXY/9mkllu3aGKuWoA1d3RbjIGSAxVt3dX/G/HsfTjHELH3qh7tNdC/bbnQmYGwXk/6HY38HPxPyP+74SC2QyKgRnT0eE73EHM7K7n4goTy1CwQtIFJxjnNHc9Cw6aL4R7nyCoIAYbyDFZu4ISIsc70dwUy7RnCKLf0kSlEcQ9HVS4wEjfoPUj+9+D/xTn+C5rhXgNPHohboGElh+MaRadoDB1G83v3OqxOw6j5JxtWtic3W5AQrjc7qJz0cLvtjn+RaloSoIE4sTonOet9wlsN0GWZ85g1UoMQ6glbx97NiKPgA+U07HMsEd0JBruFVnLCwQabYOkbGIAgAAAA==" clip-path="url(#ce770bd)"/>
 </a>
 <a href="https://github.com/ossiseesh" class="sponsorkit-link" target="_blank" id="ossiseesh">
   
   <clipPath id="c26ea9c">
-    <rect x="505" y="300" width="40" height="40" rx="20" ry="20" />
+    <rect x="455" y="300" width="40" height="40" rx="20" ry="20" />
   </clipPath>
-  <image x="505" y="300" width="40" height="40" href="data:image/webp;base64,UklGRjwBAABXRUJQVlA4IDABAADwCACdASoyADIAPm0ylEakIyIhLhkoAIANiWMA0SWLDwDcAedv1AHPgfrd8PII0RJikok2a38B46XBk6Hv5oh+Cdi23Hd2tMdLmDLXzLlMAAD+/fcX/3pAkI/xjc1ulR+/730U6iBU59v2kBcw7CVlfWomN8g8QrKNWAA4ARmXi0+rBdgMfaJ4icaKSQkLlTAY3XnJwHaqf8Ys/fB0K4QLyr2YB2LdrADhWe4TbUTqrZiYLqVl4gt6udvugNrEJTVAZO3rJkMnEUbRU9JAEoOgT5eJ7slQGOGN2lrjOBI2YPpWJefpz6ALoK6OxS8hbBJwuiWXwW8sr7syDnGkjq60UWZVMLPH+xGO5ZUM1lg2pmcaFAk3UzTpbgr1CWhtaRxnUuFWz+HcNAR3U9uCIAAA" clip-path="url(#c26ea9c)"/>
+  <image x="455" y="300" width="40" height="40" href="data:image/webp;base64,UklGRjwBAABXRUJQVlA4IDABAADwCACdASoyADIAPm0ylEakIyIhLhkoAIANiWMA0SWLDwDcAedv1AHPgfrd8PII0RJikok2a38B46XBk6Hv5oh+Cdi23Hd2tMdLmDLXzLlMAAD+/fcX/3pAkI/xjc1ulR+/730U6iBU59v2kBcw7CVlfWomN8g8QrKNWAA4ARmXi0+rBdgMfaJ4icaKSQkLlTAY3XnJwHaqf8Ys/fB0K4QLyr2YB2LdrADhWe4TbUTqrZiYLqVl4gt6udvugNrEJTVAZO3rJkMnEUbRU9JAEoOgT5eJ7slQGOGN2lrjOBI2YPpWJefpz6ALoK6OxS8hbBJwuiWXwW8sr7syDnGkjq60UWZVMLPH+xGO5ZUM1lg2pmcaFAk3UzTpbgr1CWhtaRxnUuFWz+HcNAR3U9uCIAAA" clip-path="url(#c26ea9c)"/>
 </a>
 <a href="https://github.com/DanielWeeber" class="sponsorkit-link" target="_blank" id="DanielWeeber">
   
   <clipPath id="ca714dd">
+    <rect x="505" y="300" width="40" height="40" rx="20" ry="20" />
+  </clipPath>
+  <image x="505" y="300" width="40" height="40" href="data:image/webp;base64,UklGRsYCAABXRUJQVlA4ILoCAAAQDgCdASoyADIAPm0uk0ckIiGhKhZroIANiWUAwKbztc+39djSvJuf3J902pg8+k6RvSA79Iwrfk1/0nt4U2goI2SfhJLq7yvPOy1Tp+uTBabVkHn5TYIw6so5vdBHuJQ0vniGQ356l7VQx1J3Pte9nrcTDcawjyg8AP7MASYC+1OcJW29zKvE4GN0bgUmBFOLufN1s0naUlrvt6cZganj769aWzcubI2f/vVrGPLr4LnUIunrAwcVbrQZfFQYzRtr3Ae9yQV8f5bCdsNs+feJmnYd/i8Pej6EK2GGHI3EV5SQd8uXixPVKC6DnNb19dPQ2YtHbLVp2v3i1BShxyb7UBFeYKiwB9qUcEAN904efrR0BgtVL0E/bW9IP6LretT8gOYCsB5NP/AZ1mkXvJl2FAlkIWb5saD27QZTNE+x2uMQv6IkntmSHxa/l85vitGmPFUkvKO+Qt0LTtt7cEHp5pgkK2hJGkfDlvFEnyYwnRiYapkN/hgXtUDS/kiVm7x3yvayNXqyI/6D0H+4Sfojyaddsy5q102mja17GJxq9eOqa1Cq1l5vPjaaO98wlIsy6up+3Cuk9+4qeHznusRU/oXPHmoJ0Um+SZvzFJNwOEnlYBomMhJj2VZ7szxOwb4htXRVhfTwwNBZRSFWq/aeYXqNff18Wqf7pOauu4X6HxKEi+nOoXeOgJpEUsPmqVqp+L/4l96UXAA0nO3Anm0ZkL1qc0tANX8EKYXajewAn/Lb8kr8KSj8Fw9eZ7i+WQYKF2LIIzwzeqKV7cNeMyiMRfm7uISgair2bOPoOYbtZmTJyIMWt4y6LpiYHNYQORa+ZGnkUWxnURhwlXDQSd7wx7gVss//7bBFG8GoSo3l2eVBxJ5QP+lrzMs+8IwaADgirWDM2sJYrTx/XJEHktAb90pavhtJwyAAAA==" clip-path="url(#ca714dd)"/>
+</a>
+<a href="https://github.com/frederikfottner768-dot" class="sponsorkit-link" target="_blank" id="frederikfottner768-dot">
+  
+  <clipPath id="cd7e443">
     <rect x="555" y="300" width="40" height="40" rx="20" ry="20" />
   </clipPath>
-  <image x="555" y="300" width="40" height="40" href="data:image/webp;base64,UklGRsYCAABXRUJQVlA4ILoCAAAQDgCdASoyADIAPm0uk0ckIiGhKhZroIANiWUAwKbztc+39djSvJuf3J902pg8+k6RvSA79Iwrfk1/0nt4U2goI2SfhJLq7yvPOy1Tp+uTBabVkHn5TYIw6so5vdBHuJQ0vniGQ356l7VQx1J3Pte9nrcTDcawjyg8AP7MASYC+1OcJW29zKvE4GN0bgUmBFOLufN1s0naUlrvt6cZganj769aWzcubI2f/vVrGPLr4LnUIunrAwcVbrQZfFQYzRtr3Ae9yQV8f5bCdsNs+feJmnYd/i8Pej6EK2GGHI3EV5SQd8uXixPVKC6DnNb19dPQ2YtHbLVp2v3i1BShxyb7UBFeYKiwB9qUcEAN904efrR0BgtVL0E/bW9IP6LretT8gOYCsB5NP/AZ1mkXvJl2FAlkIWb5saD27QZTNE+x2uMQv6IkntmSHxa/l85vitGmPFUkvKO+Qt0LTtt7cEHp5pgkK2hJGkfDlvFEnyYwnRiYapkN/hgXtUDS/kiVm7x3yvayNXqyI/6D0H+4Sfojyaddsy5q102mja17GJxq9eOqa1Cq1l5vPjaaO98wlIsy6up+3Cuk9+4qeHznusRU/oXPHmoJ0Um+SZvzFJNwOEnlYBomMhJj2VZ7szxOwb4htXRVhfTwwNBZRSFWq/aeYXqNff18Wqf7pOauu4X6HxKEi+nOoXeOgJpEUsPmqVqp+L/4l96UXAA0nO3Anm0ZkL1qc0tANX8EKYXajewAn/Lb8kr8KSj8Fw9eZ7i+WQYKF2LIIzwzeqKV7cNeMyiMRfm7uISgair2bOPoOYbtZmTJyIMWt4y6LpiYHNYQORa+ZGnkUWxnURhwlXDQSd7wx7gVss//7bBFG8GoSo3l2eVBxJ5QP+lrzMs+8IwaADgirWDM2sJYrTx/XJEHktAb90pavhtJwyAAAA==" clip-path="url(#ca714dd)"/>
+  <image x="555" y="300" width="40" height="40" href="data:image/webp;base64,UklGRvIBAABXRUJQVlA4IOYBAABQCwCdASoyADIAPm0wkkWkIyGY/HQAQAbEsQBBvkhXkcA7bAeYDc5upr6ET/ve0AA9j60q7gqaiYXX61caEb9TUQv+mbvs3g7AlyeAjEKdOuq6S22tSXkKSV2RQc5zCkzYx7gA/v0q5/pU6+HgLJbQwI0FwTpf8vBY15swQo8My2h7m0bJdg2L19c98uhBr8eJUVFsbTLNhf0dMDCPQ380J6jasGG2VB5JBKqscy6gppk5jzcb5MXGoL+0CTyZ9OOOo14qJncje9j8Pcbed2bNxIgHddPdGorh1ytT9e64kHzBje/Vc9Vx0Z+hm4H3woLK4NZErD+kB5gCouBW+7P7mthGg542dL5MgkJMUf3zO52qIi/mSeFhPv4htpzRjJI8Arw4XvYrRGBkON/0kQiEikNTMw0HyErx7cjvX9yxKYVqzTedpawjiJqpC6P+iOhTGXloIhM3V7y01hjBzxS9uDuaCP6fJDbduOuorJ7yt7sNMW+r3tbQc7Lmr7+tu939ll88TRxYDlkBHZb95p0zMO0A4rdyuU+RCv+0zdI76t2m0f+q9/estAVsBLqhpIdXTabpCUiEt6OU+ZTLVxUxx1AgHr/v7/ErpZPgCOa1f8M7QfipwsU7hIVkAdDeNO24AaYAAAA=" clip-path="url(#cd7e443)"/>
+</a>
+<a href="https://github.com/horstevering-hash" class="sponsorkit-link" target="_blank" id="horstevering-hash">
+  
+  <clipPath id="c325eeb">
+    <rect x="605" y="300" width="40" height="40" rx="20" ry="20" />
+  </clipPath>
+  <image x="605" y="300" width="40" height="40" href="data:image/webp;base64,UklGRoQBAABXRUJQVlA4IHgBAACwCgCdASoyADIAPm0yk0YkIyGhMBgIAIANiUAZgo+BoQ2nRfHXOA2wHmA84f+wer7z/+o83pEE0IR+w/tjWf+chbrPOJC5ncCZTRzZdSy0qG5BKDBN/hKTLA6JdZgAAP7996H82PE/cJKcg35rZnooCayg7mLWn8AWcx9xKlVO+Am5cicalAmOECC/d+/fsLF/m6j4mDT+YPTwN0AuseofKq+AxCuUBnNooaAs7xU9Y3Ae2qKRJkRT7kjvhhdt5ZYEMvah1nW/+hwNSi8BF0QlPwFMBpdVdr+4DNtDc4t/ETa0qvBLFqkk4gvYYugXTs8V35zUfeFQfgMH512T6f7306qvAliBU/gyWLbj2ZkMonVOyzcHRc8o8SnRLIBApWyIa8WvTApul+tO5zBUOHGFn4efyMPWX/QBj+0sKGYMs8Km7il7jtiXsrBOcaBbpZMGSFs8Er3jf08ovvTuHrg3p+fkRhoXVmXhx0GbE4fk3l8H8yCAAAAA" clip-path="url(#c325eeb)"/>
 </a><a href="https://github.com/britz77" class="sponsorkit-link" target="_blank" id="britz77">
   
   <clipPath id="ca2f930">
