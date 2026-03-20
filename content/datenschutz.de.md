@@ -71,7 +71,57 @@ Da Algolia in den USA ansässig ist, erfolgt eine Übermittlung personenbezogene
 
 Die Suchanfragen werden von Algolia zu Analyse- und Verbesserungszwecken der Suchfunktion verarbeitet. Eine darüber hinausgehende Nutzung oder Weitergabe an Dritte erfolgt nicht.
 
-## 4. Allgemeine Hinweise und Pflicht­informationen
+## 4. Zahlungsabwicklung für evcc-Sponsoring (creem.io)
+
+Wenn du ein evcc-Sponsoring erwirbst, erfolgt die Zahlungsabwicklung über unseren Zahlungsdienstleister creem.io, ein Dienst der Armitage Labs OÜ, Telliskivi Street 57b/1, Tallinn 10412, Estland.
+
+### Datenverarbeitung durch creem.io
+
+Bei deinem Sponsoring-Kauf werden folgende Daten an creem.io übermittelt und von diesem verarbeitet:
+- Name und E-Mail-Adresse
+- Zahlungsinformationen (abhängig von der gewählten Zahlungsmethode)
+- Rechnungsadresse
+- IP-Adresse
+- Kaufdatum und -zeitpunkt
+- Art des erworbenen Sponsorings (vierteljährlich, jährlich, lebenslang)
+
+creem.io agiert als unser Merchant of Record und ist verantwortlich für:
+- Die sichere Abwicklung der Zahlung
+- Die Erhebung und Abführung der Mehrwertsteuer
+- Die Erstellung und Bereitstellung von Rechnungen
+- Die Verwaltung von wiederkehrenden Zahlungen (bei Abonnements)
+
+### Rechtsgrundlage
+
+Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO zur Erfüllung des Kaufvertrags für dein evcc-Sponsoring.
+
+### Datenweitergabe an uns
+
+creem.io übermittelt an uns als Anbieter des evcc-Sponsorings folgende Daten:
+- Name und E-Mail-Adresse
+- Art des erworbenen Sponsorings
+- Kaufdatum
+- Sponsor-Token
+
+Diese Daten benötigen wir zur:
+- Aktivierung und Validierung deines Sponsor-Tokens
+- Kommunikation bezüglich deines Sponsorings
+- Erfüllung steuerrechtlicher Aufbewahrungspflichten
+
+### Speicherdauer
+
+Wir speichern die Sponsoring-bezogenen Daten:
+- Bei laufenden Abonnements: für die Dauer des Abonnements plus gesetzliche Aufbewahrungsfristen
+- Bei Lifetime-Sponsorships: dauerhaft zur Validierung deiner Sponsoring-Berechtigung
+- Steuerrelevante Daten: 10 Jahre gemäß handels- und steuerrechtlichen Vorschriften
+
+### Widerruf und Kündigung
+
+Du kannst wiederkehrende Sponsorships jederzeit über das creem.io-Portal unter https://www.creem.io/portal/ kündigen. Die Kündigung wird zum Ende der aktuellen Abrechnungsperiode wirksam.
+
+Weitere Informationen zum Datenschutz bei creem.io findest du in der [creem.io Datenschutzerklärung](https://www.creem.io/privacy).
+
+## 5. Allgemeine Hinweise und Pflicht­informationen
 
 ### Datenschutz
 
