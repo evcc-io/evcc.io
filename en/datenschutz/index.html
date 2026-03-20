@@ -44,7 +44,7 @@ Data Collection on This Website Who is Responsible for Data Collection on This W
   <meta itemprop="name" content="evcc - Solar Charging ☀️🚘 - Connects Your EV Charger With Your PV System">
   <meta itemprop="description" content="Privacy Policy 1. Privacy at a Glance General Information The following notes provide a simple overview of what happens to your personal data when you visit this website. Personal data is any data that can personally identify you. For detailed information on data protection, please refer to our privacy policy listed below this text.
 Data Collection on This Website Who is Responsible for Data Collection on This Website? Data processing on this website is carried out by the website operator. You can find their contact details in the “Notice Concerning the Responsible Party” section of this privacy policy.">
-  <meta itemprop="wordCount" content="1744">
+  <meta itemprop="wordCount" content="1887">
 
 <link href="../../css/main.css" rel="stylesheet" />
 <link rel="preload" href="../../fonts/roboto-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
@@ -124,6 +124,16 @@ Data Collection on This Website Who is Responsible for Data Collection on This W
 <h3 id="community-telemetry-display">Community Telemetry Display</h3>
 <p>The homepage displays a live widget showing aggregated statistics from the evcc community (e.g., total charging power, number of active users, solar share). This data is provided by our own service api.evcc.io.</p>
 <p>When loading this display, no personal data is collected or transmitted from you as a website visitor. The widget exclusively shows anonymized, aggregated data from participating evcc users who have voluntarily opted into the telemetry program. For more information about telemetry participation for evcc users, see our <a href="https://docs.evcc.io/docs/reference/configuration/telemetry">documentation</a>.</p>
+<h3 id="optimizer-service-optimizerevccio">Optimizer Service (optimizer.evcc.io)</h3>
+<p>evcc offers an optional optimizer feature that makes cost-optimal decisions for your energy system. When you enable the optimizer in the user interface, the following data is transmitted to our service <code>optimizer.evcc.io</code>:</p>
+<ul>
+<li>Forecast data: solar yield, electricity prices, feed-in tariffs</li>
+<li>Historical data: your household&rsquo;s typical consumption profile</li>
+<li>Current state: battery state of charge, connected vehicles, heating demand</li>
+</ul>
+<p>The service is <strong>stateless</strong> – no data is permanently stored on the server. The transmitted data is used solely to calculate the optimisation result and discarded afterwards.</p>
+<p>The optimizer is only active when you explicitly enable it in the user interface. Usage requires an active <a href="https://docs.evcc.io/docs/sponsorship">sponsorship</a>. The legal basis for processing is Art. 6 para. 1 lit. a GDPR (consent through actively enabling the feature).</p>
+<p>Alternatively, you can run the optimizer locally to avoid data transmission entirely. For more information, see our <a href="https://docs.evcc.io/docs/features/optimizer#technical">documentation</a>.</p>
 <h2 id="3-algolia-docsearch-search-function-on-docsevccio">3. Algolia DocSearch (Search Function on docs.evcc.io)</h2>
 <p>Our documentation site (docs.evcc.io) uses Algolia DocSearch for the search function. Algolia is a service provided by Algolia Inc., 589 Howard Street, Suite 5, San Francisco, CA 94105, USA.</p>
 <p>When you use the search function, the following data is transmitted to Algolia:</p>
