@@ -54,6 +54,20 @@ The homepage displays a live widget showing aggregated statistics from the evcc 
 
 When loading this display, no personal data is collected or transmitted from you as a website visitor. The widget exclusively shows anonymized, aggregated data from participating evcc users who have voluntarily opted into the telemetry program. For more information about telemetry participation for evcc users, see our [documentation](https://docs.evcc.io/docs/reference/configuration/telemetry).
 
+### Optimizer Service (optimizer.evcc.io)
+
+evcc offers an optional optimizer feature that makes cost-optimal decisions for your energy system. When you enable the optimizer in the user interface, the following data is transmitted to our service `optimizer.evcc.io`:
+
+- Forecast data: solar yield, electricity prices, feed-in tariffs
+- Historical data: your household's typical consumption profile
+- Current state: battery state of charge, connected vehicles, heating demand
+
+The service is **stateless** – no data is permanently stored on the server. The transmitted data is used solely to calculate the optimisation result and discarded afterwards.
+
+The optimizer is only active when you explicitly enable it in the user interface. Usage requires an active [sponsorship](https://docs.evcc.io/docs/sponsorship). The legal basis for processing is Art. 6 para. 1 lit. a GDPR (consent through actively enabling the feature).
+
+Alternatively, you can run the optimizer locally to avoid data transmission entirely. For more information, see our [documentation](https://docs.evcc.io/docs/features/optimizer#technical).
+
 ## 3. Algolia DocSearch (Search Function on docs.evcc.io)
 
 Our documentation site (docs.evcc.io) uses Algolia DocSearch for the search function. Algolia is a service provided by Algolia Inc., 589 Howard Street, Suite 5, San Francisco, CA 94105, USA.

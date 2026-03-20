@@ -54,6 +54,20 @@ Auf der Startseite wird ein Live-Widget angezeigt, das aggregierte Statistiken d
 
 Beim Laden dieser Anzeige werden keine personenbezogenen Daten von Ihnen als Website-Besucher erfasst oder übermittelt. Das Widget zeigt ausschließlich anonymisierte, aggregierte Daten von teilnehmenden evcc-Nutzern an, die sich freiwillig für das Telemetrie-Programm entschieden haben. Weitere Informationen zur Telemetrie-Teilnahme für evcc-Nutzer finden Sie in unserer [Dokumentation](https://docs.evcc.io/docs/reference/configuration/telemetry).
 
+### Optimizer-Service (optimizer.evcc.io)
+
+evcc bietet eine optionale Optimizer-Funktion, die kostenoptimale Entscheidungen für dein Energiesystem trifft. Wenn du den Optimizer in der Benutzeroberfläche aktivierst, werden folgende Daten an unseren Dienst `optimizer.evcc.io` übermittelt:
+
+- Prognosedaten: PV-Ertrag, Strompreise, Einspeisetarife
+- Historische Daten: typisches Verbrauchsprofil deines Haushalts
+- Aktueller Zustand: Ladestand der Batterie, angeschlossene Fahrzeuge, Wärmebedarf
+
+Der Dienst arbeitet **zustandslos** – es werden keine Daten dauerhaft auf dem Server gespeichert. Die übermittelten Daten werden ausschließlich zur Berechnung des Optimierungsergebnisses verwendet und danach verworfen.
+
+Der Optimizer wird nur aktiv, wenn du ihn explizit in der Benutzeroberfläche aktivierst. Die Nutzung setzt ein aktives [Sponsoring](https://docs.evcc.io/docs/sponsorship) voraus. Die Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch aktive Aktivierung der Funktion).
+
+Alternativ kannst du den Optimizer lokal betreiben und damit die Datenübermittlung vollständig vermeiden. Weitere Informationen dazu findest du in unserer [Dokumentation](https://docs.evcc.io/docs/features/optimizer#technical).
+
 ## 3. Algolia DocSearch (Suchfunktion auf docs.evcc.io)
 
 Unsere Dokumentationsseite (docs.evcc.io) verwendet Algolia DocSearch für die Suchfunktion. Algolia ist ein Dienst der Algolia Inc., 589 Howard Street, Suite 5, San Francisco, CA 94105, USA.
