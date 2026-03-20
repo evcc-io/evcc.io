@@ -62,7 +62,7 @@ evcc bietet eine optionale Optimizer-Funktion, die kostenoptimale Entscheidungen
 - Historische Daten: typisches Verbrauchsprofil deines Haushalts
 - Aktueller Zustand: Ladestand der Batterie, angeschlossene Fahrzeuge, Wärmebedarf
 
-Der Dienst arbeitet **zustandslos** – es werden keine Daten dauerhaft auf dem Server gespeichert. Die übermittelten Daten werden ausschließlich zur Berechnung des Optimierungsergebnisses verwendet und danach verworfen.
+Der Dienst wird auf Microsoft Azure in einem deutschen Rechenzentrum betrieben. Es erfolgt keine Übermittlung in Drittländer. Der Dienst arbeitet **zustandslos** – es werden keine Daten dauerhaft auf dem Server gespeichert. Die übermittelten Daten werden ausschließlich zur Berechnung des Optimierungsergebnisses verwendet und danach verworfen.
 
 Der Optimizer wird nur aktiv, wenn du ihn explizit in der Benutzeroberfläche aktivierst. Die Nutzung setzt ein aktives [Sponsoring](https://docs.evcc.io/docs/sponsorship) voraus. Die Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch aktive Aktivierung der Funktion).
 

@@ -62,7 +62,7 @@ evcc offers an optional optimizer feature that makes cost-optimal decisions for 
 - Historical data: your household's typical consumption profile
 - Current state: battery state of charge, connected vehicles, heating demand
 
-The service is **stateless** – no data is permanently stored on the server. The transmitted data is used solely to calculate the optimisation result and discarded afterwards.
+The service is hosted on Microsoft Azure in a German data centre. No data is transferred to third countries. The service is **stateless** – no data is permanently stored on the server. The transmitted data is used solely to calculate the optimisation result and discarded afterwards.
 
 The optimizer is only active when you explicitly enable it in the user interface. Usage requires an active [sponsorship](https://docs.evcc.io/docs/sponsorship). The legal basis for processing is Art. 6 para. 1 lit. a GDPR (consent through actively enabling the feature).
 
