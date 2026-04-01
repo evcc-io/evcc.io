@@ -8,14 +8,14 @@ defaultContentLanguageInSubdir = false
   [languages.de]
     weight = 1
     languageName = "DE"
-    title = "evcc - Sonne tanken ☀️🚘 - PV-Überschussladen für steuerbare Wallboxen"
+    title = "evcc - Smart laden ☀️🚘 - Intelligentes Energiemanagement für Zuhause"
     [languages.de.params]
       docsUrl = "https://docs.evcc.io/docs/Home"
       blogUrl = "https://docs.evcc.io/blog"
   [languages.en]
     weight = 2
     languageName = "EN"
-    title = "evcc - Solar Charging ☀️🚘 - Connects Your EV Charger With Your PV System"
+    title = "evcc - Smart Charging ☀️🚘 - Intelligent Energy Management for Your Home"
     [languages.en.params]
       docsUrl = "https://docs.evcc.io/en/docs/Home"
       blogUrl = "https://docs.evcc.io/en/blog"

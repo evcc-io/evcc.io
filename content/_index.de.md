@@ -1,9 +1,6 @@
-# Sonne tanken. Ganz einfach.
+# Smart laden. Ganz einfach.
 
-evcc ist ein Energie-Management-System mit Fokus auf Elektromobilität.
-Die Software steuert deine [Wallbox oder Schaltsteckdose](#devices).
-Um intelligente Entscheidungen zu treffen, kommuniziert es auch mit deinem [Fahrzeug, Wechselrichter oder Hausspeicher](#devices).
-Die Software ist Open Source und lebt von der Community.
+Lade dein Elektroauto intelligent. Steuere Wallbox, Wärmepumpe und Hausspeicher, egal von welchem Hersteller. Deine Kontrolle, deine Daten. Open Source und Community-getrieben.
 
 {{< button-cta url="https://docs.evcc.io/docs/installation" target="_blank" subline="Raspberry Pi, Docker und co.">}}
 Jetzt loslegen
@@ -11,42 +8,64 @@ Jetzt loslegen
 
 ---
 
-## Laden, wenn die Sonne scheint
+## Features
 
-{{< split >}}
-{{< split-entry-image >}}
-{{< svg-animation src="/img/solar-surplus.svg" id="solar-surplus" >}}
-{{</ split-entry-image>}}
-{{< split-entry-text >}}
-Dein Ladevorgang startet, sobald genug eigener Sonnenstrom produziert wird.
-Die Ladeleistung wird permanent an den verfügbaren Überschuss angepasst.
+{{< feature-cards >}}
+{{< feature-card title="Überschussladen" icon="sun" link="https://docs.evcc.io/docs/features/solar-charging" >}}
+Dein Auto lädt, wenn die Sonne scheint. Ladeleistung folgt automatisch dem verfügbaren Überschuss.
+{{< /feature-card >}}
 
-Das erhöht Autarkie und spart Geld.
-{{</ split-entry-text>}}
-{{</ split>}}
+{{< feature-card title="Dynamische Stromtarife" icon="lightning" link="https://docs.evcc.io/docs/features/dynamic-prices" >}}
+Mit Börsenstromtarifen lädst du automatisch in den günstigsten Stunden.
+{{< /feature-card >}}
 
-{{< live-telemetry >}}
+{{< feature-card title="Ladepläne & Prognosen" icon="calendar-check" link="https://docs.evcc.io/docs/features/plans" >}}
+Abfahrtszeit und Ladeziel festlegen. evcc findet die günstigsten oder grünsten Ladezeiten automatisch.
+{{< /feature-card >}}
+
+{{< feature-card title="iOS- & Android-App" icon="device-mobile" link="https://docs.evcc.io/docs/features/app" >}}
+Überwache und steuere dein Laden von unterwegs mit der evcc Companion App.
+{{< /feature-card >}}
+
+{{< feature-card title="Hausspeicher" icon="battery-charging" link="https://docs.evcc.io/docs/features/battery" >}}
+Speicher und E-Auto optimal koordinieren. Per Batterieboost schnell aus dem Speicher laden. Bei Bedarf günstig aus dem Netz nachladen.
+{{< /feature-card >}}
+
+{{< feature-card title="Wärmepumpen" icon="thermometer" link="https://docs.evcc.io/docs/devices/heating" >}}
+Nutze Sonne oder günstigen Strom zum Heizen. evcc aktiviert deine Wärmepumpe automatisch zu den besten Zeiten.
+{{< /feature-card >}}
+
+{{< feature-card title="§14a-Konformität" icon="shield-check" link="https://docs.evcc.io/docs/features/external-control" >}}
+Automatische Leistungsreduzierung bei Netzbetreiber-Signal. Alle Eingriffe werden dokumentiert.
+{{< /feature-card >}}
+
+{{< feature-card title="Lastmanagement" icon="gauge" link="https://docs.evcc.io/docs/features/loadmanagement" >}}
+Verteile die verfügbare Leistung auf mehrere Ladepunkte. Schützt deinen Hausanschluss vor Überlastung.
+{{< /feature-card >}}
+
+{{< feature-card title="Open Source" icon="github-logo" link="https://github.com/evcc-io/evcc" >}}
+Transparent und unabhängig. Die Entwicklung wird durch die Community finanziert, nicht durch große Firmen.
+{{< /feature-card >}}
+{{< /feature-cards >}}
 
 ---
 
-## Grünen & günstigen Netzstrom nutzen
-
-{{< split >}}
+<!-- {{< split >}}
 {{< split-entry-image >}}
+<h3>PV-Überschuss</h3>
+{{< svg-animation src="/img/solar-surplus.svg" id="solar-surplus" >}}
+{{</ split-entry-image>}}
+{{< split-entry-image >}}
+<h3>Dynamischer Netzstrom</h3>
 {{< svg-animation src="/img/dynamic-grid.svg" id="dynamic-grid" >}}
 {{</ split-entry-image>}}
-{{< split-entry-text >}}
-Zu wenig Sonne oder keine PV-Anlage? Lade, wenn viel Erneuerbare verfügbar sind und unterstütze damit die Energiewende.
-
-Mit einem [dynamischen Stromtarif](https://docs.evcc.io/docs/features/dynamic-prices) sparst du sogar ordentlich Geld.
-{{</ split-entry-text>}}
-{{</ split>}}
+{{</ split>}} -->
 
 ---
 
 ## Wir 💚 gute Benutzeroberflächen
 
-Wir möchten, dass PV-Strom-Laden für alle einfach wird. Im Optimalfall funktioniert das ganz ohne manuelles Regeln und Einstellen. Wenn du aber doch mal sehen willst, was das System so macht, haben wir **eine aufgeräumte und responsive Weboberfläche** parat.
+Wir möchten, dass smartes Energiemanagement für alle einfach wird. Im Optimalfall funktioniert das ganz ohne manuelles Regeln und Einstellen. Wenn du aber doch mal sehen willst, was das System so macht, haben wir **eine aufgeräumte und responsive Weboberfläche** parat.
 
 {{< theme-switch >}}
 
@@ -102,18 +121,39 @@ Auch an deinen Daten haben wir kein Interesse.
 
 {{< /infobox >}}
 
-Mehr Details findest du in unserer [Dokumentation](https://docs.evcc.io/docs/devices/chargers). Ist dein Gerät noch nicht unterstützt, dann lass es uns auf [GitHub](https://github.com/evcc-io/evcc) wissen. Wenn es eine Schnittstelle hat, können wir es anbinden.
-
-### Plugin-Architektur und Smarthome-Integration
-
-Du hast ein spezielles Setup oder verwendest exotische Geräte? evcc kommt mit einer **flexiblen Plugin-Architektur** und erlaubt es dir, eigene Anbindungen über Modbus, SunSpec, HTTP, JSON, REST, MQTT, JavaScript und Shell zu entwickeln.
-
-Zudem gibt es Integrationen für Home Assistant, openHAB und ioBroker.
-Um sich auch mit anderen, übergeordneten Energiemanagern abzusprechen, hat evcc zusätzlich eine Unterstützung der Protokolle SEMP und EEBUS integriert.
+Mehr Details findest du in unserer [Dokumentation](https://docs.evcc.io/docs/devices/chargers). Wird dein Gerät noch nicht unterstützt, lass es uns auf [GitHub](https://github.com/evcc-io/evcc) wissen. Wenn es eine Schnittstelle hat, können wir es anbinden.
 
 ---
 
-## Community Porträts
+## So einfach geht's
+
+{{< steps >}}
+{{< step title="Installieren" >}}Image auf SD-Karte flashen, Raspberry Pi starten.<br>Alternativ: Docker auf deinem NAS oder Server.{{< /step >}}
+{{< step title="Konfigurieren" >}}Alles direkt im Browser: Geräte hinzufügen, Einstellungen anpassen, fertig.{{< /step >}}
+{{< step title="Laden" >}}evcc optimiert automatisch. Alles im Blick über die Weboberfläche oder die App.{{< /step >}}
+{{< /steps >}}
+
+{{< button-cta url="https://docs.evcc.io/docs/installation" target="_blank">}}
+Jetzt loslegen
+{{</ button-cta>}}
+
+---
+
+## Unterstütze das Projekt
+
+Werde Teil unseres Entwicklungsteams, hilf, Fehler zu korrigieren, die Dokumentation zu verbessern oder teile einfach deine Erfahrung. Informiere dich im [Forum](https://github.com/evcc-io/evcc/discussions) oder komm in unseren [Slack](/slack).
+
+Um ein Projekt dieser Größenordnung nachhaltig vorantreiben zu können, brauchen wir deine Unterstützung. Hier erfährst du mehr über unser [Sponsoring-Modell](https://docs.evcc.io/docs/sponsorship).
+
+{{< button-cta url="mailto:info@evcc.io" type="secondary">}}
+Sprich uns an
+{{</ button-cta>}}
+
+---
+
+## Aus der Community
+
+{{< live-telemetry >}}
 
 In unserem [Blog](https://docs.evcc.io/blog) stellen wir regelmäßig evcc-Installationen aus der Community vor und geben dir einen Einblick in die [Menschen](#community-person) und ihre [Technik](#community-tech).
 
@@ -131,95 +171,6 @@ In unserem [Blog](https://docs.evcc.io/blog) stellen wir regelmäßig evcc-Insta
 {{< /community >}}
 
 ---
-
-## Wie evcc funktioniert
-
-{{< full_width_image src="/img/evcc-schema.svg" alt="Darstellung der Funktionsweise" width="200" height="100" >}}
-
-Die Funktionsweise von evcc ist relativ einfach.
-Das System sammelt aktuelle Informationen über die Energieerzeugung, den Zustand des Hausakkus, den aktuellen Strompreis und den Ladezustand des Elektroautos.
-
-Mit diesen Daten regelt evcc die Wallbox, um deinen [PV-Überschuss](https://docs.evcc.io/docs/features/solar-charging) maximal zu nutzen.
-Hast du einen dynamischen Stromtarif, kannst du einen [Ladeplan](https://docs.evcc.io/docs/features/plans) oder eine [Preisgrenze](https://docs.evcc.io/docs/features/dynamic-prices) definieren, um in den günstigsten Zeiten zu laden.
-
-### Fahrzeugintegration
-
-Bietet dein [Elektroauto eine API](https://docs.evcc.io/docs/features/vehicle), kann evcc Informationen wie den aktuellen Ladestand abfragen.
-Diese Daten können genutzt werden, um Komfortfunktionen wie [Ladelimits](https://docs.evcc.io/docs/features/limits) zur Akkupflege oder einen [Mindestladestand](https://docs.evcc.io/docs/features/limits) für sofortiges Aufladen zu definieren.
-
-In der Oberfläche kannst du deine [Ladevorgänge](https://docs.evcc.io/docs/features/sessions) sehen.
-Sofern dein Fahrzeug dies unterstützt, wird neben dem Sonnenanteil und den angefallenen Kosten auch der Kilometerstand angezeigt.
-
-### Hausakkuintegration
-
-Über die [Hausbatteriesteuerung](https://docs.evcc.io/docs/features/battery) definierst du, ob die Überschussenergie zuerst in den Hausakku oder ins Elektroauto fließen soll.
-Neuere Hybridwechselrichter können auch direkt über evcc gesteuert werden.
-Dadurch kann evcc das ungewollte Entladen des Hausakkus verhindern oder ihn in den Wintermonaten gezielt zu Zeiten mit günstigem Netzstrom laden.
-
-### Große Anlagen, kleine Anlagen
-
-Auch komplexere Szenarien wie das Laden von mehreren Fahrzeugen, die Einbindung mehrerer PV- und Speichersysteme oder ein [Lastmanagement](https://docs.evcc.io/docs/features/loadmanagement), um den Hausanschluss nicht zu überlasten, sind möglich.
-
-Hast du eine Balkon-PV-Anlage und schaltbare Steckdosen?
-Auch dann hilft dir evcc, um deinen E-Bike-Akku mit Sonnenstrom zu laden oder deine Eiswürfelmaschine bei Überschuss zu aktivieren.
-Viele Mikrowechselrichter und smarte Steckdosen werden unterstützt.
-
----
-
-## Installiere evcc bei dir zuhause
-
-### Systemvoraussetzung
-
-evcc ist in Go geschrieben und sehr effizient: Es wird weder viel CPU noch RAM benötigt. Typischerweise läuft evcc auf einem **Raspberry Pi** oder in **Docker** (z.B. Synology NAS) bei dir zuhause. Windows, macOS und Linux werden auch unterstützt.
-
-### evcc einrichten
-
-evcc ist sehr flexibel. Die Ersteinrichtung erfordert aktuell aber noch einige technische Kenntnisse.
-Wenn dich die Verwendung der Kommandozeile nicht schockt und du schon mal eine YAML-Datei bearbeitet hast, steht der Installation nichts im Weg.
-In der Dokumentation erfährst du alles, was du wissen musst.
-
-{{< button-cta url="https://docs.evcc.io/">}}
-Jetzt loslegen
-{{</ button-cta>}}
-
----
-
-## Professioneller Support
-
-Du bist Solarteur oder Elektriker, richtest beruflich Ladelösungen ein und brauchst Unterstützung bei der Einrichtung von evcc? Wir können leider keinen individuellen Support leisten. Für eine Beratung, Betreuung oder Schulung vermitteln wir dich aber gerne an Experten und Poweruser aus der Community, die das System sehr gut kennen.
-
-{{< button-cta url="mailto:pro-support@evcc.io?subject=Anfrage professioneller evcc-Support" type="secondary">}}
-Anfrage stellen
-{{</ button-cta>}}
-
----
-
-## c't-Magazin erklärt evcc
-
-{{< youtube link="https://www.youtube.com/watch?v=MoBpEXHMNjI" thumb="video/evcc-ct-youtube-video.webp" title="c't erklärt evcc" width="1000" height="563" >}}
-
-In diesem YouTube-Video der c't-Redaktion bekommst du einen schnellen Überblick über evcc, wie es funktioniert und was es kann.
-
----
-
-## Unterstütze das Projekt
-
-### Aktiv teilnehmen
-
-Werde Teil unseres Entwicklungsteams und hilf mit, dein installiertes System zu unterstützen, Fehler zu korrigieren und die Dokumentation zu verbessern.
-
-Informiere dich, stelle Fragen und erhalte Unterstützung von anderen Anwendern und Entwicklern im [Forum](https://github.com/evcc-io/evcc/discussions).
-Oder komm in unseren Chat, lerne uns kennen und diskutiere mit uns: [Slack](/slack)
-
-### Finanzieller Support
-
-Um ein Projekt dieser Größenordnung nachhaltig vorantreiben zu können, brauchen wir eure Unterstützung. Hier erfährst du mehr über unser [Sponsoring-Modell](https://docs.evcc.io/docs/sponsorship).
-
-Arbeitest du in einer Firma, die Wallboxen, Energiemesssysteme oder PV-Systeme anbietet? Möchtest du euren Kunden das Laden mit eigenem Sonnenstrom ermöglichen? Sprich uns gerne an. Eigene Code-Beiträge und Hardware-Sponsoring helfen uns, die Fähigkeiten von evcc auszubauen.
-
-{{< button-cta url="mailto:info@evcc.io" type="secondary">}}
-Sprich uns an
-{{</ button-cta>}}
 
 ## Sponsoren
 

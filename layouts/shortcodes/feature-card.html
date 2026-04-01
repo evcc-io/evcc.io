@@ -1,0 +1,14 @@
+{{ $title := .Get "title" }}
+{{ $icon := .Get "icon" }}
+{{ $link := .Get "link" }}
+<div class="feature-card">
+  <div class="feature-card__icon">
+    {{ partial (printf "icons/%s.html" $icon) . }}
+  </div>
+  <div class="feature-card__content">
+    {{ if $link }}<a href="{{ $link }}" class="feature-card__title">{{ $title }}</a>
+    {{ else }}<div class="feature-card__title">{{ $title }}</div>
+    {{ end }}
+    <p class="feature-card__description">{{ .Inner }}</p>
+  </div>
+</div>
