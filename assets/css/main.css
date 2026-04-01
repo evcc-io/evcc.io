@@ -156,7 +156,7 @@ a:hover {
   overflow: hidden;
 }
 
-.header__navigation__item .icon {
+.header__navigation__item svg {
   width: 24px;
   height: 24px;
   display: block;
@@ -241,14 +241,15 @@ a:hover {
 }
 
 .content {
-  max-width: var(--layout-width);
+  max-width: 1400px;
   margin: 0 auto;
+  padding: 0 var(--grid-gutter);
 }
 
 .content p {
   margin: 1.5em auto;
   padding: 0 var(--grid-gutter);
-  width: var(--4-cols);
+  max-width: calc(var(--layout-width) * 4 / 6);
   line-height: 1.5em;
 }
 
@@ -299,15 +300,20 @@ a:hover {
 .infobox {
   margin: 40px auto;
   padding: 40px 16px;
-  width: calc(var(--6-cols) - var(--grid-gutter) * 2);
+  max-width: var(--layout-width);
   background-color: var(--infobox-background);
   color: var(--infobox-color);
-  border-radius: 30px 30px 30px 30px;
+  border-radius: 30px;
+  box-sizing: border-box;
 }
 
 @media (max-width: 499px) {
   .infobox {
-    width: 90%;
+    width: 100%;
+    border-radius: 0;
+    margin-left: calc(-1 * var(--grid-gutter));
+    margin-right: calc(-1 * var(--grid-gutter));
+    width: calc(100% + 2 * var(--grid-gutter));
   }
 }
 
@@ -363,7 +369,8 @@ a:hover {
 
 hr {
   border: none;
-  margin: 3rem 0;
+  margin: 3rem auto;
+  max-width: var(--layout-width);
 }
 
 .fineprint {
@@ -386,7 +393,7 @@ h5 {
   line-height: 1.1em;
   padding: 0 var(--grid-gutter);
   margin: 2em auto 1em;
-  width: var(--5-cols);
+  max-width: var(--layout-width);
 }
 
 h1 {
@@ -422,7 +429,7 @@ p + h3 {
   display: block;
   padding: 0.5em;
 }
-footer .icon {
+footer svg {
   display: inline-block;
   vertical-align: middle;
   margin-right: 0.3rem;
@@ -592,6 +599,9 @@ footer .icon {
 
 .sponsors {
   margin-bottom: 2em;
+  max-width: var(--layout-width);
+  margin-left: auto;
+  margin-right: auto;
 }
 .sponsor-logos {
   display: grid;
@@ -629,6 +639,9 @@ footer .icon {
   display: block;
 }
 .team {
+  max-width: var(--layout-width);
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
@@ -691,8 +704,12 @@ footer .icon {
 
 .telemetry_icon {
   margin-right: 1em;
-  width: 4rem !important;
   flex-shrink: 0;
+}
+
+.telemetry_icon svg {
+  width: 4rem;
+  height: 4rem;
 }
 
 .telemetry_title {
@@ -718,6 +735,8 @@ footer .icon {
 
 .telemetry .fineprint {
   text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 :root.dark [data-theme="dark"] {
@@ -731,7 +750,7 @@ footer .icon {
 .split {
   margin: 40px auto;
   padding: 0;
-  width: calc(var(--6-cols) - var(--grid-gutter) * 2);
+  max-width: var(--layout-width);
   display: flex;
   align-items: center;
 }
@@ -809,4 +828,115 @@ footer .icon {
 
 .youtube:hover .youtube__play {
   opacity: 0.8;
+}
+
+/* Feature Cards */
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.feature-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.feature-card__icon {
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.feature-card__icon svg {
+  width: 2rem;
+  height: 2rem;
+  color: var(--text-color);
+}
+
+.feature-card__icon .duotone-fill {
+  fill: var(--infobox-background);
+  opacity: 1;
+}
+
+:root.dark .feature-card__icon svg {
+  color: var(--accent-color);
+}
+
+:root.dark .feature-card__icon .duotone-fill {
+  fill: var(--page-background);
+}
+
+.feature-card__content {
+  min-width: 0;
+}
+
+.feature-card__title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--text-color);
+  text-decoration: none;
+  display: block;
+}
+
+a.feature-card__title:hover {
+  color: var(--accent-color);
+}
+
+.feature-card__description {
+  width: auto !important;
+  padding: 0 !important;
+  margin: 0.4em 0 0 !important;
+  font-size: var(--small-text-font-size);
+  line-height: 1.4em;
+  color: var(--text-color);
+  opacity: 0.85;
+}
+
+/* Get Started Steps */
+.steps {
+  counter-reset: step;
+  margin: 2rem auto;
+  padding: 0 var(--grid-gutter);
+  max-width: calc(var(--layout-width) * 4 / 6);
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.step::before {
+  counter-increment: step;
+  content: counter(step);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  color: var(--page-background);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.step__content h4 {
+  text-align: left;
+  padding: 0;
+  margin: 0 0 0.3em;
+  width: auto;
+  font-size: 1.1rem;
+}
+
+.step__content p {
+  width: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: var(--small-text-font-size);
+  line-height: 1.4em;
 }
