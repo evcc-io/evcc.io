@@ -52,6 +52,9 @@ other = 'Hier'
 [blog]
 other = 'Blog'
 
+[status]
+other = 'Status'
+
 [sonne_tanken]
 other = 'Smart laden'
 
