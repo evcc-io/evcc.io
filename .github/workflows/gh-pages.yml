@@ -39,6 +39,9 @@ jobs:
       - name: Build
         run: hugo --minify
 
+      - name: Create media-kit.zip
+        run: cd public/media-kit && zip -r ../media-kit.zip .
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         if: github.ref == 'refs/heads/main'

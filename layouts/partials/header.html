@@ -34,8 +34,10 @@
       </nav>
     </div>
   </div>
+  {{ if not .Params.hideHero }}
   <div class="header__hero__wrapper">
     <img class="header__hero" width="1440" height="354" src="/img/evcc-hero.svg"
       alt="Elektroauto lädt Solarstrom an einer Wallbox. Person verwendet evcc auf dem Smartphone." draggable="false" />
   </div>
+  {{ end }}
 </header>

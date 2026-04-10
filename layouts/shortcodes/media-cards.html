@@ -1,0 +1,4 @@
+{{ $class := .Get "class" }}
+<div class="media-cards{{ with $class }} media-cards--{{ . }}{{ end }}">
+  {{ .Inner }}
+</div>

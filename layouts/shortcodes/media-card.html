@@ -1,0 +1,19 @@
+{{ $src := .Get "src" }}
+{{ $name := .Get "name" }}
+{{ $format := .Get "format" }}
+{{ $bg := .Get "bg" | default "" }}
+<div class="media-card">
+  <a href="{{ $src }}" download class="media-card__preview{{ with $bg }} media-card__preview--{{ . }}{{ end }}">
+    {{ if or (eq $format "SVG") (eq $format "PNG") (eq $format "WEBP") }}
+      <img src="{{ $src }}" alt="{{ $name }}">
+    {{ else }}
+      <span class="media-card__file-icon">{{ $format }}</span>
+    {{ end }}
+  </a>
+  {{ with $name }}
+  <div class="media-card__info">
+    <span class="media-card__name">{{ . }}</span>
+    <a href="{{ $src }}" download class="media-card__download fineprint">{{ $format }}</a>
+  </div>
+  {{ end }}
+</div>
