@@ -26,7 +26,7 @@ Use the logo on a background that provides sufficient contrast. Don't modify col
 
 ## Naming
 
-**evcc is always written in lowercase** — as you see in our logo. Please don't write "EVCC" or "Evcc". When starting a sentence, rephrase to avoid leading with the name, or keep it lowercase.
+**evcc is always written in lowercase**, as you see in our logo. Please don't write "EVCC" or "Evcc". When starting a sentence, rephrase to avoid leading with the name, or keep it lowercase.
 
 ---
 

@@ -26,7 +26,7 @@ Verwende das Logo auf einem Hintergrund mit ausreichend Kontrast. Farben, Propor
 
 ## Schreibweise
 
-**evcc wird immer kleingeschrieben** — wie in unserem Logo. Bitte nicht "EVCC" oder "Evcc" schreiben. Am Satzanfang den Satz umformulieren oder kleingeschrieben lassen.
+**evcc wird immer kleingeschrieben**, wie in unserem Logo. Bitte nicht "EVCC" oder "Evcc" schreiben. Am Satzanfang den Satz umformulieren oder kleingeschrieben lassen.
 
 ---
 
