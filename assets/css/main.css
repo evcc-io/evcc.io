@@ -605,23 +605,16 @@ footer svg {
 }
 .sponsor-logos {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .5em 2em;
   margin: 0 auto 3em;
-  width: 220px;
+  width: 100%;
+  max-width: 800px;
 }
 @media (min-width: 600px) {
   .sponsor-logos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2em 4em;
-    width: 100%;
-    padding: 0 5em;
-    margin: 0 auto 3em;
-  }
-}
-@media screen and (min-width: 900px) {
-  .sponsor-logos {
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 0 2em;
+    gap: 2em;
   }
 }
 .sponsor-logos a {
