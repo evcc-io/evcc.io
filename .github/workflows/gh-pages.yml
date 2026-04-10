@@ -39,8 +39,8 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - name: Create media-kit.zip
-        run: cd public/media-kit && zip -r ../media-kit.zip .
+      - name: Create evcc-media-kit.zip
+        run: cd public/media-kit && zip -r ../evcc-media-kit.zip . -x '*.html'
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
