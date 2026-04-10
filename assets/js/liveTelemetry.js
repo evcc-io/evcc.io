@@ -25,6 +25,8 @@ function initializeElements() {
 }
 
 function render(data) {
+  if (!$chargePowerUnit || !$activeClients) return;
+
   const telemetryElement = document.querySelector(".telemetry");
   if (telemetryElement) {
     telemetryElement.style.display = "block";
