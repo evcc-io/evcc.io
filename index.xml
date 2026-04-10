@@ -18,11 +18,11 @@ Neuenkirchener Str. 23a&lt;br&gt;
 &lt;p class="button-container"&gt;
  &lt;a href="./evcc-media-kit.zip" target="_self" class="button button--cta"&gt;
  
-Download Media Kit
+Media Kit herunterladen
 
  &lt;/a&gt;
  
- &lt;small class="button-subline fineprint"&gt;&lt;a href='https://github.com/evcc-io/evcc.io/tree/main/static/media-kit'&gt;Browse files&lt;/a&gt;&lt;/small&gt;
+ &lt;small class="button-subline fineprint"&gt;&lt;a href='https://github.com/evcc-io/evcc.io/tree/main/static/media-kit'&gt;Dateien durchsuchen&lt;/a&gt;&lt;/small&gt;
  
 &lt;/p&gt;
 &lt;hr&gt;
@@ -84,10 +84,24 @@ Download Media Kit
 
 &lt;/div&gt;
 
-&lt;p&gt;Use the logo on a background that provides sufficient contrast. Don&amp;rsquo;t modify colors, proportions, or spacing.&lt;/p&gt;
+&lt;p&gt;Verwende das Logo auf einem Hintergrund mit ausreichend Kontrast. Farben, Proportionen und Abstände bitte nicht verändern.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id="naming"&gt;Naming&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;evcc is always written in lowercase&lt;/strong&gt; — as you see in our logo. Please don&amp;rsquo;t write &amp;ldquo;EVCC&amp;rdquo; or &amp;ldquo;Evcc&amp;rdquo;. When starting a sentence, rephrase to avoid leading with the name, or keep it lowercase.&lt;/p&gt;</description></item><item><title/><link>/slack/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/slack/</guid><description>&lt;h1 id="slack-einladung"&gt;Slack-Einladung&lt;/h1&gt;
+&lt;h2 id="schreibweise"&gt;Schreibweise&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;evcc wird immer kleingeschrieben&lt;/strong&gt; — wie in unserem Logo. Bitte nicht &amp;ldquo;EVCC&amp;rdquo; oder &amp;ldquo;Evcc&amp;rdquo; schreiben. Am Satzanfang den Satz umformulieren oder kleingeschrieben lassen.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="app-icon"&gt;App Icon&lt;/h2&gt;
+
+
+
+&lt;div class="app-icon"&gt;
+ &lt;a href="./media-kit/app-icons/app-icon.png" download&gt;&lt;img class="app-icon__img" src="./media-kit/app-icons/app-icon.png" alt="evcc App Icon"&gt;&lt;/a&gt;
+ &lt;div class="app-icon__links fineprint"&gt;
+ &lt;a href="./media-kit/app-icons/app-icon.png" download&gt;PNG&lt;/a&gt;
+ &lt;a href="./media-kit/app-icons/app-icon.svg" download&gt;SVG&lt;/a&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Icon der iOS- und Android-App. Der Blitz ist im Vergleich zur Logo-Version leicht abgerundet.&lt;/p&gt;</description></item><item><title/><link>/slack/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/slack/</guid><description>&lt;h1 id="slack-einladung"&gt;Slack-Einladung&lt;/h1&gt;
 &lt;p&gt;Du wirst weitergeleitet …&lt;/p&gt;
 &lt;meta http-equiv="refresh" content="0; url=https://join.slack.com/t/evccgroup/shared_invite/zt-3uwlngi45-LKX_rtAlSH7WqNQv7p7VHA" /&gt;</description></item><item><title/><link>/sticker/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/sticker/</guid><description>&lt;h1 id="sticker"&gt;Sticker!&lt;/h1&gt;
 &lt;p&gt;Du wirst weitergeleitet …&lt;/p&gt;
