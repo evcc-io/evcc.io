@@ -4,7 +4,7 @@ hideHero: true
 
 # Media Kit
 
-<p style="text-align:center">Logos, icons, colors and fonts for your evcc project.</p>
+<p style="text-align:center">Logos, icons, colors and fonts of the evcc project.</p>
 
 {{< button-cta url="/evcc-media-kit.zip" subline="<a href='https://github.com/evcc-io/evcc.io/tree/main/static/media-kit'>Browse files</a>">}}
 Download Media Kit

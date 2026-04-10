@@ -4,10 +4,10 @@ hideHero: true
 
 # Media Kit
 
-<p style="text-align:center">Logos, icons, colors and fonts for your evcc project.</p>
+<p style="text-align:center">Logos, Icons, Farben und Schriften des evcc-Projekts.</p>
 
-{{< button-cta url="/evcc-media-kit.zip" subline="<a href='https://github.com/evcc-io/evcc.io/tree/main/static/media-kit'>Browse files</a>">}}
-Download Media Kit
+{{< button-cta url="/evcc-media-kit.zip" subline="<a href='https://github.com/evcc-io/evcc.io/tree/main/static/media-kit'>Dateien durchsuchen</a>">}}
+Media Kit herunterladen
 {{</ button-cta>}}
 
 ---
@@ -20,13 +20,13 @@ Download Media Kit
 {{< logo-card name="Mono" preview="/media-kit/logos/logo-mono-bg.png" png="/media-kit/logos/logo-mono-trans.png" svg="/media-kit/logos/logo-mono-vector.svg" >}}
 {{< /media-cards >}}
 
-Use the logo on a background that provides sufficient contrast. Don't modify colors, proportions, or spacing.
+Verwende das Logo auf einem Hintergrund mit ausreichend Kontrast. Farben, Proportionen und Abstände bitte nicht verändern.
 
 ---
 
-## Naming
+## Schreibweise
 
-**evcc is always written in lowercase** — as you see in our logo. Please don't write "EVCC" or "Evcc". When starting a sentence, rephrase to avoid leading with the name, or keep it lowercase.
+**evcc wird immer kleingeschrieben** — wie in unserem Logo. Bitte nicht "EVCC" oder "Evcc" schreiben. Am Satzanfang den Satz umformulieren oder kleingeschrieben lassen.
 
 ---
 
@@ -34,11 +34,11 @@ Use the logo on a background that provides sufficient contrast. Don't modify col
 
 {{< app-icon src="/media-kit/app-icons/app-icon.png" png="/media-kit/app-icons/app-icon.png" svg="/media-kit/app-icons/app-icon.svg" >}}
 
-Icon used in the iOS and Android apps. The lightning bolt is slightly rounded compared to the logo version.
+Icon der iOS- und Android-App. Der Blitz ist im Vergleich zur Logo-Version leicht abgerundet.
 
 ---
 
-## Colors
+## Farben
 
 {{< color-swatches >}}
 {{< color-swatch name="Dark" color="#1C2445" hex="#1C2445" cmyk="100/91/41/44" >}}
@@ -49,13 +49,13 @@ Icon used in the iOS and Android apps. The lightning bolt is slightly rounded co
 {{< color-swatch name="White" color="#FFFFFF" hex="#FFFFFF" cmyk="0/0/0/0" textcolor="#1C2445" bordered="true" >}}
 {{< /color-swatches >}}
 
-The UI uses variations of these colors. The source of truth is the [app.css](https://github.com/evcc-io/evcc/blob/master/assets/css/app.css).
+Die Benutzeroberfläche verwendet Variationen dieser Farben. Die Referenz ist die [app.css](https://github.com/evcc-io/evcc/blob/master/assets/css/app.css).
 
 ---
 
-## Typography
+## Typografie
 
-The evcc brand uses [**Montserrat**](https://github.com/JulietaUla/Montserrat) (Medium & Bold) for the logo and headings.
+Die evcc-Marke verwendet [**Montserrat**](https://github.com/JulietaUla/Montserrat) (Medium & Bold) für Logo und Überschriften.
 
 ---
 
@@ -71,18 +71,18 @@ The evcc brand uses [**Montserrat**](https://github.com/JulietaUla/Montserrat) (
 {{< media-card src="/media-kit/screenshots/7_large_settings_light.webp" format="WEBP" >}}
 {{< /media-cards >}}
 
-Dark mode screenshots are also available. See [here](https://github.com/evcc-io/evcc.io/tree/main/static/media-kit/screenshots).
+Dark-Mode-Screenshots sind ebenfalls verfügbar. Siehe [hier](https://github.com/evcc-io/evcc.io/tree/main/static/media-kit/screenshots).
 
 ---
 
-## Stickers
+## Sticker
 
-Sticker designs for print are [available here](https://github.com/evcc-io/evcc.io/tree/main/static/media-kit/stickers).
+Sticker-Designs zum Drucken sind [hier verfügbar](https://github.com/evcc-io/evcc.io/tree/main/static/media-kit/stickers).
 
 ---
 
-{{< button-cta url="/evcc-media-kit.zip" subline="<a href='https://github.com/evcc-io/evcc.io/tree/main/static/media-kit'>Browse files</a>">}}
-Download Media Kit
+{{< button-cta url="/evcc-media-kit.zip" subline="<a href='https://github.com/evcc-io/evcc.io/tree/main/static/media-kit'>Dateien durchsuchen</a>">}}
+Media Kit herunterladen
 {{</ button-cta>}}
 
 ---
