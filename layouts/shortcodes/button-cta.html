@@ -8,6 +8,6 @@
     {{ .Inner }}
   </a>
   {{ with $subline }}
-  <small class="button-subline fineprint">{{ $subline }}</small>
+  <small class="button-subline fineprint">{{ $subline | safeHTML }}</small>
   {{ end }}
 </p>

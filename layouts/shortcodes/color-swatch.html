@@ -1,0 +1,11 @@
+{{ $color := .Get "color" }}
+{{ $name := .Get "name" }}
+{{ $hex := .Get "hex" }}
+{{ $cmyk := .Get "cmyk" }}
+{{ $textcolor := .Get "textcolor" | default "#ffffff" }}
+{{ $bordered := .Get "bordered" }}
+<div class="color-swatch{{ with $bordered }} color-swatch--bordered{{ end }}" style="background-color: {{ $color }}; color: {{ $textcolor }};">
+  <span class="color-swatch__name">{{ $name }}</span>
+  <span class="color-swatch__value">{{ $hex }}</span>
+  {{ with $cmyk }}<span class="color-swatch__value">{{ . }}</span>{{ end }}
+</div>

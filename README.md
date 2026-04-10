@@ -10,19 +10,6 @@ hugo server -D
 
 ---
 
-## evcc Style
+## Brand & Media Kit
 
-### Naming
-
-**evcc is always written in lowercase**, as you see in our logo. Please don't(!) do EVCC.
-
-### Artwork
-
-evcc logos, icons and vector files can be found in [/artwork](https://github.com/evcc-io/evcc.io/tree/main/artwork). Screenshots of the UI are located in [/static/img/screenshots](https://github.com/evcc-io/evcc.io/tree/main/static/img/screenshots). Feel free to use them if you create content about evcc or build software/integrations in the evcc ecosystem.
-
-### Colors
-
-- logo green: #0FDD42
-- logo black: #1c2445
-
-The UI uses variations of these colors. The source of truth is the [app.css](https://github.com/evcc-io/evcc/blob/master/assets/css/app.css#L25-L30).
+Logos, icons, colors, fonts and usage guidelines: [evcc.io/en/media-kit](https://evcc.io/en/media-kit/)

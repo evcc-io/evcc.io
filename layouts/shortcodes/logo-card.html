@@ -1,0 +1,16 @@
+{{ $preview := .Get "preview" }}
+{{ $name := .Get "name" }}
+{{ $svg := .Get "svg" }}
+{{ $png := .Get "png" }}
+{{ $cmyk := .Get "cmyk" }}
+<div class="logo-card">
+  <a href="{{ $preview }}" download class="logo-card__preview">
+    <img src="{{ $preview }}" alt="{{ $name }}">
+  </a>
+  <div class="logo-card__name">{{ $name }}</div>
+  <div class="logo-card__links fineprint">
+    {{ with $png }}<a href="{{ . }}" download>PNG</a>{{ end }}
+    {{ with $svg }}<a href="{{ . }}" download>SVG</a>{{ end }}
+    {{ with $cmyk }}<a href="{{ . }}" download>CMYK</a>{{ end }}
+  </div>
+</div>

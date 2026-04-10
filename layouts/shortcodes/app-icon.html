@@ -1,0 +1,10 @@
+{{ $src := .Get "src" }}
+{{ $png := .Get "png" }}
+{{ $svg := .Get "svg" }}
+<div class="app-icon">
+  <a href="{{ $png }}" download><img class="app-icon__img" src="{{ $src }}" alt="evcc App Icon"></a>
+  <div class="app-icon__links fineprint">
+    <a href="{{ $png }}" download>PNG</a>
+    <a href="{{ $svg }}" download>SVG</a>
+  </div>
+</div>
