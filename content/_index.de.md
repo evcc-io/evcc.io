@@ -35,7 +35,7 @@ Speicher und E-Auto optimal koordinieren. Per Batterieboost schnell aus dem Spei
 Nutze Sonne oder günstigen Strom zum Heizen. evcc aktiviert deine Wärmepumpe automatisch zu den besten Zeiten.
 {{< /feature-card >}}
 
-{{< feature-card title="§14a-Konformität" icon="shield-check" link="https://docs.evcc.io/docs/features/external-control" >}}
+{{< feature-card title="§14a-ready" icon="shield-check" link="https://docs.evcc.io/docs/features/external-control" >}}
 Automatische Leistungsreduzierung bei Netzbetreiber-Signal. Alle Eingriffe werden dokumentiert.
 {{< /feature-card >}}
 

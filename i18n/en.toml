@@ -29,10 +29,10 @@ other = 'Live data from the community'
 other = 'Charging Power'
 
 [aktive_nutzer]
-other = 'active Users'
+other = 'active users'
 
 [sonnenanteil]
-other = 'Sun Share'
+other = 'Solar'
 
 [pv_hausakku]
 other = 'PV & battery'

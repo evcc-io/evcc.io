@@ -79,7 +79,7 @@ We want to make smart energy management easy for everyone. Ideally, everything w
 {{< screenshot-entry src="7_large_settings" width="1262" alt="evcc iPad Screenshot: Settings for price-dependent charging" >}}
 {{< /screenshots >}}
 
-Try our demo installation to explore the interface.
+Try our demo instance to explore the interface.
 
 {{< button-cta url="https://demo.evcc.io/" target="_blank">}}
 Try demo instance
@@ -87,7 +87,7 @@ Try demo instance
 
 ---
 
-## We communicate with all manufacturers {#devices}
+## We talk to all manufacturers {#devices}
 
 Closed ecosystems, cloud services, and proprietary solutions are not our cup of tea.
 evcc runs on **your own hardware** and lets your devices work together intelligently - **no matter the manufacturer.**
@@ -95,27 +95,27 @@ Your data stays with you.
 
 {{< infobox title="Supported & tested systems" >}}
 
-{{< infobox-entry title="chargers" area="charger" >}}
+{{< infobox-entry title="Chargers" area="charger" >}}
 {{< infobox-content group="Chargers">}}
 {{< /infobox-entry >}}
 
-{{< infobox-entry title="vehicles" area="vehicle" >}}
+{{< infobox-entry title="Vehicles" area="vehicle" >}}
 {{< infobox-content group="Vehicles">}}
 {{< /infobox-entry >}}
 
-{{< infobox-entry title="solar & storage" area="inverter" >}}
+{{< infobox-entry title="Solar & storage" area="inverter" >}}
 {{< infobox-content group="PVBattery">}}
 {{< /infobox-entry >}}
 
-{{< infobox-entry title="smart switches" area="smartswitch" >}}
+{{< infobox-entry title="Smart switches" area="smartswitch" >}}
 {{< infobox-content group="SmartSwitches">}}
 {{< /infobox-entry >}}
 
-{{< infobox-entry title="heat pumps & electric heaters" area="heating" >}}
+{{< infobox-entry title="Heat pumps & electric heaters" area="heating" >}}
 {{< infobox-content group="Heating">}}
 {{< /infobox-entry >}}
 
-{{< infobox-entry title="energy meters" area="meter" >}}
+{{< infobox-entry title="Energy meters" area="meter" >}}
 {{< infobox-content group="Meters">}}
 {{< /infobox-entry >}}
 
@@ -141,7 +141,7 @@ Get Started
 
 ## Support the project
 
-Join the community, help fix bugs, improve documentation, or just share your experience. Get in touch in the [Forum](https://github.com/evcc-io/evcc/discussions) or chat with us on [Slack](/slack).
+Join the community, help fix bugs, improve documentation, or just share your experience. Get in touch on the [Forum](https://github.com/evcc-io/evcc/discussions) or chat with us on [Slack](/slack).
 
 To sustain a project of this size we need your support. Learn more about our [sponsoring model](https://docs.evcc.io/en/docs/sponsorship).
 
@@ -155,7 +155,7 @@ Contact us
 
 {{< live-telemetry >}}
 
-In our [blog](https://docs.evcc.io/en/blog) we regularly present evcc installations from the community. Get to know the [people](#community-person) and their [technology](#community-tech) behind these setups.
+In our [blog](https://docs.evcc.io/en/blog) we regularly feature evcc installations from the community. Get to know the [people](#community-person) and their [technology](#community-tech) behind these setups.
 
 {{< community >}}
 {{< community-entry img="orv" name="Osnabrück Rowing Club" link="https://docs.evcc.io/en/blog/2025/11/29/osnabruecker-ruderverein">}}
