@@ -1,13 +1,13 @@
-# Terms of Service for evcc Sponsorship via creem.io
+# evcc Terms of Service
 
-**Effective Date: January 13, 2026**
+**Effective Date: May 4, 2026**
 
 These Terms of Service ("Terms") govern the purchase and use of evcc sponsorship tokens through creem.io payment platform.
 By purchasing a sponsorship, you agree to be bound by these Terms.
 
 ## 1. Parties and Acceptance
 
-These Terms constitute a legal agreement between you ("User", "You") and Michael Geers, Neuenkirchener Str. 23a, 49593 Bersenbrück, Germany ("We", "Us", "Our"), operating the evcc project together with the core team at github.com/evcc-io.
+These Terms constitute a legal agreement between you ("User", "You") and the evcc Core Team ("We", "Us", "Our"), represented by Michael Geers, Neuenkirchener Str. 23a, 49593 Bersenbrück, Germany, operating the evcc project at github.com/evcc-io.
 
 By purchasing a sponsorship token, you acknowledge that you have read, understood, and agree to be bound by these Terms.
 
@@ -22,9 +22,11 @@ By purchasing, you represent and warrant that you meet this age requirement and 
 
 We offer the following sponsorship options:
 
-- **Quarterly Sponsorship**: Recurring subscription billed every three months
+- **Monthly Sponsorship**: Recurring subscription billed every month
 - **Yearly Sponsorship**: Recurring subscription billed annually
 - **Lifetime Sponsorship**: One-time payment for permanent access
+
+Lifetime Sponsorship is currently the only tier offered; recurring tiers will be introduced later.
 
 ### 3.2 Included Features
 
@@ -32,13 +34,14 @@ Sponsorship unlocks:
 
 - All electric vehicle charger integrations
 - All heat pump integrations
-- Advanced features (modbus proxy, load management, etc.)
-- All current and future local features of evcc
+- Advanced features (modbus proxy, etc.)
+- Additional local features that may be added in future releases, at our discretion
 
 ### 3.3 Future Features
 
 We may introduce optional cloud services (such as remote access, optimization services, or third-party API access) that require additional fees.
-All sponsorships (recurring and lifetime) include all local features, but may not include future cloud services with ongoing external costs.
+We may also introduce commercial features (such as load management, fleet operations, or similar functionality aimed at commercial use cases) that are offered under a separate tier.
+Sponsorships (recurring and lifetime) cover local sponsor features as described above, but may not include future cloud services with ongoing external costs or commercial features.
 
 ## 4. Payment Terms
 
@@ -77,11 +80,7 @@ Upon refund:
 
 ### 6.1 Token Delivery
 
-Your sponsor token will be:
-
-- Displayed at the end of the checkout process
-- Sent to you via confirmation email
-- Available anytime at https://www.creem.io/portal/
+Your sponsor token will be sent to you via email after your purchase has been completed.
 
 ### 6.2 Token Usage
 
@@ -154,8 +153,12 @@ The software is provided "AS IS" without warranty of any kind, express or implie
 
 ### 10.1 Feature Availability
 
-evcc relies on open APIs and device interfaces.
-Features or device support may be removed in future releases due to:
+evcc relies on open APIs and device interfaces that are outside of our control.
+We do not guarantee that any specific device, integration, or feature will work in your environment, even if listed as supported.
+You are responsible for verifying compatibility before purchasing a sponsorship.
+A trial token is available at https://docs.evcc.io/docs/sponsorship#trial so you can confirm your setup works as expected prior to purchase.
+
+Features or device support may also be removed in future releases due to:
 
 - Changes in external services or APIs
 - Device manufacturer changes
@@ -272,7 +275,7 @@ Payment data is processed by creem.io according to their privacy policy.
 ## 15. Changes to Terms
 
 We reserve the right to modify these Terms at any time.
-Changes will be posted on our website at https://evcc.io/en/sponsorship-terms-creem with an updated effective date.
+Changes will be posted on our website at https://evcc.io/terms with an updated effective date.
 For significant changes that materially affect your rights or obligations, we will announce them on our blog (https://docs.evcc.io/blog/) at least 30 days before they take effect.
 Continued use of your sponsorship after changes take effect constitutes acceptance of the modified Terms.
 If you disagree with any changes, you may cancel your subscription at any time.
@@ -292,7 +295,3 @@ For questions about these Terms or sponsorship-related inquiries:
 **Email**: sponsors@evcc.io
 **General Contact**: info@evcc.io
 **Website**: https://evcc.io
-
----
-
-_Last updated: January 13, 2026_
