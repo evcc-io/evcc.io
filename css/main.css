@@ -259,42 +259,48 @@ a:hover {
 }
 
 .content ul {
-  list-style-type: none;
-  padding: 0;
+  margin: 1.5em auto;
+  padding: 0 var(--grid-gutter);
+  max-width: calc(var(--layout-width) * 4 / 6);
+  list-style-position: inside;
 }
 
 .content li {
-  position: relative;
   line-height: 1.5em;
-  padding: 0.9em calc(var(--1-col) + var(--grid-gutter));
+  margin: 0.4em 0;
 }
 
-.content li:nth-child(odd) {
-  background-color: var(--light-background);
+.content--legal {
+  font-size: var(--small-text-font-size);
 }
 
-.content li::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: var(--1-col);
-  border-left: var(--grid-gutter) solid var(--page-background);
-  background-image: url("../img/lightning.svg");
-  background-size: 40px;
-  background-repeat: no-repeat;
-  background-position: center 0.85em;
+.content--legal p,
+.content--legal ul {
+  max-width: var(--layout-width);
 }
 
-.content li::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  border-left: var(--grid-gutter) solid var(--page-background);
+.content--legal h1,
+.content--legal h2,
+.content--legal h3,
+.content--legal h4,
+.content--legal h5 {
+  text-align: left;
+}
+
+.content--legal h1 {
+  font-size: 1.8rem;
+}
+
+.content--legal h2 {
+  font-size: 1.4rem;
+}
+
+.content--legal h3 {
+  font-size: 1.15rem;
+}
+
+.content--legal h4 {
+  font-size: 1rem;
 }
 
 .infobox {
