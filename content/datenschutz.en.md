@@ -83,7 +83,7 @@ When purchasing a sponsorship, the following data is transmitted to and processe
 - Billing address
 - IP address
 - Purchase date and time
-- Type of sponsorship purchased (quarterly, yearly, lifetime)
+- Type of sponsorship purchased (monthly, yearly, lifetime)
 
 creem.io acts as our Merchant of Record and is responsible for:
 - Secure payment processing

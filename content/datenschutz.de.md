@@ -83,7 +83,7 @@ Bei deinem Sponsoring-Kauf werden folgende Daten an creem.io übermittelt und vo
 - Rechnungsadresse
 - IP-Adresse
 - Kaufdatum und -zeitpunkt
-- Art des erworbenen Sponsorings (vierteljährlich, jährlich, lebenslang)
+- Art des erworbenen Sponsorings (monatlich, jährlich, lebenslang)
 
 creem.io agiert als unser Merchant of Record und ist verantwortlich für:
 - Die sichere Abwicklung der Zahlung
