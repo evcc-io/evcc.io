@@ -1,3 +1,5 @@
-<main class="content">
+{{ $legal := slice "datenschutz" "terms" "impressum" }}
+{{ $isLegal := and .File (in $legal .File.ContentBaseName) }}
+<main class="content{{ if $isLegal }} content--legal{{ end }}">
   {{ .Content }}
 </main>
