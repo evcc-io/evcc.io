@@ -85,7 +85,57 @@ Since Algolia is based in the USA, personal data is transferred to a third count
 
 Search queries are processed by Algolia for analysis and improvement of the search function. No further use or disclosure to third parties occurs.
 
-## 4. General Information and Mandatory Information
+## 4. Payment Processing for evcc Sponsorship (creem.io)
+
+When you purchase an evcc sponsorship, payment processing is handled by our payment service provider creem.io, a service of Armitage Labs OÜ, Telliskivi Street 57b/1, Tallinn 10412, Estonia.
+
+### Data Processing by creem.io
+
+When purchasing a sponsorship, the following data is transmitted to and processed by creem.io:
+- Name and email address
+- Payment information (depending on the chosen payment method)
+- Billing address
+- IP address
+- Purchase date and time
+- Type of sponsorship purchased (monthly, yearly, lifetime)
+
+creem.io acts as our Merchant of Record and is responsible for:
+- Secure payment processing
+- Collection and remittance of VAT
+- Invoice generation and delivery
+- Management of recurring payments (for subscriptions)
+
+### Legal Basis
+
+Processing is based on Art. 6 para. 1 lit. b GDPR for the fulfillment of the purchase contract for your evcc sponsorship.
+
+### Data Sharing with Us
+
+creem.io transmits the following data to us as the provider of evcc sponsorship:
+- Name and email address
+- Type of sponsorship purchased
+- Purchase date
+- Sponsor token
+
+We need this data for:
+- Activation and validation of your sponsor token
+- Communication regarding your sponsorship
+- Compliance with tax record retention requirements
+
+### Storage Duration
+
+We store sponsorship-related data:
+- For active subscriptions: for the duration of the subscription plus statutory retention periods
+- For lifetime sponsorships: permanently to validate your sponsorship eligibility
+- Tax-relevant data: 10 years according to commercial and tax regulations
+
+### Revocation and Cancellation
+
+You can cancel recurring sponsorships at any time through the creem.io portal at https://www.creem.io/portal/. Cancellation becomes effective at the end of the current billing period.
+
+For more information about data protection at creem.io, see the [creem.io Privacy Policy](https://www.creem.io/privacy).
+
+## 5. General Information and Mandatory Information
 
 ### Data Protection
 
