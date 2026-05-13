@@ -44,7 +44,7 @@ Datenerfassung auf dieser Website Wer ist verantwortlich für die Datenerfassung
   <meta itemprop="name" content="evcc - Smart laden ☀️🚘 - Intelligentes Energiemanagement für Zuhause">
   <meta itemprop="description" content="Datenschutz­erklärung 1. Datenschutz auf einen Blick Allgemeine Hinweise Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.
 Datenerfassung auf dieser Website Wer ist verantwortlich für die Datenerfassung auf dieser Website? Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle“ in dieser Datenschutzerklärung entnehmen.">
-  <meta itemprop="wordCount" content="1951">
+  <meta itemprop="wordCount" content="2165">
 
 <link href="../css/main.css" rel="stylesheet" />
 <link rel="preload" href="../fonts/roboto-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
@@ -139,6 +139,20 @@ Datenerfassung auf dieser Website Wer ist verantwortlich für die Datenerfassung
 <p>Der Dienst wird auf Microsoft Azure in einem deutschen Rechenzentrum betrieben. Es erfolgt keine Übermittlung in Drittländer. Der Dienst arbeitet <strong>zustandslos</strong> – es werden keine Daten dauerhaft auf dem Server gespeichert. Die übermittelten Daten werden ausschließlich zur Berechnung des Optimierungsergebnisses verwendet und danach verworfen.</p>
 <p>Der Optimizer wird nur aktiv, wenn du ihn explizit in der Benutzeroberfläche aktivierst. Die Nutzung setzt ein aktives <a href="https://docs.evcc.io/docs/sponsorship">Sponsoring</a> voraus. Die Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch aktive Aktivierung der Funktion).</p>
 <p>Alternativ kannst du den Optimizer lokal betreiben und damit die Datenübermittlung vollständig vermeiden. Weitere Informationen dazu findest du in unserer <a href="https://docs.evcc.io/docs/features/optimizer#technical">Dokumentation</a>.</p>
+<h3 id="remote-access-dienst-evcccloud">Remote-Access-Dienst (*.evcc.cloud)</h3>
+<p>evcc bietet eine optionale Remote-Access-Funktion, die deine lokale evcc-Instanz über eine persönliche Domain auf <code>evcc.cloud</code> erreichbar macht. Wenn du Remote Access in der Benutzeroberfläche aktivierst, baut deine lokale Instanz eine dauerhafte verschlüsselte Verbindung zu unserem Dienst <code>*.evcc.cloud</code> auf.</p>
+<p>Bei der Registrierung werden folgende Daten verarbeitet und gespeichert:</p>
+<ul>
+<li>Die zufällig vergebene Domain</li>
+<li>Ein Hash des Verbindungstokens</li>
+<li>Die Zuordnung zu deinem Sponsor-Token</li>
+<li>Zeitstempel der Registrierung und der letzten Verbindung</li>
+</ul>
+<p>Während des Betriebs leitet der Dienst HTTP-Anfragen von autorisierten Clients durch den Tunnel an deine lokale evcc-Instanz weiter. Der Dienst reicht den Datenverkehr nur durch und speichert keine Anfrageinhalte. Die Authentifizierung der Zugriffe (Passwörter) erfolgt ausschließlich auf deiner lokalen evcc-Instanz; auf dem Dienst werden keine Zugangsdaten gespeichert.</p>
+<p>Der Dienst wird auf Microsoft Azure in einem deutschen Rechenzentrum betrieben. Es erfolgt keine Übermittlung in Drittländer.</p>
+<p>Remote Access wird nur aktiv, wenn du es explizit in der Benutzeroberfläche aktivierst. Die Nutzung setzt ein aktives <a href="https://docs.evcc.io/docs/sponsorship">Sponsoring</a> voraus. Die Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch aktive Aktivierung der Funktion).</p>
+<p>Wenn du Remote Access deaktivierst, bleibt die Zuordnung zwischen Sponsor-Token und Domain bestehen, damit du dieselbe Domain bei einer erneuten Aktivierung wiederverwenden kannst. Du kannst die Löschung der Registrierungsdaten jederzeit per E-Mail an <a href="mailto:info@evcc.io">info@evcc.io</a> anfordern.</p>
+<p>Weitere Informationen findest du in unserer <a href="https://docs.evcc.io/docs/features/remote-access">Dokumentation</a>.</p>
 <h2 id="3-algolia-docsearch-suchfunktion-auf-docsevccio">3. Algolia DocSearch (Suchfunktion auf docs.evcc.io)</h2>
 <p>Unsere Dokumentationsseite (docs.evcc.io) verwendet Algolia DocSearch für die Suchfunktion. Algolia ist ein Dienst der Algolia Inc., 589 Howard Street, Suite 5, San Francisco, CA 94105, USA.</p>
 <p>Wenn Sie die Suchfunktion nutzen, werden folgende Daten an Algolia übermittelt:</p>

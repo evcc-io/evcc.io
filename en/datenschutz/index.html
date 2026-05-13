@@ -44,7 +44,7 @@ Data Collection on This Website Who is Responsible for Data Collection on This W
   <meta itemprop="name" content="evcc - Smart Charging ☀️🚘 - Intelligent Energy Management for Your Home">
   <meta itemprop="description" content="Privacy Policy 1. Privacy at a Glance General Information The following notes provide a simple overview of what happens to your personal data when you visit this website. Personal data is any data that can personally identify you. For detailed information on data protection, please refer to our privacy policy listed below this text.
 Data Collection on This Website Who is Responsible for Data Collection on This Website? Data processing on this website is carried out by the website operator. You can find their contact details in the “Notice Concerning the Responsible Party” section of this privacy policy.">
-  <meta itemprop="wordCount" content="2169">
+  <meta itemprop="wordCount" content="2395">
 
 <link href="../../css/main.css" rel="stylesheet" />
 <link rel="preload" href="../../fonts/roboto-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
@@ -139,6 +139,20 @@ Data Collection on This Website Who is Responsible for Data Collection on This W
 <p>The service is hosted on Microsoft Azure in a German data centre. No data is transferred to third countries. The service is <strong>stateless</strong> – no data is permanently stored on the server. The transmitted data is used solely to calculate the optimisation result and discarded afterwards.</p>
 <p>The optimizer is only active when you explicitly enable it in the user interface. Usage requires an active <a href="https://docs.evcc.io/docs/sponsorship">sponsorship</a>. The legal basis for processing is Art. 6 para. 1 lit. a GDPR (consent through actively enabling the feature).</p>
 <p>Alternatively, you can run the optimizer locally to avoid data transmission entirely. For more information, see our <a href="https://docs.evcc.io/docs/features/optimizer#technical">documentation</a>.</p>
+<h3 id="remote-access-service-evcccloud">Remote Access Service (*.evcc.cloud)</h3>
+<p>evcc offers an optional remote access feature that makes your local evcc instance reachable over a personal domain on <code>evcc.cloud</code>. When you enable remote access in the user interface, your local instance opens a persistent encrypted connection to our service <code>*.evcc.cloud</code>.</p>
+<p>The following data is processed and stored during registration:</p>
+<ul>
+<li>The randomly assigned domain</li>
+<li>A hash of the connection token</li>
+<li>The association with your sponsor token</li>
+<li>Timestamps of registration and of the last connection</li>
+</ul>
+<p>During operation, the service forwards HTTP requests from authorised clients through the tunnel to your local evcc instance. The service only relays the traffic and does not store request content. Authentication of access (passwords) happens exclusively on your local evcc instance; no credentials are stored on the service.</p>
+<p>The service is hosted on Microsoft Azure in a German data centre. No data is transferred to third countries.</p>
+<p>Remote access is only active when you explicitly enable it in the user interface. Usage requires an active <a href="https://docs.evcc.io/docs/sponsorship">sponsorship</a>. The legal basis for processing is Art. 6 para. 1 lit. a GDPR (consent through actively enabling the feature).</p>
+<p>When you disable remote access, the association between sponsor token and domain is retained so you can reuse the same domain when re-activating. You can request deletion of the registration data at any time by emailing <a href="mailto:info@evcc.io">info@evcc.io</a>.</p>
+<p>For more information, see our <a href="https://docs.evcc.io/docs/features/remote-access">documentation</a>.</p>
 <h2 id="3-algolia-docsearch-search-function-on-docsevccio">3. Algolia DocSearch (Search Function on docs.evcc.io)</h2>
 <p>Our documentation site (docs.evcc.io) uses Algolia DocSearch for the search function. Algolia is a service provided by Algolia Inc., 589 Howard Street, Suite 5, San Francisco, CA 94105, USA.</p>
 <p>When you use the search function, the following data is transmitted to Algolia:</p>
