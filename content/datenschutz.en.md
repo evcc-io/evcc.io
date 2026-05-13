@@ -68,6 +68,27 @@ The optimizer is only active when you explicitly enable it in the user interface
 
 Alternatively, you can run the optimizer locally to avoid data transmission entirely. For more information, see our [documentation](https://docs.evcc.io/docs/features/optimizer#technical).
 
+### Remote Access Service (*.evcc.cloud)
+
+evcc offers an optional remote access feature that makes your local evcc instance reachable over a personal domain on `evcc.cloud`. When you enable remote access in the user interface, your local instance opens a persistent encrypted connection to our service `*.evcc.cloud`.
+
+The following data is processed and stored during registration:
+
+- The randomly assigned domain
+- A hash of the connection token
+- The association with your sponsor token
+- Timestamps of registration and of the last connection
+
+During operation, the service forwards HTTP requests from authorised clients through the tunnel to your local evcc instance. The service only relays the traffic and does not store request content. Authentication of access (passwords) happens exclusively on your local evcc instance; no credentials are stored on the service.
+
+The service is hosted on Microsoft Azure in a German data centre. No data is transferred to third countries.
+
+Remote access is only active when you explicitly enable it in the user interface. Usage requires an active [sponsorship](https://docs.evcc.io/docs/sponsorship). The legal basis for processing is Art. 6 para. 1 lit. a GDPR (consent through actively enabling the feature).
+
+When you disable remote access, the association between sponsor token and domain is retained so you can reuse the same domain when re-activating. You can request deletion of the registration data at any time by emailing info@evcc.io.
+
+For more information, see our [documentation](https://docs.evcc.io/docs/features/remote-access).
+
 ## 3. Algolia DocSearch (Search Function on docs.evcc.io)
 
 Our documentation site (docs.evcc.io) uses Algolia DocSearch for the search function. Algolia is a service provided by Algolia Inc., 589 Howard Street, Suite 5, San Francisco, CA 94105, USA.

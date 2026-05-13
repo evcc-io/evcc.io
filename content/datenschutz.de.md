@@ -68,6 +68,27 @@ Der Optimizer wird nur aktiv, wenn du ihn explizit in der Benutzeroberfläche ak
 
 Alternativ kannst du den Optimizer lokal betreiben und damit die Datenübermittlung vollständig vermeiden. Weitere Informationen dazu findest du in unserer [Dokumentation](https://docs.evcc.io/docs/features/optimizer#technical).
 
+### Remote-Access-Dienst (*.evcc.cloud)
+
+evcc bietet eine optionale Remote-Access-Funktion, die deine lokale evcc-Instanz über eine persönliche Domain auf `evcc.cloud` erreichbar macht. Wenn du Remote Access in der Benutzeroberfläche aktivierst, baut deine lokale Instanz eine dauerhafte verschlüsselte Verbindung zu unserem Dienst `*.evcc.cloud` auf.
+
+Bei der Registrierung werden folgende Daten verarbeitet und gespeichert:
+
+- Die zufällig vergebene Domain
+- Ein Hash des Verbindungstokens
+- Die Zuordnung zu deinem Sponsor-Token
+- Zeitstempel der Registrierung und der letzten Verbindung
+
+Während des Betriebs leitet der Dienst HTTP-Anfragen von autorisierten Clients durch den Tunnel an deine lokale evcc-Instanz weiter. Der Dienst reicht den Datenverkehr nur durch und speichert keine Anfrageinhalte. Die Authentifizierung der Zugriffe (Passwörter) erfolgt ausschließlich auf deiner lokalen evcc-Instanz; auf dem Dienst werden keine Zugangsdaten gespeichert.
+
+Der Dienst wird auf Microsoft Azure in einem deutschen Rechenzentrum betrieben. Es erfolgt keine Übermittlung in Drittländer.
+
+Remote Access wird nur aktiv, wenn du es explizit in der Benutzeroberfläche aktivierst. Die Nutzung setzt ein aktives [Sponsoring](https://docs.evcc.io/docs/sponsorship) voraus. Die Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch aktive Aktivierung der Funktion).
+
+Wenn du Remote Access deaktivierst, bleibt die Zuordnung zwischen Sponsor-Token und Domain bestehen, damit du dieselbe Domain bei einer erneuten Aktivierung wiederverwenden kannst. Du kannst die Löschung der Registrierungsdaten jederzeit per E-Mail an info@evcc.io anfordern.
+
+Weitere Informationen findest du in unserer [Dokumentation](https://docs.evcc.io/docs/features/remote-access).
+
 ## 3. Algolia DocSearch (Suchfunktion auf docs.evcc.io)
 
 Unsere Dokumentationsseite (docs.evcc.io) verwendet Algolia DocSearch für die Suchfunktion. Algolia ist ein Dienst der Algolia Inc., 589 Howard Street, Suite 5, San Francisco, CA 94105, USA.
