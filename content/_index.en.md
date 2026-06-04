@@ -70,13 +70,16 @@ We want to make smart energy management easy for everyone. Ideally, everything w
 {{< theme-switch >}}
 
 {{< screenshots class="content-gallery" >}}
-{{< screenshot-entry src="1_small_main" width="513" alt="evcc iPhone Screenshot: Energy flow and current charging process" >}}
-{{< screenshot-entry src="2_small_plan" width="513" alt="evcc iPhone Screenshot: Charging plan dialog with dynamic electricity prices" >}}
-{{< screenshot-entry src="3_small_battery" width="513" alt="evcc iPhone Screenshot: Home battery-dependent charging rules" >}}
-{{< screenshot-entry src="4_small_month_cost" width="513" alt="evcc iPhone Screenshot: Monthly overview with current costs" >}}
-{{< screenshot-entry src="5_large_main" width="1262" alt="evcc iPad Screenshot: Energy flow and current charging process" >}}
-{{< screenshot-entry src="6_large_year_solar" width="1262" alt="evcc iPad Screenshot: Solar share and annual statistics" >}}
-{{< screenshot-entry src="7_large_settings" width="1262" alt="evcc iPad Screenshot: Settings for price-dependent charging" >}}
+{{< screenshot-entry src="1_small_main_2" width="489" alt="evcc iPhone Screenshot: Energy flow and current charging process" >}}
+{{< screenshot-entry src="2_small_plan_departure" width="489" alt="evcc iPhone Screenshot: Charging plan dialog with dynamic electricity prices" >}}
+{{< screenshot-entry src="3_small_battery" width="489" alt="evcc iPhone Screenshot: Home battery-dependent charging rules" >}}
+{{< screenshot-entry src="4_small_forecast" width="489" alt="evcc iPhone Screenshot: Solar production and grid price forecast" >}}
+{{< screenshot-entry src="5_small_year_cost" width="489" alt="evcc iPhone Screenshot: Annual overview with charging costs" >}}
+{{< screenshot-entry src="6_large_total_solar" width="1305" alt="evcc iPad Screenshot: Solar share and total statistics" >}}
+{{< screenshot-entry src="7_large_main_energyflow" width="1305" alt="evcc iPad Screenshot: Energy flow and current charging process" >}}
+{{< screenshot-entry src="8_large_sessions" width="1305" alt="evcc iPad Screenshot: Charging sessions with solar share and energy by vehicle" >}}
+{{< screenshot-entry src="9_large_session_detail" width="1305" alt="evcc iPad Screenshot: Charging session details" >}}
+{{< screenshot-entry src="10_small_savings" width="489" alt="evcc iPhone Screenshot: Charge energy overview with solar share, energy price and CO₂ emissions" >}}
 {{< /screenshots >}}
 
 Try our demo instance to explore the interface.
