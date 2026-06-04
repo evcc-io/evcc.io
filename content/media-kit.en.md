@@ -62,13 +62,16 @@ The evcc brand uses [**Montserrat**](https://github.com/JulietaUla/Montserrat) (
 ## Screenshots
 
 {{< media-cards >}}
-{{< media-card src="/media-kit/screenshots/1_small_main_light.webp" format="WEBP" >}}
-{{< media-card src="/media-kit/screenshots/2_small_plan_light.webp" format="WEBP" >}}
+{{< media-card src="/media-kit/screenshots/6_large_total_solar_light.webp" format="WEBP" >}}
+{{< media-card src="/media-kit/screenshots/7_large_main_energyflow_light.webp" format="WEBP" >}}
+{{< media-card src="/media-kit/screenshots/8_large_sessions_light.webp" format="WEBP" >}}
+{{< media-card src="/media-kit/screenshots/9_large_session_detail_light.webp" format="WEBP" >}}
+{{< media-card src="/media-kit/screenshots/1_small_main_2_light.webp" format="WEBP" >}}
+{{< media-card src="/media-kit/screenshots/2_small_plan_departure_light.webp" format="WEBP" >}}
 {{< media-card src="/media-kit/screenshots/3_small_battery_light.webp" format="WEBP" >}}
-{{< media-card src="/media-kit/screenshots/4_small_month_cost_light.webp" format="WEBP" >}}
-{{< media-card src="/media-kit/screenshots/5_large_main_light.webp" format="WEBP" >}}
-{{< media-card src="/media-kit/screenshots/6_large_year_solar_light.webp" format="WEBP" >}}
-{{< media-card src="/media-kit/screenshots/7_large_settings_light.webp" format="WEBP" >}}
+{{< media-card src="/media-kit/screenshots/4_small_forecast_light.webp" format="WEBP" >}}
+{{< media-card src="/media-kit/screenshots/5_small_year_cost_light.webp" format="WEBP" >}}
+{{< media-card src="/media-kit/screenshots/10_small_savings_light.webp" format="WEBP" >}}
 {{< /media-cards >}}
 
 Dark mode screenshots are also available. See [here](https://github.com/evcc-io/evcc.io/tree/main/static/media-kit/screenshots).
