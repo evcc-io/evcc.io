@@ -1,0 +1,9 @@
+{{- $light := .Get "light" -}}
+{{- $dark := .Get "dark" -}}
+{{- $alt := .Get "alt" -}}
+{{- $width := .Get "width" -}}
+{{- $height := .Get "height" -}}
+<div class="themed-image">
+  <img class="only-light" src="{{ $light }}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" draggable="false" />
+  <img class="only-dark" src="{{ $dark }}" alt="{{ $alt }}" width="{{ $width }}" height="{{ $height }}" loading="lazy" draggable="false" />
+</div>

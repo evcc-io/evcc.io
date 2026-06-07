@@ -90,6 +90,14 @@ Try demo instance
 
 ---
 
+## How it works
+
+The system runs locally and continuously collects data from your home: grid import and export, solar production, home consumption, and the state of charge of your home battery and vehicle. Based on this, it **controls your charger** and charges your car exactly when electricity is cheapest or greenest.
+
+{{< themed-image light="/img/evcc-schema1-light.svg" dark="/img/evcc-schema1-dark.svg" width="627" height="465" alt="Diagram: evcc connects solar system, grid, home battery, consumption and vehicle and controls the charger" >}}
+
+---
+
 ## We talk to all manufacturers {#devices}
 
 Closed ecosystems, cloud services, and proprietary solutions are not our cup of tea.

@@ -90,6 +90,14 @@ Demo-Instanz ansehen
 
 ---
 
+## So funktioniert's
+
+Das System läuft bei dir lokal und sammelt laufend Daten aus deinem Zuhause: Netzbezug und Einspeisung, Solarproduktion, Hausverbrauch sowie Ladestand von Hausspeicher und Fahrzeug. Auf dieser Basis **steuert es deine Wallbox** und lädt dein Auto genau dann, wenn der Strom am günstigsten oder grünsten ist.
+
+{{< themed-image light="/img/evcc-schema1-light.svg" dark="/img/evcc-schema1-dark.svg" width="627" height="465" alt="Schaubild: evcc verbindet Solaranlage, Stromnetz, Hausspeicher, Verbrauch und Fahrzeug und steuert die Wallbox" >}}
+
+---
+
 ## Wir sprechen mit allen Herstellern {#devices}
 
 Wir sind keine Freunde von geschlossenen Ökosystemen, Clouddiensten und proprietären Lösungen.

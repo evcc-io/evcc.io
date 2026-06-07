@@ -494,6 +494,22 @@ footer svg {
   width: auto;
   height: auto;
 }
+.themed-image {
+  margin: 20px auto;
+  padding: 0 var(--grid-gutter);
+  max-width: var(--layout-width);
+}
+.themed-image img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 499px) {
+  .themed-image {
+    padding: 0;
+    margin-left: calc(-1 * var(--grid-gutter));
+    margin-right: calc(-1 * var(--grid-gutter));
+  }
+}
 @media (min-width: 750px) {
   img.image--full {
     width: calc(var(--6-cols) - var(--grid-gutter) * 2);
