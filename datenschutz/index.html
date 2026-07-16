@@ -44,7 +44,7 @@ Datenerfassung auf dieser Website Wer ist verantwortlich für die Datenerfassung
   <meta itemprop="name" content="evcc - Smart laden ☀️🚘 - Intelligentes Energiemanagement für Zuhause">
   <meta itemprop="description" content="Datenschutz­erklärung 1. Datenschutz auf einen Blick Allgemeine Hinweise Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.
 Datenerfassung auf dieser Website Wer ist verantwortlich für die Datenerfassung auf dieser Website? Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle“ in dieser Datenschutzerklärung entnehmen.">
-  <meta itemprop="wordCount" content="2165">
+  <meta itemprop="wordCount" content="2202">
 
 <link href="../css/main.css" rel="stylesheet" />
 <link rel="preload" href="../fonts/roboto-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
@@ -153,19 +153,24 @@ Datenerfassung auf dieser Website Wer ist verantwortlich für die Datenerfassung
 <p>Remote Access wird nur aktiv, wenn du es explizit in der Benutzeroberfläche aktivierst. Die Nutzung setzt ein aktives <a href="https://docs.evcc.io/docs/sponsorship">Sponsoring</a> voraus. Die Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch aktive Aktivierung der Funktion).</p>
 <p>Wenn du Remote Access deaktivierst, bleibt die Zuordnung zwischen Sponsor-Token und Domain bestehen, damit du dieselbe Domain bei einer erneuten Aktivierung wiederverwenden kannst. Du kannst die Löschung der Registrierungsdaten jederzeit per E-Mail an <a href="mailto:info@evcc.io">info@evcc.io</a> anfordern.</p>
 <p>Weitere Informationen findest du in unserer <a href="https://docs.evcc.io/docs/features/remote-access">Dokumentation</a>.</p>
-<h2 id="3-algolia-docsearch-suchfunktion-auf-docsevccio">3. Algolia DocSearch (Suchfunktion auf docs.evcc.io)</h2>
-<p>Unsere Dokumentationsseite (docs.evcc.io) verwendet Algolia DocSearch für die Suchfunktion. Algolia ist ein Dienst der Algolia Inc., 589 Howard Street, Suite 5, San Francisco, CA 94105, USA.</p>
-<p>Wenn Sie die Suchfunktion nutzen, werden folgende Daten an Algolia übermittelt:</p>
+<h3 id="sponsor-token-prüfung-sponsorevccio">Sponsor-Token-Prüfung (sponsor.evcc.io)</h3>
+<p>Wenn du ein Sponsor-Token konfiguriert hast, prüft deine lokale evcc-Instanz dieses beim Start gegen unseren Dienst <code>sponsor.evcc.io</code>. Dabei werden folgende Daten übermittelt:</p>
 <ul>
-<li>Ihre IP-Adresse</li>
-<li>Ihre Suchanfragen</li>
-<li>Browserinformationen (User-Agent)</li>
-<li>Zeitstempel der Suchanfrage</li>
+<li>Das Sponsor-Token</li>
+<li>Eine anonymisierte Gerätekennung (ein Einweg-Hash der Gerätekennung; sie ist unabhängig von der Telemetrie-Kennung und kann nicht mit dieser verknüpft werden)</li>
 </ul>
-<p>Die Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Bereitstellung einer funktionsfähigen Suchfunktion für unsere Dokumentation). Die Datenübermittlung erfolgt nur, wenn Sie aktiv die Suchfunktion verwenden.</p>
-<p>Da Algolia in den USA ansässig ist, erfolgt eine Übermittlung personenbezogener Daten in ein Drittland. Algolia ist nach dem EU-U.S. Data Privacy Framework zertifiziert. Weitere Informationen zum Datenschutz bei Algolia finden Sie in der <a href="https://www.algolia.com/policies/privacy/">Algolia Privacy Policy</a>.</p>
-<p>Die Suchanfragen werden von Algolia zu Analyse- und Verbesserungszwecken der Suchfunktion verarbeitet. Eine darüber hinausgehende Nutzung oder Weitergabe an Dritte erfolgt nicht.</p>
-<h2 id="4-zahlungsabwicklung-für-evcc-sponsoring-creemio">4. Zahlungsabwicklung für evcc-Sponsoring (creem.io)</h2>
+<p>Um Missbrauch und Weitergabe von Sponsor-Tokens zu erkennen, erfassen wir, auf welchen Geräten ein Token verwendet wird. Dabei werden folgende Daten gespeichert:</p>
+<ul>
+<li>Zeitstempel</li>
+<li>Die dem Token zugeordnete E-Mail-Adresse oder der GitHub-Benutzername</li>
+<li>Art des Sponsorings</li>
+<li>Ein Hash des Tokens</li>
+<li>Die anonymisierte Gerätekennung</li>
+</ul>
+<p>Die Gerätekennung wird ausschließlich für diesen Zweck verwendet und nicht mit anderen Daten zusammengeführt.</p>
+<p>Der Dienst wird auf Servern der <a href="https://fly.io/">Fly.io Inc.</a>, USA, betrieben; die Daten werden in einem Rechenzentrum innerhalb der EU gespeichert. Fly.io hat sich zu EU-Standardvertragsklauseln verpflichtet. Weitere Informationen findest du in der <a href="https://fly.io/legal/privacy-policy/">Datenschutzerklärung von Fly.io</a>.</p>
+<p>Die Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Verhinderung von Missbrauch des Sponsoring-Dienstes). Die Daten werden gespeichert, solange sie für die Missbrauchserkennung erforderlich sind, und anschließend gelöscht. Du kannst die Löschung jederzeit per E-Mail an <a href="mailto:info@evcc.io">info@evcc.io</a> anfordern.</p>
+<h2 id="3-zahlungsabwicklung-für-evcc-sponsoring-creemio">3. Zahlungsabwicklung für evcc-Sponsoring (creem.io)</h2>
 <p>Wenn du ein evcc-Sponsoring erwirbst, erfolgt die Zahlungsabwicklung über unseren Zahlungsdienstleister creem.io, ein Dienst der Armitage Labs OÜ, Telliskivi Street 57b/1, Tallinn 10412, Estland.</p>
 <h3 id="datenverarbeitung-durch-creemio">Datenverarbeitung durch creem.io</h3>
 <p>Bei deinem Sponsoring-Kauf werden folgende Daten an creem.io übermittelt und von diesem verarbeitet:</p>
@@ -210,7 +215,7 @@ Datenerfassung auf dieser Website Wer ist verantwortlich für die Datenerfassung
 <h3 id="widerruf-und-kündigung">Widerruf und Kündigung</h3>
 <p>Du kannst wiederkehrende Sponsorships jederzeit über das creem.io-Portal unter <a href="https://www.creem.io/portal/">https://www.creem.io/portal/</a> kündigen. Die Kündigung wird zum Ende der aktuellen Abrechnungsperiode wirksam.</p>
 <p>Weitere Informationen zum Datenschutz bei creem.io findest du in der <a href="https://www.creem.io/privacy">creem.io Datenschutzerklärung</a>.</p>
-<h2 id="5-allgemeine-hinweise-und-pflichtinformationen">5. Allgemeine Hinweise und Pflicht­informationen</h2>
+<h2 id="4-allgemeine-hinweise-und-pflichtinformationen">4. Allgemeine Hinweise und Pflicht­informationen</h2>
 <h3 id="datenschutz">Datenschutz</h3>
 <p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p>
 <p>Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht.</p>

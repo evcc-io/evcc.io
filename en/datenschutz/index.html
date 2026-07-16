@@ -44,7 +44,7 @@ Data Collection on This Website Who is Responsible for Data Collection on This W
   <meta itemprop="name" content="evcc - Smart Charging ☀️🚘 - Intelligent Energy Management for Your Home">
   <meta itemprop="description" content="Privacy Policy 1. Privacy at a Glance General Information The following notes provide a simple overview of what happens to your personal data when you visit this website. Personal data is any data that can personally identify you. For detailed information on data protection, please refer to our privacy policy listed below this text.
 Data Collection on This Website Who is Responsible for Data Collection on This Website? Data processing on this website is carried out by the website operator. You can find their contact details in the “Notice Concerning the Responsible Party” section of this privacy policy.">
-  <meta itemprop="wordCount" content="2395">
+  <meta itemprop="wordCount" content="2436">
 
 <link href="../../css/main.css" rel="stylesheet" />
 <link rel="preload" href="../../fonts/roboto-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
@@ -153,19 +153,24 @@ Data Collection on This Website Who is Responsible for Data Collection on This W
 <p>Remote access is only active when you explicitly enable it in the user interface. Usage requires an active <a href="https://docs.evcc.io/docs/sponsorship">sponsorship</a>. The legal basis for processing is Art. 6 para. 1 lit. a GDPR (consent through actively enabling the feature).</p>
 <p>When you disable remote access, the association between sponsor token and domain is retained so you can reuse the same domain when re-activating. You can request deletion of the registration data at any time by emailing <a href="mailto:info@evcc.io">info@evcc.io</a>.</p>
 <p>For more information, see our <a href="https://docs.evcc.io/docs/features/remote-access">documentation</a>.</p>
-<h2 id="3-algolia-docsearch-search-function-on-docsevccio">3. Algolia DocSearch (Search Function on docs.evcc.io)</h2>
-<p>Our documentation site (docs.evcc.io) uses Algolia DocSearch for the search function. Algolia is a service provided by Algolia Inc., 589 Howard Street, Suite 5, San Francisco, CA 94105, USA.</p>
-<p>When you use the search function, the following data is transmitted to Algolia:</p>
+<h3 id="sponsor-token-validation-sponsorevccio">Sponsor Token Validation (sponsor.evcc.io)</h3>
+<p>If you have configured a sponsor token, your local evcc instance validates it against our service <code>sponsor.evcc.io</code> when starting. The following data is transmitted:</p>
 <ul>
-<li>Your IP address</li>
-<li>Your search queries</li>
-<li>Browser information (User-Agent)</li>
-<li>Timestamp of the search query</li>
+<li>The sponsor token</li>
+<li>An anonymized machine identifier (a one-way hash of the device identifier; it is independent of the telemetry identifier and cannot be linked to it)</li>
 </ul>
-<p>The legal basis for processing is Art. 6 para. 1 lit. f GDPR (legitimate interest in providing a functional search capability for our documentation). Data transmission only occurs when you actively use the search function.</p>
-<p>Since Algolia is based in the USA, personal data is transferred to a third country. Algolia is certified under the EU-U.S. Data Privacy Framework. For more information about Algolia&rsquo;s privacy practices, see the <a href="https://www.algolia.com/policies/privacy/">Algolia Privacy Policy</a>.</p>
-<p>Search queries are processed by Algolia for analysis and improvement of the search function. No further use or disclosure to third parties occurs.</p>
-<h2 id="4-payment-processing-for-evcc-sponsorship-creemio">4. Payment Processing for evcc Sponsorship (creem.io)</h2>
+<p>To detect misuse and sharing of sponsor tokens, we record which devices a token is used on. The following data is stored:</p>
+<ul>
+<li>Timestamp</li>
+<li>Email address or GitHub username associated with the token</li>
+<li>Type of sponsorship</li>
+<li>A hash of the token</li>
+<li>The anonymized machine identifier</li>
+</ul>
+<p>The machine identifier is used solely for this purpose and not combined with any other data.</p>
+<p>The service is hosted on servers of <a href="https://fly.io/">Fly.io Inc.</a>, USA; the data is stored in a data centre within the EU. Fly.io has committed to EU standard contractual clauses. For more information, see the <a href="https://fly.io/legal/privacy-policy/">Fly.io Privacy Policy</a>.</p>
+<p>The legal basis for processing is Art. 6 para. 1 lit. f GDPR (legitimate interest in preventing misuse of the sponsorship service). The data is stored as long as required for misuse detection and deleted afterwards. You can request deletion at any time by emailing <a href="mailto:info@evcc.io">info@evcc.io</a>.</p>
+<h2 id="3-payment-processing-for-evcc-sponsorship-creemio">3. Payment Processing for evcc Sponsorship (creem.io)</h2>
 <p>When you purchase an evcc sponsorship, payment processing is handled by our payment service provider creem.io, a service of Armitage Labs OÜ, Telliskivi Street 57b/1, Tallinn 10412, Estonia.</p>
 <h3 id="data-processing-by-creemio">Data Processing by creem.io</h3>
 <p>When purchasing a sponsorship, the following data is transmitted to and processed by creem.io:</p>
@@ -210,7 +215,7 @@ Data Collection on This Website Who is Responsible for Data Collection on This W
 <h3 id="revocation-and-cancellation">Revocation and Cancellation</h3>
 <p>You can cancel recurring sponsorships at any time through the creem.io portal at <a href="https://www.creem.io/portal/">https://www.creem.io/portal/</a>. Cancellation becomes effective at the end of the current billing period.</p>
 <p>For more information about data protection at creem.io, see the <a href="https://www.creem.io/privacy">creem.io Privacy Policy</a>.</p>
-<h2 id="5-general-information-and-mandatory-information">5. General Information and Mandatory Information</h2>
+<h2 id="4-general-information-and-mandatory-information">4. General Information and Mandatory Information</h2>
 <h3 id="data-protection">Data Protection</h3>
 <p>The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with statutory data protection regulations and this privacy policy.</p>
 <p>When you use this website, various personal data is collected. Personal data is data with which you can be personally identified. This privacy policy explains what data we collect and what we use it for. It also explains how and for what purpose this happens.</p>
