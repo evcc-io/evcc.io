@@ -89,24 +89,28 @@ When you disable remote access, the association between sponsor token and domain
 
 For more information, see our [documentation](https://docs.evcc.io/docs/features/remote-access).
 
-## 3. Algolia DocSearch (Search Function on docs.evcc.io)
+### Sponsor Token Validation (sponsor.evcc.io)
 
-Our documentation site (docs.evcc.io) uses Algolia DocSearch for the search function. Algolia is a service provided by Algolia Inc., 589 Howard Street, Suite 5, San Francisco, CA 94105, USA.
+If you have configured a sponsor token, your local evcc instance validates it against our service `sponsor.evcc.io` when starting. The following data is transmitted:
 
-When you use the search function, the following data is transmitted to Algolia:
+- The sponsor token
+- An anonymized machine identifier (a one-way hash of the device identifier; it is independent of the telemetry identifier and cannot be linked to it)
 
-- Your IP address
-- Your search queries
-- Browser information (User-Agent)
-- Timestamp of the search query
+To detect misuse and sharing of sponsor tokens, we record which devices a token is used on. The following data is stored:
 
-The legal basis for processing is Art. 6 para. 1 lit. f GDPR (legitimate interest in providing a functional search capability for our documentation). Data transmission only occurs when you actively use the search function.
+- Timestamp
+- Email address or GitHub username associated with the token
+- Type of sponsorship
+- A hash of the token
+- The anonymized machine identifier
 
-Since Algolia is based in the USA, personal data is transferred to a third country. Algolia is certified under the EU-U.S. Data Privacy Framework. For more information about Algolia's privacy practices, see the [Algolia Privacy Policy](https://www.algolia.com/policies/privacy/).
+The machine identifier is used solely for this purpose and not combined with any other data.
 
-Search queries are processed by Algolia for analysis and improvement of the search function. No further use or disclosure to third parties occurs.
+The service is hosted on servers of [Fly.io Inc.](https://fly.io/), USA; the data is stored in a data centre within the EU. Fly.io has committed to EU standard contractual clauses. For more information, see the [Fly.io Privacy Policy](https://fly.io/legal/privacy-policy/).
 
-## 4. Payment Processing for evcc Sponsorship (creem.io)
+The legal basis for processing is Art. 6 para. 1 lit. f GDPR (legitimate interest in preventing misuse of the sponsorship service). The data is stored as long as required for misuse detection and deleted afterwards. You can request deletion at any time by emailing info@evcc.io.
+
+## 3. Payment Processing for evcc Sponsorship (creem.io)
 
 When you purchase an evcc sponsorship, payment processing is handled by our payment service provider creem.io, a service of Armitage Labs OÜ, Telliskivi Street 57b/1, Tallinn 10412, Estonia.
 
@@ -156,7 +160,7 @@ You can cancel recurring sponsorships at any time through the creem.io portal at
 
 For more information about data protection at creem.io, see the [creem.io Privacy Policy](https://www.creem.io/privacy).
 
-## 5. General Information and Mandatory Information
+## 4. General Information and Mandatory Information
 
 ### Data Protection
 

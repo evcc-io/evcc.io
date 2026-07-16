@@ -89,24 +89,28 @@ Wenn du Remote Access deaktivierst, bleibt die Zuordnung zwischen Sponsor-Token 
 
 Weitere Informationen findest du in unserer [Dokumentation](https://docs.evcc.io/docs/features/remote-access).
 
-## 3. Algolia DocSearch (Suchfunktion auf docs.evcc.io)
+### Sponsor-Token-Prüfung (sponsor.evcc.io)
 
-Unsere Dokumentationsseite (docs.evcc.io) verwendet Algolia DocSearch für die Suchfunktion. Algolia ist ein Dienst der Algolia Inc., 589 Howard Street, Suite 5, San Francisco, CA 94105, USA.
+Wenn du ein Sponsor-Token konfiguriert hast, prüft deine lokale evcc-Instanz dieses beim Start gegen unseren Dienst `sponsor.evcc.io`. Dabei werden folgende Daten übermittelt:
 
-Wenn Sie die Suchfunktion nutzen, werden folgende Daten an Algolia übermittelt:
+- Das Sponsor-Token
+- Eine anonymisierte Gerätekennung (ein Einweg-Hash der Gerätekennung; sie ist unabhängig von der Telemetrie-Kennung und kann nicht mit dieser verknüpft werden)
 
-- Ihre IP-Adresse
-- Ihre Suchanfragen
-- Browserinformationen (User-Agent)
-- Zeitstempel der Suchanfrage
+Um Missbrauch und Weitergabe von Sponsor-Tokens zu erkennen, erfassen wir, auf welchen Geräten ein Token verwendet wird. Dabei werden folgende Daten gespeichert:
 
-Die Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Bereitstellung einer funktionsfähigen Suchfunktion für unsere Dokumentation). Die Datenübermittlung erfolgt nur, wenn Sie aktiv die Suchfunktion verwenden.
+- Zeitstempel
+- Die dem Token zugeordnete E-Mail-Adresse oder der GitHub-Benutzername
+- Art des Sponsorings
+- Ein Hash des Tokens
+- Die anonymisierte Gerätekennung
 
-Da Algolia in den USA ansässig ist, erfolgt eine Übermittlung personenbezogener Daten in ein Drittland. Algolia ist nach dem EU-U.S. Data Privacy Framework zertifiziert. Weitere Informationen zum Datenschutz bei Algolia finden Sie in der [Algolia Privacy Policy](https://www.algolia.com/policies/privacy/).
+Die Gerätekennung wird ausschließlich für diesen Zweck verwendet und nicht mit anderen Daten zusammengeführt.
 
-Die Suchanfragen werden von Algolia zu Analyse- und Verbesserungszwecken der Suchfunktion verarbeitet. Eine darüber hinausgehende Nutzung oder Weitergabe an Dritte erfolgt nicht.
+Der Dienst wird auf Servern der [Fly.io Inc.](https://fly.io/), USA, betrieben; die Daten werden in einem Rechenzentrum innerhalb der EU gespeichert. Fly.io hat sich zu EU-Standardvertragsklauseln verpflichtet. Weitere Informationen findest du in der [Datenschutzerklärung von Fly.io](https://fly.io/legal/privacy-policy/).
 
-## 4. Zahlungsabwicklung für evcc-Sponsoring (creem.io)
+Die Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Verhinderung von Missbrauch des Sponsoring-Dienstes). Die Daten werden gespeichert, solange sie für die Missbrauchserkennung erforderlich sind, und anschließend gelöscht. Du kannst die Löschung jederzeit per E-Mail an info@evcc.io anfordern.
+
+## 3. Zahlungsabwicklung für evcc-Sponsoring (creem.io)
 
 Wenn du ein evcc-Sponsoring erwirbst, erfolgt die Zahlungsabwicklung über unseren Zahlungsdienstleister creem.io, ein Dienst der Armitage Labs OÜ, Telliskivi Street 57b/1, Tallinn 10412, Estland.
 
@@ -156,7 +160,7 @@ Du kannst wiederkehrende Sponsorships jederzeit über das creem.io-Portal unter 
 
 Weitere Informationen zum Datenschutz bei creem.io findest du in der [creem.io Datenschutzerklärung](https://www.creem.io/privacy).
 
-## 5. Allgemeine Hinweise und Pflicht­informationen
+## 4. Allgemeine Hinweise und Pflicht­informationen
 
 ### Datenschutz
 
