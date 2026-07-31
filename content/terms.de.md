@@ -1,6 +1,6 @@
 # evcc Terms of Service
 
-**Effective Date: May 4, 2026**
+**Effective Date: July 31, 2026**
 
 These Terms of Service ("Terms") govern the purchase and use of evcc sponsorship tokens through creem.io payment platform.
 By purchasing a sponsorship, you agree to be bound by these Terms.
@@ -22,11 +22,8 @@ By purchasing, you represent and warrant that you meet this age requirement and 
 
 We offer the following sponsorship options:
 
-- **Monthly Sponsorship**: Recurring subscription billed every month
 - **Yearly Sponsorship**: Recurring subscription billed annually
 - **Lifetime Sponsorship**: One-time payment for permanent access
-
-Lifetime Sponsorship is currently the only tier offered; recurring tiers will be introduced later.
 
 ### 3.2 Included Features
 
