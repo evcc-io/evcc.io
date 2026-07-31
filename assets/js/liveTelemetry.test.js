@@ -1,5 +1,5 @@
 import { expect, it } from "vitest";
-import { fmtKW } from "./liveTelemetry";
+import { fmtKW, fmtKWh } from "./liveTelemetry";
 
 it("fmtKW", () => {
   expect(fmtKW(1)).toEqual({ value: 1, unit: "kW", decimals: 0 });
@@ -28,5 +28,15 @@ it("fmtKW", () => {
     value: 12345.678901,
     unit: "GW",
     decimals: 0,
+  });
+});
+
+it("fmtKWh", () => {
+  expect(fmtKWh(123)).toEqual({ value: 123, unit: "kWh", decimals: 0 });
+  expect(fmtKWh(1234)).toEqual({ value: 1.234, unit: "MWh", decimals: 2 });
+  expect(fmtKWh(31756940)).toEqual({
+    value: 31.75694,
+    unit: "GWh",
+    decimals: 1,
   });
 });
