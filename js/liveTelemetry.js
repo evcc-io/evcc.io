@@ -268,13 +268,16 @@
   }
   var powerCount = null;
   var greenShareCount = null;
+  var greenEnergyCount = null;
   var $activeClients;
   var $totalClients;
   var $chargePowerUnit;
+  var $greenEnergyUnit;
   function initializeElements() {
     $activeClients = document.querySelector("#telemetry--activeClients");
     $totalClients = document.querySelector("#telemetry--totalClients");
     $chargePowerUnit = document.querySelector("#telemetry--chargePowerUnit");
+    $greenEnergyUnit = document.querySelector("#telemetry--greenEnergyUnit");
   }
   function render(data) {
     if (!$chargePowerUnit || !$activeClients) return;
@@ -283,6 +286,7 @@
       telemetryElement.style.display = "block";
     }
     const chargePower = fmtKW(data.chargePower / 1e3);
+    const greenEnergy = fmtKWh(data.greenEnergy);
     const greenShare = 100 / data.chargePower * data.greenPower;
     if (!powerCount) {
       powerCount = createCounter(
@@ -291,13 +295,26 @@
         chargePower.decimals
       );
       greenShareCount = createCounter("telemetry--greenShare", greenShare, 1);
+      if ($greenEnergyUnit) {
+        greenEnergyCount = createCounter(
+          "telemetry--greenEnergy",
+          greenEnergy.value,
+          greenEnergy.decimals
+        );
+      }
     } else {
       powerCount.update(chargePower.value);
       greenShareCount.update(greenShare);
+      if (greenEnergyCount) {
+        greenEnergyCount.update(greenEnergy.value);
+      }
     }
     $chargePowerUnit.innerText = chargePower.unit;
     const lang = document.documentElement.lang || "de";
     const fmt = new Intl.NumberFormat(lang);
+    if ($greenEnergyUnit) {
+      $greenEnergyUnit.innerText = greenEnergy.unit;
+    }
     $activeClients.innerText = fmt.format(data.activeClients);
     if ($totalClients) {
       $totalClients.innerText = fmt.format(data.totalClients);
@@ -327,6 +344,11 @@
       return { value: kW / 1e6, decimals: 1, unit: "GW" };
     }
     return { value: kW / 1e6, decimals: 0, unit: "GW" };
+  }
+  function fmtKWh(kWh) {
+    const result = fmtKW(kWh);
+    result.unit += "h";
+    return result;
   }
   if (typeof window !== "undefined" && !window.vitest) {
     initializeElements();
