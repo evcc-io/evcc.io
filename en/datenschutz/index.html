@@ -64,9 +64,9 @@ Data Collection on This Website Who is Responsible for Data Collection on This W
         <span>smart charging</span>
       </a>
       <nav class="header__navigation">
-        <a href="https://docs.evcc.io/en/blog" class="header__navigation__item">Blog</a>
-        <a href="https://docs.evcc.io/en/docs/Home" class="header__navigation__item hide-lg">Docs</a>
-        <a href="https://docs.evcc.io/en/docs/Home" class="header__navigation__item hide-sm">Documentation</a>
+        <a href="https://docs.evcc.io/en/blog/" class="header__navigation__item">Blog</a>
+        <a href="https://docs.evcc.io/en/" class="header__navigation__item hide-lg">Docs</a>
+        <a href="https://docs.evcc.io/en/" class="header__navigation__item hide-sm">Documentation</a>
         <a href="https://github.com/evcc-io/evcc" class="header__navigation__item" title='GitHub'
           target="_blank">
           
@@ -128,7 +128,7 @@ Data Collection on This Website Who is Responsible for Data Collection on This W
 <p>The collected data is stored and processed by GitHub in accordance with their privacy policy. We do not have direct access to these server log files.</p>
 <h3 id="community-telemetry-display">Community Telemetry Display</h3>
 <p>The homepage displays a live widget showing aggregated statistics from the evcc community (e.g., total charging power, number of active users, solar share). This data is provided by our own service api.evcc.io.</p>
-<p>When loading this display, no personal data is collected or transmitted from you as a website visitor. The widget exclusively shows anonymized, aggregated data from participating evcc users who have voluntarily opted into the telemetry program. For more information about telemetry participation for evcc users, see our <a href="https://docs.evcc.io/docs/reference/configuration/telemetry">documentation</a>.</p>
+<p>When loading this display, no personal data is collected or transmitted from you as a website visitor. The widget exclusively shows anonymized, aggregated data from participating evcc users who have voluntarily opted into the telemetry program. For more information about telemetry participation for evcc users, see our <a href="https://docs.evcc.io/en/docs/reference/configuration/telemetry">documentation</a>.</p>
 <h3 id="optimizer-service-optimizerevccio">Optimizer Service (optimizer.evcc.io)</h3>
 <p>evcc offers an optional optimizer feature that makes cost-optimal decisions for your energy system. When you enable the optimizer in the user interface, the following data is transmitted to our service <code>optimizer.evcc.io</code>:</p>
 <ul>
@@ -137,8 +137,8 @@ Data Collection on This Website Who is Responsible for Data Collection on This W
 <li>Current state: battery state of charge, connected vehicles, heating demand</li>
 </ul>
 <p>The service is hosted on Microsoft Azure in a German data centre. No data is transferred to third countries. The service is <strong>stateless</strong> – no data is permanently stored on the server. The transmitted data is used solely to calculate the optimisation result and discarded afterwards.</p>
-<p>The optimizer is only active when you explicitly enable it in the user interface. Usage requires an active <a href="https://docs.evcc.io/docs/sponsorship">sponsorship</a>. The legal basis for processing is Art. 6 para. 1 lit. a GDPR (consent through actively enabling the feature).</p>
-<p>Alternatively, you can run the optimizer locally to avoid data transmission entirely. For more information, see our <a href="https://docs.evcc.io/docs/features/optimizer#technical">documentation</a>.</p>
+<p>The optimizer is only active when you explicitly enable it in the user interface. Usage requires an active <a href="https://docs.evcc.io/en/docs/sponsorship">sponsorship</a>. The legal basis for processing is Art. 6 para. 1 lit. a GDPR (consent through actively enabling the feature).</p>
+<p>Alternatively, you can run the optimizer locally to avoid data transmission entirely. For more information, see our <a href="https://docs.evcc.io/en/docs/features/optimizer#technical">documentation</a>.</p>
 <h3 id="remote-access-service-evcccloud">Remote Access Service (*.evcc.cloud)</h3>
 <p>evcc offers an optional remote access feature that makes your local evcc instance reachable over a personal domain on <code>evcc.cloud</code>. When you enable remote access in the user interface, your local instance opens a persistent encrypted connection to our service <code>*.evcc.cloud</code>.</p>
 <p>The following data is processed and stored during registration:</p>
@@ -150,9 +150,9 @@ Data Collection on This Website Who is Responsible for Data Collection on This W
 </ul>
 <p>During operation, the service forwards HTTP requests from authorised clients through the tunnel to your local evcc instance. The service only relays the traffic and does not store request content. Authentication of access (passwords) happens exclusively on your local evcc instance; no credentials are stored on the service.</p>
 <p>The service is hosted on Microsoft Azure in a German data centre. No data is transferred to third countries.</p>
-<p>Remote access is only active when you explicitly enable it in the user interface. Usage requires an active <a href="https://docs.evcc.io/docs/sponsorship">sponsorship</a>. The legal basis for processing is Art. 6 para. 1 lit. a GDPR (consent through actively enabling the feature).</p>
+<p>Remote access is only active when you explicitly enable it in the user interface. Usage requires an active <a href="https://docs.evcc.io/en/docs/sponsorship">sponsorship</a>. The legal basis for processing is Art. 6 para. 1 lit. a GDPR (consent through actively enabling the feature).</p>
 <p>When you disable remote access, the association between sponsor token and domain is retained so you can reuse the same domain when re-activating. You can request deletion of the registration data at any time by emailing <a href="mailto:info@evcc.io">info@evcc.io</a>.</p>
-<p>For more information, see our <a href="https://docs.evcc.io/docs/features/remote-access">documentation</a>.</p>
+<p>For more information, see our <a href="https://docs.evcc.io/en/docs/features/remote-access">documentation</a>.</p>
 <h3 id="sponsor-token-validation-sponsorevccio">Sponsor Token Validation (sponsor.evcc.io)</h3>
 <p>If you have configured a sponsor token, your local evcc instance validates it against our service <code>sponsor.evcc.io</code> when starting. The following data is transmitted:</p>
 <ul>
@@ -256,8 +256,8 @@ Germany</p>
 </main>
 <footer class="footer">
   <span>© 2026 evcc</span>
-  <a href="https://docs.evcc.io/en/blog">Blog</a>
-  <a href="https://docs.evcc.io/en/docs/Home">Documentation</a>
+  <a href="https://docs.evcc.io/en/blog/">Blog</a>
+  <a href="https://docs.evcc.io/en/">Documentation</a>
   <a href="https://github.com/evcc-io/evcc">
     
 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M119.83,56A52,52,0,0,0,76,32a51.92,51.92,0,0,0-3.49,44.7A49.28,49.28,0,0,0,64,104v8a48,48,0,0,0,48,48h48a48,48,0,0,0,48-48v-8a49.28,49.28,0,0,0-8.51-27.3A51.92,51.92,0,0,0,196,32a52,52,0,0,0-43.83,24Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><path d="M104,232V192a32,32,0,0,1,32-32h0a32,32,0,0,1,32,32v40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><path d="M104,208H76a32,32,0,0,1-32-32,32,32,0,0,0-32-32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/></svg> GitHub
