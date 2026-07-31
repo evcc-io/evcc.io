@@ -166,7 +166,7 @@ Contact us
 
 {{< live-telemetry >}}
 
-In our [blog](https://docs.evcc.io/en/blog) we regularly feature evcc installations from the community. Get to know the [people](#community-person) and their [technology](#community-tech) behind these setups.
+In our [blog](https://docs.evcc.io/en/blog/) we regularly feature evcc installations from the community. Get to know the [people](#community-person) and their [technology](#community-tech) behind these setups.
 
 {{< community >}}
 {{< community-entry img="orv" name="Osnabrück Rowing Club" link="https://docs.evcc.io/en/blog/2025/11/29/osnabruecker-ruderverein">}}

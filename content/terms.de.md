@@ -114,7 +114,7 @@ Commercial and business users will be required to purchase appropriate commercia
 
 When commercial tiers are introduced:
 
-- We will announce the change on our blog (https://docs.evcc.io/blog/) with at least 90 days advance notice
+- We will announce the change on our blog (https://docs.evcc.io/de/blog/) with at least 90 days advance notice
 - Existing commercial installations will have 90 days from the announcement date to upgrade to an appropriate commercial license
 - After the transition period, commercial use without a commercial license will constitute a violation of these Terms
 
@@ -142,7 +142,7 @@ evcc is a community-driven project.
 We do not provide individual support.
 Support resources include:
 
-- Comprehensive documentation at https://docs.evcc.io/
+- Comprehensive documentation at https://docs.evcc.io/de/
 - Community support via GitHub Discussions at https://github.com/evcc-io/evcc/discussions
 
 ### 9.2 No Warranty
@@ -156,7 +156,7 @@ The software is provided "AS IS" without warranty of any kind, express or implie
 evcc relies on open APIs and device interfaces that are outside of our control.
 We do not guarantee that any specific device, integration, or feature will work in your environment, even if listed as supported.
 You are responsible for verifying compatibility before purchasing a sponsorship.
-A trial token is available at https://docs.evcc.io/docs/sponsorship#trial so you can confirm your setup works as expected prior to purchase.
+A trial token is available at https://docs.evcc.io/de/docs/sponsorship#trial so you can confirm your setup works as expected prior to purchase.
 
 Features or device support may also be removed in future releases due to:
 
@@ -276,7 +276,7 @@ Payment data is processed by creem.io according to their privacy policy.
 
 We reserve the right to modify these Terms at any time.
 Changes will be posted on our website at https://evcc.io/terms with an updated effective date.
-For significant changes that materially affect your rights or obligations, we will announce them on our blog (https://docs.evcc.io/blog/) at least 30 days before they take effect.
+For significant changes that materially affect your rights or obligations, we will announce them on our blog (https://docs.evcc.io/de/blog/) at least 30 days before they take effect.
 Continued use of your sponsorship after changes take effect constitutes acceptance of the modified Terms.
 If you disagree with any changes, you may cancel your subscription at any time.
 
