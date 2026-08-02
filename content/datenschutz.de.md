@@ -52,7 +52,7 @@ Die erfassten Daten werden von GitHub entsprechend ihrer Datenschutzrichtlinien 
 
 Auf der Startseite wird ein Live-Widget angezeigt, das aggregierte Statistiken der evcc-Community darstellt (z. B. Gesamtladeleistung, Anzahl aktiver Nutzer, Sonnenanteil). Diese Daten werden von unserem eigenen Dienst api.evcc.io bereitgestellt.
 
-Beim Laden dieser Anzeige werden keine personenbezogenen Daten von Ihnen als Website-Besucher erfasst oder übermittelt. Das Widget zeigt ausschließlich anonymisierte, aggregierte Daten von teilnehmenden evcc-Nutzern an, die sich freiwillig für das Telemetrie-Programm entschieden haben. Weitere Informationen zur Telemetrie-Teilnahme für evcc-Nutzer finden Sie in unserer [Dokumentation](https://docs.evcc.io/de/docs/reference/configuration/telemetry).
+Beim Laden dieser Anzeige werden keine personenbezogenen Daten von Ihnen als Website-Besucher erfasst oder übermittelt. Das Widget zeigt ausschließlich anonymisierte, aggregierte Daten von teilnehmenden evcc-Nutzern an, die sich freiwillig für das Telemetrie-Programm entschieden haben. Weitere Informationen zur Telemetrie-Teilnahme für evcc-Nutzer finden Sie in unserer [Dokumentation](https://docs.evcc.io/de/reference/configuration/telemetry).
 
 ### Optimizer-Service (optimizer.evcc.io)
 
@@ -64,9 +64,9 @@ evcc bietet eine optionale Optimizer-Funktion, die kostenoptimale Entscheidungen
 
 Der Dienst wird auf Microsoft Azure in einem deutschen Rechenzentrum betrieben. Es erfolgt keine Übermittlung in Drittländer. Der Dienst arbeitet **zustandslos** – es werden keine Daten dauerhaft auf dem Server gespeichert. Die übermittelten Daten werden ausschließlich zur Berechnung des Optimierungsergebnisses verwendet und danach verworfen.
 
-Der Optimizer wird nur aktiv, wenn du ihn explizit in der Benutzeroberfläche aktivierst. Die Nutzung setzt ein aktives [Sponsoring](https://docs.evcc.io/de/docs/sponsorship) voraus. Die Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch aktive Aktivierung der Funktion).
+Der Optimizer wird nur aktiv, wenn du ihn explizit in der Benutzeroberfläche aktivierst. Die Nutzung setzt ein aktives [Sponsoring](https://docs.evcc.io/de/sponsorship) voraus. Die Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch aktive Aktivierung der Funktion).
 
-Alternativ kannst du den Optimizer lokal betreiben und damit die Datenübermittlung vollständig vermeiden. Weitere Informationen dazu findest du in unserer [Dokumentation](https://docs.evcc.io/de/docs/features/optimizer#technical).
+Alternativ kannst du den Optimizer lokal betreiben und damit die Datenübermittlung vollständig vermeiden. Weitere Informationen dazu findest du in unserer [Dokumentation](https://docs.evcc.io/de/features/optimizer#technical).
 
 ### Remote-Access-Dienst (*.evcc.cloud)
 
@@ -83,11 +83,11 @@ Während des Betriebs leitet der Dienst HTTP-Anfragen von autorisierten Clients 
 
 Der Dienst wird auf Microsoft Azure in einem deutschen Rechenzentrum betrieben. Es erfolgt keine Übermittlung in Drittländer.
 
-Remote Access wird nur aktiv, wenn du es explizit in der Benutzeroberfläche aktivierst. Die Nutzung setzt ein aktives [Sponsoring](https://docs.evcc.io/de/docs/sponsorship) voraus. Die Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch aktive Aktivierung der Funktion).
+Remote Access wird nur aktiv, wenn du es explizit in der Benutzeroberfläche aktivierst. Die Nutzung setzt ein aktives [Sponsoring](https://docs.evcc.io/de/sponsorship) voraus. Die Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch aktive Aktivierung der Funktion).
 
 Wenn du Remote Access deaktivierst, bleibt die Zuordnung zwischen Sponsor-Token und Domain bestehen, damit du dieselbe Domain bei einer erneuten Aktivierung wiederverwenden kannst. Du kannst die Löschung der Registrierungsdaten jederzeit per E-Mail an info@evcc.io anfordern.
 
-Weitere Informationen findest du in unserer [Dokumentation](https://docs.evcc.io/de/docs/features/remote-access).
+Weitere Informationen findest du in unserer [Dokumentation](https://docs.evcc.io/de/features/remote-access).
 
 ### Sponsor-Token-Prüfung (sponsor.evcc.io)
 

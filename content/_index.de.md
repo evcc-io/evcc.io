@@ -2,7 +2,7 @@
 
 Lade dein Elektroauto intelligent. Steuere Wallbox, Wärmepumpe und Hausspeicher, egal von welchem Hersteller. Deine Kontrolle, deine Daten. Open Source und Community-getrieben.
 
-{{< button-cta url="https://docs.evcc.io/de/docs/installation" target="_blank" subline="Raspberry Pi, Docker und co.">}}
+{{< button-cta url="https://docs.evcc.io/de/installation" target="_blank" subline="Raspberry Pi, Docker und co.">}}
 Jetzt loslegen
 {{</ button-cta>}}
 
@@ -11,35 +11,35 @@ Jetzt loslegen
 ## Features
 
 {{< feature-cards >}}
-{{< feature-card title="Überschussladen" icon="sun" link="https://docs.evcc.io/de/docs/features/solar-charging" >}}
+{{< feature-card title="Überschussladen" icon="sun" link="https://docs.evcc.io/de/features/solar-charging" >}}
 Dein Auto lädt, wenn die Sonne scheint. Ladeleistung folgt automatisch dem verfügbaren Überschuss.
 {{< /feature-card >}}
 
-{{< feature-card title="Dynamische Stromtarife" icon="lightning" link="https://docs.evcc.io/de/docs/features/dynamic-prices" >}}
+{{< feature-card title="Dynamische Stromtarife" icon="lightning" link="https://docs.evcc.io/de/features/dynamic-prices" >}}
 Mit Börsenstromtarifen lädst du automatisch in den günstigsten Stunden.
 {{< /feature-card >}}
 
-{{< feature-card title="Ladepläne & Prognosen" icon="calendar-check" link="https://docs.evcc.io/de/docs/features/plans" >}}
+{{< feature-card title="Ladepläne & Prognosen" icon="calendar-check" link="https://docs.evcc.io/de/features/plans" >}}
 Abfahrtszeit und Ladeziel festlegen. evcc findet die günstigsten oder grünsten Ladezeiten automatisch.
 {{< /feature-card >}}
 
-{{< feature-card title="iOS- & Android-App" icon="device-mobile" link="https://docs.evcc.io/de/docs/features/app" >}}
+{{< feature-card title="iOS- & Android-App" icon="device-mobile" link="https://docs.evcc.io/de/features/app" >}}
 Überwache und steuere dein Laden von unterwegs mit der evcc Companion App.
 {{< /feature-card >}}
 
-{{< feature-card title="Hausspeicher" icon="battery-charging" link="https://docs.evcc.io/de/docs/features/battery" >}}
+{{< feature-card title="Hausspeicher" icon="battery-charging" link="https://docs.evcc.io/de/features/battery" >}}
 Speicher und E-Auto optimal koordinieren. Per Batterieboost schnell aus dem Speicher laden. Bei Bedarf günstig aus dem Netz nachladen.
 {{< /feature-card >}}
 
-{{< feature-card title="Wärmepumpen" icon="thermometer" link="https://docs.evcc.io/de/docs/devices/heating" >}}
+{{< feature-card title="Wärmepumpen" icon="thermometer" link="https://docs.evcc.io/de/heating" >}}
 Nutze Sonne oder günstigen Strom zum Heizen. evcc aktiviert deine Wärmepumpe automatisch zu den besten Zeiten.
 {{< /feature-card >}}
 
-{{< feature-card title="§14a-ready" icon="shield-check" link="https://docs.evcc.io/de/docs/features/external-control" >}}
+{{< feature-card title="§14a-ready" icon="shield-check" link="https://docs.evcc.io/de/external-limit" >}}
 Automatische Leistungsreduzierung bei Netzbetreiber-Signal. Alle Eingriffe werden dokumentiert.
 {{< /feature-card >}}
 
-{{< feature-card title="Lastmanagement" icon="gauge" link="https://docs.evcc.io/de/docs/features/loadmanagement" >}}
+{{< feature-card title="Lastmanagement" icon="gauge" link="https://docs.evcc.io/de/features/loadmanagement" >}}
 Verteile die verfügbare Leistung auf mehrere Ladepunkte. Schützt deinen Hausanschluss vor Überlastung.
 {{< /feature-card >}}
 
@@ -132,7 +132,7 @@ Auch an deinen Daten haben wir kein Interesse.
 
 {{< /infobox >}}
 
-Mehr Details findest du in unserer [Dokumentation](https://docs.evcc.io/de/docs/devices/chargers). Wird dein Gerät noch nicht unterstützt, lass es uns auf [GitHub](https://github.com/evcc-io/evcc) wissen. Wenn es eine Schnittstelle hat, können wir es anbinden.
+Mehr Details findest du in unserer [Dokumentation](https://docs.evcc.io/de/chargers). Wird dein Gerät noch nicht unterstützt, lass es uns auf [GitHub](https://github.com/evcc-io/evcc) wissen. Wenn es eine Schnittstelle hat, können wir es anbinden.
 
 ---
 
@@ -144,7 +144,7 @@ Mehr Details findest du in unserer [Dokumentation](https://docs.evcc.io/de/docs/
 {{< step title="Laden" >}}evcc optimiert automatisch. Alles im Blick über die Weboberfläche oder die App.{{< /step >}}
 {{< /steps >}}
 
-{{< button-cta url="https://docs.evcc.io/de/docs/installation" target="_blank">}}
+{{< button-cta url="https://docs.evcc.io/de/installation" target="_blank">}}
 Jetzt loslegen
 {{</ button-cta>}}
 
@@ -154,7 +154,7 @@ Jetzt loslegen
 
 Werde Teil unseres Entwicklungsteams, hilf, Fehler zu korrigieren, die Dokumentation zu verbessern oder teile einfach deine Erfahrung. Informiere dich im [Forum](https://github.com/evcc-io/evcc/discussions) oder komm in unseren [Slack](/slack).
 
-Um ein Projekt dieser Größenordnung nachhaltig vorantreiben zu können, brauchen wir deine Unterstützung. Hier erfährst du mehr über unser [Sponsoring-Modell](https://docs.evcc.io/de/docs/sponsorship).
+Um ein Projekt dieser Größenordnung nachhaltig vorantreiben zu können, brauchen wir deine Unterstützung. Hier erfährst du mehr über unser [Sponsoring-Modell](https://docs.evcc.io/de/sponsorship).
 
 {{< button-cta url="mailto:info@evcc.io" type="secondary">}}
 Sprich uns an

@@ -52,7 +52,7 @@ The collected data is stored and processed by GitHub in accordance with their pr
 
 The homepage displays a live widget showing aggregated statistics from the evcc community (e.g., total charging power, number of active users, solar share). This data is provided by our own service api.evcc.io.
 
-When loading this display, no personal data is collected or transmitted from you as a website visitor. The widget exclusively shows anonymized, aggregated data from participating evcc users who have voluntarily opted into the telemetry program. For more information about telemetry participation for evcc users, see our [documentation](https://docs.evcc.io/en/docs/reference/configuration/telemetry).
+When loading this display, no personal data is collected or transmitted from you as a website visitor. The widget exclusively shows anonymized, aggregated data from participating evcc users who have voluntarily opted into the telemetry program. For more information about telemetry participation for evcc users, see our [documentation](https://docs.evcc.io/en/reference/configuration/telemetry).
 
 ### Optimizer Service (optimizer.evcc.io)
 
@@ -64,9 +64,9 @@ evcc offers an optional optimizer feature that makes cost-optimal decisions for 
 
 The service is hosted on Microsoft Azure in a German data centre. No data is transferred to third countries. The service is **stateless** – no data is permanently stored on the server. The transmitted data is used solely to calculate the optimisation result and discarded afterwards.
 
-The optimizer is only active when you explicitly enable it in the user interface. Usage requires an active [sponsorship](https://docs.evcc.io/en/docs/sponsorship). The legal basis for processing is Art. 6 para. 1 lit. a GDPR (consent through actively enabling the feature).
+The optimizer is only active when you explicitly enable it in the user interface. Usage requires an active [sponsorship](https://docs.evcc.io/en/sponsorship). The legal basis for processing is Art. 6 para. 1 lit. a GDPR (consent through actively enabling the feature).
 
-Alternatively, you can run the optimizer locally to avoid data transmission entirely. For more information, see our [documentation](https://docs.evcc.io/en/docs/features/optimizer#technical).
+Alternatively, you can run the optimizer locally to avoid data transmission entirely. For more information, see our [documentation](https://docs.evcc.io/en/features/optimizer#technical).
 
 ### Remote Access Service (*.evcc.cloud)
 
@@ -83,11 +83,11 @@ During operation, the service forwards HTTP requests from authorised clients thr
 
 The service is hosted on Microsoft Azure in a German data centre. No data is transferred to third countries.
 
-Remote access is only active when you explicitly enable it in the user interface. Usage requires an active [sponsorship](https://docs.evcc.io/en/docs/sponsorship). The legal basis for processing is Art. 6 para. 1 lit. a GDPR (consent through actively enabling the feature).
+Remote access is only active when you explicitly enable it in the user interface. Usage requires an active [sponsorship](https://docs.evcc.io/en/sponsorship). The legal basis for processing is Art. 6 para. 1 lit. a GDPR (consent through actively enabling the feature).
 
 When you disable remote access, the association between sponsor token and domain is retained so you can reuse the same domain when re-activating. You can request deletion of the registration data at any time by emailing info@evcc.io.
 
-For more information, see our [documentation](https://docs.evcc.io/en/docs/features/remote-access).
+For more information, see our [documentation](https://docs.evcc.io/en/features/remote-access).
 
 ### Sponsor Token Validation (sponsor.evcc.io)
 
