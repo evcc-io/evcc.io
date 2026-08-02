@@ -153,7 +153,7 @@ The software is provided "AS IS" without warranty of any kind, express or implie
 evcc relies on open APIs and device interfaces that are outside of our control.
 We do not guarantee that any specific device, integration, or feature will work in your environment, even if listed as supported.
 You are responsible for verifying compatibility before purchasing a sponsorship.
-A trial token is available at https://docs.evcc.io/de/docs/sponsorship#trial so you can confirm your setup works as expected prior to purchase.
+A trial token is available at https://docs.evcc.io/de/sponsorship#trial so you can confirm your setup works as expected prior to purchase.
 
 Features or device support may also be removed in future releases due to:
 

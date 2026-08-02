@@ -2,7 +2,7 @@
 
 Charge your electric vehicle intelligently. Control charger, heat pump and home battery. Works with hundreds of devices. Your control, your data. Open source and community-driven.
 
-{{< button-cta url="https://docs.evcc.io/en/docs/installation" target="_blank" subline="Raspberry Pi, Docker and co.">}}
+{{< button-cta url="https://docs.evcc.io/en/installation" target="_blank" subline="Raspberry Pi, Docker and co.">}}
 Get Started
 {{</ button-cta>}}
 
@@ -11,35 +11,35 @@ Get Started
 ## Features
 
 {{< feature-cards >}}
-{{< feature-card title="Solar surplus charging" icon="sun" link="https://docs.evcc.io/en/docs/features/solar-charging" >}}
+{{< feature-card title="Solar surplus charging" icon="sun" link="https://docs.evcc.io/en/features/solar-charging" >}}
 Your car charges when the sun shines. Charging power automatically follows the available surplus.
 {{< /feature-card >}}
 
-{{< feature-card title="Dynamic electricity tariffs" icon="lightning" link="https://docs.evcc.io/en/docs/features/dynamic-prices" >}}
+{{< feature-card title="Dynamic electricity tariffs" icon="lightning" link="https://docs.evcc.io/en/features/dynamic-prices" >}}
 With spot price tariffs, charge automatically during the cheapest hours.
 {{< /feature-card >}}
 
-{{< feature-card title="Charging plans & forecasts" icon="calendar-check" link="https://docs.evcc.io/en/docs/features/plans" >}}
+{{< feature-card title="Charging plans & forecasts" icon="calendar-check" link="https://docs.evcc.io/en/features/plans" >}}
 Set departure time and charging target. evcc automatically finds the cheapest or greenest charging times.
 {{< /feature-card >}}
 
-{{< feature-card title="iOS & Android app" icon="device-mobile" link="https://docs.evcc.io/en/docs/features/app" >}}
+{{< feature-card title="iOS & Android app" icon="device-mobile" link="https://docs.evcc.io/en/features/app" >}}
 Monitor and control your charging from anywhere with the evcc companion app.
 {{< /feature-card >}}
 
-{{< feature-card title="Home battery" icon="battery-charging" link="https://docs.evcc.io/en/docs/features/battery" >}}
+{{< feature-card title="Home battery" icon="battery-charging" link="https://docs.evcc.io/en/features/battery" >}}
 Coordinate battery and EV optimally. Battery boost for fast charging from storage. Top up with cheap grid energy when needed.
 {{< /feature-card >}}
 
-{{< feature-card title="Heat pumps" icon="thermometer" link="https://docs.evcc.io/en/docs/devices/heating" >}}
+{{< feature-card title="Heat pumps" icon="thermometer" link="https://docs.evcc.io/en/heating" >}}
 Use solar energy or cheap grid power for heating. evcc activates your heat pump automatically at the best times.
 {{< /feature-card >}}
 
-{{< feature-card title="Grid operator control" icon="shield-check" link="https://docs.evcc.io/en/docs/features/external-control" >}}
+{{< feature-card title="Grid operator control" icon="shield-check" link="https://docs.evcc.io/en/external-limit" >}}
 Automatic power reduction on grid operator signal. Supports German §14a regulation. All interventions are documented.
 {{< /feature-card >}}
 
-{{< feature-card title="Load management" icon="gauge" link="https://docs.evcc.io/en/docs/features/loadmanagement" >}}
+{{< feature-card title="Load management" icon="gauge" link="https://docs.evcc.io/en/features/loadmanagement" >}}
 Distribute available power across multiple charge points. Protects your grid connection from overload.
 {{< /feature-card >}}
 
@@ -132,7 +132,7 @@ Your data stays with you.
 
 {{< /infobox >}}
 
-More details can be found in our [documentation](https://docs.evcc.io/en/docs/devices/chargers). If your device is not supported yet, let us know on [GitHub](https://github.com/evcc-io/evcc). If it has an interface, we can connect it.
+More details can be found in our [documentation](https://docs.evcc.io/en/chargers). If your device is not supported yet, let us know on [GitHub](https://github.com/evcc-io/evcc). If it has an interface, we can connect it.
 
 ---
 
@@ -144,7 +144,7 @@ More details can be found in our [documentation](https://docs.evcc.io/en/docs/de
 {{< step title="Charge" >}}evcc optimizes automatically. Monitor everything via the web interface or the app.{{< /step >}}
 {{< /steps >}}
 
-{{< button-cta url="https://docs.evcc.io/en/docs/installation" target="_blank">}}
+{{< button-cta url="https://docs.evcc.io/en/installation" target="_blank">}}
 Get Started
 {{</ button-cta>}}
 
@@ -154,7 +154,7 @@ Get Started
 
 Join the community, help fix bugs, improve documentation, or just share your experience. Get in touch on the [Forum](https://github.com/evcc-io/evcc/discussions) or chat with us on [Slack](/slack).
 
-To sustain a project of this size we need your support. Learn more about our [sponsoring model](https://docs.evcc.io/en/docs/sponsorship).
+To sustain a project of this size we need your support. Learn more about our [sponsoring model](https://docs.evcc.io/en/sponsorship).
 
 {{< button-cta url="mailto:info@evcc.io" type="secondary">}}
 Contact us
