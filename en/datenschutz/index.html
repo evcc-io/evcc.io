@@ -44,7 +44,7 @@ Data Collection on This Website Who is Responsible for Data Collection on This W
   <meta itemprop="name" content="evcc - Smart Charging ☀️🚘 - Intelligent Energy Management for Your Home">
   <meta itemprop="description" content="Privacy Policy 1. Privacy at a Glance General Information The following notes provide a simple overview of what happens to your personal data when you visit this website. Personal data is any data that can personally identify you. For detailed information on data protection, please refer to our privacy policy listed below this text.
 Data Collection on This Website Who is Responsible for Data Collection on This Website? Data processing on this website is carried out by the website operator. You can find their contact details in the “Notice Concerning the Responsible Party” section of this privacy policy.">
-  <meta itemprop="wordCount" content="2436">
+  <meta itemprop="wordCount" content="2488">
 
 <link href="../../css/main.css" rel="stylesheet" />
 <link rel="preload" href="../../fonts/roboto-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
@@ -145,13 +145,13 @@ Data Collection on This Website Who is Responsible for Data Collection on This W
 <ul>
 <li>The randomly assigned domain</li>
 <li>A hash of the connection token</li>
-<li>The association with your sponsor token</li>
+<li>An identifier of your sponsorship (GitHub username or email address)</li>
 <li>Timestamps of registration and of the last connection</li>
 </ul>
-<p>During operation, the service forwards HTTP requests from authorised clients through the tunnel to your local evcc instance. The service only relays the traffic and does not store request content. Authentication of access (passwords) happens exclusively on your local evcc instance; no credentials are stored on the service.</p>
-<p>The service is hosted on Microsoft Azure in a German data centre. No data is transferred to third countries.</p>
+<p>During operation, the service forwards HTTP requests from authorised clients through the tunnel to your local evcc instance. The service only relays the traffic and does not store request content. Authentication of access (passwords) happens exclusively on your local evcc instance; no credentials are stored on the service. Technical logs of connection and registration events are collected to ensure reliable operation and deleted after 30 days.</p>
+<p>The service runs on Microsoft Azure; registration data is stored in a German data centre. Traffic is routed through Microsoft&rsquo;s global infrastructure. Microsoft has committed to EU standard contractual clauses. For more information, see the <a href="https://aka.ms/dpa">Microsoft Data Protection Addendum</a>.</p>
 <p>Remote access is only active when you explicitly enable it in the user interface. Usage requires an active <a href="https://docs.evcc.io/en/sponsorship">sponsorship</a>. The legal basis for processing is Art. 6 para. 1 lit. a GDPR (consent through actively enabling the feature).</p>
-<p>When you disable remote access, the association between sponsor token and domain is retained so you can reuse the same domain when re-activating. You can request deletion of the registration data at any time by emailing <a href="mailto:info@evcc.io">info@evcc.io</a>.</p>
+<p>When you disable remote access, the association between sponsorship and domain is retained so you can reuse the same domain when re-activating. You can request deletion of the registration data at any time by emailing <a href="mailto:info@evcc.io">info@evcc.io</a>. Deleted data may remain in backups for up to 90 days.</p>
 <p>For more information, see our <a href="https://docs.evcc.io/en/features/remote-access">documentation</a>.</p>
 <h3 id="sponsor-token-validation-sponsorevccio">Sponsor Token Validation (sponsor.evcc.io)</h3>
 <p>If you have configured a sponsor token, your local evcc instance validates it against our service <code>sponsor.evcc.io</code> when starting. The following data is transmitted:</p>

@@ -44,7 +44,7 @@ Datenerfassung auf dieser Website Wer ist verantwortlich für die Datenerfassung
   <meta itemprop="name" content="evcc - Smart laden ☀️🚘 - Intelligentes Energiemanagement für Zuhause">
   <meta itemprop="description" content="Datenschutz­erklärung 1. Datenschutz auf einen Blick Allgemeine Hinweise Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.
 Datenerfassung auf dieser Website Wer ist verantwortlich für die Datenerfassung auf dieser Website? Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle“ in dieser Datenschutzerklärung entnehmen.">
-  <meta itemprop="wordCount" content="2202">
+  <meta itemprop="wordCount" content="2255">
 
 <link href="../css/main.css" rel="stylesheet" />
 <link rel="preload" href="../fonts/roboto-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
@@ -145,13 +145,13 @@ Datenerfassung auf dieser Website Wer ist verantwortlich für die Datenerfassung
 <ul>
 <li>Die zufällig vergebene Domain</li>
 <li>Ein Hash des Verbindungstokens</li>
-<li>Die Zuordnung zu deinem Sponsor-Token</li>
+<li>Eine Kennung deines Sponsorings (GitHub-Benutzername oder E-Mail-Adresse)</li>
 <li>Zeitstempel der Registrierung und der letzten Verbindung</li>
 </ul>
-<p>Während des Betriebs leitet der Dienst HTTP-Anfragen von autorisierten Clients durch den Tunnel an deine lokale evcc-Instanz weiter. Der Dienst reicht den Datenverkehr nur durch und speichert keine Anfrageinhalte. Die Authentifizierung der Zugriffe (Passwörter) erfolgt ausschließlich auf deiner lokalen evcc-Instanz; auf dem Dienst werden keine Zugangsdaten gespeichert.</p>
-<p>Der Dienst wird auf Microsoft Azure in einem deutschen Rechenzentrum betrieben. Es erfolgt keine Übermittlung in Drittländer.</p>
+<p>Während des Betriebs leitet der Dienst HTTP-Anfragen von autorisierten Clients durch den Tunnel an deine lokale evcc-Instanz weiter. Der Dienst reicht den Datenverkehr nur durch und speichert keine Anfrageinhalte. Die Authentifizierung der Zugriffe (Passwörter) erfolgt ausschließlich auf deiner lokalen evcc-Instanz; auf dem Dienst werden keine Zugangsdaten gespeichert. Technische Protokolle zu Verbindungs- und Registrierungsereignissen werden zur Sicherstellung des Betriebs erfasst und nach 30 Tagen gelöscht.</p>
+<p>Der Dienst wird auf Microsoft Azure betrieben; die Registrierungsdaten werden in einem deutschen Rechenzentrum gespeichert. Der Datenverkehr wird über die globale Infrastruktur von Microsoft geleitet. Microsoft hat sich zu EU-Standardvertragsklauseln verpflichtet. Weitere Informationen findest du im <a href="https://aka.ms/dpa">Microsoft Data Protection Addendum</a>.</p>
 <p>Remote Access wird nur aktiv, wenn du es explizit in der Benutzeroberfläche aktivierst. Die Nutzung setzt ein aktives <a href="https://docs.evcc.io/de/sponsorship">Sponsoring</a> voraus. Die Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch aktive Aktivierung der Funktion).</p>
-<p>Wenn du Remote Access deaktivierst, bleibt die Zuordnung zwischen Sponsor-Token und Domain bestehen, damit du dieselbe Domain bei einer erneuten Aktivierung wiederverwenden kannst. Du kannst die Löschung der Registrierungsdaten jederzeit per E-Mail an <a href="mailto:info@evcc.io">info@evcc.io</a> anfordern.</p>
+<p>Wenn du Remote Access deaktivierst, bleibt die Zuordnung zwischen Sponsoring und Domain bestehen, damit du dieselbe Domain bei einer erneuten Aktivierung wiederverwenden kannst. Du kannst die Löschung der Registrierungsdaten jederzeit per E-Mail an <a href="mailto:info@evcc.io">info@evcc.io</a> anfordern. Gelöschte Daten können in Sicherungskopien für bis zu 90 Tage verbleiben.</p>
 <p>Weitere Informationen findest du in unserer <a href="https://docs.evcc.io/de/features/remote-access">Dokumentation</a>.</p>
 <h3 id="sponsor-token-prüfung-sponsorevccio">Sponsor-Token-Prüfung (sponsor.evcc.io)</h3>
 <p>Wenn du ein Sponsor-Token konfiguriert hast, prüft deine lokale evcc-Instanz dieses beim Start gegen unseren Dienst <code>sponsor.evcc.io</code>. Dabei werden folgende Daten übermittelt:</p>
