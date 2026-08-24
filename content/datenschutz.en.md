@@ -76,16 +76,16 @@ The following data is processed and stored during registration:
 
 - The randomly assigned domain
 - A hash of the connection token
-- The association with your sponsor token
+- An identifier of your sponsorship (GitHub username or email address)
 - Timestamps of registration and of the last connection
 
-During operation, the service forwards HTTP requests from authorised clients through the tunnel to your local evcc instance. The service only relays the traffic and does not store request content. Authentication of access (passwords) happens exclusively on your local evcc instance; no credentials are stored on the service.
+During operation, the service forwards HTTP requests from authorised clients through the tunnel to your local evcc instance. The service only relays the traffic and does not store request content. Authentication of access (passwords) happens exclusively on your local evcc instance; no credentials are stored on the service. Technical logs of connection and registration events are collected to ensure reliable operation and deleted after 30 days.
 
-The service is hosted on Microsoft Azure in a German data centre. No data is transferred to third countries.
+The service runs on Microsoft Azure; registration data is stored in a German data centre. Traffic is routed through Microsoft's global infrastructure. Microsoft has committed to EU standard contractual clauses. For more information, see the [Microsoft Data Protection Addendum](https://aka.ms/dpa).
 
 Remote access is only active when you explicitly enable it in the user interface. Usage requires an active [sponsorship](https://docs.evcc.io/en/sponsorship). The legal basis for processing is Art. 6 para. 1 lit. a GDPR (consent through actively enabling the feature).
 
-When you disable remote access, the association between sponsor token and domain is retained so you can reuse the same domain when re-activating. You can request deletion of the registration data at any time by emailing info@evcc.io.
+When you disable remote access, the association between sponsorship and domain is retained so you can reuse the same domain when re-activating. You can request deletion of the registration data at any time by emailing info@evcc.io. Deleted data may remain in backups for up to 90 days.
 
 For more information, see our [documentation](https://docs.evcc.io/en/features/remote-access).
 

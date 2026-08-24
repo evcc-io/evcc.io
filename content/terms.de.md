@@ -1,6 +1,6 @@
 # evcc Terms of Service
 
-**Effective Date: July 31, 2026**
+**Effective Date: August 24, 2026**
 
 These Terms of Service ("Terms") govern the purchase and use of evcc sponsorship tokens through creem.io payment platform.
 By purchasing a sponsorship, you agree to be bound by these Terms.
@@ -36,9 +36,19 @@ Sponsorship unlocks:
 
 ### 3.3 Future Features
 
-We may introduce optional cloud services (such as remote access, optimization services, or third-party API access) that require additional fees.
+We may introduce additional optional cloud services (such as third-party API access) that require additional fees.
 We may also introduce commercial features (such as load management, fleet operations, or similar functionality aimed at commercial use cases) that are offered under a separate tier.
 Sponsorships (recurring and lifetime) cover local sponsor features as described above, but may not include future cloud services with ongoing external costs or commercial features.
+
+### 3.4 Cloud Services
+
+We currently offer optional cloud services — Remote Access (a personal domain on evcc.cloud) and the Optimizer service — to users with an active sponsorship at no additional charge.
+These services are provided on an "as available" basis:
+
+- We do not guarantee availability, uptime, or uninterrupted operation of cloud services.
+- Remote Access is limited to one personal domain per sponsorship.
+- We may modify, limit, suspend, or discontinue cloud services, or offer them as separately priced services, at any time. Material changes will be announced on our blog (https://docs.evcc.io/de/blog/) at least 30 days in advance.
+- Section 10.1 (continued use of previously installed versions) does not apply to cloud services, as they depend on our hosted infrastructure.
 
 ## 4. Payment Terms
 

@@ -76,16 +76,16 @@ Bei der Registrierung werden folgende Daten verarbeitet und gespeichert:
 
 - Die zufällig vergebene Domain
 - Ein Hash des Verbindungstokens
-- Die Zuordnung zu deinem Sponsor-Token
+- Eine Kennung deines Sponsorings (GitHub-Benutzername oder E-Mail-Adresse)
 - Zeitstempel der Registrierung und der letzten Verbindung
 
-Während des Betriebs leitet der Dienst HTTP-Anfragen von autorisierten Clients durch den Tunnel an deine lokale evcc-Instanz weiter. Der Dienst reicht den Datenverkehr nur durch und speichert keine Anfrageinhalte. Die Authentifizierung der Zugriffe (Passwörter) erfolgt ausschließlich auf deiner lokalen evcc-Instanz; auf dem Dienst werden keine Zugangsdaten gespeichert.
+Während des Betriebs leitet der Dienst HTTP-Anfragen von autorisierten Clients durch den Tunnel an deine lokale evcc-Instanz weiter. Der Dienst reicht den Datenverkehr nur durch und speichert keine Anfrageinhalte. Die Authentifizierung der Zugriffe (Passwörter) erfolgt ausschließlich auf deiner lokalen evcc-Instanz; auf dem Dienst werden keine Zugangsdaten gespeichert. Technische Protokolle zu Verbindungs- und Registrierungsereignissen werden zur Sicherstellung des Betriebs erfasst und nach 30 Tagen gelöscht.
 
-Der Dienst wird auf Microsoft Azure in einem deutschen Rechenzentrum betrieben. Es erfolgt keine Übermittlung in Drittländer.
+Der Dienst wird auf Microsoft Azure betrieben; die Registrierungsdaten werden in einem deutschen Rechenzentrum gespeichert. Der Datenverkehr wird über die globale Infrastruktur von Microsoft geleitet. Microsoft hat sich zu EU-Standardvertragsklauseln verpflichtet. Weitere Informationen findest du im [Microsoft Data Protection Addendum](https://aka.ms/dpa).
 
 Remote Access wird nur aktiv, wenn du es explizit in der Benutzeroberfläche aktivierst. Die Nutzung setzt ein aktives [Sponsoring](https://docs.evcc.io/de/sponsorship) voraus. Die Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch aktive Aktivierung der Funktion).
 
-Wenn du Remote Access deaktivierst, bleibt die Zuordnung zwischen Sponsor-Token und Domain bestehen, damit du dieselbe Domain bei einer erneuten Aktivierung wiederverwenden kannst. Du kannst die Löschung der Registrierungsdaten jederzeit per E-Mail an info@evcc.io anfordern.
+Wenn du Remote Access deaktivierst, bleibt die Zuordnung zwischen Sponsoring und Domain bestehen, damit du dieselbe Domain bei einer erneuten Aktivierung wiederverwenden kannst. Du kannst die Löschung der Registrierungsdaten jederzeit per E-Mail an info@evcc.io anfordern. Gelöschte Daten können in Sicherungskopien für bis zu 90 Tage verbleiben.
 
 Weitere Informationen findest du in unserer [Dokumentation](https://docs.evcc.io/de/features/remote-access).
 
