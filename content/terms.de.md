@@ -1,6 +1,6 @@
 # evcc Terms of Service
 
-**Effective Date: July 31, 2026**
+**Effective Date: August 24, 2026**
 
 These Terms of Service ("Terms") govern the purchase and use of evcc sponsorship tokens through creem.io payment platform.
 By purchasing a sponsorship, you agree to be bound by these Terms.
