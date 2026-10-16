@@ -44,7 +44,7 @@ Data Collection on This Website Who is Responsible for Data Collection on This W
   <meta itemprop="name" content="evcc - Smart Charging ☀️🚘 - Intelligent Energy Management for Your Home">
   <meta itemprop="description" content="Privacy Policy 1. Privacy at a Glance General Information The following notes provide a simple overview of what happens to your personal data when you visit this website. Personal data is any data that can personally identify you. For detailed information on data protection, please refer to our privacy policy listed below this text.
 Data Collection on This Website Who is Responsible for Data Collection on This Website? Data processing on this website is carried out by the website operator. You can find their contact details in the “Notice Concerning the Responsible Party” section of this privacy policy.">
-  <meta itemprop="wordCount" content="2488">
+  <meta itemprop="wordCount" content="2765">
 
 <link href="../../css/main.css" rel="stylesheet" />
 <link rel="preload" href="../../fonts/roboto-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
@@ -136,9 +136,14 @@ Data Collection on This Website Who is Responsible for Data Collection on This W
 <li>Historical data: your household&rsquo;s typical consumption profile</li>
 <li>Current state: battery state of charge, connected vehicles, heating demand</li>
 </ul>
-<p>The service is hosted on Microsoft Azure in a German data centre. No data is transferred to third countries. The service is <strong>stateless</strong> – no data is permanently stored on the server. The transmitted data is used solely to calculate the optimisation result and discarded afterwards.</p>
+<p>The service is hosted on Microsoft Azure in a German data centre. No data is transferred to third countries. Optimisation requests are not stored. The transmitted data is used solely to calculate the optimisation result and discarded afterwards.</p>
 <p>The optimizer is only active when you explicitly enable it in the user interface. Usage requires an active <a href="https://docs.evcc.io/en/sponsorship">sponsorship</a>. The legal basis for processing is Art. 6 para. 1 lit. a GDPR (consent through actively enabling the feature).</p>
-<p>Alternatively, you can run the optimizer locally to avoid data transmission entirely. For more information, see our <a href="https://docs.evcc.io/en/features/optimizer#technical">documentation</a>.</p>
+<h4 id="plan-explanation-ai">Plan Explanation (AI)</h4>
+<p>When you click &ldquo;Explain plan&rdquo;, the plan with the data listed above, the names of your vehicles, charging points and batteries, and the language of the user interface are transmitted to <code>optimizer.evcc.io</code>. The service has the explanation written by a language model (Azure OpenAI by Microsoft). Processing takes place exclusively in the EU. Microsoft acts as a processor under the <a href="https://aka.ms/dpa">Microsoft Data Protection Addendum</a> and does not use the data for training. Microsoft checks requests for abuse automatically. Only when abuse is suspected are individual requests and responses stored in the EU, where authorised Microsoft employees in the European Economic Area may review them. We do not store the explanation. The legal basis is Art. 6 para. 1 lit. a GDPR (consent by clicking &ldquo;Explain plan&rdquo;).</p>
+<h4 id="feedback-on-explanations">Feedback on Explanations</h4>
+<p>Only when you rate an explanation with &ldquo;Helpful? Yes / No&rdquo; do we store: the plan as the language model saw it, the explanation, your rating and your optional comment, language, model and prompt version, the number of processed tokens, some characteristics of the plan (e.g. time span, number of vehicles and batteries, strategy) and a pseudonym of your sponsor account (a hash value, not the account itself). We use this data to improve the explanations. Please do not write personal data into the comment.</p>
+<p>The data is stored on Microsoft Azure in a German data centre and deleted automatically after 12 months. The legal basis is Art. 6 para. 1 lit. a GDPR (consent by submitting the rating). You can withdraw your consent at any time and request the deletion of your ratings; the pseudonym lets us find your entries.</p>
+<p>Alternatively, you can run the optimizer locally to avoid data transmission entirely. Plan explanations are then only available with your own Azure OpenAI access. For more information, see our <a href="https://docs.evcc.io/en/features/optimizer#technical">documentation</a>.</p>
 <h3 id="remote-access-service-evcccloud">Remote Access Service (*.evcc.cloud)</h3>
 <p>evcc offers an optional remote access feature that makes your local evcc instance reachable over a personal domain on <code>evcc.cloud</code>. When you enable remote access in the user interface, your local instance opens a persistent encrypted connection to our service <code>*.evcc.cloud</code>.</p>
 <p>The following data is processed and stored during registration:</p>
