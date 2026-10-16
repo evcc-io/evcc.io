@@ -62,11 +62,21 @@ evcc bietet eine optionale Optimizer-Funktion, die kostenoptimale Entscheidungen
 - Historische Daten: typisches Verbrauchsprofil deines Haushalts
 - Aktueller Zustand: Ladestand der Batterie, angeschlossene Fahrzeuge, Wärmebedarf
 
-Der Dienst wird auf Microsoft Azure in einem deutschen Rechenzentrum betrieben. Es erfolgt keine Übermittlung in Drittländer. Der Dienst arbeitet **zustandslos** – es werden keine Daten dauerhaft auf dem Server gespeichert. Die übermittelten Daten werden ausschließlich zur Berechnung des Optimierungsergebnisses verwendet und danach verworfen.
+Der Dienst wird auf Microsoft Azure in einem deutschen Rechenzentrum betrieben. Es erfolgt keine Übermittlung in Drittländer. Optimierungsanfragen werden nicht gespeichert. Die übermittelten Daten werden ausschließlich zur Berechnung des Optimierungsergebnisses verwendet und danach verworfen.
 
 Der Optimizer wird nur aktiv, wenn du ihn explizit in der Benutzeroberfläche aktivierst. Die Nutzung setzt ein aktives [Sponsoring](https://docs.evcc.io/de/sponsorship) voraus. Die Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch aktive Aktivierung der Funktion).
 
-Alternativ kannst du den Optimizer lokal betreiben und damit die Datenübermittlung vollständig vermeiden. Weitere Informationen dazu findest du in unserer [Dokumentation](https://docs.evcc.io/de/features/optimizer#technical).
+#### Plan-Erklärung (KI)
+
+Wenn du auf „Plan erklären“ klickst, wird der Plan mit den oben genannten Daten, den Namen deiner Fahrzeuge, Ladepunkte und Batterien sowie der Sprache der Oberfläche an `optimizer.evcc.io` übermittelt. Der Dienst lässt die Erklärung von einem Sprachmodell schreiben (Azure OpenAI von Microsoft). Die Verarbeitung erfolgt ausschließlich in der EU. Microsoft ist dabei Auftragsverarbeiter gemäß dem [Microsoft Data Protection Addendum](https://aka.ms/dpa) und verwendet die Daten nicht zum Training. Microsoft prüft Anfragen automatisch auf Missbrauch. Nur bei Verdacht auf Missbrauch werden einzelne Anfragen und Antworten in der EU gespeichert und können von Microsoft-Mitarbeitern im Europäischen Wirtschaftsraum geprüft werden. Wir speichern die Erklärung nicht. Die Rechtsgrundlage ist Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch Klick auf „Plan erklären“).
+
+#### Feedback zu Erklärungen
+
+Nur wenn du eine Erklärung mit „Hilfreich? Ja / Nein“ bewertest, speichern wir: den Plan, wie ihn das Sprachmodell gesehen hat, die Erklärung, deine Bewertung und deinen optionalen Kommentar, Sprache, Modell und Prompt-Version, die Anzahl verarbeiteter Tokens, einige Merkmale des Plans (z. B. Zeitraum, Anzahl der Fahrzeuge und Batterien, Strategie) sowie ein Pseudonym deines Sponsor-Kontos (ein Hashwert, nicht das Konto selbst). Wir nutzen diese Daten, um die Erklärungen zu verbessern. Bitte schreibe keine personenbezogenen Daten in den Kommentar.
+
+Die Daten werden auf Microsoft Azure in einem deutschen Rechenzentrum gespeichert und nach 12 Monaten automatisch gelöscht. Die Rechtsgrundlage ist Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch das Absenden der Bewertung). Du kannst deine Einwilligung jederzeit widerrufen und die Löschung deiner Bewertungen verlangen; über das Pseudonym finden wir deine Einträge.
+
+Alternativ kannst du den Optimizer lokal betreiben und damit die Datenübermittlung vollständig vermeiden. Plan-Erklärungen stehen dann nur mit einem eigenen Zugang zu Azure OpenAI zur Verfügung. Weitere Informationen dazu findest du in unserer [Dokumentation](https://docs.evcc.io/de/features/optimizer#technical).
 
 ### Remote-Access-Dienst (*.evcc.cloud)
 
