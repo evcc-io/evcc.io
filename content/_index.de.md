@@ -169,6 +169,7 @@ Sprich uns an
 In unserem [Blog](https://docs.evcc.io/de/blog/) stellen wir regelmäßig evcc-Installationen aus der Community vor und geben dir einen Einblick in die [Menschen](#community-person) und ihre [Technik](#community-tech).
 
 {{< community >}}
+{{< community-entry img="joerg" name="Tech-Blogger Jörg" link="https://docs.evcc.io/de/blog/2026/10/29/joerg-meintechblog">}}
 {{< community-entry img="orv" name="Osnabrücker Ruderverein" link="https://docs.evcc.io/de/blog/2025/11/29/osnabruecker-ruderverein">}}
 {{< community-entry img="tobias" name="Tobias aus Trebur" link="https://docs.evcc.io/de/blog/2025/10/04/tobias-aus-trebur">}}
 {{< community-entry img="michael" name="Michael, Core Team" link="https://docs.evcc.io/de/blog/2025/06/30/michael-vom-core-team">}}
