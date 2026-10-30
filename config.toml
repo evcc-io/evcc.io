@@ -1,27 +1,91 @@
-baseURL = ""
+baseURL = "https://evcc.io/"
 relativeURLs = true
 
-languageCode = "de-de"
 defaultContentLanguage = "de"
 defaultContentLanguageInSubdir = false
 [languages]
   [languages.de]
     weight = 1
-    languageName = "DE"
+    languageCode = "de-DE"
     title = "evcc - Smart laden ☀️🚘 - Intelligentes Energiemanagement für Zuhause"
     [languages.de.params]
+      description = "evcc ermöglicht es, Elektrofahrzeuge mit möglichst viel selbsterzeugtem Solarstrom zu laden."
       docsUrl = "https://docs.evcc.io/de/"
       blogUrl = "https://docs.evcc.io/de/blog/"
+      langMsg = "Diese Seite ist auf Deutsch verfügbar."
+      langSwitch = "Zu Deutsch wechseln"
+      langStay = "Nein danke"
   [languages.en]
     weight = 2
-    languageName = "EN"
+    languageCode = "en-US"
     title = "evcc - Smart Charging ☀️🚘 - Intelligent Energy Management for Your Home"
     [languages.en.params]
+      description = "evcc lets you charge electric vehicles with as much self-generated solar power as possible."
       docsUrl = "https://docs.evcc.io/en/"
       blogUrl = "https://docs.evcc.io/en/blog/"
-[site]
-  [params]
-  description = "evcc ermöglicht es, Elektrofahrzeuge mit möglichst viel selbsterzeugtem Solarstrom zu laden."
+      langMsg = "This page is available in English."
+      langSwitch = "Switch to English"
+      langStay = "No thanks"
+  [languages.nl]
+    disabled = true
+    weight = 3
+    languageCode = "nl-NL"
+    title = "evcc - Smart Charging ☀️🚘 - Intelligent Energy Management for Your Home"
+    [languages.nl.params]
+      description = "evcc lets you charge electric vehicles with as much self-generated solar power as possible."
+      docsUrl = "https://docs.evcc.io/en/"
+      blogUrl = "https://docs.evcc.io/en/blog/"
+      langMsg = "This page is available in English."
+      langSwitch = "Switch to English"
+      langStay = "No thanks"
+  [languages.fr]
+    disabled = true
+    weight = 4
+    languageCode = "fr-FR"
+    title = "evcc - Smart Charging ☀️🚘 - Intelligent Energy Management for Your Home"
+    [languages.fr.params]
+      description = "evcc lets you charge electric vehicles with as much self-generated solar power as possible."
+      docsUrl = "https://docs.evcc.io/en/"
+      blogUrl = "https://docs.evcc.io/en/blog/"
+      langMsg = "This page is available in English."
+      langSwitch = "Switch to English"
+      langStay = "No thanks"
+  [languages.da]
+    disabled = true
+    weight = 5
+    languageCode = "da-DK"
+    title = "evcc - Smart Charging ☀️🚘 - Intelligent Energy Management for Your Home"
+    [languages.da.params]
+      description = "evcc lets you charge electric vehicles with as much self-generated solar power as possible."
+      docsUrl = "https://docs.evcc.io/en/"
+      blogUrl = "https://docs.evcc.io/en/blog/"
+      langMsg = "This page is available in English."
+      langSwitch = "Switch to English"
+      langStay = "No thanks"
+  [languages.it]
+    disabled = true
+    weight = 6
+    languageCode = "it-IT"
+    title = "evcc - Smart Charging ☀️🚘 - Intelligent Energy Management for Your Home"
+    [languages.it.params]
+      description = "evcc lets you charge electric vehicles with as much self-generated solar power as possible."
+      docsUrl = "https://docs.evcc.io/en/"
+      blogUrl = "https://docs.evcc.io/en/blog/"
+      langMsg = "This page is available in English."
+      langSwitch = "Switch to English"
+      langStay = "No thanks"
+  [languages.cs]
+    disabled = true
+    weight = 7
+    languageCode = "cs-CZ"
+    title = "evcc - Smart Charging ☀️🚘 - Intelligent Energy Management for Your Home"
+    [languages.cs.params]
+      description = "evcc lets you charge electric vehicles with as much self-generated solar power as possible."
+      docsUrl = "https://docs.evcc.io/en/"
+      blogUrl = "https://docs.evcc.io/en/blog/"
+      langMsg = "This page is available in English."
+      langSwitch = "Switch to English"
+      langStay = "No thanks"
 
 [minify]
   disableSVG = true

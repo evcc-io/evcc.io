@@ -18,7 +18,9 @@
       </div>
     </div>
     <div class="telemetry_box">
-      <span class="telemetry_icon">{{ partial "icons/shopicon-sun.html" . }}</span>
+      <span class="telemetry_icon"
+        >{{ partial "icons/shopicon-sun.html" . }}</span
+      >
       <div class="telemetry_details">
         <div class="telemetry_main">
           <div class="telemetry_title">
@@ -33,7 +35,9 @@
       </div>
     </div>
     <div class="telemetry_box">
-      <span class="telemetry_icon">{{ partial "icons/shopicon-eco1.html" . }}</span>
+      <span class="telemetry_icon"
+        >{{ partial "icons/shopicon-eco1.html" . }}</span
+      >
       <div class="telemetry_details">
         <div class="telemetry_main">
           <div class="telemetry_title">
@@ -44,12 +48,9 @@
             <span id="telemetry--greenEnergyUnit" class="telemetry_unit"></span>
           </div>
         </div>
-        <div class="telemetry_sub">seit Ende 2022</div>
+        <div class="telemetry_sub">{{ i18n "seit_ende_2022" }}</div>
       </div>
     </div>
   </div>
-  <p class="fineprint">
-    Zusammengefasste Ladedaten von
-    <span id="telemetry--totalClients"></span> teilnehmenden Sponsoren.
-  </p>
+  <p class="fineprint">{{ i18n "telemetry_fineprint" | safeHTML }}</p>
 </aside>

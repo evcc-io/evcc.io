@@ -1,5 +1,5 @@
 // Language mismatch detection
-(function() {
+(function () {
   const DISMISSED_KEY = "langMismatchDismissed";
 
   // Check if already dismissed
@@ -7,41 +7,22 @@
     return;
   }
 
-  // Detect page language from URL
-  const path = window.location.pathname;
-  const isEnglishPage = path.startsWith('/en/');
-  const pageLanguage = isEnglishPage ? 'en' : 'de';
-
-  // Detect browser language preference
-  const browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
-  const prefersEnglish = browserLang.startsWith('en');
-  const prefersGerman = browserLang.startsWith('de');
-
-  // Only show if there's a mismatch and browser has clear preference
-  let shouldShow = false;
-  let suggestedUrl = '';
-  let currentLangName = '';
-  let suggestedLangName = '';
-
-  if (pageLanguage === 'de' && prefersEnglish) {
-    shouldShow = true;
-    currentLangName = 'Deutsch';
-    suggestedLangName = 'English';
-    // Convert German URL to English
-    suggestedUrl = '/en' + path;
-  } else if (pageLanguage === 'en' && prefersGerman && !prefersEnglish) {
-    shouldShow = true;
-    currentLangName = 'English';
-    suggestedLangName = 'Deutsch';
-    // Convert English URL to German
-    suggestedUrl = path.replace(/^\/en/, '') || '/';
+  // Suggest the first browser language the site supports (switcher links carry hreflang + dialog strings)
+  const links = document.querySelectorAll(
+    "a.header__navigation__lang[hreflang]",
+  );
+  let link;
+  for (const pref of navigator.languages || [navigator.language || ""]) {
+    const code = pref.toLowerCase().split("-")[0];
+    link = [...links].find((a) => a.hreflang === code);
+    if (link) break;
   }
-
-  if (!shouldShow) return;
+  if (!link || link.hreflang === document.documentElement.lang) return;
+  const suggestedUrl = link.href;
 
   // Create dialog
-  const dialog = document.createElement('div');
-  dialog.className = 'lang-dialog-container';
+  const dialog = document.createElement("div");
+  dialog.className = "lang-dialog-container";
   dialog.style.cssText = `
     position: fixed;
     bottom: 16px;
@@ -56,17 +37,7 @@
     animation: slideIn 0.3s ease-out;
   `;
 
-  const message = pageLanguage === 'de'
-    ? `This page is available in English.`
-    : `Diese Seite ist auf Deutsch verfügbar.`;
-
-  const switchText = pageLanguage === 'de'
-    ? `Switch to English`
-    : `Zu Deutsch wechseln`;
-
-  const stayText = pageLanguage === 'de'
-    ? `No thanks`
-    : `Nein danke`;
+  const { msg: message, switch: switchText, stay: stayText } = link.dataset;
 
   dialog.innerHTML = `
     <style>
@@ -176,9 +147,11 @@
   document.body.appendChild(dialog);
 
   // Handle dismiss
-  dialog.querySelector('#langDialogStay').addEventListener('click', function() {
-    localStorage.setItem(DISMISSED_KEY, 'true');
-    dialog.style.animation = 'slideIn 0.3s ease-out reverse';
-    setTimeout(() => dialog.remove(), 300);
-  });
+  dialog
+    .querySelector("#langDialogStay")
+    .addEventListener("click", function () {
+      localStorage.setItem(DISMISSED_KEY, "true");
+      dialog.style.animation = "slideIn 0.3s ease-out reverse";
+      setTimeout(() => dialog.remove(), 300);
+    });
 })();

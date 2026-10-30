@@ -7,8 +7,7 @@ function createCounter(id, value, decimalPlaces) {
     startVal: value,
     duration: UPDATE_INTERVAL_SECONDS,
     useEasing: false,
-    separator: ".",
-    decimal: ",",
+    ...numberSeparators(document.documentElement.lang || "de"),
     decimalPlaces,
   });
 }
@@ -42,14 +41,14 @@ function render(data) {
     powerCount = createCounter(
       "telemetry--power",
       chargePower.value,
-      chargePower.decimals
+      chargePower.decimals,
     );
     greenShareCount = createCounter("telemetry--greenShare", greenShare, 1);
     if ($greenEnergyUnit) {
       greenEnergyCount = createCounter(
         "telemetry--greenEnergy",
         greenEnergy.value,
-        greenEnergy.decimals
+        greenEnergy.decimals,
       );
     }
   } else {
@@ -82,6 +81,12 @@ function update() {
         telemetryElement.style.display = "none";
       }
     });
+}
+
+export function numberSeparators(lang) {
+  const parts = new Intl.NumberFormat(lang).formatToParts(1234567.8);
+  const part = (type) => parts.find((p) => p.type === type)?.value ?? "";
+  return { separator: part("group"), decimal: part("decimal") };
 }
 
 export function fmtKW(kW) {

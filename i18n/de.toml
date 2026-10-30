@@ -19,9 +19,6 @@ other = 'Instagram'
 [slack]
 other = 'Entwickler Slack'
 
-[livedaten_aus_der_community]
-other = 'Livedaten aus der Community'
-
 [ladeleistung]
 other = 'Ladeleistung'
 
@@ -36,15 +33,6 @@ other = 'PV & Hausakku'
 
 [sonnenenergie]
 other = 'Sonnenenergie'
-
-[seit_date]
-other = 'seit {{ . }}'
-
-[startseite]
-other = 'Startseite'
-
-[hier]
-other = 'Hier'
 
 [blog]
 other = 'Blog'
@@ -66,3 +54,18 @@ other = 'Impressum'
 
 [datenschutz]
 other = 'Datenschutz'
+
+[hero_alt]
+other = 'Elektroauto lädt Solarstrom an einer Wallbox. Person verwendet evcc auf dem Smartphone.'
+
+[media_kit]
+other = 'Media Kit'
+
+[seit_ende_2022]
+other = 'seit Ende 2022'
+
+[telemetry_fineprint]
+other = 'Zusammengefasste Ladedaten von <span id="telemetry--totalClients"></span> teilnehmenden Sponsoren.'
+
+[theme_switch]
+other = 'Du kannst zwischen <a href="#" data-theme="light">Light-</a> und <a href="#" data-theme="dark">Dark-Mode</a> wählen.'
