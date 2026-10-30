@@ -1,3 +1,8 @@
+---
+title: "evcc - Smart laden - Intelligentes Energiemanagement für Zuhause"
+description: "Lade dein Elektroauto intelligent. Steuere Wallbox, Wärmepumpe und Hausspeicher, egal von welchem Hersteller. Deine Kontrolle, deine Daten. Open Source und Community-getrieben."
+---
+
 # Smart laden. Ganz einfach.
 
 Lade dein Elektroauto intelligent. Steuere Wallbox, Wärmepumpe und Hausspeicher, egal von welchem Hersteller. Deine Kontrolle, deine Daten. Open Source und Community-getrieben.

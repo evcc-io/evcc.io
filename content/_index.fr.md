@@ -1,3 +1,8 @@
+---
+title: "evcc - Recharge intelligente - Pilotage de l’énergie pour votre maison"
+description: "Rechargez votre véhicule électrique de manière intelligente. Pilotez votre chargeur, votre pompe à chaleur et votre batterie domestique. Compatible avec des centaines d’appareils. Vous gardez le contrôle et vos données. Open source et porté par la communauté."
+---
+
 # Recharge intelligente. Tout simplement.
 
 Rechargez votre véhicule électrique de manière intelligente. Pilotez votre chargeur, votre pompe à chaleur et votre batterie domestique. Compatible avec des centaines d’appareils. Vous gardez le contrôle et vos données. Open source et porté par la communauté.

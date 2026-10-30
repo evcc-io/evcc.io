@@ -1,3 +1,8 @@
+---
+title: "evcc - Smart opladning - Intelligent energistyring til dit hjem"
+description: "Oplad din elbil intelligent. Styr oplader, varmepumpe og hjemmebatteri. Fungerer med hundredvis af enheder. Din kontrol, dine data. Open source og drevet af fællesskabet."
+---
+
 # Smart opladning. Super enkelt.
 
 Oplad din elbil intelligent. Styr oplader, varmepumpe og hjemmebatteri. Fungerer med hundredvis af enheder. Din kontrol, dine data. Open source og drevet af fællesskabet.
