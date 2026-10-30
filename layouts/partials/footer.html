@@ -36,20 +36,14 @@
     {{ partial "icons/cloud-check.html" . }}
     {{ i18n "status" }}
   </a>
-  <a
-    href="{{- with site.GetPage "/impressum" -}}
-      {{- .RelPermalink -}}
-    {{- else -}}
-      /en/impressum/
-    {{- end -}}"
-    >{{ i18n "impressum" }}</a
-  >
-  <a
-    href="{{- with site.GetPage "/datenschutz" -}}
-      {{- .RelPermalink -}}
-    {{- else -}}
-      /en/datenschutz/
-    {{- end -}}"
-    >{{ i18n "datenschutz" }}</a
-  >
+  {{ range slice "impressum" "datenschutz" }}
+    <a
+      href="{{- with site.GetPage . -}}
+        {{- .RelPermalink -}}
+      {{- else -}}
+        /en/{{ . }}/
+      {{- end -}}"
+      >{{ i18n . }}</a
+    >
+  {{ end }}
 </footer>

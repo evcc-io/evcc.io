@@ -12,14 +12,13 @@
     ".header__navigation__lang option[hreflang]",
   );
   let link;
-  for (const pref of navigator.languages || [navigator.language || ""]) {
+  for (const pref of navigator.languages) {
     const code = pref.toLowerCase().split("-")[0];
     link = [...options].find((o) => o.getAttribute("hreflang") === code);
     if (link) break;
   }
   if (!link || link.getAttribute("hreflang") === document.documentElement.lang)
     return;
-  const suggestedUrl = new URL(link.value, location.href).href;
 
   // Create dialog
   const dialog = document.createElement("div");
@@ -37,8 +36,6 @@
     font-family: system-ui, -apple-system, sans-serif;
     animation: slideIn 0.3s ease-out;
   `;
-
-  const { msg: message, switch: switchText, stay: stayText } = link.dataset;
 
   dialog.innerHTML = `
     <style>
@@ -138,12 +135,19 @@
         }
       }
     </style>
-    <p class="lang-dialog-message">${message}</p>
+    <p class="lang-dialog-message"></p>
     <div class="lang-dialog-buttons">
-      <button class="lang-dialog-btn lang-dialog-btn-secondary" id="langDialogStay">${stayText}</button>
-      <a href="${suggestedUrl}" class="lang-dialog-btn lang-dialog-btn-primary">${switchText}</a>
+      <button class="lang-dialog-btn lang-dialog-btn-secondary" id="langDialogStay"></button>
+      <a href="/" class="lang-dialog-btn lang-dialog-btn-primary"></a>
     </div>
   `;
+
+  // texts and target come from the DOM, so set them as text/path, never as HTML
+  dialog.querySelector("p").textContent = link.dataset.msg;
+  dialog.querySelector("#langDialogStay").textContent = link.dataset.stay;
+  const $switch = dialog.querySelector("a");
+  $switch.textContent = link.dataset.switch;
+  $switch.pathname = link.value;
 
   document.body.appendChild(dialog);
 

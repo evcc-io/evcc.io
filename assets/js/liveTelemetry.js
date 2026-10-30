@@ -7,7 +7,7 @@ function createCounter(id, value, decimalPlaces) {
     startVal: value,
     duration: UPDATE_INTERVAL_SECONDS,
     useEasing: false,
-    ...numberSeparators(document.documentElement.lang || "de"),
+    ...numberSeparators(document.documentElement.lang),
     decimalPlaces,
   });
 }

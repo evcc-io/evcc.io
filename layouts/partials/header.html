@@ -32,14 +32,14 @@
           {{ partial "icons/github.html" . }}
         </a>
 
-        <label
+        <div
           class="header__navigation__item header__navigation__item--translation"
         >
-          <span class="sr-only">{{ i18n "language" }}</span>
           <select
             class="header__navigation__lang"
+            aria-label="{{ i18n "language" }}"
             autocomplete="off"
-            onchange="location.href = this.value"
+            onchange="location.pathname = this.value"
           >
             {{ range site.Home.AllTranslations }}
               {{ $lang := .Language.Lang }}
@@ -59,7 +59,7 @@
               </option>
             {{ end }}
           </select>
-        </label>
+        </div>
       </nav>
     </div>
   </div>
