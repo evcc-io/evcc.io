@@ -71,17 +71,16 @@ defaultContentLanguageInSubdir = false
       langSwitch = "Passa all’italiano"
       langStay = "No, grazie"
   [languages.cs]
-    disabled = true
     weight = 7
     languageCode = "cs-CZ"
-    title = "evcc - Smart Charging ☀️🚘 - Intelligent Energy Management for Your Home"
+    title = "evcc - Chytré nabíjení ☀️🚘 - Inteligentní řízení energie pro váš domov"
     [languages.cs.params]
-      description = "evcc lets you charge electric vehicles with as much self-generated solar power as possible."
-      docsUrl = "https://docs.evcc.io/en/"
-      blogUrl = "https://docs.evcc.io/en/blog/"
-      langMsg = "This page is available in English."
-      langSwitch = "Switch to English"
-      langStay = "No thanks"
+      description = "evcc vám umožní nabíjet elektromobily co nejvíce vlastní solární energií."
+      docsUrl = "https://docs.evcc.io/cs/"
+      blogUrl = "https://docs.evcc.io/cs/blog/"
+      langMsg = "Tato stránka je dostupná v češtině."
+      langSwitch = "Přepnout do češtiny"
+      langStay = "Ne, děkuji"
 
 [minify]
   disableSVG = true
