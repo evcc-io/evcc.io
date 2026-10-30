@@ -7,7 +7,7 @@ defaultContentLanguageInSubdir = false
   [languages.de]
     weight = 1
     languageCode = "de-DE"
-    title = "evcc - Smart laden ☀️🚘 - Intelligentes Energiemanagement für Zuhause"
+    title = "evcc"
     [languages.de.params]
       description = "evcc ermöglicht es, Elektrofahrzeuge mit möglichst viel selbsterzeugtem Solarstrom zu laden."
       docsUrl = "https://docs.evcc.io/de/"
@@ -18,7 +18,7 @@ defaultContentLanguageInSubdir = false
   [languages.en]
     weight = 2
     languageCode = "en-US"
-    title = "evcc - Smart Charging ☀️🚘 - Intelligent Energy Management for Your Home"
+    title = "evcc"
     [languages.en.params]
       description = "evcc lets you charge electric vehicles with as much self-generated solar power as possible."
       docsUrl = "https://docs.evcc.io/en/"
@@ -29,7 +29,7 @@ defaultContentLanguageInSubdir = false
   [languages.nl]
     weight = 3
     languageCode = "nl-NL"
-    title = "evcc - Slim laden ☀️🚘 - Intelligent energiebeheer voor uw woning"
+    title = "evcc"
     [languages.nl.params]
       description = "Met evcc laadt u elektrische voertuigen met zoveel mogelijk zelf opgewekte zonne-energie."
       docsUrl = "https://docs.evcc.io/nl/"
@@ -40,7 +40,7 @@ defaultContentLanguageInSubdir = false
   [languages.fr]
     weight = 4
     languageCode = "fr-FR"
-    title = "evcc - Recharge intelligente ☀️🚘 - Pilotage de l’énergie pour votre maison"
+    title = "evcc"
     [languages.fr.params]
       description = "evcc vous permet de recharger vos véhicules électriques avec un maximum d’énergie solaire autoproduite."
       docsUrl = "https://docs.evcc.io/fr/"
@@ -51,7 +51,7 @@ defaultContentLanguageInSubdir = false
   [languages.da]
     weight = 5
     languageCode = "da-DK"
-    title = "evcc - Smart opladning ☀️🚘 - Intelligent energistyring til dit hjem"
+    title = "evcc"
     [languages.da.params]
       description = "Med evcc kan du oplade elbiler med så meget selvproduceret solenergi som muligt."
       docsUrl = "https://docs.evcc.io/da/"
@@ -62,7 +62,7 @@ defaultContentLanguageInSubdir = false
   [languages.it]
     weight = 6
     languageCode = "it-IT"
-    title = "evcc - Ricarica intelligente ☀️🚘 - Gestione smart dell’energia per la tua casa"
+    title = "evcc"
     [languages.it.params]
       description = "evcc ti permette di ricaricare i veicoli elettrici con quanta più energia solare autoprodotta possibile."
       docsUrl = "https://docs.evcc.io/it/"
@@ -73,7 +73,7 @@ defaultContentLanguageInSubdir = false
   [languages.cs]
     weight = 7
     languageCode = "cs-CZ"
-    title = "evcc - Chytré nabíjení ☀️🚘 - Inteligentní řízení energie pro váš domov"
+    title = "evcc"
     [languages.cs.params]
       description = "evcc vám umožní nabíjet elektromobily co nejvíce vlastní solární energií."
       docsUrl = "https://docs.evcc.io/cs/"

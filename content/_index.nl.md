@@ -1,3 +1,8 @@
+---
+title: "evcc - Slim laden - Intelligent energiebeheer voor uw woning"
+description: "Laad uw elektrische auto intelligent. Stuur lader, warmtepomp en thuisbatterij aan. Werkt met honderden apparaten. Uw regie, uw data. Open source en gedragen door de community."
+---
+
 # Slim laden. Supersimpel.
 
 Laad uw elektrische auto intelligent. Stuur lader, warmtepomp en thuisbatterij aan. Werkt met honderden apparaten. Uw regie, uw data. Open source en gedragen door de community.

@@ -1,3 +1,8 @@
+---
+title: "evcc - Smart Charging - Intelligent Energy Management for Your Home"
+description: "Charge your electric vehicle intelligently. Control charger, heat pump and home battery. Works with hundreds of devices. Your control, your data. Open source and community-driven."
+---
+
 # Smart charging. Super simple.
 
 Charge your electric vehicle intelligently. Control charger, heat pump and home battery. Works with hundreds of devices. Your control, your data. Open source and community-driven.

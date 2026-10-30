@@ -2,14 +2,21 @@
   <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-  <title>{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}</title>
+  {{/* subpages have no front matter title, their H1 names them */}}
+  {{ $title := .Title }}
+  {{ if not .IsHome }}
+    {{ with .Fragments.Headings }}
+      {{ $title = printf "%s | %s" (index . 0).Title site.Title }}
+    {{ end }}
+  {{ end }}
+  <title>{{ $title | default site.Title | plainify }}</title>
 
   <link rel="icon" href="/favicon.ico" />
   <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
   <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
-  {{ with .Site.Params.description }}
+  {{ with or .Description .Site.Params.description }}
     <meta name="description" content="{{ . }}" />
   {{ end }}
   {{ with .Site.Params.meta.keywords }}

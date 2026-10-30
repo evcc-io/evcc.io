@@ -1,3 +1,8 @@
+---
+title: "evcc - Chytré nabíjení - Inteligentní řízení energie pro váš domov"
+description: "Nabíjejte svůj elektromobil chytře. Ovládejte nabíječku, tepelné čerpadlo a domácí baterii. Funguje se stovkami zařízení. Vše máte pod kontrolou a data zůstávají vaše. Open source a vyvíjeno komunitou."
+---
+
 # Chytré nabíjení. Úplně jednoduše.
 
 Nabíjejte svůj elektromobil chytře. Ovládejte nabíječku, tepelné čerpadlo a domácí baterii. Funguje se stovkami zařízení. Vše máte pod kontrolou a data zůstávají vaše. Open source a vyvíjeno komunitou.

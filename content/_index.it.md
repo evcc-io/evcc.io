@@ -1,3 +1,8 @@
+---
+title: "evcc - Ricarica intelligente - Gestione smart dell’energia per la tua casa"
+description: "Ricarica il tuo veicolo elettrico in modo intelligente. Controlla caricabatterie, pompa di calore e batteria domestica. Funziona con centinaia di dispositivi. Il controllo è tuo, i dati sono tuoi. Open source e portato avanti dalla community."
+---
+
 # Ricarica intelligente. Semplicissima.
 
 Ricarica il tuo veicolo elettrico in modo intelligente. Controlla caricabatterie, pompa di calore e batteria domestica. Funziona con centinaia di dispositivi. Il controllo è tuo, i dati sono tuoi. Open source e portato avanti dalla community.
