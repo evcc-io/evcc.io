@@ -1,0 +1,19 @@
+# evcc
+
+> evcc is open-source energy management for your home. It charges your electric car with solar surplus or in the cheapest hours of a dynamic tariff and also controls heat pumps, switchable sockets and home batteries. It runs locally on your own hardware and works with hundreds of chargers, meters and vehicles.
+
+The documentation lives on docs.evcc.io. Every docs page is also available as markdown by appending .md to its URL.
+
+## Documentation
+
+- [Documentation index](https://docs.evcc.io/llms.txt): every docs page with a one-line summary and a link to its markdown version
+- [Getting started](https://docs.evcc.io/en/installation.md): all ways to install evcc, from the Raspberry Pi image to Docker, Home Assistant, Linux, macOS and Windows
+- [Features](https://docs.evcc.io/llms-features.txt): solar surplus charging, dynamic tariffs, charging plans, home battery, load management
+- [Supported devices](https://docs.evcc.io/llms-devices.txt): every supported charger, meter, vehicle and tariff
+- [Integrations](https://docs.evcc.io/llms-integrations.txt): MQTT and REST APIs, MCP server, Home Assistant and other smart home systems
+
+## Project
+
+- [Source code](https://github.com/evcc-io/evcc): MIT licensed
+- [Sponsorship](https://docs.evcc.io/en/sponsorship.md): why some chargers need a sponsor token and how to get one
+- [Media kit](https://evcc.io/en/media-kit/): logos, screenshots and app icons
