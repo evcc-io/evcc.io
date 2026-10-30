@@ -1,5 +1,6 @@
 baseURL = "https://evcc.io/"
 relativeURLs = true
+disableKinds = ["taxonomy", "term"]
 
 defaultContentLanguage = "de"
 defaultContentLanguageInSubdir = false
