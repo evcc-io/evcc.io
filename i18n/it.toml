@@ -69,3 +69,6 @@ other = 'Dati di ricarica aggregati di <span id="telemetry--totalClients"></span
 
 [theme_switch]
 other = 'Puoi scegliere tra la <a href="#" data-theme="light">modalità chiara</a> e la <a href="#" data-theme="dark">modalità scura.</a>'
+
+[language]
+other = "Lingua"

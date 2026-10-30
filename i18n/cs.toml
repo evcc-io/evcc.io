@@ -69,3 +69,6 @@ other = 'Souhrnná data o nabíjení od <span id="telemetry--totalClients"></spa
 
 [theme_switch]
 other = 'Můžete si vybrat mezi <a href="#" data-theme="light">světlým</a> a <a href="#" data-theme="dark">tmavým režimem.</a>'
+
+[language]
+other = "Jazyk"

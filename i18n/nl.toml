@@ -69,3 +69,6 @@ other = 'Geaggregeerde laadgegevens van <span id="telemetry--totalClients"></spa
 
 [theme_switch]
 other = 'U kunt kiezen tussen een <a href="#" data-theme="light">lichte</a> en een <a href="#" data-theme="dark">donkere modus.</a>'
+
+[language]
+other = "Taal"

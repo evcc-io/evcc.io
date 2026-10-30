@@ -69,3 +69,6 @@ other = 'Samlede opladningsdata fra <span id="telemetry--totalClients"></span> d
 
 [theme_switch]
 other = 'Du kan vælge mellem <a href="#" data-theme="light">lyst</a> og <a href="#" data-theme="dark">mørkt tema.</a>'
+
+[language]
+other = "Sprog"

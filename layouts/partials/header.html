@@ -20,15 +20,8 @@
         <a href="{{ .Site.Params.BlogUrl }}" class="header__navigation__item"
           >{{ i18n "blog" }}</a
         >
-        <a
-          href="{{ .Site.Params.DocsUrl }}"
-          class="header__navigation__item hide-lg"
+        <a href="{{ .Site.Params.DocsUrl }}" class="header__navigation__item"
           >{{ i18n "dokumentation-short" }}</a
-        >
-        <a
-          href="{{ .Site.Params.DocsUrl }}"
-          class="header__navigation__item hide-sm"
-          >{{ i18n "dokumentation" }}</a
         >
         <a
           href="https://github.com/evcc-io/evcc"
@@ -39,29 +32,34 @@
           {{ partial "icons/github.html" . }}
         </a>
 
-        <div
+        <label
           class="header__navigation__item header__navigation__item--translation"
         >
-          {{ range $index, $home := site.Home.AllTranslations }}
-            {{ $lang := .Language.Lang }}
-            {{ $target := . }}
-            {{ range $.AllTranslations }}
-              {{ if eq .Language.Lang $lang }}{{ $target = . }}{{ end }}
+          <span class="sr-only">{{ i18n "language" }}</span>
+          <select
+            class="header__navigation__lang"
+            autocomplete="off"
+            onchange="location.href = this.value"
+          >
+            {{ range site.Home.AllTranslations }}
+              {{ $lang := .Language.Lang }}
+              {{ $target := . }}
+              {{ range where $.AllTranslations "Language.Lang" $lang }}
+                {{ $target = . }}
+              {{ end }}
+              <option
+                value="{{ $target.RelPermalink }}"
+                hreflang="{{ $lang }}"
+                data-msg="{{ .Site.Params.langMsg }}"
+                data-switch="{{ .Site.Params.langSwitch }}"
+                data-stay="{{ .Site.Params.langStay }}"
+                {{ if eq $lang site.Language.Lang }}selected{{ end }}
+              >
+                {{ upper $lang }}
+              </option>
             {{ end }}
-            {{ if $index }}<span> | </span>{{ end }}
-            <a
-              href="{{ $target.RelPermalink }}"
-              hreflang="{{ $lang }}"
-              data-msg="{{ .Site.Params.langMsg }}"
-              data-switch="{{ .Site.Params.langSwitch }}"
-              data-stay="{{ .Site.Params.langStay }}"
-              class="header__navigation__lang{{ if eq $lang site.Language.Lang }}
-                header__navigation__lang--active
-              {{ end }}"
-              >{{ upper $lang }}</a
-            >
-          {{ end }}
-        </div>
+          </select>
+        </label>
       </nav>
     </div>
   </div>

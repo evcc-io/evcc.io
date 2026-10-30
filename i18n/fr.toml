@@ -69,3 +69,6 @@ other = 'Données de charge agrégées de <span id="telemetry--totalClients"></s
 
 [theme_switch]
 other = 'Vous pouvez choisir entre le <a href="#" data-theme="light">mode clair</a> et le <a href="#" data-theme="dark">mode sombre.</a>'
+
+[language]
+other = "Langue"

@@ -66,3 +66,4 @@ if ($community) {
   });
   $personLink.classList.add("community-selected");
 }
+

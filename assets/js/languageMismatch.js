@@ -7,18 +7,19 @@
     return;
   }
 
-  // Suggest the first browser language the site supports (switcher links carry hreflang + dialog strings)
-  const links = document.querySelectorAll(
-    "a.header__navigation__lang[hreflang]",
+  // Suggest the first browser language the site supports (switcher options carry hreflang + dialog strings)
+  const options = document.querySelectorAll(
+    ".header__navigation__lang option[hreflang]",
   );
   let link;
   for (const pref of navigator.languages || [navigator.language || ""]) {
     const code = pref.toLowerCase().split("-")[0];
-    link = [...links].find((a) => a.hreflang === code);
+    link = [...options].find((o) => o.getAttribute("hreflang") === code);
     if (link) break;
   }
-  if (!link || link.hreflang === document.documentElement.lang) return;
-  const suggestedUrl = link.href;
+  if (!link || link.getAttribute("hreflang") === document.documentElement.lang)
+    return;
+  const suggestedUrl = new URL(link.value, location.href).href;
 
   // Create dialog
   const dialog = document.createElement("div");
