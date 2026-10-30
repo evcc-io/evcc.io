@@ -27,17 +27,16 @@ defaultContentLanguageInSubdir = false
       langSwitch = "Switch to English"
       langStay = "No thanks"
   [languages.nl]
-    disabled = true
     weight = 3
     languageCode = "nl-NL"
-    title = "evcc - Smart Charging ☀️🚘 - Intelligent Energy Management for Your Home"
+    title = "evcc - Slim laden ☀️🚘 - Intelligent energiebeheer voor uw woning"
     [languages.nl.params]
-      description = "evcc lets you charge electric vehicles with as much self-generated solar power as possible."
-      docsUrl = "https://docs.evcc.io/en/"
-      blogUrl = "https://docs.evcc.io/en/blog/"
-      langMsg = "This page is available in English."
-      langSwitch = "Switch to English"
-      langStay = "No thanks"
+      description = "Met evcc laadt u elektrische voertuigen met zoveel mogelijk zelf opgewekte zonne-energie."
+      docsUrl = "https://docs.evcc.io/nl/"
+      blogUrl = "https://docs.evcc.io/nl/blog/"
+      langMsg = "Deze pagina is beschikbaar in het Nederlands."
+      langSwitch = "Overschakelen naar Nederlands"
+      langStay = "Nee, bedankt"
   [languages.fr]
     disabled = true
     weight = 4
