@@ -1,5 +1,5 @@
 import { expect, it } from "vitest";
-import { fmtKW, fmtKWh } from "./liveTelemetry";
+import { fmtKW, fmtKWh, numberSeparators } from "./liveTelemetry";
 
 it("fmtKW", () => {
   expect(fmtKW(1)).toEqual({ value: 1, unit: "kW", decimals: 0 });
@@ -39,4 +39,9 @@ it("fmtKWh", () => {
     unit: "GWh",
     decimals: 1,
   });
+});
+
+it("numberSeparators", () => {
+  expect(numberSeparators("de")).toEqual({ separator: ".", decimal: "," });
+  expect(numberSeparators("en")).toEqual({ separator: ",", decimal: "." });
 });

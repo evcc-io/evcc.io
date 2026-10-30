@@ -19,9 +19,6 @@ other = 'Instagram'
 [slack]
 other = 'Developer Slack'
 
-[livedaten_aus_der_community]
-other = 'Live data from the community'
-
 [ladeleistung]
 other = 'Charging Power'
 
@@ -36,15 +33,6 @@ other = 'PV & battery'
 
 [sonnenenergie]
 other = 'Solar Energy'
-
-[seit_date]
-other = 'since {{ . }}'
-
-[startseite]
-other = 'Home'
-
-[hier]
-other = 'Here'
 
 [blog]
 other = 'Blog'
@@ -66,3 +54,21 @@ other = 'Legal Notice'
 
 [datenschutz]
 other = 'Privacy Policy'
+
+[hero_alt]
+other = 'Electric car charging with solar power at a charger. Person using evcc on a smartphone.'
+
+[media_kit]
+other = 'Media Kit'
+
+[seit_ende_2022]
+other = 'since end of 2022'
+
+[telemetry_fineprint]
+other = 'Aggregated charging data from <span id="telemetry--totalClients"></span> participating sponsors.'
+
+[theme_switch]
+other = 'You can choose between <a href="#" data-theme="light">light-</a> and <a href="#" data-theme="dark">dark-mode.</a>'
+
+[language]
+other = "Language"

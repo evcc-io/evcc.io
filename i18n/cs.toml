@@ -1,0 +1,74 @@
+[evcc]
+other = 'evcc'
+
+[github]
+other = 'GitHub'
+
+[shirts]
+other = 'Trička a mikiny'
+
+[bluesky]
+other = 'Bluesky'
+
+[mastodon]
+other = 'Mastodon'
+
+[instagram]
+other = 'Instagram'
+
+[slack]
+other = 'Slack pro vývojáře'
+
+[ladeleistung]
+other = 'Nabíjecí výkon'
+
+[aktive_nutzer]
+other = 'aktivních uživatelů'
+
+[sonnenanteil]
+other = 'Solární podíl'
+
+[pv_hausakku]
+other = 'Solár a baterie'
+
+[sonnenenergie]
+other = 'Solární energie'
+
+[blog]
+other = 'Blog'
+
+[status]
+other = 'Stav'
+
+[sonne_tanken]
+other = 'chytré nabíjení'
+
+[dokumentation]
+other = 'Dokumentace'
+
+[dokumentation-short]
+other = 'Docs'
+
+[impressum]
+other = 'Právní informace'
+
+[datenschutz]
+other = 'Ochrana osobních údajů'
+
+[hero_alt]
+other = 'Elektromobil se nabíjí solární energií z nabíječky. Osoba používá evcc na chytrém telefonu.'
+
+[media_kit]
+other = 'Mediální kit'
+
+[seit_ende_2022]
+other = 'od konce roku 2022'
+
+[telemetry_fineprint]
+other = 'Souhrnná data o nabíjení od <span id="telemetry--totalClients"></span> zapojených sponzorů.'
+
+[theme_switch]
+other = 'Můžete si vybrat mezi <a href="#" data-theme="light">světlým</a> a <a href="#" data-theme="dark">tmavým režimem.</a>'
+
+[language]
+other = "Jazyk"

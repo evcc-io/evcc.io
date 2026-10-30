@@ -3,29 +3,47 @@
   <a href="{{ .Site.Params.BlogUrl }}">{{ i18n "blog" }}</a>
   <a href="{{ .Site.Params.DocsUrl }}">{{ i18n "dokumentation" }}</a>
   <a href="https://github.com/evcc-io/evcc">
-    {{ partial "icons/github.html" . }} {{ i18n "github" }}
+    {{ partial "icons/github.html" . }}
+    {{ i18n "github" }}
   </a>
   <a href="{{ "media-kit" | relLangURL }}">
-    {{ partial "icons/megaphone.html" . }} Media Kit
+    {{ partial "icons/megaphone.html" . }}
+    {{ i18n "media_kit" }}
   </a>
-  <a href="https://supergeek.de/{{ lower .Language.LanguageName }}/evcc/">
-    {{ partial "icons/t-shirt.html" . }} {{ i18n "shirts" }}
+  <a
+    href="https://supergeek.de/{{ cond (eq site.Language.Lang "de") "de" "en" }}/evcc/"
+  >
+    {{ partial "icons/t-shirt.html" . }}
+    {{ i18n "shirts" }}
   </a>
   <a rel="me" href="https://fosstodon.org/@evcc">
-    {{ partial "icons/mastodon.html" . }} {{ i18n "mastodon" }}
+    {{ partial "icons/mastodon.html" . }}
+    {{ i18n "mastodon" }}
   </a>
   <a href="https://www.instagram.com/evcc.io/">
-    {{ partial "icons/instagram.html" . }} {{ i18n "instagram" }}
+    {{ partial "icons/instagram.html" . }}
+    {{ i18n "instagram" }}
   </a>
   <a href="https://bsky.app/profile/evcc.io">
-    {{ partial "icons/bluesky.html" . }} {{ i18n "bluesky" }}
+    {{ partial "icons/bluesky.html" . }}
+    {{ i18n "bluesky" }}
   </a>
   <a href="/slack">
-    {{ partial "icons/slack.html" . }} {{ i18n "slack" }}
+    {{ partial "icons/slack.html" . }}
+    {{ i18n "slack" }}
   </a>
   <a href="https://status.evcc.io">
-    {{ partial "icons/cloud-check.html" . }} {{ i18n "status" }}
+    {{ partial "icons/cloud-check.html" . }}
+    {{ i18n "status" }}
   </a>
-  <a href="/impressum/">{{ i18n "impressum" }}</a>
-  <a href="/datenschutz/">{{ i18n "datenschutz" }}</a>
+  {{ range slice "impressum" "datenschutz" }}
+    <a
+      href="{{- with site.GetPage . -}}
+        {{- .RelPermalink -}}
+      {{- else -}}
+        /en/{{ . }}/
+      {{- end -}}"
+      >{{ i18n . }}</a
+    >
+  {{ end }}
 </footer>

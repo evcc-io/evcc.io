@@ -1,0 +1,74 @@
+[evcc]
+other = 'evcc'
+
+[github]
+other = 'GitHub'
+
+[shirts]
+other = 'Shirts & hoodies'
+
+[bluesky]
+other = 'Bluesky'
+
+[mastodon]
+other = 'Mastodon'
+
+[instagram]
+other = 'Instagram'
+
+[slack]
+other = 'Slack voor ontwikkelaars'
+
+[ladeleistung]
+other = 'Laadvermogen'
+
+[aktive_nutzer]
+other = 'actieve gebruikers'
+
+[sonnenanteil]
+other = 'Zon'
+
+[pv_hausakku]
+other = 'PV & thuisbatterij'
+
+[sonnenenergie]
+other = 'Zonne-energie'
+
+[blog]
+other = 'Blog'
+
+[status]
+other = 'Status'
+
+[sonne_tanken]
+other = 'slim laden'
+
+[dokumentation]
+other = 'Documentatie'
+
+[dokumentation-short]
+other = 'Docs'
+
+[impressum]
+other = 'Colofon'
+
+[datenschutz]
+other = 'Privacybeleid'
+
+[hero_alt]
+other = 'Elektrische auto laadt met zonne-energie aan een lader. Persoon gebruikt evcc op een smartphone.'
+
+[media_kit]
+other = 'Mediakit'
+
+[seit_ende_2022]
+other = 'sinds eind 2022'
+
+[telemetry_fineprint]
+other = 'Geaggregeerde laadgegevens van <span id="telemetry--totalClients"></span> deelnemende sponsors.'
+
+[theme_switch]
+other = 'U kunt kiezen tussen een <a href="#" data-theme="light">lichte</a> en een <a href="#" data-theme="dark">donkere modus.</a>'
+
+[language]
+other = "Taal"

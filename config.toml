@@ -1,27 +1,86 @@
-baseURL = ""
+baseURL = "https://evcc.io/"
 relativeURLs = true
 
-languageCode = "de-de"
 defaultContentLanguage = "de"
 defaultContentLanguageInSubdir = false
 [languages]
   [languages.de]
     weight = 1
-    languageName = "DE"
+    languageCode = "de-DE"
     title = "evcc - Smart laden ☀️🚘 - Intelligentes Energiemanagement für Zuhause"
     [languages.de.params]
+      description = "evcc ermöglicht es, Elektrofahrzeuge mit möglichst viel selbsterzeugtem Solarstrom zu laden."
       docsUrl = "https://docs.evcc.io/de/"
       blogUrl = "https://docs.evcc.io/de/blog/"
+      langMsg = "Diese Seite ist auf Deutsch verfügbar."
+      langSwitch = "Zu Deutsch wechseln"
+      langStay = "Nein danke"
   [languages.en]
     weight = 2
-    languageName = "EN"
+    languageCode = "en-US"
     title = "evcc - Smart Charging ☀️🚘 - Intelligent Energy Management for Your Home"
     [languages.en.params]
+      description = "evcc lets you charge electric vehicles with as much self-generated solar power as possible."
       docsUrl = "https://docs.evcc.io/en/"
       blogUrl = "https://docs.evcc.io/en/blog/"
-[site]
-  [params]
-  description = "evcc ermöglicht es, Elektrofahrzeuge mit möglichst viel selbsterzeugtem Solarstrom zu laden."
+      langMsg = "This page is available in English."
+      langSwitch = "Switch to English"
+      langStay = "No thanks"
+  [languages.nl]
+    weight = 3
+    languageCode = "nl-NL"
+    title = "evcc - Slim laden ☀️🚘 - Intelligent energiebeheer voor uw woning"
+    [languages.nl.params]
+      description = "Met evcc laadt u elektrische voertuigen met zoveel mogelijk zelf opgewekte zonne-energie."
+      docsUrl = "https://docs.evcc.io/nl/"
+      blogUrl = "https://docs.evcc.io/nl/blog/"
+      langMsg = "Deze pagina is beschikbaar in het Nederlands."
+      langSwitch = "Overschakelen naar Nederlands"
+      langStay = "Nee, bedankt"
+  [languages.fr]
+    weight = 4
+    languageCode = "fr-FR"
+    title = "evcc - Recharge intelligente ☀️🚘 - Pilotage de l’énergie pour votre maison"
+    [languages.fr.params]
+      description = "evcc vous permet de recharger vos véhicules électriques avec un maximum d’énergie solaire autoproduite."
+      docsUrl = "https://docs.evcc.io/fr/"
+      blogUrl = "https://docs.evcc.io/fr/blog/"
+      langMsg = "Cette page est disponible en français."
+      langSwitch = "Passer au français"
+      langStay = "Non merci"
+  [languages.da]
+    weight = 5
+    languageCode = "da-DK"
+    title = "evcc - Smart opladning ☀️🚘 - Intelligent energistyring til dit hjem"
+    [languages.da.params]
+      description = "Med evcc kan du oplade elbiler med så meget selvproduceret solenergi som muligt."
+      docsUrl = "https://docs.evcc.io/da/"
+      blogUrl = "https://docs.evcc.io/da/blog/"
+      langMsg = "Denne side findes på dansk."
+      langSwitch = "Skift til dansk"
+      langStay = "Nej tak"
+  [languages.it]
+    weight = 6
+    languageCode = "it-IT"
+    title = "evcc - Ricarica intelligente ☀️🚘 - Gestione smart dell’energia per la tua casa"
+    [languages.it.params]
+      description = "evcc ti permette di ricaricare i veicoli elettrici con quanta più energia solare autoprodotta possibile."
+      docsUrl = "https://docs.evcc.io/it/"
+      blogUrl = "https://docs.evcc.io/it/blog/"
+      langMsg = "Questa pagina è disponibile in italiano."
+      langSwitch = "Passa all’italiano"
+      langStay = "No, grazie"
+  [languages.cs]
+    weight = 7
+    languageCode = "cs-CZ"
+    title = "evcc - Chytré nabíjení ☀️🚘 - Inteligentní řízení energie pro váš domov"
+    [languages.cs.params]
+      description = "evcc vám umožní nabíjet elektromobily co nejvíce vlastní solární energií."
+      docsUrl = "https://docs.evcc.io/cs/"
+      blogUrl = "https://docs.evcc.io/cs/blog/"
+      langMsg = "Tato stránka je dostupná v češtině."
+      langSwitch = "Přepnout do češtiny"
+      langStay = "Ne, děkuji"
 
 [minify]
   disableSVG = true

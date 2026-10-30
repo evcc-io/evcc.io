@@ -1,0 +1,74 @@
+[evcc]
+other = 'evcc'
+
+[github]
+other = 'GitHub'
+
+[shirts]
+other = 'T-shirts & hoodies'
+
+[bluesky]
+other = 'Bluesky'
+
+[mastodon]
+other = 'Mastodon'
+
+[instagram]
+other = 'Instagram'
+
+[slack]
+other = 'Udvikler-Slack'
+
+[ladeleistung]
+other = 'Ladeeffekt'
+
+[aktive_nutzer]
+other = 'aktive brugere'
+
+[sonnenanteil]
+other = 'Solandel'
+
+[pv_hausakku]
+other = 'Sol & batteri'
+
+[sonnenenergie]
+other = 'Solenergi'
+
+[blog]
+other = 'Blog'
+
+[status]
+other = 'Status'
+
+[sonne_tanken]
+other = 'smart opladning'
+
+[dokumentation]
+other = 'Dokumentation'
+
+[dokumentation-short]
+other = 'Docs'
+
+[impressum]
+other = 'Juridisk information'
+
+[datenschutz]
+other = 'Privatlivspolitik'
+
+[hero_alt]
+other = 'Elbil, der lader med solenergi ved en oplader. En person bruger evcc på en smartphone.'
+
+[media_kit]
+other = 'Mediekit'
+
+[seit_ende_2022]
+other = 'siden slutningen af 2022'
+
+[telemetry_fineprint]
+other = 'Samlede opladningsdata fra <span id="telemetry--totalClients"></span> deltagende sponsorer.'
+
+[theme_switch]
+other = 'Du kan vælge mellem <a href="#" data-theme="light">lyst</a> og <a href="#" data-theme="dark">mørkt tema.</a>'
+
+[language]
+other = "Sprog"

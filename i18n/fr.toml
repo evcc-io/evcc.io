@@ -1,0 +1,74 @@
+[evcc]
+other = 'evcc'
+
+[github]
+other = 'GitHub'
+
+[shirts]
+other = 'T-shirts & sweats'
+
+[bluesky]
+other = 'Bluesky'
+
+[mastodon]
+other = 'Mastodon'
+
+[instagram]
+other = 'Instagram'
+
+[slack]
+other = 'Slack des développeurs'
+
+[ladeleistung]
+other = 'Puissance de charge'
+
+[aktive_nutzer]
+other = 'utilisateurs actifs'
+
+[sonnenanteil]
+other = 'Part solaire'
+
+[pv_hausakku]
+other = 'Solaire & batterie'
+
+[sonnenenergie]
+other = 'Énergie solaire'
+
+[blog]
+other = 'Blog'
+
+[status]
+other = 'Statut'
+
+[sonne_tanken]
+other = 'recharge intelligente'
+
+[dokumentation]
+other = 'Documentation'
+
+[dokumentation-short]
+other = 'Docs'
+
+[impressum]
+other = 'Mentions légales'
+
+[datenschutz]
+other = 'Politique de confidentialité'
+
+[hero_alt]
+other = "Voiture électrique en charge à l’énergie solaire sur un chargeur. Une personne utilise evcc sur un smartphone."
+
+[media_kit]
+other = 'Kit média'
+
+[seit_ende_2022]
+other = 'depuis fin 2022'
+
+[telemetry_fineprint]
+other = 'Données de charge agrégées de <span id="telemetry--totalClients"></span> sponsors participants.'
+
+[theme_switch]
+other = 'Vous pouvez choisir entre le <a href="#" data-theme="light">mode clair</a> et le <a href="#" data-theme="dark">mode sombre.</a>'
+
+[language]
+other = "Langue"
