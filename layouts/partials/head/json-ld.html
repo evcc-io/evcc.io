@@ -1,0 +1,43 @@
+{{ if .IsHome }}
+  {{ $org := "https://evcc.io/#organization" }}
+  {{ $data := dict
+    "@context" "https://schema.org"
+    "@graph" (slice
+      (dict
+        "@type" "Organization"
+        "@id" $org
+        "name" "evcc"
+        "url" "https://evcc.io/"
+        "logo" "https://evcc.io/media-kit/app-icons/app-icon.png"
+        "sameAs" (slice
+          "https://github.com/evcc-io"
+          "https://fosstodon.org/@evcc"
+          "https://bsky.app/profile/evcc.io"
+          "https://www.instagram.com/evcc.io/"
+        )
+      )
+      (dict
+        "@type" "WebSite"
+        "name" "evcc"
+        "url" .Permalink
+        "inLanguage" site.Language.Lang
+        "publisher" (dict "@id" $org)
+      )
+      (dict
+        "@type" "SoftwareApplication"
+        "name" "evcc"
+        "description" site.Params.description
+        "url" .Permalink
+        "applicationCategory" "UtilitiesApplication"
+        "operatingSystem" "Linux, macOS, Windows, FreeBSD, Docker, Home Assistant"
+        "license" "https://github.com/evcc-io/evcc/blob/master/LICENSE"
+        "offers" (dict "@type" "Offer" "price" "0" "priceCurrency" "EUR")
+        "softwareHelp" (dict "@type" "CreativeWork" "url" site.Params.docsUrl)
+        "publisher" (dict "@id" $org)
+      )
+    )
+  }}
+  <script type="application/ld+json">
+    {{ $data | jsonify | safeJS }}
+  </script>
+{{ end }}
