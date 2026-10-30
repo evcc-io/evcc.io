@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+	<meta name="generator" content="Hugo 0.150.0">
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <title>evcc - Ricarica intelligente ☀️🚘 - Gestione smart dell’energia per la tua casa</title>
+
+  <link rel="icon" href="../favicon.ico" />
+  <link rel="icon" href="../favicon-32x32.png" type="image/png" sizes="32x32" />
+  <link rel="icon" href="../favicon-16x16.png" type="image/png" sizes="16x16" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+
+  
+    <meta name="description" content="evcc ti permette di ricaricare i veicoli elettrici con quanta più energia solare autoprodotta possibile." />
+  
+  
+  <meta name="viewport" content="width=device-width" />
+
+  
+    
+      <link
+        rel="alternate"
+        hreflang="de"
+        href="https://evcc.io/"
+      />
+      
+        <link rel="alternate" hreflang="x-default" href="https://evcc.io/" />
+      
+    
+      <link
+        rel="alternate"
+        hreflang="en"
+        href="https://evcc.io/en/"
+      />
+      
+    
+      <link
+        rel="alternate"
+        hreflang="nl"
+        href="https://evcc.io/nl/"
+      />
+      
+    
+      <link
+        rel="alternate"
+        hreflang="fr"
+        href="https://evcc.io/fr/"
+      />
+      
+    
+      <link
+        rel="alternate"
+        hreflang="da"
+        href="https://evcc.io/da/"
+      />
+      
+    
+      <link
+        rel="alternate"
+        hreflang="it"
+        href="https://evcc.io/it/"
+      />
+      
+    
+      <link
+        rel="alternate"
+        hreflang="cs"
+        href="https://evcc.io/cs/"
+      />
+      
+    
+  
+
+  <meta property="og:url" content="https://evcc.io/it/">
+  <meta property="og:site_name" content="evcc - Ricarica intelligente ☀️🚘 - Gestione smart dell’energia per la tua casa">
+  <meta property="og:title" content="evcc - Ricarica intelligente ☀️🚘 - Gestione smart dell’energia per la tua casa">
+  <meta property="og:description" content="Ricarica intelligente. Semplicissima. Ricarica il tuo veicolo elettrico in modo intelligente. Controlla caricabatterie, pompa di calore e batteria domestica. Funziona con centinaia di dispositivi. Il controllo è tuo, i dati sono tuoi. Open source e portato avanti dalla community.
+Inizia ora Raspberry Pi, Docker e altro. Funzionalità Ricarica con surplus solare La tua auto si ricarica quando splende il sole. La potenza di ricarica segue automaticamente il surplus disponibile.">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:type" content="website">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="evcc - Ricarica intelligente ☀️🚘 - Gestione smart dell’energia per la tua casa">
+  <meta name="twitter:description" content="Ricarica intelligente. Semplicissima. Ricarica il tuo veicolo elettrico in modo intelligente. Controlla caricabatterie, pompa di calore e batteria domestica. Funziona con centinaia di dispositivi. Il controllo è tuo, i dati sono tuoi. Open source e portato avanti dalla community.
+Inizia ora Raspberry Pi, Docker e altro. Funzionalità Ricarica con surplus solare La tua auto si ricarica quando splende il sole. La potenza di ricarica segue automaticamente il surplus disponibile.">
+
+  
+  <meta itemprop="name" content="evcc - Ricarica intelligente ☀️🚘 - Gestione smart dell’energia per la tua casa">
+  <meta itemprop="description" content="Ricarica intelligente. Semplicissima. Ricarica il tuo veicolo elettrico in modo intelligente. Controlla caricabatterie, pompa di calore e batteria domestica. Funziona con centinaia di dispositivi. Il controllo è tuo, i dati sono tuoi. Open source e portato avanti dalla community.
+Inizia ora Raspberry Pi, Docker e altro. Funzionalità Ricarica con surplus solare La tua auto si ricarica quando splende il sole. La potenza di ricarica segue automaticamente il surplus disponibile.">
+  <meta itemprop="wordCount" content="1612">
+
+<link href="../css/main.css" rel="stylesheet" />
+<link
+    rel="preload"
+    href="../fonts/roboto-v20-latin-regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="../fonts/roboto-v20-latin-bold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+</head>
+<body><header class="header">
+  <div class="header__top">
+    <div class="header__inner">
+      <a href="../it/" class="header__logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 76">
+          <title>evcc Logo</title>
+          <path
+            d="M37.54 51.18a12.38 12.38 0 01-9-3.42A12.19 12.19 0 0125 38.64V38a15.4 15.4 0 011.47-6.83 10.82 10.82 0 014.17-4.64 11.63 11.63 0 016.15-1.63A10.44 10.44 0 0145 28.16q3 3.29 3 9.31v2.76H31.84a6.35 6.35 0 002 4A6 6 0 0038 45.72a7.3 7.3 0 006.1-2.84l3.31 3.73A10 10 0 0143.28 50a13.32 13.32 0 01-5.74 1.18zm-.77-20.84a4.21 4.21 0 00-3.26 1.37 7.14 7.14 0 00-1.6 3.91h9.39v-.55a5 5 0 00-1.22-3.49 4.3 4.3 0 00-3.31-1.24zM60.91 42.44l4.7-17.09h7l-8.48 25.36h-6.44l-8.52-25.36h7zM110 45.72a4.45 4.45 0 003-1 3.64 3.64 0 001.22-2.75h6.32a8.67 8.67 0 01-1.4 4.73 9.15 9.15 0 01-3.79 3.3 11.75 11.75 0 01-5.29 1.19 10.91 10.91 0 01-8.54-3.46q-3.13-3.45-3.13-9.55v-.45q0-5.85 3.1-9.35a10.86 10.86 0 018.51-3.5 10.59 10.59 0 017.6 2.71 9.62 9.62 0 012.9 7.21h-6.3a4.66 4.66 0 00-1.2-3.22 4 4 0 00-3.08-1.24 4.06 4.06 0 00-3.56 1.73c-.8 1.15-1.2 3-1.2 5.6v.7c0 2.61.39 4.49 1.19 5.63a4.09 4.09 0 003.65 1.72zM134.88 45.72a4.46 4.46 0 003-1 3.63 3.63 0 001.21-2.75h6.33a8.67 8.67 0 01-1.4 4.73 9.15 9.15 0 01-3.73 3.3 11.78 11.78 0 01-5.29 1.18 10.91 10.91 0 01-8.54-3.46q-3.13-3.45-3.13-9.55v-.45q0-5.85 3.1-9.35a10.84 10.84 0 018.57-3.49 10.57 10.57 0 017.6 2.71 9.59 9.59 0 012.91 7.21h-6.33a4.65 4.65 0 00-1.21-3.22 4.49 4.49 0 00-6.64.49c-.8 1.15-1.21 3-1.21 5.6v.7q0 3.91 1.2 5.63a4.09 4.09 0 003.56 1.72z"
+            class="header__logo__letters"
+          />
+          <path
+            d="M82.92 22.86h9.22L86 35.16h6.15L80.62 56.67l2.3-15.36h-7.68z"
+            fill="#0fdd42"
+          />
+          <path d="M0 0h170v76H0z" fill="none" />
+        </svg>
+        <span>ricarica intelligente</span>
+      </a>
+      <nav class="header__navigation">
+        <a href="https://docs.evcc.io/it/blog/" class="header__navigation__item"
+          >Blog</a
+        >
+        <a href="https://docs.evcc.io/it/" class="header__navigation__item"
+          >Docs</a
+        >
+        <a
+          href="https://github.com/evcc-io/evcc"
+          class="header__navigation__item"
+          title="GitHub"
+          target="_blank"
+        >
+          
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="1em"
+  height="1em"
+  viewBox="0 0 48 48"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    d="M39.155 13.946c-.214-.604-.538-1.212-.999-1.869.848-3.154.253-5.792.225-5.915l-.365-1.564-1.606.019c-.15.002-3.48.063-6.724 1.955a29.635 29.635 0 0 0-11.371 0c-3.243-1.892-6.573-1.953-6.724-1.955l-1.607-.02-.365 1.564c-.028.123-.623 2.761.225 5.915-.461.657-.785 1.266-.999 1.869-1.187 3.356-1.187 6.76.001 10.117 1.07 3.023 4.697 6.116 7.225 6.862.851.251 1.704.422 2.558.545A5.236 5.236 0 0 0 18 34.004v1.281c-.062.036-.127.065-.187.108-.289.211-2.869 1.967-5.505.09-.93-.946-1.386-1.639-1.826-2.309-.988-1.5-1.841-2.586-4.588-3.96a2 2 0 1 0-1.789 3.579c1.991.995 2.341 1.525 3.035 2.581.515.781 1.155 1.754 2.445 3.044l.215.186c1.692 1.27 3.447 1.723 5.053 1.723A9.286 9.286 0 0 0 18 39.76v4.253h4V34.004c0-1.103.897-2 2-2s2 .897 2 2v10h4v-10c0-.955-.23-1.803-.628-2.534a18.287 18.287 0 0 0 2.558-.545c2.527-.746 6.154-3.839 7.226-6.863 1.187-3.357 1.187-6.76-.001-10.116zm-3.77 8.781c-.591 1.667-3.167 3.942-4.588 4.362-4.509 1.331-9.083 1.332-13.594 0-1.421-.42-3.997-2.695-4.587-4.361-.875-2.472-.853-4.969-.001-7.447.485-1.41 1.724-2.427 1.724-2.427l-.398-1.08a9.24 9.24 0 0 1-.548-2.886c.992.233 2.247.664 3.416 1.459l.716.487.845-.188a25.659 25.659 0 0 1 11.262 0l.845.188.716-.487c1.167-.794 2.423-1.225 3.415-1.458a9.169 9.169 0 0 1-.547 2.885l-.398 1.08s1.093.81 1.724 2.427c.951 2.441.872 4.976-.002 7.446z"
+  />
+</svg>
+
+        </a>
+
+        <div
+          class="header__navigation__item header__navigation__item--translation"
+        >
+          <select
+            class="header__navigation__lang"
+            aria-label="Lingua"
+            autocomplete="off"
+            onchange="location.pathname = this.value"
+          >
+            
+              
+              
+              
+                
+              
+              <option
+                value="/"
+                hreflang="de"
+                data-msg="Diese Seite ist auf Deutsch verfügbar."
+                data-switch="Zu Deutsch wechseln"
+                data-stay="Nein danke"
+                
+              >
+                DE
+              </option>
+            
+              
+              
+              
+                
+              
+              <option
+                value="/en/"
+                hreflang="en"
+                data-msg="This page is available in English."
+                data-switch="Switch to English"
+                data-stay="No thanks"
+                
+              >
+                EN
+              </option>
+            
+              
+              
+              
+                
+              
+              <option
+                value="/nl/"
+                hreflang="nl"
+                data-msg="Deze pagina is beschikbaar in het Nederlands."
+                data-switch="Overschakelen naar Nederlands"
+                data-stay="Nee, bedankt"
+                
+              >
+                NL
+              </option>
+            
+              
+              
+              
+                
+              
+              <option
+                value="/fr/"
+                hreflang="fr"
+                data-msg="Cette page est disponible en français."
+                data-switch="Passer au français"
+                data-stay="Non merci"
+                
+              >
+                FR
+              </option>
+            
+              
+              
+              
+                
+              
+              <option
+                value="/da/"
+                hreflang="da"
+                data-msg="Denne side findes på dansk."
+                data-switch="Skift til dansk"
+                data-stay="Nej tak"
+                
+              >
+                DA
+              </option>
+            
+              
+              
+              
+                
+              
+              <option
+                value="/it/"
+                hreflang="it"
+                data-msg="Questa pagina è disponibile in italiano."
+                data-switch="Passa all’italiano"
+                data-stay="No, grazie"
+                selected
+              >
+                IT
+              </option>
+            
+              
+              
+              
+                
+              
+              <option
+                value="/cs/"
+                hreflang="cs"
+                data-msg="Tato stránka je dostupná v češtině."
+                data-switch="Přepnout do češtiny"
+                data-stay="Ne, děkuji"
+                
+              >
+                CS
+              </option>
+            
+          </select>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+    <div class="header__hero__wrapper">
+      <img
+        class="header__hero"
+        width="1440"
+        height="354"
+        src="../img/evcc-hero.svg"
+        alt="Auto elettrica in ricarica con energia solare a un caricabatterie. Una persona usa evcc sullo smartphone."
+        draggable="false"
+      />
+    </div>
+  
+</header>
+
+
+<main class="content">
+  <h1 id="ricarica-intelligente-semplicissima">Ricarica intelligente. Semplicissima.</h1>
+<p>Ricarica il tuo veicolo elettrico in modo intelligente. Controlla caricabatterie, pompa di calore e batteria domestica. Funziona con centinaia di dispositivi. Il controllo è tuo, i dati sono tuoi. Open source e portato avanti dalla community.</p>
+<p class="button-container">
+  <a href="https://docs.evcc.io/it/installation" target="_blank" class="button button--cta">
+    
+Inizia ora
+
+  </a>
+  
+  <small class="button-subline fineprint">Raspberry Pi, Docker e altro.</small>
+  
+</p>
+<hr>
+<h2 id="funzionalità">Funzionalità</h2>
+<div class="feature-cards">
+  
+
+
+
+<div class="feature-card">
+  <div class="feature-card__icon">
+    
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><circle cx="128" cy="128" r="56" class="duotone-fill"/><line x1="128" y1="40" x2="128" y2="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><circle cx="128" cy="128" r="56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="64" y1="64" x2="48" y2="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="64" y1="192" x2="48" y2="208" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="192" y1="64" x2="208" y2="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="192" y1="192" x2="208" y2="208" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="40" y1="128" x2="16" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="128" y1="216" x2="128" y2="240" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="216" y1="128" x2="240" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
+  </div>
+  <div class="feature-card__content">
+    <a href="https://docs.evcc.io/it/features/solar-charging" class="feature-card__title">Ricarica con surplus solare</a>
+    
+    <p class="feature-card__description">
+La tua auto si ricarica quando splende il sole. La potenza di ricarica segue automaticamente il surplus disponibile.
+</p>
+  </div>
+</div>
+
+
+
+
+
+<div class="feature-card">
+  <div class="feature-card__icon">
+    
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><polygon points="160 16 144 96 208 120 96 240 112 160 48 136 160 16" class="duotone-fill"/><polygon points="160 16 144 96 208 120 96 240 112 160 48 136 160 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
+  </div>
+  <div class="feature-card__content">
+    <a href="https://docs.evcc.io/it/features/dynamic-prices" class="feature-card__title">Tariffe elettriche dinamiche</a>
+    
+    <p class="feature-card__description">
+Con le tariffe a prezzo spot ricarichi automaticamente nelle ore più economiche.
+</p>
+  </div>
+</div>
+
+
+
+
+
+<div class="feature-card">
+  <div class="feature-card__icon">
+    
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M216,88H40V48a8,8,0,0,1,8-8H208a8,8,0,0,1,8,8Z" class="duotone-fill"/><rect x="40" y="40" width="176" height="176" rx="8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="176" y1="24" x2="176" y2="56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="80" y1="24" x2="80" y2="56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="40" y1="88" x2="216" y2="88" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><polyline points="92 152 116 176 164 128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
+  </div>
+  <div class="feature-card__content">
+    <a href="https://docs.evcc.io/it/features/plans" class="feature-card__title">Piani di ricarica e previsioni</a>
+    
+    <p class="feature-card__description">
+Imposta l’orario di partenza e l’obiettivo di ricarica. evcc trova automaticamente gli orari di ricarica più economici o più puliti.
+</p>
+  </div>
+</div>
+
+
+
+
+
+<div class="feature-card">
+  <div class="feature-card__icon">
+    
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><rect x="64" y="56" width="128" height="144" class="duotone-fill"/><rect x="64" y="24" width="128" height="208" rx="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="64" y1="56" x2="192" y2="56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="64" y1="200" x2="192" y2="200" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
+  </div>
+  <div class="feature-card__content">
+    <a href="https://docs.evcc.io/it/features/app" class="feature-card__title">App per iOS e Android</a>
+    
+    <p class="feature-card__description">
+Monitora e controlla la ricarica da qualsiasi luogo con l’app di evcc.
+</p>
+  </div>
+</div>
+
+
+
+
+
+<div class="feature-card">
+  <div class="feature-card__icon">
+    
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><rect x="16" y="64" width="200" height="128" rx="16" class="duotone-fill"/><rect x="16" y="64" width="200" height="128" rx="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="248" y1="96" x2="248" y2="160" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><polyline points="116 160 132 128 100 128 116 96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
+  </div>
+  <div class="feature-card__content">
+    <a href="https://docs.evcc.io/it/features/battery" class="feature-card__title">Batteria domestica</a>
+    
+    <p class="feature-card__description">
+Coordina al meglio batteria e auto elettrica. Il boost da batteria permette una ricarica veloce dall’accumulo. Se serve, ricarica la batteria con energia economica dalla rete.
+</p>
+  </div>
+</div>
+
+
+
+
+
+<div class="feature-card">
+  <div class="feature-card__icon">
+    
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><circle cx="212" cy="84" r="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M152,138V48a32,32,0,0,0-64,0v90a56,56,0,1,0,64,0Zm-32,70a24,24,0,1,1,24-24A24,24,0,0,1,120,208Z" class="duotone-fill"/><line x1="120" y1="160" x2="120" y2="88" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><circle cx="120" cy="184" r="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M88,48a32,32,0,0,1,64,0v90a56,56,0,1,1-64,0Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
+  </div>
+  <div class="feature-card__content">
+    <a href="https://docs.evcc.io/it/heating" class="feature-card__title">Pompe di calore</a>
+    
+    <p class="feature-card__description">
+Usa l’energia solare o l’energia economica dalla rete per il riscaldamento. evcc attiva automaticamente la tua pompa di calore nei momenti migliori.
+</p>
+  </div>
+</div>
+
+
+
+
+
+<div class="feature-card">
+  <div class="feature-card__icon">
+    
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M216,112V56a8,8,0,0,0-8-8H48a8,8,0,0,0-8,8v56c0,96,88,120,88,120S216,208,216,112Z" class="duotone-fill"/><path d="M216,112V56a8,8,0,0,0-8-8H48a8,8,0,0,0-8,8v56c0,96,88,120,88,120S216,208,216,112Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><polyline points="88 136 112 160 168 104" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
+  </div>
+  <div class="feature-card__content">
+    <a href="https://docs.evcc.io/it/external-limit" class="feature-card__title">Controllo del gestore di rete</a>
+    
+    <p class="feature-card__description">
+Riduzione automatica della potenza su segnale del gestore di rete. Supporta la normativa tedesca § 14a EnWG. Tutti gli interventi vengono documentati.
+</p>
+  </div>
+</div>
+
+
+
+
+
+<div class="feature-card">
+  <div class="feature-card__icon">
+    
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M24,176V153.13C24,95.65,70.15,48.2,127.63,48A104,104,0,0,1,232,152v24a8,8,0,0,1-8,8H32A8,8,0,0,1,24,176Z" class="duotone-fill"/><path d="M24,176V153.13C24,95.65,70.15,48.2,127.63,48A104,104,0,0,1,232,152v24a8,8,0,0,1-8,8H32A8,8,0,0,1,24,176Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="128" y1="48" x2="128" y2="80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="104" y1="184" x2="168" y2="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="200" y1="136" x2="230.78" y2="136" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="25.39" y1="136" x2="56" y2="136" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
+  </div>
+  <div class="feature-card__content">
+    <a href="https://docs.evcc.io/it/features/loadmanagement" class="feature-card__title">Gestione del carico</a>
+    
+    <p class="feature-card__description">
+Distribuisce la potenza disponibile su più punti di ricarica. Protegge il tuo allacciamento alla rete dal sovraccarico.
+</p>
+  </div>
+</div>
+
+
+
+
+
+<div class="feature-card">
+  <div class="feature-card__icon">
+    
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M104,232V192a32,32,0,0,1,32-32h0a32,32,0,0,1,32,32v40Z" class="duotone-fill"/><path d="M119.83,56A52,52,0,0,0,76,32a51.92,51.92,0,0,0-3.49,44.7A49.28,49.28,0,0,0,64,104v8a48,48,0,0,0,48,48h48a48,48,0,0,0,48-48v-8a49.28,49.28,0,0,0-8.51-27.3A51.92,51.92,0,0,0,196,32a52,52,0,0,0-43.83,24Z" class="duotone-fill"/><path d="M119.83,56A52,52,0,0,0,76,32a51.92,51.92,0,0,0-3.49,44.7A49.28,49.28,0,0,0,64,104v8a48,48,0,0,0,48,48h48a48,48,0,0,0,48-48v-8a49.28,49.28,0,0,0-8.51-27.3A51.92,51.92,0,0,0,196,32a52,52,0,0,0-43.83,24Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M104,232V192a32,32,0,0,1,32-32h0a32,32,0,0,1,32,32v40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M104,208H72a32,32,0,0,1-32-32A32,32,0,0,0,8,144" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
+  </div>
+  <div class="feature-card__content">
+    <a href="https://github.com/evcc-io/evcc" class="feature-card__title">Open source</a>
+    
+    <p class="feature-card__description">
+Trasparente e indipendente. Lo sviluppo è finanziato dalla community, non da grandi aziende.
+</p>
+  </div>
+</div>
+
+
+</div>
+
+<hr>
+<hr>
+<h2 id="ci-piacciono-le-belle-interfacce-">Ci piacciono le belle interfacce 💚</h2>
+<p>Vogliamo rendere la gestione intelligente dell’energia semplice per tutti. Idealmente tutto funziona senza interventi manuali né continue regolazioni. Ma se vuoi vedere cosa fa il sistema, c’è un’<strong>interfaccia web pulita e reattiva</strong> pronta all’uso.</p>
+<p>Puoi scegliere tra la <a href="#" data-theme="light">modalità chiara</a> e la <a href="#" data-theme="dark">modalità scura.</a></p>
+
+<div class="screenshots">
+  <div class="screenshots_container">
+    <div class="screenshots_inner">
+      
+<div class="screenshot">
+  <a href="../img/screenshots/1_small_main_2_light.webp" class="screenshot_link screenshot_link--light" data-glightbox
+    data-gallery="light">
+    <img src="../img/screenshots-small/1_small_main_2_light.webp" height="1000" width="489" alt="1_small_main_2"
+      loading="lazy" />
+  </a>
+  <a href="../img/screenshots/1_small_main_2_dark.webp" class="screenshot_link screenshot_link--dark" data-glightbox
+    data-gallery="dark">
+    <img src="../img/screenshots-small/1_small_main_2_dark.webp" height="1000" width="489" alt="1_small_main_2"
+      loading="lazy" />
+  </a>
+</div>
+<div class="screenshot">
+  <a href="../img/screenshots/2_small_plan_departure_light.webp" class="screenshot_link screenshot_link--light" data-glightbox
+    data-gallery="light">
+    <img src="../img/screenshots-small/2_small_plan_departure_light.webp" height="1000" width="489" alt="2_small_plan_departure"
+      loading="lazy" />
+  </a>
+  <a href="../img/screenshots/2_small_plan_departure_dark.webp" class="screenshot_link screenshot_link--dark" data-glightbox
+    data-gallery="dark">
+    <img src="../img/screenshots-small/2_small_plan_departure_dark.webp" height="1000" width="489" alt="2_small_plan_departure"
+      loading="lazy" />
+  </a>
+</div>
+<div class="screenshot">
+  <a href="../img/screenshots/3_small_battery_light.webp" class="screenshot_link screenshot_link--light" data-glightbox
+    data-gallery="light">
+    <img src="../img/screenshots-small/3_small_battery_light.webp" height="1000" width="489" alt="3_small_battery"
+      loading="lazy" />
+  </a>
+  <a href="../img/screenshots/3_small_battery_dark.webp" class="screenshot_link screenshot_link--dark" data-glightbox
+    data-gallery="dark">
+    <img src="../img/screenshots-small/3_small_battery_dark.webp" height="1000" width="489" alt="3_small_battery"
+      loading="lazy" />
+  </a>
+</div>
+<div class="screenshot">
+  <a href="../img/screenshots/4_small_forecast_light.webp" class="screenshot_link screenshot_link--light" data-glightbox
+    data-gallery="light">
+    <img src="../img/screenshots-small/4_small_forecast_light.webp" height="1000" width="489" alt="4_small_forecast"
+      loading="lazy" />
+  </a>
+  <a href="../img/screenshots/4_small_forecast_dark.webp" class="screenshot_link screenshot_link--dark" data-glightbox
+    data-gallery="dark">
+    <img src="../img/screenshots-small/4_small_forecast_dark.webp" height="1000" width="489" alt="4_small_forecast"
+      loading="lazy" />
+  </a>
+</div>
+<div class="screenshot">
+  <a href="../img/screenshots/5_small_year_cost_light.webp" class="screenshot_link screenshot_link--light" data-glightbox
+    data-gallery="light">
+    <img src="../img/screenshots-small/5_small_year_cost_light.webp" height="1000" width="489" alt="5_small_year_cost"
+      loading="lazy" />
+  </a>
+  <a href="../img/screenshots/5_small_year_cost_dark.webp" class="screenshot_link screenshot_link--dark" data-glightbox
+    data-gallery="dark">
+    <img src="../img/screenshots-small/5_small_year_cost_dark.webp" height="1000" width="489" alt="5_small_year_cost"
+      loading="lazy" />
+  </a>
+</div>
+<div class="screenshot">
+  <a href="../img/screenshots/6_large_total_solar_light.webp" class="screenshot_link screenshot_link--light" data-glightbox
+    data-gallery="light">
+    <img src="../img/screenshots-small/6_large_total_solar_light.webp" height="1000" width="1305" alt="6_large_total_solar"
+      loading="lazy" />
+  </a>
+  <a href="../img/screenshots/6_large_total_solar_dark.webp" class="screenshot_link screenshot_link--dark" data-glightbox
+    data-gallery="dark">
+    <img src="../img/screenshots-small/6_large_total_solar_dark.webp" height="1000" width="1305" alt="6_large_total_solar"
+      loading="lazy" />
+  </a>
+</div>
+<div class="screenshot">
+  <a href="../img/screenshots/7_large_main_energyflow_light.webp" class="screenshot_link screenshot_link--light" data-glightbox
+    data-gallery="light">
+    <img src="../img/screenshots-small/7_large_main_energyflow_light.webp" height="1000" width="1305" alt="7_large_main_energyflow"
+      loading="lazy" />
+  </a>
+  <a href="../img/screenshots/7_large_main_energyflow_dark.webp" class="screenshot_link screenshot_link--dark" data-glightbox
+    data-gallery="dark">
+    <img src="../img/screenshots-small/7_large_main_energyflow_dark.webp" height="1000" width="1305" alt="7_large_main_energyflow"
+      loading="lazy" />
+  </a>
+</div>
+<div class="screenshot">
+  <a href="../img/screenshots/8_large_sessions_light.webp" class="screenshot_link screenshot_link--light" data-glightbox
+    data-gallery="light">
+    <img src="../img/screenshots-small/8_large_sessions_light.webp" height="1000" width="1305" alt="8_large_sessions"
+      loading="lazy" />
+  </a>
+  <a href="../img/screenshots/8_large_sessions_dark.webp" class="screenshot_link screenshot_link--dark" data-glightbox
+    data-gallery="dark">
+    <img src="../img/screenshots-small/8_large_sessions_dark.webp" height="1000" width="1305" alt="8_large_sessions"
+      loading="lazy" />
+  </a>
+</div>
+<div class="screenshot">
+  <a href="../img/screenshots/9_large_session_detail_light.webp" class="screenshot_link screenshot_link--light" data-glightbox
+    data-gallery="light">
+    <img src="../img/screenshots-small/9_large_session_detail_light.webp" height="1000" width="1305" alt="9_large_session_detail"
+      loading="lazy" />
+  </a>
+  <a href="../img/screenshots/9_large_session_detail_dark.webp" class="screenshot_link screenshot_link--dark" data-glightbox
+    data-gallery="dark">
+    <img src="../img/screenshots-small/9_large_session_detail_dark.webp" height="1000" width="1305" alt="9_large_session_detail"
+      loading="lazy" />
+  </a>
+</div>
+<div class="screenshot">
+  <a href="../img/screenshots/10_small_savings_light.webp" class="screenshot_link screenshot_link--light" data-glightbox
+    data-gallery="light">
+    <img src="../img/screenshots-small/10_small_savings_light.webp" height="1000" width="489" alt="10_small_savings"
+      loading="lazy" />
+  </a>
+  <a href="../img/screenshots/10_small_savings_dark.webp" class="screenshot_link screenshot_link--dark" data-glightbox
+    data-gallery="dark">
+    <img src="../img/screenshots-small/10_small_savings_dark.webp" height="1000" width="489" alt="10_small_savings"
+      loading="lazy" />
+  </a>
+</div>
+
+    </div>
+  </div>
+</div>
+<p>Prova la nostra istanza demo per esplorare l’interfaccia.</p>
+<p class="button-container">
+  <a href="https://demo.evcc.io/" target="_blank" class="button button--cta">
+    
+Prova l’istanza demo
+
+  </a>
+  
+</p>
+<hr>
+<h2 id="come-funziona">Come funziona</h2>
+<p>Il sistema gira in locale e raccoglie di continuo i dati della tua casa: prelievo dalla rete e immissione in rete, produzione solare, consumo domestico e livello di carica della batteria domestica e del veicolo. Sulla base di questi dati <strong>controlla il tuo caricabatterie</strong> e ricarica l’auto proprio quando l’energia è più economica o più pulita.</p>
+<div class="themed-image">
+  <img class="only-light" src="../img/evcc-schema1-light.svg" alt="Schema: evcc collega impianto fotovoltaico, rete, batteria domestica, consumo e veicolo e controlla il caricabatterie" width="627" height="465" loading="lazy" draggable="false" />
+  <img class="only-dark" src="../img/evcc-schema1-dark.svg" alt="Schema: evcc collega impianto fotovoltaico, rete, batteria domestica, consumo e veicolo e controlla il caricabatterie" width="627" height="465" loading="lazy" draggable="false" />
+</div>
+
+<hr>
+<h2 id="devices">Parliamo con tutti i produttori</h2>
+<p>Ecosistemi chiusi, servizi cloud e soluzioni proprietarie non fanno per noi.
+evcc gira sul <strong>tuo hardware</strong> e fa collaborare in modo intelligente i tuoi dispositivi, <strong>di qualunque produttore.</strong>
+I tuoi dati restano nelle tue mani.</p>
+<aside class="infobox">
+  <h2>Sistemi supportati e testati</h2>
+  <div class="infobox_inner">
+    
+
+<div class="infobox_entry" style="grid-area: charger;">
+  <img src="../img/icons/charger.svg" alt="Caricabatterie" width="140" height="140" draggable="false" />
+  <h3>Caricabatterie</h3>
+  
+
+<p class="products group-Chargers">
+    ABB • ABL • Absina • Alfen • Alphatec • Alpitronic • Ambibox • Amperfied • Ampure • Audi • AUTEL • Autoaid • Bender • BMW • cFos • Charge Amps • ChargeLine • ChargeX • Compleo • CUBOS • Cupra • Dadapower • DaheimLaden • Delta • dé • E.ON Drive • E3/DC • Easee • Ebee • echarge • EcoHarmony • EcoPower • Edgetech • Elecq • eledio • Elli • EM2GO • EN&#43; • enercab • Enovates • Ensto • EntraTek • ESL • eSystems • ETEK • Etrel • EV Expert • EVBox • EVSE Master • Feyree • FoxESS • Free2Move • Free2move eSolutions • Fronius • Garo • go-e • Goodcell • GoodWe • Grizzl-E • Hager • Hardy Barth • Heidelberg • Hesotec • Home Assistant • Homecharge • Huawei • Innogy • INRO • ioBroker • iSIGMA • Juice • Kathrein • KEBA • Kolanky • Kontron Solar • Kostal • KSE • LadeFoxx • Lektrico • LRT • Mennekes • NEcharge • Neoom • NewMotion • Nexblue • NRGkick • OBO Bettermann • OpenEVSE • openWB • Optec • Orbis • PC Electric • Peblar • Phoenix Contact • Plugchoice • Porsche • Pracht • Pulsares • Pulsatrix • Qcells • RAEDIAN • Schneider • Schrack • SENEC • Shell Recharge • Shelly • Siemens • Sigenergy • Skoda • SMA • Smartfox • SolarEdge • Solax • Sonnen • Spelsberg • Stark in Strom • Steca • Stegen Electronics • Sungrow • TechniSat • Tesla • Tigo • TinkerForge • Ubitricity • V2C • Vestel • Veton • Victron • Viridian EV • Volkswagen • Volt Time • Voltie • Wallbe • wallbox • Walther Werke • Webasto • Weidmüller • Zaptec • ZJ Beny
+</p>
+
+</div>
+
+<div class="infobox_entry" style="grid-area: vehicle;">
+  <img src="../img/icons/vehicle.svg" alt="Veicoli" width="140" height="140" draggable="false" />
+  <h3>Veicoli</h3>
+  
+
+<p class="products group-Vehicles">
+    Aiways • Alpine • Audi • BMW • Citroën • Cupra • Dacia • DS • Fiat • Ford • Genesis • Home Assistant • Hyundai • Jeep • Kia • Lexus • LiveWire • Mazda • Mercedes-Benz • MG • Mini • Nissan • NIU • Octopus Energy • Opel • Peugeot • Polestar • Porsche • Renault • Seat • Smart • Subaru • Tesla • Tibber • Toyota • Volkswagen • Volvo • Zero Motorcycles • Škoda
+</p>
+
+</div>
+
+<div class="infobox_entry" style="grid-area: inverter;">
+  <img src="../img/icons/inverter.svg" alt="Fotovoltaico e accumulo" width="140" height="140" draggable="false" />
+  <h3>Fotovoltaico e accumulo</h3>
+  
+
+<p class="products group-PVBattery">
+    A-Tronix • ABB • Acrel • Ads-tec • Afore • Alpha ESS • Ampere • amsleser.no • Anker • APsystems • Atmoce • AVM • Axitec • Azimut Energy • B&#43;GE-TECH • batterX • Bernecker Engineering • Bosch • Bosswerk • Carlo Gavazzi • CHINT • Danfoss • DDM • Deye • DZG • E3/DC • Eastron • EcoFlow • Eltako • enecess • Enphase • FENECON • Ferroamp • Finder • FoxESS • FRITZ! • Fronius • Ginlong • go-e • GoodWe • Gossen Metrawatt • Growatt • Home Assistant • Homematic IP • HomeWizard • Hoymiles • Huawei • IAMMETER • IBC Solar • IGEN Tech • Indevolt • inepro • INTILION • ioBroker • IoTaWatt • Janitza • Kostal • LG • Lovato • Loxone • M-TEC • Marstek • myStrom • OpenEMS • ORNO • Powerfox • Qcells • RCT • Roche Energy • Saia-Burgess Controls (SBC) • SAJ • SAX • Schneider Electric • SENEC • Senergy • Sermatec • Sessy • Shelly • Siemens • Sigenergy • SMA • Smartfox • Socomec • SofarSolar • Solakon • Solaranzeige • SolarEdge • SolarMax • Solarwatt • Solax • Solinteg • Solplanet • Sonnen • Steca • stromleser.one • Strong Energy • SunEnergyBox • SunEnergyXT • Sungrow • Sunsynk • Sunways • Tasmota • Tepto • Tesla • TP-Link • VARTA • Victron • Wago • Wattsonic • Weidmüller • Youless • Youliq • ZCS Azzurro • Zendure
+</p>
+
+</div>
+
+<div class="infobox_entry" style="grid-area: smartswitch;">
+  <img src="../img/icons/smartswitch.svg" alt="Prese commutabili" width="140" height="140" draggable="false" />
+  <h3>Prese commutabili</h3>
+  
+
+<p class="products group-SmartSwitches">
+    AVM • FRITZ! • Home Assistant • Homematic IP • HomeWizard • myStrom • Shelly • SONOFF • Tasmota • TP-Link
+</p>
+
+</div>
+
+<div class="infobox_entry" style="grid-area: heating;">
+  <img src="../img/icons/heating.svg" alt="Pompe di calore e resistenze elettriche" width="140" height="140" draggable="false" />
+  <h3>Pompe di calore e resistenze elettriche</h3>
+  
+
+<p class="products group-Heating">
+    1SINQ • alpha innotec • Askoma • Bosch • Buderus • Bulex • Bösch • CTA All-In-One • Daikin • DemirDöküm • E.G.O. • Elco • Glen Dimplex • Glow-worm • IDM • Junkers • Kermi • Lambda • LG • M-Tec • my-PV • Nibe • NIBE • Novelan • Ochsner • OVUM • Roth • Saunier Duval • Solvis • Stiebel Eltron • Tecalor • Vaillant • Viessmann • Weishaupt • Wolf • Xtherma • Zewotherm
+</p>
+
+</div>
+
+<div class="infobox_entry" style="grid-area: meter;">
+  <img src="../img/icons/meter.svg" alt="Contatori di energia" width="140" height="140" draggable="false" />
+  <h3>Contatori di energia</h3>
+  
+
+<p class="products group-Meters">
+    A-Tronix • Aandewiel • ABB • Acrel • Afore • Alpha ESS • Ampere • amsleser.no • Anker • Askoma • Atmoce • AVM • Axitec • B&#43;GE-TECH • batterX • Bernecker Engineering • Bosch • Carlo Gavazzi • cFos • CHINT • Cozify HAN • DDM • Deye • DSMR • DZG • E3/DC • Eastron • EcoFlow • Eltako • enecess • Enphase • ESPHome • Everhome • FENECON • Ferroamp • Finder • FoxESS • FRITZ! • Fronius • Ginlong • go-e • GoodWe • Gossen Metrawatt • Growatt • Home Assistant • Homematic IP • HomeWizard • Homey • Huawei • IAMMETER • IBC Solar • Indevolt • inepro • INTILION • ioBroker • IOmeter • IoTaWatt • Janitza • KEBA • Kostal • LG • Lovato • Loxone • M-TEC • my-PV • myStrom • OpenEMS • ORNO • P1Monitor • Powerfox • Pstryk.pl • Qcells • RCT • Saia-Burgess Controls (SBC) • SAJ • SAX • Schneider Electric • SENEC • Senergy • Sermatec • Sessy • Shelly • Siemens • Sigenergy • SMA • Smartfox • Smartstuff • Socomec • SofarSolar • Solakon • Solaranzeige • SolarEdge • SolarMax • Solarwatt • Solax • Solinteg • Solplanet • Sonnen • Steca • stromleser.one • Strong Energy • SunEnergyBox • SunEnergyXT • Sungrow • Sunsynk • Sunways • Tasmota • Tepto • Tesla • Tibber • TP-Link • TQ • VARTA • Victron • Viessmann • Volkszähler • Wago • Wattsonic • Weidmüller • Youless • ZCS Azzurro • Zendure • Zuidwijk
+</p>
+
+</div>
+
+
+  </div>
+</aside>
+<p>Trovi maggiori dettagli nella nostra <a href="https://docs.evcc.io/it/chargers">documentazione</a>. Se il tuo dispositivo non è ancora supportato, faccelo sapere su <a href="https://github.com/evcc-io/evcc">GitHub</a>. Se ha un’interfaccia, possiamo collegarlo.</p>
+<hr>
+<h2 id="inizia-in-pochi-minuti">Inizia in pochi minuti</h2>
+<div class="steps">
+  
+<div class="step">
+  <div class="step__content">
+    <h4>Installa</h4>
+    Scrivi l’immagine su una scheda SD e inseriscila nel tuo Raspberry Pi.<br>In alternativa: Docker sul tuo NAS o server.
+  </div>
+</div>
+
+<div class="step">
+  <div class="step__content">
+    <h4>Configura</h4>
+    Tutto direttamente nel browser: aggiungi i dispositivi, regola le impostazioni, fatto.
+  </div>
+</div>
+
+<div class="step">
+  <div class="step__content">
+    <h4>Ricarica</h4>
+    evcc ottimizza in automatico. Tieni tutto sotto controllo dall’interfaccia web o dall’app.
+  </div>
+</div>
+
+
+</div>
+
+<p class="button-container">
+  <a href="https://docs.evcc.io/it/installation" target="_blank" class="button button--cta">
+    
+Inizia ora
+
+  </a>
+  
+</p>
+<hr>
+<h2 id="sostieni-il-progetto">Sostieni il progetto</h2>
+<p>Unisciti alla community, aiuta a correggere bug, migliora la documentazione o semplicemente condividi la tua esperienza. Scrivici sul <a href="https://github.com/evcc-io/evcc/discussions">forum</a> o chatta con noi su <a href="../slack">Slack</a>.</p>
+<p>Per portare avanti un progetto di queste dimensioni abbiamo bisogno del tuo sostegno. Scopri di più sul nostro <a href="https://docs.evcc.io/it/sponsorship">modello di sponsorizzazione</a>.</p>
+<p class="button-container">
+  <a href="mailto:info@evcc.io" target="_self" class="button button--secondary">
+    
+Contattaci
+
+  </a>
+  
+</p>
+<hr>
+<h2 id="dalla-community">Dalla community</h2>
+<aside class="telemetry" id="live">
+  <div class="telemetry_inner">
+    <div class="telemetry_box">
+      <span class="telemetry_icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48"><circle cx="16" cy="26" r="2" fill="currentColor"/><circle cx="32" cy="26" r="2" fill="currentColor"/><path fill="currentColor" d="M42 18h-3.8c-.5-4.5-4.3-8.1-9-8.1H18.8c-4.7 0-8.5 3.6-9 8.1H6c-1.1 0-2 .9-2 2s.9 2 2 2h2.4c-.3.6-.4 1.3-.4 2v10.4c.2 2 1.9 3.6 4 3.6s3.8-1.6 4-3.6V34h16v.4c.2 2 1.9 3.6 4 3.6s3.8-1.6 4-3.6V24c0-.7-.1-1.4-.3-2H42c1.1 0 2-.9 2-2s-.9-2-2-2zm-23.2-4.1h10.5c2.4 0 4.5 1.7 4.9 4.1H13.8c.5-2.4 2.5-4.1 5-4.1zM14 30c-1.1 0-2-.9-2-2v-4c0-1.1.9-2 2-2h20c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2H14z"/></svg></span>
+      <div class="telemetry_details">
+        <div class="telemetry_main">
+          <div class="telemetry_title">
+            Potenza di ricarica
+          </div>
+          <div class="telemetry_value">
+            <span id="telemetry--power"></span>
+            <span id="telemetry--chargePowerUnit" class="telemetry_unit"></span>
+          </div>
+        </div>
+        <div class="telemetry_sub">
+          <span id="telemetry--activeClients"></span> utenti attivi
+        </div>
+      </div>
+    </div>
+    <div class="telemetry_box">
+      <span class="telemetry_icon"
+        >
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48"><path fill="currentColor" d="M24,34c5.514,0,10-4.486,10-10s-4.486-10-10-10c-5.514,0-10,4.486-10,10S18.486,34,24,34z M30,24c0,3.309-2.691,6-6,6s-6-2.691-6-6s2.691-6,6-6S30,20.691,30,24z"/><rect fill="currentColor" x="22" y="4" width="4" height="6"/><rect fill="currentColor" x="22" y="38" width="4" height="6"/><rect fill="currentColor" x="4" y="22" width="6" height="4"/><rect fill="currentColor" x="38" y="22" width="6" height="4"/><rect fill="currentColor" x="13.5" y="6.278" transform="matrix(0.866 -0.5 0.5 0.866 -2.5623 8.9935)" width="4" height="6"/><rect fill="currentColor" x="30.5" y="35.722" transform="matrix(0.866 -0.5 0.5 0.866 -15.0067 21.4372)" width="4.001" height="6"/><rect fill="currentColor" x="6.277" y="30.5" transform="matrix(0.866 -0.5 0.5 0.866 -15.0068 8.9926)" width="6" height="4.001"/><rect fill="currentColor" x="35.722" y="13.5" transform="matrix(0.8661 -0.4999 0.4999 0.8661 -2.5628 21.4339)" width="6" height="4.001"/><rect fill="currentColor" x="7.277" y="12.5" transform="matrix(0.4999 -0.8661 0.8661 0.4999 -8.7847 15.7861)" width="4.001" height="6"/><rect fill="currentColor" x="36.722" y="29.5" transform="matrix(0.5 -0.866 0.866 0.5 -8.7845 49.7849)" width="4.001" height="6"/><rect fill="currentColor" x="12.5" y="36.722" transform="matrix(0.5 -0.866 0.866 0.5 -25.7843 32.7831)" width="6" height="4"/><rect fill="currentColor" x="29.5" y="7.277" transform="matrix(0.5001 -0.866 0.866 0.5001 8.2139 32.7828)" width="5.999" height="4.001"/></svg></span
+      >
+      <div class="telemetry_details">
+        <div class="telemetry_main">
+          <div class="telemetry_title">
+            Quota solare
+          </div>
+          <div class="telemetry_value">
+            <span id="telemetry--greenShare"></span>
+            <span class="telemetry_unit">%</span>
+          </div>
+        </div>
+        <div class="telemetry_sub">Fotovoltaico e batteria</div>
+      </div>
+    </div>
+    <div class="telemetry_box">
+      <span class="telemetry_icon"
+        >
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48"><path fill="currentColor" d="M37.602,8c-5.108,0-17.423,0.821-24.812,8.21c-4.765,4.765-5.187,12.211-1.297,17.469l-5.833,5.833l2.828,2.828l5.833-5.833c2.363,1.748,5.163,2.638,7.969,2.638c3.438,0,6.877-1.312,9.5-3.935c9.5-9.5,8.143-27.143,8.143-27.143S39.062,8,37.602,8z M12.855,25.71c0-2.52,0.981-4.89,2.763-6.672c4.7-4.7,12.013-6.295,17.323-6.808L14.358,30.814C13.383,29.305,12.855,27.549,12.855,25.71z M28.962,32.381c-1.782,1.782-4.151,2.763-6.672,2.763c-1.839,0-3.595-0.528-5.104-1.503l18.578-18.578C35.248,20.388,33.651,27.692,28.962,32.381z"/></svg>
+</span
+      >
+      <div class="telemetry_details">
+        <div class="telemetry_main">
+          <div class="telemetry_title">
+            Energia solare
+          </div>
+          <div class="telemetry_value">
+            <span id="telemetry--greenEnergy"></span>
+            <span id="telemetry--greenEnergyUnit" class="telemetry_unit"></span>
+          </div>
+        </div>
+        <div class="telemetry_sub">dalla fine del 2022</div>
+      </div>
+    </div>
+  </div>
+  <p class="fineprint">Dati di ricarica aggregati di <span id="telemetry--totalClients"></span> sponsor partecipanti.</p>
+</aside>
+
+<p>Nel nostro <a href="https://docs.evcc.io/it/blog/">blog</a> presentiamo regolarmente installazioni di evcc della community. Scopri le <a href="../it/#community-person">persone</a> e la <a href="../it/#community-tech">tecnologia</a> dietro questi impianti.</p>
+<div class="community">
+  <div class="community_container">
+    <div class="community_inner">
+      
+<a href="https://docs.evcc.io/it/blog/2026/10/29/joerg-meintechblog" class="community-entry">
+  <div class="community-entry__imgs">
+    <img
+      src="../img/community/joerg.webp"
+      class="community-entry__person"
+      height="300"
+      width="400"
+      alt="joerg"
+      loading="lazy"
+    />
+    <img
+      src="../img/community/joerg-en.webp"
+      class="community-entry__diagram"
+      height="300"
+      width="400"
+      alt="joerg"
+      loading="lazy"
+    />
+  </div>
+  <p>Il tech blogger Jörg</p>
+  <p></p>
+</a>
+
+<a href="https://docs.evcc.io/it/blog/2025/11/29/osnabruecker-ruderverein" class="community-entry">
+  <div class="community-entry__imgs">
+    <img
+      src="../img/community/orv.webp"
+      class="community-entry__person"
+      height="300"
+      width="400"
+      alt="orv"
+      loading="lazy"
+    />
+    <img
+      src="../img/community/orv-en.webp"
+      class="community-entry__diagram"
+      height="300"
+      width="400"
+      alt="orv"
+      loading="lazy"
+    />
+  </div>
+  <p>Circolo di canottaggio di Osnabrück</p>
+  <p></p>
+</a>
+
+<a href="https://docs.evcc.io/it/blog/2025/10/04/tobias-aus-trebur" class="community-entry">
+  <div class="community-entry__imgs">
+    <img
+      src="../img/community/tobias.webp"
+      class="community-entry__person"
+      height="300"
+      width="400"
+      alt="tobias"
+      loading="lazy"
+    />
+    <img
+      src="../img/community/tobias-en.webp"
+      class="community-entry__diagram"
+      height="300"
+      width="400"
+      alt="tobias"
+      loading="lazy"
+    />
+  </div>
+  <p>Tobias da Trebur</p>
+  <p></p>
+</a>
+
+<a href="https://docs.evcc.io/it/blog/2025/06/30/michael-vom-core-team" class="community-entry">
+  <div class="community-entry__imgs">
+    <img
+      src="../img/community/michael.webp"
+      class="community-entry__person"
+      height="300"
+      width="400"
+      alt="michael"
+      loading="lazy"
+    />
+    <img
+      src="../img/community/michael-en.webp"
+      class="community-entry__diagram"
+      height="300"
+      width="400"
+      alt="michael"
+      loading="lazy"
+    />
+  </div>
+  <p>Michael, core team</p>
+  <p></p>
+</a>
+
+<a href="https://docs.evcc.io/it/blog/2025/04/26/ulrike-und-gunther-aus-alzenau" class="community-entry">
+  <div class="community-entry__imgs">
+    <img
+      src="../img/community/ulrike-gunther.webp"
+      class="community-entry__person"
+      height="300"
+      width="400"
+      alt="ulrike-gunther"
+      loading="lazy"
+    />
+    <img
+      src="../img/community/ulrike-gunther-en.webp"
+      class="community-entry__diagram"
+      height="300"
+      width="400"
+      alt="ulrike-gunther"
+      loading="lazy"
+    />
+  </div>
+  <p>Ulrike e Gunther da Alzenau</p>
+  <p></p>
+</a>
+
+<a href="https://docs.evcc.io/it/blog/2024/12/21/olaf-aus-bergisch-gladbach" class="community-entry">
+  <div class="community-entry__imgs">
+    <img
+      src="../img/community/olaf.webp"
+      class="community-entry__person"
+      height="300"
+      width="400"
+      alt="olaf"
+      loading="lazy"
+    />
+    <img
+      src="../img/community/olaf-en.webp"
+      class="community-entry__diagram"
+      height="300"
+      width="400"
+      alt="olaf"
+      loading="lazy"
+    />
+  </div>
+  <p>Olaf da Bergisch Gladbach</p>
+  <p></p>
+</a>
+
+<a href="https://docs.evcc.io/it/blog/2024/11/14/andreas-aus-wettringen" class="community-entry">
+  <div class="community-entry__imgs">
+    <img
+      src="../img/community/andreas.webp"
+      class="community-entry__person"
+      height="300"
+      width="400"
+      alt="andreas"
+      loading="lazy"
+    />
+    <img
+      src="../img/community/andreas-en.webp"
+      class="community-entry__diagram"
+      height="300"
+      width="400"
+      alt="andreas"
+      loading="lazy"
+    />
+  </div>
+  <p>Andreas da Wettringen</p>
+  <p></p>
+</a>
+
+<a href="https://docs.evcc.io/it/blog/2024/10/25/portrait-bastian-aus-alhorn" class="community-entry">
+  <div class="community-entry__imgs">
+    <img
+      src="../img/community/bastian.webp"
+      class="community-entry__person"
+      height="300"
+      width="400"
+      alt="bastian"
+      loading="lazy"
+    />
+    <img
+      src="../img/community/bastian-en.webp"
+      class="community-entry__diagram"
+      height="300"
+      width="400"
+      alt="bastian"
+      loading="lazy"
+    />
+  </div>
+  <p>Bastian da Ahlhorn</p>
+  <p></p>
+</a>
+
+<a href="https://docs.evcc.io/it/blog/2024/09/21/portrait-tjarko-grossefehn" class="community-entry">
+  <div class="community-entry__imgs">
+    <img
+      src="../img/community/tjarko.webp"
+      class="community-entry__person"
+      height="300"
+      width="400"
+      alt="tjarko"
+      loading="lazy"
+    />
+    <img
+      src="../img/community/tjarko-en.webp"
+      class="community-entry__diagram"
+      height="300"
+      width="400"
+      alt="tjarko"
+      loading="lazy"
+    />
+  </div>
+  <p>Tjarko da Großefehn</p>
+  <p></p>
+</a>
+
+<a href="https://docs.evcc.io/it/blog/2024/08/25/portrait-christian-trebbin" class="community-entry">
+  <div class="community-entry__imgs">
+    <img
+      src="../img/community/christian.webp"
+      class="community-entry__person"
+      height="300"
+      width="400"
+      alt="christian"
+      loading="lazy"
+    />
+    <img
+      src="../img/community/christian-en.webp"
+      class="community-entry__diagram"
+      height="300"
+      width="400"
+      alt="christian"
+      loading="lazy"
+    />
+  </div>
+  <p>Christian da Trebbin</p>
+  <p></p>
+</a>
+
+<a href="https://docs.evcc.io/it/blog/2024/08/09/portrait-arne-gifhorn" class="community-entry">
+  <div class="community-entry__imgs">
+    <img
+      src="../img/community/arne.webp"
+      class="community-entry__person"
+      height="300"
+      width="400"
+      alt="arne"
+      loading="lazy"
+    />
+    <img
+      src="../img/community/arne-en.webp"
+      class="community-entry__diagram"
+      height="300"
+      width="400"
+      alt="arne"
+      loading="lazy"
+    />
+  </div>
+  <p>Arne da Gifhorn</p>
+  <p></p>
+</a>
+
+
+    </div>
+    <button class="community_page_left">
+      
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><polyline points="160 208 80 128 160 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/></svg>
+    </button>
+    <button class="community_page_right">
+      
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><polyline points="96 48 176 128 96 208" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/></svg>
+    </button>
+  </div>
+</div>
+<hr>
+<h2 id="sponsor">Sponsor</h2>
+<div class="sponsors">
+    <div class="sponsor-logos">
+        <a href="https://cocharge.de/evcc" title="cocharge" target="blank">
+            <img src="../img/sponsors/cocharge-light.svg" class="only-light" loading="lazy" style="aspect-ratio: 3.846" />
+            <img src="../img/sponsors/cocharge-dark.svg" class="only-dark" loading="lazy" style="aspect-ratio: 3.846" />
+        </a>
+        <a href="https://www.cubos.com" title="CUBOS" target="blank" style="padding: 0 0.3rem">
+            <img src="../img/sponsors/cubos-light.svg" class="only-light" loading="lazy" style="aspect-ratio: 4.312" />
+            <img src="../img/sponsors/cubos-dark.svg" class="only-dark" loading="lazy" style="aspect-ratio: 4.312" />
+        </a>
+        <a href="https://www.daheimladen.de/" title="DaheimLaden Wallboxen" target="blank">
+            <img src="../img/sponsors/daheimladen-light.webp" class="only-light" loading="lazy"
+                style="aspect-ratio: 5.707" />
+            <img src="../img/sponsors/daheimladen-dark.webp" class="only-dark" loading="lazy"
+                style="aspect-ratio: 5.707" />
+        </a>
+        <a href="https://www.em2go.de/" title="EM2GO" target="blank">
+            <img src="../img/sponsors/em2go-light.svg" class="only-light" loading="lazy" style="aspect-ratio: 4.5" />
+            <img src="../img/sponsors/em2go-dark.svg" class="only-dark" loading="lazy" style="aspect-ratio: 4.5" />
+        </a>
+        <a href="https://www.lekker.de" title="lekker Energie" target="blank" style="padding: 0 0.75rem">
+            <img src="../img/sponsors/lekker-light.svg" class="only-light" loading="lazy" style="aspect-ratio: 2.524" />
+            <img src="../img/sponsors/lekker-dark.svg" class="only-dark" loading="lazy" style="aspect-ratio: 2.524" />
+        </a>
+        <a href="https://www.pantabox.de/" title="Pantabox" target="blank" style="padding: 0 0.3rem">
+            <img src="../img/sponsors/pantabox-light.webp" class="only-light" loading="lazy"
+                style="aspect-ratio: 7.692" />
+            <img src="../img/sponsors/pantabox-dark.webp" class="only-dark" loading="lazy" style="aspect-ratio: 7.692" />
+        </a>
+        <a href="https://sourceful.energy/" target="blank" style="padding: 0 0.3rem">
+            <img src="../img/sponsors/sourceful-light.svg" class="only-light" loading="lazy"
+                style="aspect-ratio: 3.388" />
+            <img src="../img/sponsors/sourceful-dark.svg" class="only-dark" loading="lazy" style="aspect-ratio: 3.388" />
+        </a>
+        <a href="https://www.victronenergy.de/" title="Victron Energy" target="blank">
+            <img src="../img/sponsors/victron-light.svg" class="only-light" loading="lazy" style="aspect-ratio: 5.22" />
+            <img src="../img/sponsors/victron-dark.svg" class="only-dark" loading="lazy" style="aspect-ratio: 5.22" />
+        </a>
+        <a href="https://www.tinkerforge.com/" title="Warp by Tinkerforge" target="blank">
+            <img src="../img/sponsors/warp-by-tinkerforge.webp" loading="lazy" style="aspect-ratio: 4.055" />
+        </a>
+    </div>
+    <div class="github-sponsors">
+        <h4>GitHub Community</h4>
+        <object data="/img/github/evcc-io/sponsors.svg" type="image/svg+xml" loading="lazy"></object>
+        <object data="/img/github/andig/sponsors.svg" type="image/svg+xml" loading="lazy"></object>
+    </div>
+</div>
+<h2 id="core-team">Core team</h2>
+<div class="team">
+    <a class="team-member" href="https://github.com/andig" title="naltatis" target="blank">
+        <img src="https://avatars.githubusercontent.com/u/184815?v=4" width="300" height="300" loading="lazy" />
+        <div class="team-member-name">
+            Andi<small>andig</small>
+        </div class="team-member-name">
+    </a>
+    <a class="team-member" href="https://github.com/premultiply" title="naltatis" target="blank">
+        <img src="https://avatars.githubusercontent.com/u/4681172?v=4" width="300" height="300" loading="lazy" />
+        <div class="team-member-name">
+            Uli<small>premultiply</small>
+        </div class="team-member-name">
+    </a>
+    <a class="team-member" href="https://github.com/naltatis" title="naltatis" target="blank">
+        <img src="https://avatars.githubusercontent.com/u/152287?v=4" width="300" height="300" loading="lazy" />
+        <div class="team-member-name">
+            Michael<small>naltatis</small>
+        </div class="team-member-name">
+    </a>
+</div>
+
+</main>
+<footer class="footer">
+  <span>© 2026 evcc</span>
+  <a href="https://docs.evcc.io/it/blog/">Blog</a>
+  <a href="https://docs.evcc.io/it/">Documentazione</a>
+  <a href="https://github.com/evcc-io/evcc">
+    
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="1em"
+  height="1em"
+  viewBox="0 0 48 48"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    d="M39.155 13.946c-.214-.604-.538-1.212-.999-1.869.848-3.154.253-5.792.225-5.915l-.365-1.564-1.606.019c-.15.002-3.48.063-6.724 1.955a29.635 29.635 0 0 0-11.371 0c-3.243-1.892-6.573-1.953-6.724-1.955l-1.607-.02-.365 1.564c-.028.123-.623 2.761.225 5.915-.461.657-.785 1.266-.999 1.869-1.187 3.356-1.187 6.76.001 10.117 1.07 3.023 4.697 6.116 7.225 6.862.851.251 1.704.422 2.558.545A5.236 5.236 0 0 0 18 34.004v1.281c-.062.036-.127.065-.187.108-.289.211-2.869 1.967-5.505.09-.93-.946-1.386-1.639-1.826-2.309-.988-1.5-1.841-2.586-4.588-3.96a2 2 0 1 0-1.789 3.579c1.991.995 2.341 1.525 3.035 2.581.515.781 1.155 1.754 2.445 3.044l.215.186c1.692 1.27 3.447 1.723 5.053 1.723A9.286 9.286 0 0 0 18 39.76v4.253h4V34.004c0-1.103.897-2 2-2s2 .897 2 2v10h4v-10c0-.955-.23-1.803-.628-2.534a18.287 18.287 0 0 0 2.558-.545c2.527-.746 6.154-3.839 7.226-6.863 1.187-3.357 1.187-6.76-.001-10.116zm-3.77 8.781c-.591 1.667-3.167 3.942-4.588 4.362-4.509 1.331-9.083 1.332-13.594 0-1.421-.42-3.997-2.695-4.587-4.361-.875-2.472-.853-4.969-.001-7.447.485-1.41 1.724-2.427 1.724-2.427l-.398-1.08a9.24 9.24 0 0 1-.548-2.886c.992.233 2.247.664 3.416 1.459l.716.487.845-.188a25.659 25.659 0 0 1 11.262 0l.845.188.716-.487c1.167-.794 2.423-1.225 3.415-1.458a9.169 9.169 0 0 1-.547 2.885l-.398 1.08s1.093.81 1.724 2.427c.951 2.441.872 4.976-.002 7.446z"
+  />
+</svg>
+
+    GitHub
+  </a>
+  <a href="../it/media-kit">
+    
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M226.24,145.68A8,8,0,0,0,232,138V102a8,8,0,0,0-5.76-7.68l-176-54A8,8,0,0,0,40,48V192a8,8,0,0,0,10.24,7.68Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><path d="M192,156.18V196a8,8,0,0,1-8,8H152a8,8,0,0,1-8-8V69.09" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/></svg>
+    Media kit
+  </a>
+  <a
+    href="https://supergeek.de/en/evcc/"
+  >
+    
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M192,120h26.32a7.77,7.77,0,0,0,7-4.42l17.9-36.81a8.12,8.12,0,0,0-3.1-10.52L192,40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><path d="M64,120H37.68a7.77,7.77,0,0,1-7-4.42L12.82,78.77a8.12,8.12,0,0,1,3.1-10.52L64,40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><path d="M160,40a32,32,0,0,1-64,0H64V208a8,8,0,0,0,8,8H184a8,8,0,0,0,8-8V40Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/></svg>
+    T-shirt e felpe
+  </a>
+  <a rel="me" href="https://fosstodon.org/@evcc">
+    
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M160,224H72a32,32,0,0,1-32-32V72A32,32,0,0,1,72,40H184a32,32,0,0,1,32,32v72a32,32,0,0,1-32,32H40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><path d="M128,136V104a24,24,0,0,0-48,0v32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><path d="M176,136V104a24,24,0,0,0-48,0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/></svg>
+    Mastodon
+  </a>
+  <a href="https://www.instagram.com/evcc.io/">
+    
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><circle cx="128" cy="128" r="36" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><rect x="32" y="32" width="192" height="192" rx="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><circle cx="180" cy="76" r="16" fill="currentColor"/></svg>
+    Instagram
+  </a>
+  <a href="https://bsky.app/profile/evcc.io">
+    
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><line x1="128" y1="56" x2="128" y2="180" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><path d="M187.76,151.94c8.05.48,29.5-1.29,37.36-32.23C233.21,87.84,240.22,48,208.93,48S128,95.8,128,127.67C128,95.8,78.36,48,47.07,48S22.79,87.84,30.88,119.71c7.86,30.94,29.31,32.71,37.36,32.23" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><path d="M88,144a36.11,36.11,0,1,0,40,36,36,36,0,1,0,40-36" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/></svg>
+    Bluesky
+  </a>
+  <a href="../slack">
+    
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M80,56h24a0,0,0,0,1,0,0v72a24,24,0,0,1-24,24h0a24,24,0,0,1-24-24V80A24,24,0,0,1,80,56Z" transform="translate(184 24) rotate(90)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><path d="M128,80H104A24,24,0,0,1,80,56h0a24,24,0,0,1,24-24h0a24,24,0,0,1,24,24Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><path d="M152,32h24a0,0,0,0,1,0,0v72a24,24,0,0,1-24,24h0a24,24,0,0,1-24-24V56a24,24,0,0,1,24-24Z" transform="translate(304 160) rotate(-180)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><path d="M176,128V104a24,24,0,0,1,24-24h0a24,24,0,0,1,24,24h0a24,24,0,0,1-24,24Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><path d="M176,104h24a0,0,0,0,1,0,0v72a24,24,0,0,1-24,24h0a24,24,0,0,1-24-24V128a24,24,0,0,1,24-24Z" transform="translate(24 328) rotate(-90)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><path d="M128,176h24a24,24,0,0,1,24,24h0a24,24,0,0,1-24,24h0a24,24,0,0,1-24-24Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><path d="M104,128h24a0,0,0,0,1,0,0v72a24,24,0,0,1-24,24h0a24,24,0,0,1-24-24V152A24,24,0,0,1,104,128Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><path d="M80,128v24a24,24,0,0,1-24,24h0a24,24,0,0,1-24-24h0a24,24,0,0,1,24-24Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/></svg>
+    Slack per sviluppatori
+  </a>
+  <a href="https://status.evcc.io">
+    
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M80,128a80,80,0,1,1,80,80H72A56,56,0,1,1,85.92,97.74" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><polyline points="120 136 144 160 192 112" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/></svg>
+
+    Stato
+  </a>
+  
+    <a
+      href="../en/impressum/"
+      >Note legali</a
+    >
+  
+    <a
+      href="../en/datenschutz/"
+      >Informativa sulla privacy</a
+    >
+  
+</footer>
+
+<script src="../js/main.js" async type="module"></script>
+
+<script src="../js/liveTelemetry.js" async type="module"></script>
+
+<script src="../js/languageMismatch.js" async type="module"></script>
+<link rel="stylesheet" href="../css/glightbox.min.css" />
+<script src="../js/glightbox.min.js"></script>
+<script type="text/javascript">
+    const lightbox = GLightbox({ selector: ".screenshot_link" });
+</script></body>
+
+</html>

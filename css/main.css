@@ -64,7 +64,9 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
-  src: local("Roboto"), local("Roboto-Regular"),
+  src:
+    local("Roboto"),
+    local("Roboto-Regular"),
     url("../fonts/roboto-v20-latin-regular.woff2") format("woff2");
   font-display: swap;
 }
@@ -73,7 +75,9 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
-  src: local("Roboto Bold"), local("Roboto-Bold"),
+  src:
+    local("Roboto Bold"),
+    local("Roboto-Bold"),
     url("../fonts/roboto-v20-latin-bold.woff2") format("woff2");
   font-display: swap;
 }
@@ -106,6 +110,8 @@ a:hover {
 
 .header__top {
   background: linear-gradient(#fff, #f3ffff);
+  /* same hairline as the docs header */
+  border-bottom: 1px solid #eef1ee;
 }
 
 .header__inner {
@@ -132,6 +138,9 @@ a:hover {
 }
 
 .header__logo span {
+  /* puts the text baseline on the wordmark's baseline (measured) */
+  position: relative;
+  top: 5px;
   font-size: 18px;
   white-space: nowrap;
 }
@@ -162,17 +171,20 @@ a:hover {
   display: block;
 }
 
-.header__navigation__lang {
-  color: #1c2445;
-}
-
-.header__navigation__lang--active {
-  color: #1c2445;
-  text-decoration: underline;
-}
-
+/* compact language switcher: a native select that only shows the two-letter code */
 .header__navigation__item--translation {
+  display: flex;
+  align-items: center;
   margin-right: 8px;
+}
+.header__navigation__lang {
+  appearance: none;
+  border: 0;
+  padding: 0 4px 0 0;
+  background: transparent;
+  color: #1c2445;
+  font: inherit;
+  cursor: pointer;
 }
 
 @media (max-width: 699px) {
@@ -181,7 +193,6 @@ a:hover {
     display: none;
   }
   .header__navigation__item--translation {
-    display: block;
     margin-right: 0px;
   }
 }
@@ -591,7 +602,9 @@ footer svg {
 .community--tech .community-entry:hover .community-entry__diagram {
   transform: scale(1.05);
   opacity: 0;
-  transition: transform 400ms ease-in-out, opacity 400ms ease-in-out;
+  transition:
+    transform 400ms ease-in-out,
+    opacity 400ms ease-in-out;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -628,7 +641,7 @@ footer svg {
 .sponsor-logos {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: .5em 2em;
+  gap: 0.5em 2em;
   margin: 0 auto 3em;
   width: 100%;
   max-width: 800px;

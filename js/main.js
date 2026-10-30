@@ -16,17 +16,6 @@
       updateTheme(el.getAttribute("data-theme") === "dark");
     });
   });
-  document.querySelectorAll("a[href^='./#'], a[href^='../en/#']").forEach((el) => {
-    el.addEventListener("click", (e) => {
-      e.preventDefault();
-      const target = document.getElementById(
-        el.getAttribute("href").split("#").pop()
-      );
-      console.log(el.getAttribute("href").split("#").pop());
-      if (!target) return;
-      target.scrollIntoView({ behavior: "smooth" });
-    });
-  });
   var $community = document.querySelector(".community_container");
   var $communityInner = document.querySelector(".community_inner");
   var $communityLeft = document.querySelector(".community_page_left");

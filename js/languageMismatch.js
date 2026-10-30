@@ -5,28 +5,17 @@
     if (localStorage.getItem(DISMISSED_KEY)) {
       return;
     }
-    const path = window.location.pathname;
-    const isEnglishPage = path.startsWith("/en/");
-    const pageLanguage = isEnglishPage ? "en" : "de";
-    const browserLang = (navigator.language || navigator.userLanguage || "").toLowerCase();
-    const prefersEnglish = browserLang.startsWith("en");
-    const prefersGerman = browserLang.startsWith("de");
-    let shouldShow = false;
-    let suggestedUrl = "";
-    let currentLangName = "";
-    let suggestedLangName = "";
-    if (pageLanguage === "de" && prefersEnglish) {
-      shouldShow = true;
-      currentLangName = "Deutsch";
-      suggestedLangName = "English";
-      suggestedUrl = "/en" + path;
-    } else if (pageLanguage === "en" && prefersGerman && !prefersEnglish) {
-      shouldShow = true;
-      currentLangName = "English";
-      suggestedLangName = "Deutsch";
-      suggestedUrl = path.replace(/^\/en/, "") || "/";
+    const options = document.querySelectorAll(
+      ".header__navigation__lang option[hreflang]"
+    );
+    let link;
+    for (const pref of navigator.languages) {
+      const code = pref.toLowerCase().split("-")[0];
+      link = [...options].find((o) => o.getAttribute("hreflang") === code);
+      if (link) break;
     }
-    if (!shouldShow) return;
+    if (!link || link.getAttribute("hreflang") === document.documentElement.lang)
+      return;
     const dialog = document.createElement("div");
     dialog.className = "lang-dialog-container";
     dialog.style.cssText = `
@@ -42,9 +31,6 @@
     font-family: system-ui, -apple-system, sans-serif;
     animation: slideIn 0.3s ease-out;
   `;
-    const message = pageLanguage === "de" ? `This page is available in English.` : `Diese Seite ist auf Deutsch verf\xFCgbar.`;
-    const switchText = pageLanguage === "de" ? `Switch to English` : `Zu Deutsch wechseln`;
-    const stayText = pageLanguage === "de" ? `No thanks` : `Nein danke`;
     dialog.innerHTML = `
     <style>
       .lang-dialog-container {
@@ -143,12 +129,17 @@
         }
       }
     </style>
-    <p class="lang-dialog-message">${message}</p>
+    <p class="lang-dialog-message"></p>
     <div class="lang-dialog-buttons">
-      <button class="lang-dialog-btn lang-dialog-btn-secondary" id="langDialogStay">${stayText}</button>
-      <a href="${suggestedUrl}" class="lang-dialog-btn lang-dialog-btn-primary">${switchText}</a>
+      <button class="lang-dialog-btn lang-dialog-btn-secondary" id="langDialogStay"></button>
+      <a href="/" class="lang-dialog-btn lang-dialog-btn-primary"></a>
     </div>
   `;
+    dialog.querySelector("p").textContent = link.dataset.msg;
+    dialog.querySelector("#langDialogStay").textContent = link.dataset.stay;
+    const $switch = dialog.querySelector("a");
+    $switch.textContent = link.dataset.switch;
+    $switch.pathname = link.value;
     document.body.appendChild(dialog);
     dialog.querySelector("#langDialogStay").addEventListener("click", function() {
       localStorage.setItem(DISMISSED_KEY, "true");

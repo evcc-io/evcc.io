@@ -261,8 +261,7 @@
       startVal: value,
       duration: UPDATE_INTERVAL_SECONDS,
       useEasing: false,
-      separator: ".",
-      decimal: ",",
+      ...numberSeparators(document.documentElement.lang),
       decimalPlaces
     });
   }
@@ -328,6 +327,11 @@
         telemetryElement.style.display = "none";
       }
     });
+  }
+  function numberSeparators(lang) {
+    const parts = new Intl.NumberFormat(lang).formatToParts(12345678e-1);
+    const part = (type) => parts.find((p) => p.type === type)?.value ?? "";
+    return { separator: part("group"), decimal: part("decimal") };
   }
   function fmtKW(kW) {
     if (kW < 1e3) {
