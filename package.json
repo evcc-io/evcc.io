@@ -21,10 +21,10 @@
   "homepage": "https://github.com/naltatis/evcc.io#readme",
   "dependencies": {
     "prettier-plugin-go-template": "^0.0.15",
-    "sponsorkit": "^17.0.0"
+    "sponsorkit": "^19.0.0"
   },
   "devDependencies": {
     "prettier": "^3.6.2",
-    "vitest": "^3.2.4"
+    "vitest": "^4.1.12"
   }
 }
