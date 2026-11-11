@@ -1,4 +1,4 @@
 {{ $group := .Get "group" }}
 <p class="products group-{{$group}}">
-    {{ delimit (index .Site.Data.brands $group) " • " }}
+    {{ delimit (index hugo.Data.brands $group) " • " }}
 </p>
