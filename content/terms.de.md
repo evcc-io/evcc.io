@@ -7,7 +7,7 @@ By purchasing a sponsorship, you agree to be bound by these Terms.
 
 ## 1. Parties and Acceptance
 
-These Terms constitute a legal agreement between you ("User", "You") and the evcc Core Team ("We", "Us", "Our"), represented by Michael Geers, Neuenkirchener Str. 23a, 49593 Bersenbrück, Germany, operating the evcc project at github.com/evcc-io.
+These Terms constitute a legal agreement between you ("User", "You") and evcc open source GbR ("We", "Us", "Our"), Neuenkirchener Str. 23a, 49593 Bersenbrück, Germany, operating the evcc project at github.com/evcc-io.
 
 By purchasing a sponsorship token, you acknowledge that you have read, understood, and agree to be bound by these Terms.
 

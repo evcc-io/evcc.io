@@ -184,7 +184,7 @@ Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Ko
 
 Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
 
-Michael Geers\
+evcc open source GbR\
 Neuenkirchener Str. 23a\
 49593 Bersenbrück
 

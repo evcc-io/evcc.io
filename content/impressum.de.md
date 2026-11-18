@@ -3,13 +3,21 @@
 
 ## Angaben gemäß § 5 TMG
 
-Michael Geers\
+evcc open source GbR\
 Neuenkirchener Str. 23a\
 49593 Bersenbrück
+
+Vertreten durch die Gesellschafter:\
+Michael Geers, Andreas Götz, Ulrich Peters
 
 ## Kontakt
 
 E-Mail: info@evcc.io
+
+## Umsatzsteuer-ID
+
+Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:\
+DE465674234
 
 ### Haftung für Inhalte
 

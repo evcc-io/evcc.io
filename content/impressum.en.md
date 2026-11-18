@@ -2,14 +2,22 @@
 
 ## Information pursuant to § 5 TMG
 
-Michael Geers\
+evcc open source GbR\
 Neuenkirchener Str. 23a\
 49593 Bersenbrück\
 Germany
 
+Represented by the partners:\
+Michael Geers, Andreas Götz, Ulrich Peters
+
 ## Contact
 
 Email: info@evcc.io
+
+## VAT ID
+
+VAT identification number pursuant to § 27 a of the German VAT Act (UStG):\
+DE465674234
 
 ### Liability for Content
 

@@ -184,7 +184,7 @@ We point out that data transmission over the Internet (e.g., when communicating 
 
 The responsible party for data processing on this website is:
 
-Michael Geers\
+evcc open source GbR\
 Neuenkirchener Str. 23a\
 49593 Bersenbrück\
 Germany
